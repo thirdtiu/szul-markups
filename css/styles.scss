@@ -198,6 +198,39 @@ a#nav-toggle{
 	position:relative;
 	background:url(../images/sprite.png) no-repeat;
 }
+.icon-mdiamond-rings{
+	width:18px;
+	height:22px;
+	background-position:-138px -190px;
+}
+.active .icon-mdiamond-rings{
+	background-position:-107px -190px;
+}
+.icon-mgem-type{
+	width:32px;
+	height:22px;
+	background-position: -132px -212px;	
+}
+.active .icon-mgem-type{
+	background-position: -100px -212px;
+}
+.icon-mmetal-type{
+	width:20px;
+	height:22px;
+	background-position: -138px -234px;
+}
+.active .icon-mmetal-type{
+	background-position: -106px -234px;
+}
+.icon-mprice-range{
+	width: 22px;
+	height:22px;
+	background-position: -137px -256px;
+}
+.active .icon-mprice-range{
+	background-position: -104px -256px;
+}
+
 .lowprice-ribbon{
 	width:99px;
 	height:99px;
@@ -641,6 +674,9 @@ a#nav-toggle{
 		
 	}
 
+}
+.mobile-overlay{
+	display:none;
 }
 #mobile-nav ul{
 	list-style-type: none;
@@ -2538,6 +2574,13 @@ div#thumbs{
 			outline:none;
 			padding: 10px 10px;
 			text-align: center;
+			color:#a7a7a7;
+			span{
+				display: block;
+				margin-left:auto;
+				margin-right: auto;
+				margin-bottom: 10px;
+			}
 		}
 		> li > a, 
 		> li > a:hover,
@@ -2549,10 +2592,18 @@ div#thumbs{
 		> li.active > a:focus{
 			border:none;
 			background:none;
+			color:$purple;
 		}
 	}
 	.mobile-filter-tab-content{
-		
+		margin-left:90px;
+		ul{
+			list-style-type: none;
+			li{
+				border-bottom:1px solid #e1e1e2;
+				padding:15px;
+			}
+		}
 	}
 	.product-filter-sidebar{
 		display: none;
