@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SZUL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <!-- Mobile Menu -->
+    <link href="css/jquery.mmenu.css" rel="stylesheet">
+    <link href="css/jquery.mmenu.fullscreen.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- We only want the thunbnails to display when javascript is disabled -->
+    <script type="text/javascript">
+      document.write('<style>.noscript { display: none; }</style>');
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+  	<header id="top_header">
+      <a href="#mobile-nav" id="nav-toggle"><span class="icon icon-trigram"></span></a>
+      <div class="top_primary">
+        <div class="container">
+          <h1 id="logo"><a href="/"><img src="images/logo.png" alt="SZUL" /></a></h1>
+          <div class="store-info">
+            <ul class="store-features">
+              <li><a href="#">30 Day Money Back</a></li>
+              <li><a href="#">Free Shipping</a></li>
+              <li><a href="#">Certificate of Authenticity</a></li>
+            </ul>
+            <form action="#" role="form" class="form-inline search-form">
+              <div class="form-group">
+                <label class="sr-only" for="search">Email address</label>
+                <input type="text" class="form-control" name="search" id="search" placeholder="Search Title, Keyword, or SKU" />
+              </div>
+              <button type="submit" class="btn btn-transparent">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+          </div>
+          <ul class="top-columns hidden-xs">
+            <li>
+              <h2>
+                <span class="glyphicon glyphicon-earphone"></span>
+                CONTACT US
+              </h2>
+              088-432-8832
+            </li>
+            <li class="account" data-container="body" data-toggle="popover">
+              <h2>
+                <span class="glyphicon glyphicon-user"></span>
+                ACCOUNT
+              </h2>
+              <a href="#" class="sign-in">Sign in</a>
+              <span class="icon icon-chevron-down"></span>
+
+              <div class="account-popover-contents">
+                <!--MY ACCOUNT POPOVER-->
+                <div class="my-account-contents" style="display:none;">
+                  <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Wish List</a></li>
+                  </ul>
+                </div>
+                <!--MY ACCOUNT POPOVER-->
+
+                <!--SIGN IN POPOVER-->
+                <div class="sign-in-contents">
+                  <form action="#" role="form">
+                    <div class="form-group">
+                      <label for="username" class="sr-only">Usernam</label>
+                      <input type="text" class="form-control" id="username" placeholder="User ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="sr-only">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-green btn-block">SIGN-IN</button>
+                    <p class="text-center forgot-link">
+                      <a href="#">FORGOT PASSWORD?</a>
+                    </p>
+                  </form>
+
+                  <div class="other-signin">
+                    <h4 class="text-center">Sign-in Using</h4>
+                    <ul class="clearfix">
+                      <li class="facebook"><a href="#">Facebook</a></li>
+                      <li class="google"><a href="#">Google Plus</a></li>
+                      <li class="yahoo"><a href="#">Yahoo</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="no-account">
+                    <p class="clearfix">
+                      <span class="pull-left">No account yet?</span>
+                      <a href="#" class="pull-right register">REGISTER &gt;</a>
+                    </p>
+                  </div>
+                </div>
+                <!--END SIGN IN POPOVER-->
+              </div>
+            </li>
+            <li class="cart" data-container="body" data-toggle="popover">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+              <div class="cart-popover-contents">
+                <table>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                </table>
+                <p class="total text-right">
+                  Total: <strong>$1,000</strong>
+                </p>
+                <div class="ft clearfix">
+                  <a href="#" class="pull-left btn btn-transparent view-cart">VIEW CART &gt;</a>
+                  <a href="#" class="pull-right btn btn-primary-gradient">CHECKOUT &gt;</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="top-columns_mobile visible-xs">
+            <li class="mobile-search">
+              <a href="#" class="" data-toggle="collapse" data-target="#mobile-search">
+                <span class="icon icon-spyglass"></span>
+              </a>
+            </li>
+            <li class="mobile-cart">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+            </li>
+          </ul>
+        </div><!--.container-->
+      </div>
+      <div class="top_secondary">
+        <div class="container">
+          <nav id="main_nav">
+            <ul id="mega-menu">
+              <li><a href="#">Rings</a></li>
+              <li>
+                <a href="#">Earrings</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Pendants &amp; Necklaces</a></li>
+              <li><a href="#">Bracelets</a></li>
+              <li><a href="#">Engagement &amp; Wedding</a></li>
+              <li><a href="#">Diamond</a></li>
+              <li><a href="#">Men's Jewelry</a></li>
+              <li><a href="#">Deals &amp; Collections</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+            </ul>
+          </nav>
+          <div id="mobile-nav">
+            <ul>
+              <li><a href="#"><span class="icon icon-lock"></span> LOGIN/SIGUP</a></li>
+              <li><a href="#"><span class="icon icon-rings"></span> RINGS</a>
+                  <ul class="sub_menu">
+                    <li><a href="#"><span class="icon icon-diamondrings"></span> DIAMOND RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-gemstonerings"></span> GEMSTONE RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-engagementrings"></span> ENGAGEMENT RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-weddingrings"></span> WEDDING RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-promiserings"></span> PROMISE RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-mensrings"></span> MEN'S RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-pearlrings"></span> PEARL RINGS</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><span class="icon icon-earrings"></span> EARRINGS</a></li>
+              <li><a href="#"><span class="icon icon-pendants"></span> PENDANTS &amp; NECKLACES</a></li>
+              <li><a href="#"><span class="icon icon-bracelets"></span> BRACELETS</a></li>
+              <li><a href="#"><span class="icon icon-mensjewelry"></span> MEN'S JEWELRY</a></li>
+              <li><a href="#"><span class="icon icon-deals"></span> DEALS COLLECTION</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form action="#" method="post" id="mobile-search" class="collapse">
+        <div class="form-group">
+          <label for="search" class="sr-only">Email address</label>
+          <input type="text" class="form-control" id="search" placeholder="Search Title, Keyword, or SKU">
+        </div>
+      </form>
+    </header>
+    <section class="windowshade">
+      <div class="container">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="images/windowshade-ad-mobile.png" media="(max-width: 767px)">
+          <source srcset="images/windowshade-ad.png" media="(min-width: 768px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="images/windowshade-ad.png" alt="30 day money back guarantee">
+        </picture>
+      </div>
+    </section>
+
+    <div class="container">
+      <h1 class="page-header">CREATE YOUR OWN RING</h1>
+
+      <ul class="steps create-steps clearfix">
+        <li class="active"><span>01</span> SELECT YOUR DIAMOND</li>
+        <li><span>02</span> CHOOSE RING SETTING</li>
+        <li><span>03</span> PREVIEW YOUR RING</li>
+      </ul>
+      
+      <div class="advanced-search-wrap">
+        <form action="#" method="post" class="advanced-search-form">
+          <div class="form-group">
+            <p>SELECT DIAMOND SHAPE</p>
+            <ul class="shapes">
+              <ul class="types">
+                <li class="type">
+                    <img src="images/type-round.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-princess.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-radiant.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-cushion.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">                  
+                </li>
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="form-group">
+            <p>CERTIFICATE</p>
+            <label>
+              <input type="checkbox"> GIA
+            </label>
+            <label>
+              <input type="checkbox"> EGL
+            </label>
+          </div>
+          <div class="form-group">
+            <p>PRICE RANGE</p>
+            <div class="text-center">
+            <input type="text" class="range-input" id="range-input1"> TO <input type="text" class="range-input" id="range-input2">
+            </div>
+            <input id="range-slider" type="text" class="span2" value="" data-slider-min="6000" data-slider-max="20000" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide">
+          </div>
+
+          <div class="form-group">
+            <p>CARAT RANGE</p>
+            <div class="text-center">
+            <input type="text" class="range-input" id="carat-range1"> TO <input type="text" class="range-input" id="carat-range2">
+            </div>
+
+            <input id="carat-range-slider" type="text" class="span2" value="" data-slider-min="2" data-slider-max="16" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide">
+          </div>
+
+          <div class="form-group">
+            <p>COLOR GRADE RANGE</p>
+
+            <input id="color-grade-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="7" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+          </div>
+
+          <div class="form-group">
+            <p>CLARITY GRADE RANGE</p>
+
+            <input id="clarity-grade-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+          </div>
+
+          <div class="form-group">
+            <p>CUT GRADE RANGE</p>
+
+            <input id="cut-grade-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="3" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+          </div>
+
+          <div class="form-group">
+            <p>SYMMETRY RANGE</p>
+
+            <input id="symmetry-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="3" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+          </div>
+
+          <div class="form-group">
+            <p>POLISH RANGE</p>
+
+            <input id="polish-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="3" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+          </div>
+
+          <div class="form-group">
+            <p>FLUORESCENCE RANGE</p>
+
+            <input id="fluorescence-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+          </div>
+
+
+        </form>
+        <div class="advanced-results">
+          <div class="results-heading">
+            <p class="stats pull-left"><span class="count">2,538 Records</span> | <span class="page-count">Showing 27 of 567</span></p>
+            <div class="pull-right">
+              <a href="#" class="btn btn-default">EMAIL THIS LIST</a>
+              <a class="btn btn-default disabled" href="#"><span class="icon icon-first"></span></a>
+              <a class="btn btn-default disabled" href="#"><span class="icon icon-prev"></span></a>
+              <a class="btn btn-default" href="#"><span class="icon icon-next"></span></a>
+              <a class="btn btn-default" href="#"><span class="icon icon-last"></span></a>
+            </div>
+          </div>
+          <table class="table table-condensed table-striped table-hover">
+            <thead>
+              <tr>
+                <th>SHAPE</th>
+                <th>CARAT</th>
+                <th>COLOR</th>
+                <th>CLARITY</th>
+                <th>CUT</th>
+                <th>CERT.</th>
+                <th>SYM</th>
+                <th>POLISH</th>
+                <th>MEASUREMENT</th>
+                <th class="price">PRICE</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
+                <td class="shape">
+                  <span class="icon icon-sample-shape"></span>
+                </td>
+                <td class="carat">2.17</td>
+                <td class="color">K</td>
+                <td class="clarity">SI1</td>
+                <td class="cut">VG</td>
+                <td class="cert">EGL</td>
+                <td class="sym">EX</td>
+                <td class="polish">VG</td>
+                <td class="measurement">8.26x8.20x5.19</td>
+                <td class="price">$2,450.00</td>
+                <td class="more"><a href="#"><span class="glyphicon glyphicon-search"></span></a></td>
+              </tr>
+              <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
+                <td class="shape">
+                  <span class="icon icon-sample-shape"></span>
+                </td>
+                <td class="carat">2.17</td>
+                <td class="color">K</td>
+                <td class="clarity">SI1</td>
+                <td class="cut">VG</td>
+                <td class="cert">EGL</td>
+                <td class="sym">EX</td>
+                <td class="polish">VG</td>
+                <td class="measurement">8.26x8.20x5.19</td>
+                <td class="price">$2,450.00</td>
+                <td class="more"><a href="#"><span class="glyphicon glyphicon-search"></span></a></td>
+              </tr>
+              <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
+                <td class="shape">
+                  <span class="icon icon-sample-shape"></span>
+                </td>
+                <td class="carat">2.17</td>
+                <td class="color">K</td>
+                <td class="clarity">SI1</td>
+                <td class="cut">VG</td>
+                <td class="cert">EGL</td>
+                <td class="sym">EX</td>
+                <td class="polish">VG</td>
+                <td class="measurement">8.26x8.20x5.19</td>
+                <td class="price">$2,450.00</td>
+                <td class="more"><a href="#"><span class="glyphicon glyphicon-search"></span></a></td>
+              </tr>
+              <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
+                <td class="shape">
+                  <span class="icon icon-sample-shape"></span>
+                </td>
+                <td class="carat">2.17</td>
+                <td class="color">K</td>
+                <td class="clarity">SI1</td>
+                <td class="cut">VG</td>
+                <td class="cert">EGL</td>
+                <td class="sym">EX</td>
+                <td class="polish">VG</td>
+                <td class="measurement">8.26x8.20x5.19</td>
+                <td class="price">$2,450.00</td>
+                <td class="more"><a href="#"><span class="glyphicon glyphicon-search"></span></a></td>
+              </tr>
+              <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
+                <td class="shape">
+                  <span class="icon icon-sample-shape"></span>
+                </td>
+                <td class="carat">2.17</td>
+                <td class="color">K</td>
+                <td class="clarity">SI1</td>
+                <td class="cut">VG</td>
+                <td class="cert">EGL</td>
+                <td class="sym">EX</td>
+                <td class="polish">VG</td>
+                <td class="measurement">8.26x8.20x5.19</td>
+                <td class="price">$2,450.00</td>
+                <td class="more"><a href="#"><span class="glyphicon glyphicon-search"></span></a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tooltip-content">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>STOCK NUMBER</th>
+                  <th>DEPTH %</th>
+                  <th>TABLE %</th>
+                  <th>GIRDLE</th>
+                  <th>CULET</th>
+                  <th>FLUORESCENCE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CLS123451209</td>
+                  <td>62.7</td>
+                  <td>55</td>
+                  <td>Medium-Slightly Thick</td>
+                  <td>None</td>
+                  <td>M</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination-wrap text-center">
+            <ul class="pagination">
+              <li><a href="#" class="btn btn-default"><span class="icon icon-prev"></span></a></li>
+              <li><a href="#" class="btn btn-default"><span class="icon icon-first"></span> BACK</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#" class="btn btn-default">NEXT <span class="icon icon-last"></span></a></li>
+              <li><a href="#" class="btn btn-default"><span class="icon icon-next"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      
+    </div>
+
+  	<footer id="main_footer">
+      <div class="affiliations">
+        <div class="container">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="images/affiliates-mobile.png" media="(max-width: 767px)">
+            <source srcset="images/affiliates.png" media="(min-width: 768px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="images/affiliates.png" alt="Affiliates">
+          </picture>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 hidden-xs">
+              <h3 class="col-heading">SOCIAL</h3>
+              <div class="col-body">
+                <ul class="social-links">
+                  <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form form-inline">
+                  <p>Sign-up for special offers. We don't spam and won't sell your data.</p>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                  </div>
+                  <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">SZUL</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services &amp; Policies</a></li>
+                  <li><a href="#">Site Map</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Szul Reviews</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">SHOP WITH CONFIDENCE</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li><a href="#">Free Shipping</a></li>
+                  <li><a href="#">30-Day Return Policy</a></li>
+                  <li><a href="#">Free Gift Packagin</a></li>
+                  <li><a href="#">Safe &amp; Secure</a></li>
+                  <li><a href="#">Jewelry Guide</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">CUSTOMER SERVICE</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li class="white"><span class="glyphicon glyphicon-earphone"></span> <strong>800 332 4382</strong></li>
+                  <li class="white"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:customerservice@szul.com" class="white"><strong>customerservice@szul.com</strong></a></li>
+                  <li><a href="#">Order Status</a></li>
+                  <li><a href="#">Shipping Information</a></li>
+                  <li><a href="#">Returns &amp; Exchanges</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 visible-xs">
+              <h3 class="col-heading">SOCIAL</h3>
+              <div class="col-body">
+                <ul class="social-links">
+                  <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form form-inline">
+                  <p>Sign-up for special offers. We don't<br>spam and won't sell your data.</p>
+                  <input type="email" class="form-control" id="email" placeholder="Email Address">
+                  <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                </form>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+        
+      <div class="copyright">
+        <div class="container">
+          Copyright &copy; 1999 - 2014. Szul. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script>
+    <script src="js/jquery.syncHeight.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+    <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+    <script type="text/javascript" src="js/product-gallery.js"></script>
+    <script src="js/script.js"></script>
+    
+    <!--LIVE RELOAD-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>

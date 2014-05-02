@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SZUL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <!-- Mobile Menu -->
+    <link href="css/jquery.mmenu.css" rel="stylesheet">
+    <link href="css/jquery.mmenu.fullscreen.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+  	<header id="top_header">
+      <a href="#mobile-nav" id="nav-toggle"><span class="icon icon-trigram"></span></a>
+      <div class="top_primary">
+        <div class="container">
+          <h1 id="logo"><a href="/"><img src="images/logo.png" alt="SZUL" /></a></h1>
+          <div class="store-info">
+            <ul class="store-features">
+              <li><a href="#">30 Day Money Back</a></li>
+              <li><a href="#">Free Shipping</a></li>
+              <li><a href="#">Certificate of Authenticity</a></li>
+            </ul>
+            <form action="#" role="form" class="form-inline search-form">
+              <div class="form-group">
+                <label class="sr-only" for="search">Email address</label>
+                <input type="text" class="form-control" name="search" id="search" placeholder="Search Title, Keyword, or SKU" />
+              </div>
+              <button type="submit" class="btn btn-transparent">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+          </div>
+          <ul class="top-columns hidden-xs">
+            <li>
+              <h2>
+                <span class="glyphicon glyphicon-earphone"></span>
+                CONTACT US
+              </h2>
+              088-432-8832
+            </li>
+            <li class="account" data-container="body" data-toggle="popover">
+              <h2>
+                <span class="glyphicon glyphicon-user"></span>
+                ACCOUNT
+              </h2>
+              <a href="#" class="sign-in">Sign in</a>
+              <span class="icon icon-chevron-down"></span>
+
+              <div class="account-popover-contents">
+                <!--MY ACCOUNT POPOVER-->
+                <div class="my-account-contents" style="display:none;">
+                  <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Wish List</a></li>
+                  </ul>
+                </div>
+                <!--MY ACCOUNT POPOVER-->
+
+                <!--SIGN IN POPOVER-->
+                <div class="sign-in-contents">
+                  <form action="#" role="form">
+                    <div class="form-group">
+                      <label for="username" class="sr-only">Usernam</label>
+                      <input type="text" class="form-control" id="username" placeholder="User ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="sr-only">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-green btn-block">SIGN-IN</button>
+                    <p class="text-center forgot-link">
+                      <a href="#">FORGOT PASSWORD?</a>
+                    </p>
+                  </form>
+
+                  <div class="other-signin">
+                    <h4 class="text-center">Sign-in Using</h4>
+                    <ul class="clearfix">
+                      <li class="facebook"><a href="#">Facebook</a></li>
+                      <li class="google"><a href="#">Google Plus</a></li>
+                      <li class="yahoo"><a href="#">Yahoo</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="no-account">
+                    <p class="clearfix">
+                      <span class="pull-left">No account yet?</span>
+                      <a href="#" class="pull-right register">REGISTER &gt;</a>
+                    </p>
+                  </div>
+                </div>
+                <!--END SIGN IN POPOVER-->
+              </div>
+            </li>
+            <li class="cart" data-container="body" data-toggle="popover">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+              <div class="cart-popover-contents">
+                <table>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                </table>
+                <p class="total text-right">
+                  Total: <strong>$1,000</strong>
+                </p>
+                <div class="ft clearfix">
+                  <a href="#" class="pull-left btn btn-transparent view-cart">VIEW CART &gt;</a>
+                  <a href="#" class="pull-right btn btn-primary-gradient">CHECKOUT &gt;</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="top-columns_mobile visible-xs">
+            <li class="mobile-search">
+              <a href="#" class="" data-toggle="collapse" data-target="#mobile-search">
+                <span class="icon icon-spyglass"></span>
+              </a>
+            </li>
+            <li class="mobile-cart">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+            </li>
+          </ul>
+        </div><!--.container-->
+      </div>
+      <div class="top_secondary">
+        <div class="container">
+          <nav id="main_nav">
+            <ul id="mega-menu">
+              <li><a href="#">Rings</a></li>
+              <li>
+                <a href="#">Earrings</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Pendants &amp; Necklaces</a></li>
+              <li><a href="#">Bracelets</a></li>
+              <li><a href="#">Engagement &amp; Wedding</a></li>
+              <li><a href="#">Diamond</a></li>
+              <li><a href="#">Men's Jewelry</a></li>
+              <li><a href="#">Deals &amp; Collections</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+            </ul>
+          </nav>
+          <div id="mobile-nav">
+            <ul>
+              <li><a href="#"><span class="icon icon-lock"></span> LOGIN/SIGUP</a></li>
+              <li><a href="#"><span class="icon icon-rings"></span> RINGS</a>
+                  <ul class="sub_menu">
+                    <li><a href="#"><span class="icon icon-diamondrings"></span> DIAMOND RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-gemstonerings"></span> GEMSTONE RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-engagementrings"></span> ENGAGEMENT RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-weddingrings"></span> WEDDING RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-promiserings"></span> PROMISE RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-mensrings"></span> MEN'S RINGS</a></li>
+                    <li><a href="#"><span class="icon icon-pearlrings"></span> PEARL RINGS</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><span class="icon icon-earrings"></span> EARRINGS</a></li>
+              <li><a href="#"><span class="icon icon-pendants"></span> PENDANTS &amp; NECKLACES</a></li>
+              <li><a href="#"><span class="icon icon-bracelets"></span> BRACELETS</a></li>
+              <li><a href="#"><span class="icon icon-mensjewelry"></span> MEN'S JEWELRY</a></li>
+              <li><a href="#"><span class="icon icon-deals"></span> DEALS COLLECTION</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form action="#" method="post" id="mobile-search" class="collapse">
+        <div class="form-group">
+          <label for="search" class="sr-only">Email address</label>
+          <input type="text" class="form-control" id="search" placeholder="Search Title, Keyword, or SKU">
+        </div>
+      </form>
+    </header>
+    <section class="windowshade">
+      <div class="container pull-out">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="images/windowshade-ad-mobile.png" media="(max-width: 767px)">
+          <source srcset="images/windowshade-ad.png" media="(min-width: 768px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="images/windowshade-ad.png" alt="30 day money back guarantee">
+        </picture>
+      </div>
+    </section>
+    <div class="mobile-overlay">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs mobile-filter-tabs pull-left">
+        <li class="active"><a href="#diamond-rings" data-toggle="tab">DIAMOND RINGS</a></li>
+        <li><a href="#gem-type" data-toggle="tab">GEM TYPE</a></li>
+        <li><a href="#metal-type" data-toggle="tab">METAL TYPE</a></li>
+        <li><a href="#price-range" data-toggle="tab">PRICE RANGE</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content mobile-filter-tab-content">
+        <div class="tab-pane active" id="diamond-rings">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox"> ALL
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="gem-type">gem type</div>
+        <div class="tab-pane" id="metal-type">metal type</div>
+        <div class="tab-pane" id="price-range">price ranges</div>
+      </div>
+    </div>
+    <div class="container pull-out">
+      <div class="module mod-breadcrumbs">
+        <div class="mod-bd">
+          <ul class="breadcrumbs">
+            <li><a href="#">HOME</a> &gt;</li>
+            <li><a href="#">RINGS</a> <span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li class="current">DIAMOND RINGS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-container product-listing-page">
+        <form action="#" role="form" class="product-filter-sidebar">
+          <div class="block">
+            <h3 class="block-head">DIAMOND RINGS</h3>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <h3 class="block-head">GEM TYPE</h3>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <h3 class="block-head">METAL TYPE</h3>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block price-range-block">
+            <h3 class="block-head">PRICE RANGE</h3>
+            <div class="form-group">
+              <input type="text" class="range-input" id="range-input1"> TO <input type="text" class="range-input" id="range-input2">
+            </div>
+            <input id="range-slider" type="text" class="span2" value="" data-slider-min="6000" data-slider-max="20000" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide">
+          </div>
+
+        </form>
+
+        <div class="main-content">
+          <form class="top-filters form-inline clearfix" role="form">
+            <div class="form-group pull-left">
+              <label for="items-per-page">ITEMS PER PAGE</label> 
+              <select id="items-per-page">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group pull-right">
+              <label for="sortby">SORT BY</label> 
+              <select id="sortby">
+                <option>Our Picks</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </form>
+          <div class="mobile-filters clearfix visible-xs">
+            <div class="pull-left">
+              <span class="item-count">Showing 300 Items</span>
+            </div>
+            <div class="pull-right">
+              <a href="#" class="btn btn-default btn-sm"><span class="icon icon-msort"></span> Sort</a>
+              <a href="#" class="btn btn-default btn-sm"><span class="icon icon-mfilter"></span> Filter</a>
+            </div>
+          </div>
+          <div class="item-navigation clearfix">
+            <div class="pull-left view-page">
+              <label for="page">VIEW PAGE</label> <input type="text" id="page"> <button class="btn btn-default"><strong>GO</strong></button>
+            </div>
+
+            <p class="item-count text-center">27 Items | Showing 1 to 9</p>
+            
+            <div class="pull-right">
+              <div class="item-pager">
+                Page 1 of 3
+                <a href="#" class="btn btn-default disabled"><span class="icon icon-first"></span></a>
+                <a href="#" class="btn btn-default disabled"><span class="icon icon-prev"></span></a>
+                <a href="#" class="btn btn-default"><span class="icon icon-next"></span></a>
+                <a href="#" class="btn btn-default"><span class="icon icon-last"></span></a>
+              </div>
+            </div>
+
+          </div>
+          <ul class="products">
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon active">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="szul-price price">Szul Price: <span class="strike">$499.99</span></p>
+                <p class="new-price price">Special Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-image">
+                <span class="ribbon">
+                  <em>
+                  SAVE<br>
+                  23%
+                  </em>
+                </span>
+                <img src="images/sample-img.png" alt="">
+              </div>
+              <p class="text-center hidden-xs">
+                <a href="#" class="btn btn-default btn-quicklook">QUICK LOOK</a>
+              </p>
+              <div class="product-body">
+                <h2 class="product-name">1/2 Carat TW Diamond Ring in 10K White Gold</h2>
+                <div class="ratings">
+                  <div class="stars">
+                    <div class="rate" style="width:50%;"></div>
+                  </div>
+                </div>
+                <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                <p class="new-price price">Szul Price: <span class="main-price">$399.00</span></p>
+              </div>
+            </li>
+          </ul>
+        </div><!--end .main-content -->
+        <div class="pagination-wrap text-center hidden-xs">
+          <ul class="pagination">
+            <li><a href="#" class="btn btn-default"><span class="icon icon-prev"></span></a></li>
+            <li><a href="#" class="btn btn-default"><span class="icon icon-first"></span> BACK</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="btn btn-default">NEXT <span class="icon icon-last"></span></a></li>
+            <li><a href="#" class="btn btn-default"><span class="icon icon-next"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+
+      
+    </div>
+
+  	<footer id="main_footer">
+      <div class="affiliations">
+        <div class="container">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="images/affiliates-mobile.png" media="(max-width: 767px)">
+            <source srcset="images/affiliates.png" media="(min-width: 768px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="images/affiliates.png" alt="Affiliates">
+          </picture>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 hidden-xs">
+              <h3 class="col-heading">SOCIAL</h3>
+              <div class="col-body">
+                <ul class="social-links">
+                  <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form form-inline">
+                  <p>Sign-up for special offers. We don't spam and won't sell your data.</p>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                  </div>
+                  <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">SZUL</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services &amp; Policies</a></li>
+                  <li><a href="#">Site Map</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Szul Reviews</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">SHOP WITH CONFIDENCE</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li><a href="#">Free Shipping</a></li>
+                  <li><a href="#">30-Day Return Policy</a></li>
+                  <li><a href="#">Free Gift Packagin</a></li>
+                  <li><a href="#">Safe &amp; Secure</a></li>
+                  <li><a href="#">Jewelry Guide</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">CUSTOMER SERVICE</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li class="white"><span class="glyphicon glyphicon-earphone"></span> <strong>800 332 4382</strong></li>
+                  <li class="white"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:customerservice@szul.com" class="white"><strong>customerservice@szul.com</strong></a></li>
+                  <li><a href="#">Order Status</a></li>
+                  <li><a href="#">Shipping Information</a></li>
+                  <li><a href="#">Returns &amp; Exchanges</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 visible-xs">
+              <h3 class="col-heading">SOCIAL</h3>
+              <div class="col-body">
+                <ul class="social-links">
+                  <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form form-inline">
+                  <p>Sign-up for special offers. We don't<br>spam and won't sell your data.</p>
+                  <input type="email" class="form-control" id="email" placeholder="Email Address">
+                  <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                </form>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+        
+      <div class="copyright">
+        <div class="container">
+          Copyright &copy; 1999 - 2014. Szul. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.syncHeight.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+    <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('ul.products .product').syncHeight({
+            updateOnResize:true
+          });
+      });
+    </script>
+    
+    <!--LIVE RELOAD-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>
