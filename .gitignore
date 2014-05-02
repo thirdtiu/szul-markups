@@ -1,0 +1,11 @@
+*.iws
+*.iml
+*.ipr
+.idea
+.classpath
+.project
+.settings
+eclipse-classes
+.DS_Store
+
+/css/styles.css
