@@ -161,6 +161,13 @@ $(function(){
         delay: { show: 500, hide: 100 }
     });
 
+
+
+    /** mobile overlay stuff **/
+    $('.mobile-overlay .sticky-footer a.cancel').click(function(){
+        $('.mobile-overlay').hide();
+    });
+
 });
 
 $(window).load(function(){
