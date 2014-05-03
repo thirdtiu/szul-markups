@@ -166,7 +166,12 @@ $(function(){
     /** mobile overlay stuff **/
     $('.mobile-overlay .sticky-footer a.cancel').click(function(){
         $('.mobile-overlay').hide();
+        return false;
     });
+    $('.btn-mfilter').click(function(){
+        $('.mobile-overlay.filter').show();
+        return false;
+    })
 
 });
 
