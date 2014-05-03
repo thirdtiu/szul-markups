@@ -249,7 +249,7 @@
       </div>
     </section>
     <div class="mobile-overlay filter">
-      <div class="tab-wrap">
+      <form role="form" class="tab-wrap form-inline">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs mobile-filter-tabs pull-left">
           <li class="active">
@@ -376,9 +376,18 @@
           </div>
           <div class="tab-pane" id="gem-type">gem type</div>
           <div class="tab-pane" id="metal-type">metal type</div>
-          <div class="tab-pane" id="price-range">price ranges</div>
+          <div class="tab-pane" id="price-range">
+            <div class="form-group">
+              <label for="mrange-input1">FROM: </label>
+              <input type="text" id="mrange-input1" >
+            </div>
+            <div class="form-group">
+              <label for="mrange-input1">TO: </label>
+              <input type="text" id="mrange-input1" >
+            </div>
+          </div>
         </div>
-      </div>
+      </form>
       <div class="sticky-footer">
         <a href="#" class="cancel pull-left">Cancel</a>
         <a href="#" class="apply">Apply</a>
