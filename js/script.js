@@ -164,7 +164,7 @@ $(function(){
 
 
     /** mobile overlay stuff **/
-    $('.mobile-overlay .sticky-footer a.cancel').click(function(){
+    $('.mobile-overlay .sticky-footer button.cancel').click(function(){
         $('.mobile-overlay').hide();
         return false;
     });
