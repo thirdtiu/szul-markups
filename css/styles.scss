@@ -676,7 +676,8 @@ a#nav-toggle{
 
 }
 .mobile-overlay{
-	display:none;
+	/*display:none;*/
+	visibility:hidden;
 }
 #mobile-nav ul{
 	list-style-type: none;
@@ -2720,6 +2721,7 @@ div#thumbs{
 		}
 	}
 	.mobile-filter-tab-content{
+		position:relative;
 		margin-left:89px;
 		border-left:1px solid #e1e1e2;
 		ul{
