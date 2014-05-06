@@ -1282,6 +1282,9 @@ ul.payment-icons{
 				border-color: #fff;
 				padding: 10px;
 				margin: 20px 0;
+				p:first-child {
+					font-family: $brandon-bold;
+				}
 				.btn {
 					margin: auto;
 					margin:3px;
@@ -1321,7 +1324,39 @@ ul.payment-icons{
 			}
 		}
 	}
-	
+	.pull-right {
+		padding: 0;
+		.carousel {
+			padding: 10px 20px;
+			min-height: 644px;
+			.carousel-control.left,
+			.carousel-control.right {
+				background: none;
+				.glyphicon-chevron-left,
+				.glyphicon-chevron-right {
+					top: 94.2%!important;
+				}
+			}
+			.carousel-control {
+				text-shadow: none;
+				color: #b3b3b3;
+			}
+			.carousel-indicators {
+				bottom: 4px;
+			}
+			.carousel-indicators li {
+				background-color: #868686;
+				border: none;
+				margin: 0px 3px;
+			}
+			.carousel-indicators .active{
+				background-color: #a445a5;
+				width: 10px;
+				height: 10px;
+
+			}	
+		}
+	}
 }
 .btn-turquoise,
 .btn-turquoise:hover {
