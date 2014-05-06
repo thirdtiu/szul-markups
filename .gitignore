@@ -9,3 +9,5 @@ eclipse-classes
 .DS_Store
 
 /css/styles.css
+/css/.sass-cache
+/css/.sass-cache/*

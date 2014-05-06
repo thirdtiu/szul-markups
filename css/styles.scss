@@ -2495,7 +2495,7 @@ div#thumbs{
 				color:$purple;
 			}
 
-			a.apply{
+			button.apply{
 				text-align: center;
 				position:absolute;
 				width: 60px;
@@ -2760,7 +2760,14 @@ div#thumbs{
 			padding-top:10px;
 		}
 		#price-range{
-			
+			label{
+				width: 20%;
+			}
+			.form-control{
+				width: 78%;
+				display: inline-block;
+				@include border-radius(0);
+			}
 		}
 	}
 	.product-filter-sidebar{
