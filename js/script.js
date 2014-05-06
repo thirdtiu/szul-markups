@@ -93,6 +93,11 @@ $(function(){
         $('#carat-range2').val(secondvalue);*/
     });
 
+    $('.range-slider-mobiletabs').slider({
+
+    });
+
+
 
 
     
@@ -165,11 +170,11 @@ $(function(){
 
     /** mobile overlay stuff **/
     $('.mobile-overlay .sticky-footer button.cancel').click(function(){
-        $('.mobile-overlay').hide();
+        $('.mobile-overlay').css('visibility', 'hidden');
         return false;
     });
     $('.btn-mfilter').click(function(){
-        $('.mobile-overlay.filter').show();
+        $('.mobile-overlay.filter').css('visibility', 'visible');
         return false;
     })
 
