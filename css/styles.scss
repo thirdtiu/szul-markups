@@ -2875,6 +2875,22 @@ div#thumbs{
 		}
 	}
 
+	/** gallerific **/
+	div.slideshow-container{
+		overflow: hidden;
+	}
+	div.content{
+		width: 100%;
+	}
+	div.slideshow{
+		span.image-wrapper{
+			position:static;
+		}
+		a.advance-link{
+			width: 100%;
+		}
+	}
+
 
 	/* PRODUCT LISTING */
 	.mobile-filter-tabs{
