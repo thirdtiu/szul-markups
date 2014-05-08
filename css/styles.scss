@@ -2873,6 +2873,11 @@ div#thumbs{
 				margin-right:0;
 				margin-bottom: 20px;
 			}
+			.product-information{
+				.info-head{
+					font-size: 16px;
+				}
+			}
 		}
 	}
 
@@ -2922,6 +2927,20 @@ div#thumbs{
 					background-color: $purple;
 					border:none;
 				}
+			}
+		}
+	}
+	#gallery{
+		.ribbon{
+			width: 75px;
+			height: 75px;
+			font-size: 16px;
+			@include border-radius(75px);
+			em{
+				margin-top: 20px;
+			}
+			strong{
+				font-size: 18px;
 			}
 		}
 	}
