@@ -2877,9 +2877,23 @@ div#thumbs{
 				.info-head{
 					font-size: 16px;
 				}
+				.info-bd{
+					.option-block{
+						.group{
+							.block-subhead{
+								display: inline-block;
+							}
+							p{
+								display: inline-block;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
+
 
 	/** gallerific **/
 	div.slideshow-container{
