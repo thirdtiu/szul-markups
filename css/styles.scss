@@ -2871,6 +2871,7 @@ div#thumbs{
 				float:none;
 				width: 100%;
 				margin-right:0;
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -2878,6 +2879,7 @@ div#thumbs{
 	/** gallerific **/
 	div.slideshow-container{
 		overflow: hidden;
+		height: 300px;
 	}
 	div.content{
 		width: 100%;
@@ -2888,6 +2890,8 @@ div#thumbs{
 		}
 		a.advance-link{
 			width: 100%;
+			height: 300px;
+			line-height: inherit;
 		}
 	}
 
