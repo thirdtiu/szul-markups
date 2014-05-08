@@ -2894,7 +2894,37 @@ div#thumbs{
 			line-height: 300px;
 		}
 	}
-
+	div#thumbs{
+		.thumbs{
+			text-align: center;
+			li{
+				float:none;
+				display: inline-block;
+				width: 11px;
+				height: 11px;
+				@include border-radius(11px);
+				border:none;
+				a{
+					display: inline-block;
+					width: 11px;
+					height: 11px;
+					border:none;
+					@include border-radius(11px);
+					border:none;
+					background-color:#EDEDED;
+					img{
+						display: none;
+					}
+				}
+			}
+			li.selected{
+				a{
+					background-color: $purple;
+					border:none;
+				}
+			}
+		}
+	}
 
 	/* PRODUCT LISTING */
 	.mobile-filter-tabs{
