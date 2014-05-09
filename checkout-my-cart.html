@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SZUL - checkout my cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Mobile Menu -->
+  <link href="css/jquery.mmenu.css" rel="stylesheet">
+  <link href="css/jquery.mmenu.fullscreen.css" rel="stylesheet">
+  <!-- main style -->
+  <link href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <script src="js/picturefill.min.js" async></script>
+      <!-- We only want the thunbnails to display when javascript is disabled -->
+      <script type="text/javascript">
+        document.write('<style>.noscript { display: none; }</style>');
+      </script>
+    </head>
+    <body>
+     <header id="top_header">
+      <a href="#mobile-nav" id="nav-toggle"><span class="icon icon-trigram"></span></a>
+      <div class="top_primary">
+        <div class="container">
+          <h1 id="logo"><a href="/"><img src="images/logo.png" alt="SZUL" /></a></h1>
+          <div class="store-info">
+            <ul class="store-features">
+              <li><a href="#">30 Day Money Back</a></li>
+              <li><a href="#">Free Shipping</a></li>
+              <li><a href="#">Certificate of Authenticity</a></li>
+            </ul>
+            <form action="#" role="form" class="form-inline search-form">
+              <div class="form-group">
+                <label class="sr-only" for="search">Email address</label>
+                <input type="text" class="form-control" name="search" id="search" placeholder="Search Title, Keyword, or SKU" />
+              </div>
+              <button type="submit" class="btn btn-transparent">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+          </div>
+          <ul class="top-columns hidden-xs">
+            <li>
+              <h2>
+                <span class="glyphicon glyphicon-earphone"></span>
+                CONTACT US
+              </h2>
+              088-432-8832
+            </li>
+            <li class="account" data-container="body" data-toggle="popover">
+              <h2>
+                <span class="glyphicon glyphicon-user"></span>
+                ACCOUNT
+              </h2>
+              <a href="#" class="sign-in">Sign in</a>
+              <span class="icon icon-chevron-down"></span>
+
+              <div class="account-popover-contents">
+                <!--MY ACCOUNT POPOVER-->
+                <div class="my-account-contents" style="display:none;">
+                  <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Wish List</a></li>
+                  </ul>
+                </div>
+                <!--MY ACCOUNT POPOVER-->
+
+                <!--SIGN IN POPOVER-->
+                <div class="sign-in-contents">
+                  <form action="#" role="form">
+                    <div class="form-group">
+                      <label for="username" class="sr-only">Usernam</label>
+                      <input type="text" class="form-control" id="username" placeholder="User ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="sr-only">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-green btn-block">SIGN-IN</button>
+                    <p class="text-center forgot-link">
+                      <a href="#">FORGOT PASSWORD?</a>
+                    </p>
+                  </form>
+
+                  <div class="other-signin">
+                    <h4 class="text-center">Sign-in Using</h4>
+                    <ul class="clearfix">
+                      <li class="facebook"><a href="#">Facebook</a></li>
+                      <li class="google"><a href="#">Google Plus</a></li>
+                      <li class="yahoo"><a href="#">Yahoo</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="no-account">
+                    <p class="clearfix">
+                      <span class="pull-left">No account yet?</span>
+                      <a href="#" class="pull-right register">REGISTER &gt;</a>
+                    </p>
+                  </div>
+                </div>
+                <!--END SIGN IN POPOVER-->
+              </div>
+            </li>
+            <li class="cart" data-container="body" data-toggle="popover">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+              <div class="cart-popover-contents">
+                <table>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                </table>
+                <p class="total text-right">
+                  Total: <strong>$1,000</strong>
+                </p>
+                <div class="ft clearfix">
+                  <a href="#" class="pull-left btn btn-transparent view-cart">VIEW CART &gt;</a>
+                  <a href="#" class="pull-right btn btn-primary-gradient">CHECKOUT &gt;</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="top-columns_mobile visible-xs">
+            <li class="mobile-search">
+              <a href="#" class="" data-toggle="collapse" data-target="#mobile-search">
+                <span class="icon icon-spyglass"></span>
+              </a>
+            </li>
+            <li class="mobile-cart">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+            </li>
+          </ul>
+        </div><!--.container-->
+      </div>
+      <div class="top_secondary">
+        <div class="container">
+          <nav id="main_nav">
+            <ul id="mega-menu">
+              <li><a href="#">Rings</a></li>
+              <li>
+                <a href="#">Earrings</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Pendants &amp; Necklaces</a></li>
+              <li><a href="#">Bracelets</a></li>
+              <li><a href="#">Engagement &amp; Wedding</a></li>
+              <li><a href="#">Diamond</a></li>
+              <li><a href="#">Men's Jewelry</a></li>
+              <li><a href="#">Deals &amp; Collections</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+            </ul>
+          </nav>
+          <div id="mobile-nav">
+            <ul>
+              <li><a href="#"><span class="icon icon-lock"></span> LOGIN/SIGUP</a></li>
+              <li><a href="#"><span class="icon icon-rings"></span> RINGS</a>
+                <ul class="sub_menu">
+                  <li><a href="#"><span class="icon icon-diamondrings"></span> DIAMOND RINGS</a></li>
+                  <li><a href="#"><span class="icon icon-gemstonerings"></span> GEMSTONE RINGS</a></li>
+                  <li><a href="#"><span class="icon icon-engagementrings"></span> ENGAGEMENT RINGS</a></li>
+                  <li><a href="#"><span class="icon icon-weddingrings"></span> WEDDING RINGS</a></li>
+                  <li><a href="#"><span class="icon icon-promiserings"></span> PROMISE RINGS</a></li>
+                  <li><a href="#"><span class="icon icon-mensrings"></span> MEN'S RINGS</a></li>
+                  <li><a href="#"><span class="icon icon-pearlrings"></span> PEARL RINGS</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="icon icon-earrings"></span> EARRINGS</a></li>
+              <li><a href="#"><span class="icon icon-pendants"></span> PENDANTS &amp; NECKLACES</a></li>
+              <li><a href="#"><span class="icon icon-bracelets"></span> BRACELETS</a></li>
+              <li><a href="#"><span class="icon icon-mensjewelry"></span> MEN'S JEWELRY</a></li>
+              <li><a href="#"><span class="icon icon-deals"></span> DEALS COLLECTION</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form action="#" method="post" id="mobile-search" class="collapse">
+        <div class="form-group">
+          <label for="search" class="sr-only">Email address</label>
+          <input type="text" class="form-control" id="search" placeholder="Search Title, Keyword, or SKU">
+        </div>
+      </form>
+    </header>
+    <section class="windowshade">
+      <div class="container">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="images/windowshade-ad-mobile.png" media="(max-width: 767px)">
+            <source srcset="images/windowshade-ad.png" media="(min-width: 768px)">
+              <!--[if IE 9]></video><![endif]-->
+              <img srcset="images/windowshade-ad.png" alt="30 day money back guarantee">
+            </picture>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row page-container checkout">
+            <div class="col-md-12 cart-summary">
+
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="page-header">MY SHOPPING CART</h1>
+                  <table class="table in-cart">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>ITEM DESCRIPTION</th>
+                        <th class="text-center">SIZE</th>
+                        <th class="text-center">QUANTITY</th>
+                        <th class="text-right">PRICE</th>
+                        <th class="text-right">TOTAL PRICE</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img src="images/img-ring-100x100.jpg" alt="ring" />
+                        </td>
+                        <td>
+                          <p>Diamond Swirl PromisE Ring in 10K White Gold Longer content goes IN HERE CAN FIT 3 LINES</p>
+                          <p><small>Item Number: RGIF12398BE</small></p>
+                          <a href="#"><span class="glyphicon glyphicon-remove"></span> REMOVE ITEM</a>
+                          </td>
+                        <td class="text-center">7.0</td>
+                        <td class="text-center">
+                          <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </td>
+                        <td class="text-right">$2,899.00</td>
+                        <td class="text-right">$2,899.00</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="images/img-ring-100x100.jpg" alt="ring" />
+                        </td>
+                        <td>
+                          <p>Diamond Swirl PromisE Ring in 10K White Gold Longer content goes IN HERE CAN FIT 3 LINES</p>
+                          <p><small>Item Number: RGIF12398BE</small></p>
+                          <a href="#"><span class="glyphicon glyphicon-remove"></span> REMOVE ITEM</a>
+                          </td>
+                        <td class="text-center">7.0</td>
+                        <td class="text-center">
+                          <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </td>
+                        <td class="text-right">$2,899.00</td>
+                        <td class="text-right">$2,899.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="">
+                    <div class="col-md-12 col-xs-12 summation">
+                      <div class="row subtotal">
+                        <div class="col-md-4 col-md-offset-6 col-xs-6">
+                          <p class="pull-left">SUB TOTAL</p>
+                        </div>
+                        <div class="col-md-2 col-xs-6">
+                          <p class="subtotal-price pull-right">$5,799.00</p>
+                        </div>
+                      </div>
+                      <div class="row coupon-discount">
+                        <div class="col-md-4 col-md-offset-6 col-xs-6">
+                          <p class="pull-left">COUPON DISCOUNT</p>
+                        </div>
+                        <div class="col-md-2 col-xs-6">
+                          <p class="discount-price pull-right">$0.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="block">
+                    <small>Have a coupon code? Enter it here.</small>
+                    <form id="coupon-code">
+                      <input type="text">
+                      <button class="btn btn-default btn-md" type="submit">APPLY COUPON</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="row total">
+                    <div class="col-md-6 col-xs-6">
+                      <p class="pull-left">TOTAL</p>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                      <p class="total-price pull-right">$5,798.00</p>
+                    </div>
+                  </div>
+                  <div class="row total-btns">
+                    <div class="col-md-6 col-xs-6">
+                      <a href="#" class="btn btn-default btn-lg">CONTINUE SHOPPING</a>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                      <a href="#" class="btn btn-primary-gradient btn-lg">CHECKOUT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="block">
+                    <h2 class="block-head">ADD TODAY’s DEAL FOR $19.00</h2>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img src="images/img-ring-100x100.jpg" alt="ring" />
+                      </a>
+                      <div class="media-body">
+                        <p class="media-heading">1.00 CARAT THREE STONE DIAMOND RING IN 14K WHITE GOLD</p>
+                        <p class="retail-price price">Retail Price: <span class="strike">$999.99</span></p>
+                        <p class="szul-price price">Szul Price: <span class="strike">$499.99</span></p>
+                        <p class="new-price price">Special Price: <span class="main-price">$399.00</span></p>
+                        <button class="btn btn-default btn-md" type="submit">ADD ITEM</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <footer id="main_footer">
+          <div class="affiliations">
+            <div class="container">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/affiliates-mobile.png" media="(max-width: 767px)">
+                  <source srcset="images/affiliates.png" media="(min-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img srcset="images/affiliates.png" alt="Affiliates">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="main">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 hidden-xs">
+                      <h3 class="col-heading">SOCIAL</h3>
+                      <div class="col-body">
+                        <ul class="social-links">
+                          <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                        </ul>
+                        <form action="#" method="post" class="subscribe-form form-inline">
+                          <p>Sign-up for special offers. We don't spam and won't sell your data.</p>
+                          <div class="form-group">
+                            <label class="sr-only" for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                          </div>
+                          <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <h3 class="col-heading">SZUL</h3>
+                      <div class="col-body">
+                        <ul class="links">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Services &amp; Policies</a></li>
+                          <li><a href="#">Site Map</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Szul Reviews</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <h3 class="col-heading">SHOP WITH CONFIDENCE</h3>
+                      <div class="col-body">
+                        <ul class="links">
+                          <li><a href="#">Free Shipping</a></li>
+                          <li><a href="#">30-Day Return Policy</a></li>
+                          <li><a href="#">Free Gift Packagin</a></li>
+                          <li><a href="#">Safe &amp; Secure</a></li>
+                          <li><a href="#">Jewelry Guide</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <h3 class="col-heading">CUSTOMER SERVICE</h3>
+                      <div class="col-body">
+                        <ul class="links">
+                          <li class="white"><span class="glyphicon glyphicon-earphone"></span> <strong>800 332 4382</strong></li>
+                          <li class="white"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:customerservice@szul.com" class="white"><strong>customerservice@szul.com</strong></a></li>
+                          <li><a href="#">Order Status</a></li>
+                          <li><a href="#">Shipping Information</a></li>
+                          <li><a href="#">Returns &amp; Exchanges</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 visible-xs">
+                      <h3 class="col-heading">SOCIAL</h3>
+                      <div class="col-body">
+                        <ul class="social-links">
+                          <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                        </ul>
+                        <form action="#" method="post" class="subscribe-form form-inline">
+                          <p>Sign-up for special offers. We don't<br>spam and won't sell your data.</p>
+                          <input type="email" class="form-control" id="email" placeholder="Email Address">
+                          <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                        </form>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="copyright">
+                <div class="container">
+                  Copyright &copy; 1999 - 2014. Szul. All rights reserved.
+                </div>
+              </div>
+            </footer>
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="js/jquery.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.js"></script>
+            <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+            <script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script>
+            <script src="js/bootstrap-slider.js"></script>
+            <script src="js/jquery.syncHeight.js"></script>
+            <script src="js/jquery.jcarousel.js"></script>
+            <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+            <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+            <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+            <script src="js/script.js"></script>
+
+            <script type="text/javascript">
+              $(window).load(function(){
+                $('ul.products .product').syncHeight({
+                  updateOnResize:true
+                });
+              });
+            </script>
+
+            <!--LIVE RELOAD-->
+            <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+          </body>
+          </html>
