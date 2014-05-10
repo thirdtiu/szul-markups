@@ -1242,7 +1242,134 @@ ul.payment-icons{
 	}
 }
 
+/*my-account*/
+.my-account-tab {
+	.boxed {
+		background-color: #fff;
+		border-color: #fff;
+		padding: 20px;
+		margin: 0px 0 30px 0;
+		height: 220px;
+		p {
+			margin-bottom: 0;
+			line-height: 17px;
+		}
+		p:first-child {
+			font-family: $brandon-bold;
+			margin-bottom: 20px;
+		}
+		.btns {
+			border-top: 1px solid #cccccc;
+			padding-top: 10px;
+			margin-top: 16px;
+			.btn-primary-gradient {
+				width: 100%!important;
+			}
+		}
+		.btn {
+			margin: auto;
+			display: inline-block;
+			font-family: $brandon-bold;
+			padding: 4px 12px;
+			width: 50%;
+		}
+		.btn:first-child {
+			width: 46%;
+		}
+	}
+	.add-address {
+		background-color: #d6d6d6;
+		text-align: center;
+		height: 205px;
+		p {
+			font-family: $museo-300!important;
+			font-size: 14px;
+			color: #575757;
+		}
+		.btns {
+			border: none;
+		}
+		img {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+	}
+	.tab-content {
+		padding: 30px 30px 10px;
+		min-height: 600px;
+	}
+	table thead th {
+		border-bottom: 1px solid #b0b0b0;
+		padding-bottom: 15px;
+		color: #8d8d8d;
+		font-style: italic;
+	}
+	table tbody td {
+		color: #373737;
+		border-top: 1px solid #b0b0b0;
+		padding: 15px 8px;
+		font-family: $museo-500;
+		p {
+			margin: 0;
+		}
+		.yellow {
+			color: #eeb73f;
+		}
+		.cyan {
+			color: #38caa5;
+		}
+		.red {
+			color: #fd4b6d;
+		}
+		.violet {
+			color: #a445a5;
+		}
+	}
+	table tbody td:first-child {
+		color: #a445a5;
+	}
+	#passwd form {
+		background-color: #fff;
+		padding: 20px;
+		input[type="email"] {
+			background-color: #e5e5e5;
+		}
+		button {
+			width: 100%;
+		}
+	}
+	#wishlist .table-wishlist {
+		td {
+			color: #373737;
+			vertical-align: middle;
+		}
+		tbody td {
+			border-bottom: 1px solid #b0b0b0;
+		}
+		.media-body {
+			width: 315px;
+			font-family: $museo-300;
+			color: #6b6b6b;
+			.media-heading {
+				font-size: 14px;
+				font-family: $brandon-bold;
+				text-transform: uppercase;
+			}
+		}
+		.media-heading {
+			color: #373737;
+		}
+		.media > .pull-left {
+			margin-right: 20px;
+		}
+		a {
+			margin-top: 5px;
+			display: inline-block;
+			font-family: $brandon-bold;
+		}
 
+	}
+}
 /*checkout*/
 .input-styles {
 	@include border-radius(3px);
@@ -1403,6 +1530,9 @@ ul.payment-icons{
 				border-color: #fff;
 				padding: 10px;
 				margin: 20px 0;
+				p {
+					margin-bottom: 0;
+				}
 				p:first-child {
 					font-family: $brandon-bold;
 				}
@@ -1433,13 +1563,14 @@ ul.payment-icons{
 			label {
 				margin-top: 0;
 			}
-			p {
-				margin-top: 10px;
+			p:first-child {
+				margin-bottom: 15px;
 			}
 		}
 		.btns {
 			border-top: 1px solid #cccccc;
 			padding-top: 9px;
+			margin-top: 15px;
 		}
 	}
 	.pull-right {
