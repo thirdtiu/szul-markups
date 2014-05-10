@@ -3054,6 +3054,25 @@ div#thumbs{
 				}
 			}
 		}
+		.product-details{
+			.sidebar{
+				.mod-recommended{
+					.mod-hd{
+						text-align: center !important;
+						border-bottom:none;
+					}
+					.products{
+						li.product{
+							margin:0 3.125%;
+							float:left;
+							min-height:440px;
+							width: 42.8125%;
+						}
+
+					}
+				}
+			}
+		}
 	}
 
 
