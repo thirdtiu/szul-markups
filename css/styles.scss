@@ -3031,6 +3031,7 @@ div#thumbs{
 				}
 				.info-bd{
 					.option-block{
+						margin-bottom: 0;
 						.group{
 							.block-subhead{
 								display: inline-block;
@@ -3141,6 +3142,16 @@ div#thumbs{
 				margin-right:5px;
 				text-indent: -9999px;
 				outline: none;
+			}
+		}
+	}
+	.product-details-mobile{
+		.block{
+			background: #efefef;
+			padding:10px 20px;
+			.block-body.data p span.field{
+				width: 60%;
+				font-style:normal;
 			}
 		}
 	}
