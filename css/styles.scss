@@ -1242,6 +1242,69 @@ ul.payment-icons{
 	}
 }
 
+/*gem-stud*/
+.gem-stud {
+	.module {
+		margin-bottom: 0px;
+	}
+	h1 {
+		margin: 20px 0;
+		font-family: $brandon-italic;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.entry {
+		border-top: 1px solid #ccc;
+		padding-top: 20px;
+		img.pull-left {
+			margin-top: 20px;
+		}
+		.gem-choices {
+			padding-bottom: 20px;
+			a {
+				color: #575757;
+				font-size: 12px;
+				margin: 2px 20px;
+				font-family: $museo-500;
+			}
+			a:first-child {
+				margin-left: 0;
+			}
+			a:hover, .active {
+				color: #a445a5;
+			}
+		}
+	}
+	.title {
+		font-family: $museo-500;
+		margin-bottom: 8px;
+	}
+	ul {
+		li {
+			display: inline-block;
+			list-style-type: none;
+		}	
+	}
+	.gems-list {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		li:first-child {
+			margin-left: 20px;
+		}
+		li {
+			margin: 5px 13px;
+			font-size: 12px;
+			text-align: center;
+		}
+		img {
+			margin: auto;
+			text-align: center;
+			display: block;
+			margin-bottom: 15px;
+		}
+	}
+}
+
 /*my-account*/
 .my-account-tab {
 	.boxed {
