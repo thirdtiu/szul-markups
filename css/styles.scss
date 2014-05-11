@@ -1264,7 +1264,39 @@ ul.payment-icons{
 }
 
 /*gem-stud*/
+.sep {
+	border-top: 1px solid #ccc;
+	height: 1px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .gem-stud {
+	.ctw-range {
+		li {
+			width: 8.4%;
+			display: inline-block;
+			text-align: center;
+			p {
+				margin-bottom: 0px;
+				color: #6b6b6b;
+				text-decoration: line-through;
+				font-size: 12px;
+			}
+			.title {
+				text-decoration: none!important;
+				color: #373737;
+				font-size: 14px;
+				font-family: $brandon-bold;
+			}
+		}
+		.main-price {
+			color: #fd4b6d;
+			font-size: 16px;
+			font-family: $museo-500;
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
 	.module {
 		margin-bottom: 0px;
 	}
@@ -1296,9 +1328,25 @@ ul.payment-icons{
 			}
 		}
 	}
+	.banner {
+		margin-bottom: 20px;
+		img {
+			display: block;
+		}
+	}
+	.no-border {
+		border: none;
+	}
 	.title {
 		font-family: $museo-500;
 		margin-bottom: 8px;
+		small {
+			color: #575757;
+			margin-left: 20px;
+			span {
+				color: #a445a5;
+			}
+		}
 	}
 	ul {
 		li {
