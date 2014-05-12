@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SZUL - checkout my cart</title>
+  <title>SZUL - checkout shipping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -253,255 +253,137 @@
         </section>
 
         <div class="container">
-          <div class="row page-container my-account">
-            <div class="col-md-12 cart-summary">
 
+          <div class="page-container checkout checkout-payment">
+            <div class="main-content clearfix">
+              <h1 class="page-header">CHECKOUT</h1>
+              <ul class="steps create-steps clearfix">
+                <li class="checked"><span>&nbsp;</span> SHIPPING INFORMATION</li>
+                <li class="active"><span>02</span> PAYMENT</li>
+                <li><span>03</span> REVIEW</li>
+              </ul>
               <div class="row">
                 <div class="col-md-12">
-                  <h1 class="page-header">MY ACCOUNT</h1>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-12">
-                  <!--tabs-->
-                  <div class="product-details-tabs my-account-tab">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs">
-                      <li class="active"><a href="#orders" data-toggle="tab">MY ORDERS</a></li>
-                      <li class=""><a href="#addresses" data-toggle="tab">MY ADDRESSES</a></li>
-                      <li><a href="#wishlist" data-toggle="tab">MY WISHLIST</a></li>
-                      <li><a href="#passwd" data-toggle="tab">CHANGE PASSWORD</a></li>
-                    </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div class="tab-pane active" id="orders">
-                        <table class="table in-cart">
-                          <thead>
-                            <tr>
-                              <th>ORDER NUMBER</th>
-                              <th>ORDER AMOUNT</th>
-                              <th>ORDER DATE</th>
-                              <th>ORDER STATUS</th>
-                              <th class="text-right">TRACKING NUMBER</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>3448910</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="yellow">IN-TRANSIT</p></td>
-                              <td class="text-right"><p class="violet">LJ3456UYG7US</p></td>
-                            </tr>
-                            <tr>
-                              <td>1256789</td>
-                              <td>$450.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="cyan">SHIPPED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                            <tr>
-                              <td>3448678</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="cyan">SHIPPED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                            <tr>
-                              <td>3448910</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="cyan">SHIPPED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                            <tr>
-                              <td>4567789</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="red">CANCELLED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                            <tr>
-                              <td>3448910</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="red">CANCELLED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                            <tr>
-                              <td>3448910</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="cyan">SHIPPED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                            <tr>
-                              <td>3448910</td>
-                              <td>$5,798.00</td>
-                              <td>March 12, 2014</td>
-                              <td><p class="cyan">SHIPPED</p></td>
-                              <td class="text-right"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div><!--#specs-->
-                      <div class="tab-pane" id="addresses">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="boxed">
-                              <p>JOHN EDWARD DOE</p>
-                              <p>888 Joel Boulevard</p>
-                              <p>Second Address Line</p>
-                              <p>Woodside, NY 13377</p>
-                              <p>United States</p>
-                              <p>371 1234</p>
-                                <div class="btns text-center">
-                                    <a href="#" class="btn btn-default btn-md">EDIT</a>
-                                    <a href="#" class="btn btn-default btn-md">DELETE</a>
+                  <form>
+                    <div class="product-details-tabs full payment-tabs">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs">
+                        <li class="active"><a href="#onlinecc" data-toggle="tab">ONLINE WITH CREDIT CARD</a></li>
+                        <li><a href="#bankwire" data-toggle="tab">BANK WIRE TRANSFER</a></li>
+                        <li><a href="#paypal" data-toggle="tab"><img src="images/steps-paypal.png"></a></li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="onlinecc">
+                          <ul class="payment-icons">
+                            <li><img src="images/cc1.png" alt=""></li>
+                            <li><img src="images/cc2.png" alt=""></li>
+                            <li><img src="images/cc3.png" alt=""></li>
+                            <li><img src="images/cc4.png" alt=""></li>
+                          </ul>
+                          <fieldset>
+                            <p>
+                              <label>CREDIT CARD TYPE</label>
+                              <select>
+                                <option>VISA</option>
+                                <option>MASTERCARD</option>
+                              </select>
+                            </p>
+                            <p>
+                              <label>CARD NUMBER</label>
+                              <input type="text" id="card-num">
+                            </p>
+                            <p>
+                              <div class="row">
+                                <div class="col-md-5 col-xs-6">
+                                  <label>EXPIRATION DATE</label>
+                                  <select id="month" class="pull-left">
+                                    <option>Month</option>
+                                    <option>Month</option>
+                                  </select>
+                                  <select id="year" class="pull-right">
+                                    <option>Year</option>
+                                    <option>Year</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-5 col-xs-6">
+                                  <label>CARD VERIFICATION (CCV) NO.</label>
+                                  <input id="fw" type="text">
                                 </div>
                               </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="boxed">
-                              <p>JOHN EDWARD DOE</p>
-                              <p>888 Joel Boulevard</p>
-                              <p>Second Address Line</p>
-                              <p>Woodside, NY 13377</p>
-                              <p>United States</p>
-                              <p>371 1234</p>
-                                <div class="btns text-center">
-                                    <a href="#" class="btn btn-default btn-md">EDIT</a>
-                                    <a href="#" class="btn btn-default btn-md">DELETE</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="boxed">
-                              <p>JOHN EDWARD DOE</p>
-                              <p>888 Joel Boulevard</p>
-                              <p>Second Address Line</p>
-                              <p>Woodside, NY 13377</p>
-                              <p>United States</p>
-                              <p>371 1234</p>
-                                <div class="btns text-center">
-                                    <a href="#" class="btn btn-default btn-md">EDIT</a>
-                                    <a href="#" class="btn btn-default btn-md">DELETE</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="boxed">
-                              <p>JOHN EDWARD DOE</p>
-                              <p>888 Joel Boulevard</p>
-                              <p>Second Address Line</p>
-                              <p>Woodside, NY 13377</p>
-                              <p>United States</p>
-                              <p>371 1234</p>
-                                <div class="btns text-center">
-                                    <a href="#" class="btn btn-default btn-md">EDIT</a>
-                                    <a href="#" class="btn btn-default btn-md">DELETE</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="boxed add-address">
-                              <img src="images/circle-add.png">
-                              <p>Create an address for future use.</p>
-                                <div class="btns text-center">
-                                  <a href="#" class="btn btn-primary-gradient btn-md ">ADD AN ADDRESS</a>
-                                </div>
-                              </div>
-                          </div>
+                            </p>
+                            <p>
+                              <label>NAME AS IT APPEARS ON THE CARD</label>
+                              <input type="text" id="name-card">
+                            </p>
+                          </fieldset>
+                        </div><!--onlinecc-->
+                        <div class="tab-pane" id="bankwire">
+
+                          <p>You have selected the option to initiate payment for your order via Bank Wire Transfer. This option will allow you to transfer funds automatically from your bank account directly to our bank account. Please note that your order will be processed only after funds have been received in full.</p>
+                          
+                          <p>After confirming below, an email will be sent to the email address specified during registration with recipient account (Szul jewelry, Inc.) details that will be required by your bank/financial institution upon initiation of the funds transfer.</p>
+
+                          <p>Please feel free to contact our Customer Service Department at 800.332.4382 or at <a href="#" class="mailto">customerservice@szul.com</a> for any additional information.</p>
+
+                          <button type="submit" class="btn btn-primary-gradient btn-lg" href="#">REQUEST WIRE TRANSFER DETAILS</button>
                         </div>
-                      </div><!--#addresses-->
-                      
-                      <div class="tab-pane" id="wishlist">
-                        <table class="table table-wishlist">
-                          <thead>
-                            <tr>
-                              <th>ITEM DESCRIPTION</th>
-                              <th class="text-right">PRICE</th>
-                              <th></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="media">
-                                  <a class="pull-left" href="#">
-                                    <img class="media-object" src="images/img-ring-100x100.jpg" alt="ring">
-                                  </a>
-                                  <div class="media-body">
-                                    <h4 class="media-heading">Diamond Swirl PromisE Ring in 10K White Gold Longer content goes IN HERE CAN FIT 3 LINES</h4>
-                                    <p>Item Number: RGIF12398BE</p>
-                                    <a href="#"><span class="glyphicon glyphicon-remove"></span> REMOVE ITEM</a>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>$2,899.00</td>
-                              <td>
-                              <td class="text-right"><a href="#" class="btn btn-primary-gradient btn-md ">ADD THIS TO CART</a></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div class="media">
-                                  <a class="pull-left" href="#">
-                                    <img class="media-object" src="images/img-ring-100x100.jpg" alt="ring">
-                                  </a>
-                                  <div class="media-body">
-                                    <h4 class="media-heading">1.00 CARAT THREE STONE DIAMOND RING IN 14K WHITE GOLD</h4>
-                                    <p>Item Number: RGIF12398BE</p>
-                                    <a href="#"><span class="glyphicon glyphicon-remove"></span> REMOVE ITEM</a>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>$2,899.00</td>
-                              <td>
-                              <td class="text-right"><a href="#" class="btn btn-primary-gradient btn-md ">ADD THIS TO CART</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div><!--#wishlist-->
-                      
-                      <div class="tab-pane" id="passwd">
-                        <div class="row">
-                          <div class="col-md-offset-3 col-md-6">
-
-                            <form role="form">
-                              <div class="form-group">
-                                <label for="exampleInputEmail1">EMAIL ADDRESS</label>
-                                <input type="email" class="form-control" id="" placeholder="Email Address">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleInputPassword1">OLD PASSWORD</label>
-                                <input type="password" class="form-control" id="" placeholder="John Edward">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleInputPassword1">NEW PASSWORD</label>
-                                <input type="password" class="form-control" id="" placeholder="New Password">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleInputPassword1">CONFIRM NEW PASSWORD</label>
-                                <input type="password" class="form-control" id="" placeholder="">
-                              </div>
-                            <button type="submit" class="btn btn-primary-gradient btn-lg">UPDATE PASSWORD</button>
-                          </form><br>
-                        
-                      </div><!--#password-->
+                        <div class="tab-pane" id="paypal">
+                          <h2 class="block-head">ADD YOUR PAYPAL ACCOUNT</h2>
+                          <p class="purple">What is Paypal?</p>
+                          <p>You’ll be redirected to www.paypal.com to login. After you login and confirm, you’ll be redirected back to www.szul.com to review and submit your order.</p>
+                          <a href="#"><img class="paypal-btn" src="images/paypal-checkout.png" alt="Pay with Paypal"></a>
+                        </div>
                       </div>
+
+                      <div class="block">
+                        <p><input type="checkbox">SEND ORDER AS A GIFT</p>
+                        <p>
+                          <label>ENTER GIFT MESSAGE</label>
+                          <textarea></textarea>
+                        </p>
                       </div>
                     </div>
-                    
-                  </div><br>
-                  <!--end tabs-->
+                  </form>
+
                 </div>
-                <div class="col-md-6"></div>
               </div>
-              
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-primary-gradient btn-lg" href="#">PROCEED TO ORDER REVIEW</button>
+                  </div>
+                </div>
+              </div>
+
+            </div><!--end .main-content -->
+
+            <div class="checkout-cart-info">
+              <div class="block">
+                <p class="subtotal">SUB TOTAL <span class="pull-right">$2,899.00</span></p>
+                <p class="discount">DISCOUNT <span class="pull-right">$0.00</span></p>
+                <p class="shipping">SHIPPING <span class="pull-right">$0.00</span></p>
+                <div class="total">
+                  <p>TOTAL<span class="pull-right">$5,798.00</span></p>
+                </div>
+                <p class="text-center">
+                  <a href="#" class="btn btn-lg btn-turquoise">PLACE ORDER</a>
+                </p>
+              </div>
+
             </div>
+
+
           </div>
+
+
+
+
+
+
+
+
         </div>
 
         <footer id="main_footer">
