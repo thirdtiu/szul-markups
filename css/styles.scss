@@ -1374,6 +1374,40 @@ ul.payment-icons{
 	}
 }
 
+/*free gift*/
+.free-gift {
+	margin-bottom: 20px;
+	.info-head {
+		font-family: $brandon-bold;
+		font-size: 22px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-family: $brandon-italic;
+		font-size: 16px;
+		color: #575757;
+	}
+	.entry {
+		border-top: 1px solid #cccccc;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		a {
+			font-family: $brandon-bold;
+		}
+		table td {
+			color: #8d8d8d;
+			font-size: 12px;
+			width: 47%;
+			padding: 4px;
+			font-family: $museo-500;
+		}
+		.glyphicon {
+			font-size: 10px;
+			margin-right: 7px;
+		}
+	}
+}
 /*my-account*/
 .my-account-tab {
 	.boxed {
