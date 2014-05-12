@@ -699,6 +699,7 @@ a#nav-toggle{
 .mobile-overlay{
 	/*display:none;*/
 	visibility:hidden;
+	position:absolute;
 }
 #mobile-nav ul{
 	list-style-type: none;
@@ -2927,6 +2928,7 @@ div#thumbs{
 	}
 	/* mobile overlay */
 	.mobile-overlay{
+		position:static;
 		.tab-wrap{
 			height: 100%;
 		}
