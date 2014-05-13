@@ -198,6 +198,11 @@ a#nav-toggle{
 	position:relative;
 	background:url(../images/sprite.png) no-repeat;
 }
+.icon-gt{
+	width:7px;
+	height:10px;
+	background-position: -143px -46px;
+}
 .icon-mdiamond-rings{
 	width:18px;
 	height:22px;
@@ -936,12 +941,14 @@ footer#main_footer{
 
 /* breadcrumbs */
 .mod-breadcrumbs{
-	height:65px;
 	border-bottom:1px solid #ccc;
+	.mod-bd{
+		padding:20px 0;
+	}
 }
 ul.breadcrumbs{
 	margin:0;
-	padding:20px 0 0 0;
+	padding:0;
 	color:#373737;
 	font-size: 16px;
 	font-family:$brandon-bold;
@@ -951,7 +958,9 @@ ul.breadcrumbs{
 			color: #9d54a8;
 		}
 		span{
-			color: #9d54a8;	
+			color: #9d54a8;
+			vertical-align: baseline;
+
 		}
 	}
 }
