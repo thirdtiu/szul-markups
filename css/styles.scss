@@ -3611,7 +3611,8 @@ div#thumbs{
 	}
 
 	/** LOGIN MOBILE **/
-	form.mobile-login-form{
+	form.mobile-login-form,
+	form.mobile-register-form{
 		padding:10px 0;
 		.form-group{
 			background:#efefef;
@@ -3635,6 +3636,9 @@ div#thumbs{
 					margin-bottom: 10px;
 				}
 			}
+		}
+		.help-block{
+			font-size: 12px;
 		}
 	}
 
