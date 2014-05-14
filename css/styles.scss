@@ -351,6 +351,16 @@ a#nav-toggle{
 .btn-green:hover{
 	color:#fff;
 }
+.btn-solid-green{
+	background:#39cba4;
+	border-color:#39cba4;
+	font-family:$brandon-bold;
+}
+.btn-solid-green:hover,
+.btn-solid-green:active{
+	background:#3ee1b7;
+	border-color:#3ee1b7;
+}
 .icon-chevron-down{width:15px;height:9px;background-position: -143px -34px;}
 .mt20{margin-top:20px;}
 .btn-default{
@@ -371,9 +381,9 @@ a#nav-toggle{
 	font-family:$brandon-bold;
 	@include border-radius(5px);
 	background-color: #fff;
-	-webkit-box-shadow: inset 0 2px rgba(255,255,255,.25);
+	/*-webkit-box-shadow: inset 0 2px rgba(255,255,255,.25);
 	-moz-box-shadow: inset 0 2px rgba(255,255,255,.25);
-	box-shadow: inset 0 2px rgba(255,255,255,.25);
+	box-shadow: inset 0 2px rgba(255,255,255,.25);*/
 	background-image: -webkit-linear-gradient(bottom, #803e82, #ac47ad);
 	background-image: -moz-linear-gradient(bottom, #803e82, #ac47ad);
 	background-image: -o-linear-gradient(bottom, #803e82, #ac47ad);
@@ -839,6 +849,29 @@ background: #efefef;
 
 
 /** FOOTER **/
+.social-links{
+	margin:0 0 15px 0;
+	li{
+		display: inline-block;
+	}
+	a{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		text-indent: -9999px;
+		outline: none;
+		margin-right: 13px;
+	}
+	.facebook a{
+		background-position: 0 0;
+	}
+	.twitter a{
+		background-position: -48px 0;	
+	}
+	.google a{
+		background-position: -48px -49px;	
+	}
+}
 footer#main_footer{
 	min-width:970px;
 	.main{
@@ -857,29 +890,6 @@ footer#main_footer{
 	}
 	.affiliation-list{
 		margin: 15px 0;
-	}
-	.social-links{
-		margin:0 0 15px 0;
-		li{
-			display: inline-block;
-		}
-		a{
-			display: inline-block;
-			width: 48px;
-			height: 48px;
-			text-indent: -9999px;
-			outline: none;
-			margin-right: 13px;
-		}
-		.facebook a{
-			background-position: 0 0;
-		}
-		.twitter a{
-			background-position: -48px 0;	
-		}
-		.google a{
-			background-position: -48px -49px;	
-		}
 	}
 	ul.links{
 		li{
@@ -3595,6 +3605,34 @@ div#thumbs{
 				.btn{
 					background:#fff;
 					border-color:#c9c9c9;
+				}
+			}
+		}
+	}
+
+	/** LOGIN MOBILE **/
+	form.mobile-login-form{
+		padding:10px 0;
+		.form-group{
+			background:#efefef;
+			padding:10px;
+			margin-bottom: 0;
+			label{
+				text-transform: uppercase;
+			}
+			.form-control{
+				@include border-radius(5px);
+			}
+		}
+		.actions{
+			padding:10px;
+			.forgot{
+				font-family: $brandon-bold;
+				margin:20px 0;
+			}
+			.signin-options{
+				p{
+					margin-bottom: 10px;
 				}
 			}
 		}
