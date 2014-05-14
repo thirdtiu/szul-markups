@@ -2979,6 +2979,7 @@ div#thumbs{
 @media (max-width: 767px){
 	body{
 		min-width: 320px;
+		padding-top:44px;
 	}
 	.container{
 		padding-left:3.125%;
@@ -3146,6 +3147,7 @@ div#thumbs{
 		position:fixed;
 		width: 100%;
 		z-index: 9999;
+		top:0;
 	}
 	form.search-form{
 		display:none;
@@ -3198,7 +3200,7 @@ div#thumbs{
 		}
 	}
 	.windowshade{
-		padding-top:44px;
+		/*padding-top:44px;*/
 	}
 	#mobile-search{
 		background:#fff;
