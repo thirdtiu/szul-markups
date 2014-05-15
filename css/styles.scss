@@ -2985,8 +2985,35 @@ div#thumbs{
 		min-width:970px;
 	}
 }
+
 /* MOBILE */
 @media (max-width: 767px){
+	/*rodel parts*/
+	/*7b diamond stud*/
+	.gem-stud {
+		.title {
+			small {
+				display: block;
+				margin-left: 0;
+			}
+		}
+		.main-img {
+			float: none!important;
+			img {
+				display: block;	
+				margin: auto;
+			}
+		}
+		.ctw-range {
+			text-align: center;
+			li {
+				width: 15%;
+				margin: 10px 5px;
+			}
+		}
+	}
+
+	
 	body{
 		min-width: 320px;
 		padding-top:44px;
@@ -3661,6 +3688,8 @@ div#thumbs{
 			}
 		}
 	}
+
+	
 
 
 }
