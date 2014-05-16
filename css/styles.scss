@@ -2989,7 +2989,112 @@ div#thumbs{
 
 /* MOBILE */
 @media (max-width: 767px){
-	/*rodel parts*/
+	.my-account-tab {
+		table, thead, tbody, th, td, tr { 
+				display: block; 
+		}
+		thead tr { 
+				position: absolute;
+				top: -9999px;
+				left: -9999px;
+		}
+		td { 
+				border: none;
+				position: relative;
+				padding-left: 10px; 
+		}
+		td:before { 
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				width: 100%; 
+				padding-right: 10px; 
+				white-space: nowrap;
+				font-family: $brandon-italic;
+				color: #8d8d8d
+		}
+		.tab-content {
+				padding: 15px 15px;
+			}
+		.nav li {
+			width: 50%;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			a {
+				margin: 0;
+				font-size: 11.5px;
+			}
+		}
+		#orders {
+			td:nth-of-type(1):before { 
+				content: "ORDER NUMBER"; 
+			}
+			td:nth-of-type(1) {
+				border-top: 2px solid #aaa;
+			}
+			td:nth-of-type(2):before {
+				content: "ORDER AMOUNT";  
+			}
+			td:nth-of-type(3):before {
+				content: "ORDER DATE";  
+			}
+			td:nth-of-type(4):before { 
+				content: "ORDER STATUS"; 
+			}
+			td:nth-of-type(5):before {
+				content: "TRACKING NUMBER";
+			}
+			td:nth-of-type(5) {
+				text-align: left;
+				height: 45px;
+				margin-bottom: 50px;
+			}
+			td { 
+				border: none;
+				border-bottom: 1px solid #ccc; 
+				position: relative;
+				padding-left: 50%; 
+			}
+			td:before { 
+				position: absolute;
+				top: 12px;
+				left: 6px;
+				width: 45%; 
+				padding-right: 10px; 
+				white-space: nowrap;
+			}
+		}
+		#wishlist {
+			td:nth-of-type(1):before { 
+				content: "ITEM DESCRIPTION"; 
+				display: block;
+			}
+			td:nth-of-type(2):before { 
+				content: "PRICE"; 
+				text-align: left;
+				top: 15px;
+			}
+			td:nth-of-type(2) {
+				border: none!important;
+			}
+			td:nth-of-type(3) {
+				border: none!important;
+				padding: 0!important;
+			}
+			td:nth-of-type(4) { 
+				padding-top: 0;
+				margin-bottom: 50px;
+				border: none!important;
+			}
+			.media {
+				margin-top: 10px;
+				img {
+					margin: 10px 0;
+				}
+			}
+			
+		}
+	}
 	/*7b diamond stud*/
 	.gem-stud {
 		.title {
@@ -3011,6 +3116,30 @@ div#thumbs{
 				width: 15%;
 				margin: 10px 5px;
 			}
+		}
+		.gem-choices li {
+			display: block;
+			margin-bottom: 8px;
+		}
+		.gems-list {
+			margin-top: 25px;
+			display: block;
+			li:first-child {
+				margin-left: 6px;
+			}
+			li {
+				margin: 6px 8px 10px 8px;
+				width: 13%;
+				vertical-align: text-top;
+				height: 54px;
+			}
+		}
+		.entry {
+			img.pull-left {
+				float: none!important;
+				display: block;
+			}
+
 		}
 	}
 
