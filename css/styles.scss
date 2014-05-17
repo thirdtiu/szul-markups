@@ -128,6 +128,9 @@ a.green{
 .purple{
 	color:$purple;
 }
+span.hidden-phone{
+	display:inline;
+}
 a#nav-toggle{
 	text-decoration: none;
 	position: absolute;
@@ -3924,6 +3927,38 @@ div#thumbs{
 		.subscribe-form{
 			.form-control{
 				display: inline-block;
+			}
+		}
+	}
+	span.hidden-phone{
+		display: none;
+	}
+	.windowshade-promo{
+		height: auto;
+		min-height: 50px;
+		overflow: visible;
+		div.main-content{
+			height: auto;
+			min-height:50px;
+			overflow: visible;
+			background:#f7f4ce;
+			float:none;
+			width: 100%;
+			padding-top:5px;
+			padding-left:10px;
+			padding-right:10px;
+			.primary{
+				font-size: 13px;
+				color: #fd4b6d;
+				font-weight: normal;
+				margin-bottom: 0;
+			}
+			.secondary{
+				font-size: 11px;
+				line-height: 14px;
+				color: #706770;
+				font-family: $museo-300;
+				margin-bottom: 0;
 			}
 		}
 	}
