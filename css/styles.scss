@@ -848,6 +848,42 @@ background: #efefef;
 	background: linear-gradient(to right, rgba(246,245,236,1) 0%, rgba(246,245,236,1) 49%, rgba(247,244,206,1) 49%, rgba(247,244,206,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f5ec', endColorstr='#f7f4ce', GradientType=1 );
 }
+.windowshade-promo{
+	height:50px;
+	overflow:hidden;
+	div.left-box{
+		float:left;
+		width: 28.75%;
+		background:#f6f5ec;
+		overflow: hidden;
+		zoom:1;
+		.large-object{
+			font-size: 38px;
+			color: #706770;
+		}
+		.left-box-body{
+			overflow: hidden;
+			padding-top:10px;
+			line-height: 16px;
+			p{
+				margin:0;
+			}
+			p.primary{
+				font-size: 14px;
+				color: #706770;
+			}
+			p.secondary{
+				font-size: 13px;
+				color: $purple;
+			}
+		}
+	}
+	div.main-content{
+		background:#f7f4ce;
+		float:left;
+		width: 71.25%;
+	}
+}
 
 
 /** FOOTER **/
