@@ -852,6 +852,7 @@ background: #efefef;
 	height:50px;
 	overflow:hidden;
 	div.left-box{
+		height:50px;
 		float:left;
 		width: 28.75%;
 		background:#f6f5ec;
@@ -868,20 +869,35 @@ background: #efefef;
 			p{
 				margin:0;
 			}
-			p.primary{
+			.primary{
 				font-size: 14px;
 				color: #706770;
 			}
-			p.secondary{
+			.secondary{
 				font-size: 13px;
 				color: $purple;
 			}
 		}
 	}
 	div.main-content{
+		height:50px;
 		background:#f7f4ce;
 		float:left;
 		width: 71.25%;
+		padding-left:15px;
+		padding-top: 10px;
+		.primary{
+			font-size: 16px;
+			color: #fd4b6d;
+			font-weight: normal;
+			margin-bottom: 0;
+		}
+		.secondary{
+			font-size: 12px;
+			color: #706770;
+			font-family: $museo-300;
+			margin-bottom: 0;
+		}
 	}
 }
 
