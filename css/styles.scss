@@ -4018,6 +4018,22 @@ div#thumbs{
 		}
 	}
 
+	.product-diamond{
+		.the-product{
+			.product-information{
+				.info-bd{
+					.block-buttons{
+						.btn-left-col,
+						.btn-right-col{
+							width: 100%;
+							margin:0 0 10px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	footer#main_footer{
 		min-width:320px;
 		.affiliation-list{
