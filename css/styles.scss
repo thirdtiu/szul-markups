@@ -3047,6 +3047,81 @@ div#thumbs{
 
 /* MOBILE */
 @media (max-width: 767px){
+	.payment-review {
+		.total {
+			margin-top: 20px!important;
+		}
+		.sm-blocks {
+			a.btn {
+				width: 88%!important;
+			}
+		}
+		
+	}
+	.checkout-payment {
+		.mm-blocks {
+			height: 280px!important;
+		}
+		.payment-tabs {
+			.nav {
+				width: 100%;
+				li {
+					width: 100%;
+					a {
+						margin: 0;
+					}
+				}
+			}
+			.btn-lg {
+				width: 100%!important;
+				font-size: 12px;
+			}
+		}
+		.mmspace {
+			padding-left: 10px;
+		}
+		.mmspace:first-child {
+			margin-bottom: 20px;
+		}
+		fieldset p select {
+			width: 62%!important;
+		}
+	}
+	.checkout {
+		.main-content {
+			width: inherit;
+			.btn-lg {
+				width: 100%;
+			}
+			.block-forms {
+				.pull-right,
+				.pull-left {
+					width: 100%;
+				}
+				.pull-right {
+					.carousel {
+						min-height: 600px;
+					}
+				}
+				.pull-left {
+					select {
+						background: #d7d7d7 url(../images/sprite.png) 300px -570px;
+					}
+				}
+			}
+		}
+	}
+	.halvs {
+		.row {
+			.col-md-12 {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+	}
+	.checkout-cart-info {
+		width: 100%;
+	}
 	.cart-summary {
 		td:nth-of-type(1):before { 
 			content: ""; 

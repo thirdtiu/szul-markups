@@ -273,13 +273,11 @@
 
                   <form>
                     <div class="product-details-tabs full payment-tabs">
-                      <!-- Nav tabs -->
                       <ul class="nav nav-tabs">
                         <li class="active"><a href="#onlinecc" data-toggle="tab">ONLINE WITH CREDIT CARD</a></li>
-                        <li><a href="#bankwire" data-toggle="tab">BANK WIRE TRANSFER</a></li>
-                        <li><a href="#paypal" data-toggle="tab"><img src="images/steps-paypal.png"></a></li>
+                        <li><a href="#bankwired" data-toggle="tab">BANK WIRE TRANSFER</a></li>
+                        <li><a href="#paypal" data-toggle="tab"><img src="images/steps-paypal.png"/></a></li>
                       </ul>
-                      <!-- Tab panes -->
                       <div class="tab-content">
                         <div class="tab-pane active" id="onlinecc">
                           <ul class="payment-icons">
@@ -302,7 +300,7 @@
                             </p>
                             <p>
                               <div class="row">
-                                <div class="col-md-5 col-xs-6">
+                                <div class="col-md-5 col-xs-12 mmspace">
                                   <label>EXPIRATION DATE</label>
                                   <select id="month" class="pull-left">
                                     <option>Month</option>
@@ -313,7 +311,7 @@
                                     <option>Year</option>
                                   </select>
                                 </div>
-                                <div class="col-md-5 col-xs-6">
+                                <div class="col-md-5 col-xs-12 mmspace">
                                   <label>CARD VERIFICATION (CCV) NO.</label>
                                   <input id="fw" type="text">
                                 </div>
@@ -325,15 +323,16 @@
                             </p>
                           </fieldset>
                         </div><!--onlinecc-->
-                        <div class="tab-pane" id="bankwire">
+                        <div class="tab-pane" id="bankwired">
 
                           <p>You have selected the option to initiate payment for your order via Bank Wire Transfer. This option will allow you to transfer funds automatically from your bank account directly to our bank account. Please note that your order will be processed only after funds have been received in full.</p>
                           
                           <p>After confirming below, an email will be sent to the email address specified during registration with recipient account (Szul jewelry, Inc.) details that will be required by your bank/financial institution upon initiation of the funds transfer.</p>
 
-                          <p>Please feel free to contact our Customer Service Department at 800.332.4382 or at <a href="#" class="mailto">customerservice@szul.com</a> for any additional information.</p>
+                          <p>Please feel free to contact our Customer Service Department at 800.332.4382 or at 
+                          <a href="#" class="mailto">customerservice@szul.com</a> for any additional information.</p>
 
-                          <button type="submit" class="btn btn-primary-gradient btn-lg" href="#">REQUEST WIRE TRANSFER DETAILS</button>
+                          <p><a href="#" class=" btn-primary-gradient btn-lg" >REQUEST WIRE TRANSFER DETAILS</a></p>
                         </div>
                         <div class="tab-pane" id="paypal">
                           <h2 class="block-head">ADD YOUR PAYPAL ACCOUNT</h2>
