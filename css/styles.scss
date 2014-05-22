@@ -3100,12 +3100,13 @@ div#thumbs{
 				}
 				.pull-right {
 					.carousel {
-						min-height: 600px;
+						min-height: inherit!important;
+						padding: 10px 20px 50px 10px;
 					}
 				}
 				.pull-left {
 					select {
-						background: #d7d7d7 url(../images/sprite.png) 300px -570px;
+						background: #d7d7d7 url(../images/sprite.png) 280px -570px;
 					}
 				}
 			}
