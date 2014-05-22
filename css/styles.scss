@@ -3923,6 +3923,12 @@ div#thumbs{
 	.product-filter-sidebar{
 		display: none;
 	}
+	.select-setting .product-filter-sidebar{
+		display: block;
+		float:none;
+		margin-right:0;
+		width: 100%;
+	}
 
 	ul.products{
 		.product{
@@ -3954,6 +3960,39 @@ div#thumbs{
 			}
 		}
 	}
+	.select-setting{
+		.main-content{
+			.top-filters{
+				display: block !important;
+				.pull-left,
+				.pull-right{
+					float:none !important;
+				}
+				.form-group{
+					text-align: center;
+					label{
+						display: block;
+					}
+				}
+			}
+			.item-navigation{
+				display: block !important;
+				text-align: center;
+				.pull-left,
+				.pull-right{
+					float:none !important;
+					margin-bottom: 10px;
+				}
+				p.item-count{
+					position:static;
+					margin-bottom: 10px;
+				}
+			}
+
+			
+		}	
+	}
+
 
 	/** LOGIN MOBILE **/
 	form.mobile-login-form,
