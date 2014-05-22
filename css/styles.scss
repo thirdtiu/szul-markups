@@ -2607,6 +2607,7 @@ ul.steps{
 
 .advanced-search-wrap{
 	overflow:hidden;
+	margin-bottom: 20px;
 	zoom:1;
 	form.advanced-search-form{
 		float:left;
@@ -4110,6 +4111,22 @@ div#thumbs{
 		}
 	}
 
+	.advanced-search-wrap{
+		form.advanced-search-form{
+			float:none;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.advanced-results{
+			.results-heading{
+				.pull-left,
+				.pull-right{
+					float:none !important;
+				}
+			}
+		}
+	}
+
 	footer#main_footer{
 		min-width:320px;
 		.affiliation-list{
@@ -4163,6 +4180,12 @@ div#thumbs{
 				font-family: $museo-300;
 				margin-bottom: 0;
 			}
+		}
+	}
+
+	.pagination{
+		.hidden-phone{
+			display: none;
 		}
 	}
 
