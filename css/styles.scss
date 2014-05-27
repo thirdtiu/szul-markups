@@ -2675,6 +2675,10 @@ ul.steps{
 		.pagination{
 			margin:0;
 		}
+		.tooltip-content{
+			visibility: hidden;
+			position:absolute;
+		}
 	}
 }
 
@@ -4158,6 +4162,7 @@ div#thumbs{
 		}
 		.advanced-results{
 			.results-heading{
+				margin-bottom: 20px;
 				.pull-left,
 				.pull-right{
 					float:none !important;
