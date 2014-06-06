@@ -100,7 +100,14 @@ $(function(){
 
 
 
-    
+    $('input#search').on('focus', function(){
+        $(this).attr('placeholder', '');
+        $(this).parents('form').addClass('active');
+    });
+    $('input#search').on('blur', function(){
+       $(this).attr('placeholder', 'Search Title, Keyword, or SKU'); 
+       $(this).parents('form').removeClass('active');
+    });
 
     $('.account').popover({
         placement : 'bottom',

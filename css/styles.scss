@@ -628,6 +628,9 @@ a#nav-toggle{
 		   color: #e0d6e2;  
 		}
 	}
+	.search-form.active{
+		background:lighten(#751e82, 15%);
+	}
 
 	.top-columns,
 	.top-columns_mobile{
