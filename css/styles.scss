@@ -2221,9 +2221,10 @@ ul.payment-icons{
 		margin:0 3% 30px;
 		.product-image{
 			text-align: center;
-			min-height: 206px;
+			height: 200px;
 			vertical-align: middle;
-			line-height: 206px;
+			line-height: 200px;
+			overflow: hidden;
 			position:relative;
 			img{
 				vertical-align: middle;
@@ -2233,6 +2234,12 @@ ul.payment-icons{
 				font-size: 14px;
 				font-family: $brandon-bold;
 				@include border-radius(3px);
+				position:absolute;
+				bottom:20px;
+				width: 120px;
+				left: 50%;
+				margin-left: -60px;
+				visibility: hidden;
 			}
 		}
 		.ribbon{

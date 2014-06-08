@@ -183,7 +183,16 @@ $(function(){
     $('.btn-mfilter').click(function(){
         $('.mobile-overlay.filter').css('visibility', 'visible');
         return false;
-    })
+    });
+
+    /** slideUp animation on quicklook **/
+    $('.products .product').hover(
+        function () {
+            $(this).find('.btn-quicklook').addClass('slideUp');
+        },
+        function(){
+            $(this).find('.btn-quicklook').removeClass('slideUp');
+        });
 
 });
 
