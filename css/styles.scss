@@ -563,7 +563,25 @@ a#nav-toggle{
 }
 
 /** HEADER **/
-
+.top-links{
+	background:#efefef;
+	font-size: 13px;
+	li{
+		list-style-type:none;
+		float:left;
+		a{
+			color: #706770;
+			font-style: italic;
+			display: block;
+			padding:4px 5px;
+		}
+	}
+	li:last-child{
+		a{
+			padding-right:0;
+		}
+	}
+}
 .top_primary{
 	background:$purple;
 	color:#fff;
@@ -586,6 +604,7 @@ a#nav-toggle{
 		float:left;
 		width: 390px;
 		font-family: $museo-500;
+		margin-top:15px;
 		ul{
 			list-style-type: none;
 			margin:10px 0;
@@ -613,7 +632,7 @@ a#nav-toggle{
 			border:none;
 			color:#fff;
 			width:344px;
-			height: 28px;
+			height: 33px;
 			font-size: .90em;
 		}
 		.btn{
@@ -3542,6 +3561,9 @@ div#thumbs{
 	.store-info{
 		display: none;
 	}
+	.top-links{
+		display: none;
+	}
 	.top_primary{
 		.container{
 			position: relative;
@@ -3549,10 +3571,10 @@ div#thumbs{
 		}
 		#logo{
 			margin-right: 0;
+			padding-top: 5px;
 			position:absolute;
 			height: 44px;
 			width: 62px;
-			background:#000;
 			left:50%;
 			margin-left:-31px;
 		}
