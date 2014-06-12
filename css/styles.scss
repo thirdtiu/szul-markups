@@ -744,7 +744,7 @@ a#nav-toggle{
 				height:50px;
 				line-height:50px;
 				color:#bdbdbd;
-				padding:0 9px;
+				padding:0 8px;
 			}
 			:hover{
 				text-decoration:none;
@@ -2259,16 +2259,26 @@ ul.payment-icons{
 				vertical-align: middle;
 				display: inline-block;
 			}
-			.btn-quicklook{
-				font-size: 14px;
-				font-family: $brandon-bold;
-				@include border-radius(3px);
+			.overlay{
 				position:absolute;
-				bottom:20px;
-				width: 120px;
-				left: 50%;
-				margin-left: -60px;
-				visibility: hidden;
+				width: 100%;
+				bottom:0;
+				height: 0px;
+				line-height: 18px;
+				-webkit-transition: height 0.2s linear;
+
+
+
+				p{
+					margin-bottom: 10px;
+				}
+				.btn-quicklook{
+					font-size: 14px;
+					font-family: $brandon-bold;
+					@include border-radius(3px);
+					margin: 0 auto 10px;
+					width: 120px;
+				}
 			}
 		}
 		.ribbon{
@@ -2303,6 +2313,13 @@ ul.payment-icons{
 			p{
 				margin:0;
 			}
+		}
+	}
+	.product:hover{
+		.overlay{		
+			height: 100px;
+
+
 		}
 	}
 }
@@ -4292,3 +4309,5 @@ div#thumbs{
 
 
 }
+
+

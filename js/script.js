@@ -186,13 +186,7 @@ $(function(){
     });
 
     /** slideUp animation on quicklook **/
-    $('.products .product').hover(
-        function () {
-            $(this).find('.btn-quicklook').addClass('slideUp');
-        },
-        function(){
-            $(this).find('.btn-quicklook').removeClass('slideUp');
-        });
+    
 
 });
 
