@@ -2246,8 +2246,8 @@ ul.payment-icons{
 		list-style-type: none;
 		position: relative;
 		float:left;
-		width: 27.142857%;
-		margin:0 3% 30px;
+		width: 28.571429%;
+		margin:0 2.313% 30px;
 		.product-image{
 			text-align: center;
 			height: 200px;
@@ -2326,8 +2326,8 @@ ul.payment-icons{
 .products-carousel{
 	margin:0;
 	.product{
-		width:190px;
-		margin:0 50px 0 0;
+		width:200px;
+		margin:0 40px 0 0;
 	}
 	li:last-child{
 		margin-right:0;
@@ -2797,7 +2797,7 @@ ul.steps{
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 200px;
+    top: 130px;
     text-align: center;
     color: #8f8f8f;
     text-decoration: none;
@@ -3774,6 +3774,10 @@ div#thumbs{
 				margin-right:0;
 				margin-bottom: 20px;
 			}
+			/*set a border on the images to prevent shifting*/ 
+			#gal1 img{border:2px solid white;} 
+			/*Change the colour*/ 
+			.active img{border:2px solid #333 !important;} 
 			.product-information{
 				.info-head{
 					font-size: 16px;

@@ -51,8 +51,14 @@ $(window).load(function(){
         exemptionSelector: '.selected'
     });
 
+    //initiate the plugin and pass the id of the div containing gallery images
+    $("#img_01").elevateZoom();
+
+
+
+
     // Initialize Advanced Galleriffic Gallery
-    var gallery = $('#thumbs').galleriffic({
+/*    var gallery = $('#thumbs').galleriffic({
         delay:                     2500,
         numThumbs:                 15,
         preloadAhead:              10,
@@ -87,5 +93,5 @@ $(window).load(function(){
         onPageTransitionIn:        function() {
             this.fadeTo('fast', 1.0);
         }
-    });
+    });*/
 });
