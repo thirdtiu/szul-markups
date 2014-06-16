@@ -2343,6 +2343,33 @@ ul.payment-icons{
 			float:left;
 			width: 460px;
 			margin-right:40px;
+			.stage{
+				position:relative;
+				.ribbon{
+					position:absolute;
+					right: 0;
+					top:0;
+					z-index: 99999;
+				}
+				img{}
+				margin-bottom: 20px;
+			}
+			/*set a border on the images to prevent shifting*/ 
+			#gal1{
+	
+				img{
+					
+				}
+				a{
+					display: inline-block;
+					border:2px solid #eee;
+				}
+				/*Change the colour*/ 
+				a.active{
+					border-color:$purple;
+				}
+			}
+			
 		}
 		.product-information{
 			overflow: hidden;
@@ -3774,10 +3801,6 @@ div#thumbs{
 				margin-right:0;
 				margin-bottom: 20px;
 			}
-			/*set a border on the images to prevent shifting*/ 
-			#gal1 img{border:2px solid white;} 
-			/*Change the colour*/ 
-			.active img{border:2px solid #333 !important;} 
 			.product-information{
 				.info-head{
 					font-size: 16px;
