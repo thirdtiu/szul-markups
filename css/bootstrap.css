@@ -6021,7 +6021,7 @@ button.close {
 
 .modal-body {
   position: relative;
-  padding: 20px;
+  padding: 15px;
 }
 
 .modal-footer {
@@ -6066,7 +6066,7 @@ button.close {
 
 @media screen and (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 740px;
     margin: 30px auto;
   }
   .modal-content {
