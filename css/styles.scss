@@ -2595,6 +2595,16 @@ ul.payment-icons{
 				a.full-details{
 					font-family: $brandon-bold;
 				}
+				.mini-desc{
+					margin:10px 0;
+					height: 100px;
+					overflow-y: scroll;
+				}
+				.option-block{
+					ul.gemstone-types li{
+						width: 135px;
+					}
+				}
 			}
 		}
 	}
