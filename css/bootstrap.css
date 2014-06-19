@@ -6017,6 +6017,8 @@ button.close {
 .modal-title {
   margin: 0;
   line-height: 1.428571429;
+  font-family: 'brandon_grotesqueMdIt', sans-serif;
+  text-transform: uppercase;
 }
 
 .modal-body {

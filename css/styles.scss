@@ -2952,6 +2952,10 @@ div.content {
 	display: none;
 	width: 460px; 
 }
+.modal div.content{
+	display:block;
+	width:100%;
+}
 div.controls {
 	margin-top: 5px;
 	height: 23px;
@@ -2962,6 +2966,9 @@ div.slideshow-container {
 	position: relative;
 	clear: both;
 	height: 557px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+.modal div.slideshow-container{
+	height:200px;
 }
 div.loader {
 	position: absolute;
@@ -2998,6 +3005,18 @@ div.slideshow{
 		vertical-align: middle;
 	}
 }
+.modal div.slideshow{
+	a.advance-link {
+		display: block;
+		width: 214px;
+		height: 200px !important;
+		line-height: 1.4 !important;
+		text-align: center;
+		overflow:hidden;
+		position:relative;
+		/*background:red;*/
+	}
+}
 div.caption {
 	
 }
@@ -3020,6 +3039,15 @@ div#thumbs{
 			a.thumb{
 				border:2px solid $purple;
 			}
+		}
+	}
+}
+
+.modal div#thumbs{
+	.thumbs{
+		li{
+			margin-right:10px !important;
+		
 		}
 	}
 }
