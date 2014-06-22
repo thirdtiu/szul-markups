@@ -2391,6 +2391,13 @@ ul.payment-icons{
 					p{
 						margin-bottom: 0;
 					}
+					p.new-price{
+						color: #fd4b6d;
+						.main-price{
+							font-family: $museo-500;
+							font-size: 16px;
+						}
+					}
 					span.guarantee-ribbon{
 						position: absolute;
 						right:0;
