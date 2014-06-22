@@ -4130,8 +4130,11 @@ div#thumbs{
 			.mobile-filters{
 				background-color:#efefef;
 				border-bottom:1px solid #e1e1e2;
-				margin-bottom: 10px;
 				padding:10px;
+				position:fixed;
+				width: 100%;
+				bottom:0;
+				z-index: 99999;
 				.item-count{
 					color: #373737;
 					font-family: $museo-500;
