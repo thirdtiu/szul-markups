@@ -1237,6 +1237,11 @@ form.diamond_filter{
 		float: left;
 		margin:0 1.0416666666666665% 20px;
 	}
+	.product:hover{
+		.grid-header{
+			background:rgba(157, 84, 168, .6) !important;
+		}
+	}
 }
 .product-grid2{
 	.product{
