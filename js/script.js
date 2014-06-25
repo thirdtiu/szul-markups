@@ -112,9 +112,28 @@ $(function(){
     $('.account').popover({
         placement : 'bottom',
         'html' : true,
+        trigger: 'manual',
         content: $('.account-popover-contents').html(),
         container : 'body',
         template: '<div id="account-popover" class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    }).on('mouseenter', function(){
+        var _this = this;
+        $(this).popover('show');
+        $(this).siblings('.popover').on('mouseleave', function(){
+            $(_this).popover('hide');
+        });
+    }).on('mouseleave',function(){
+        var _this = this;
+        var some_function = function(){
+            setTimeout(function(){
+                if(!$('.popover:hover').length){
+                    $(_this).popover('hide');
+                }else{
+                    some_function();
+                }
+            }, 50);
+        };
+        some_function();
     });
     $('.account .sign-in, .cart .cart-wrap').removeAttr('href');
     /** modifies the position of the popover arrow **/
@@ -127,9 +146,28 @@ $(function(){
     $('.cart').popover({
         placement : 'bottom',
         'html' : true,
+        trigger : 'manual',
         content: $('.cart-popover-contents').html(),
         container : 'body',
         template: '<div id="cart-popover" class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    }).on('mouseenter', function(){
+        var _this = this;
+        $(this).popover('show');
+        $(this).siblings('.popover').on('mouseleave', function(){
+            $(_this).popover('hide');
+        });
+    }).on('mouseleave',function(){
+        var _this = this;
+        var some_function = function(){
+            setTimeout(function(){
+                if(!$('.popover:hover').length){
+                    $(_this).popover('hide');
+                }else{
+                    some_function();
+                }
+            }, 50);
+        };
+        some_function();
     });
 
     $('li.cart').on('shown.bs.popover', function () {
