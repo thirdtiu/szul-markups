@@ -3847,9 +3847,7 @@ div#thumbs{
 			}
 		}
 		.carousel-inner > .item > img, .carousel-inner > .item > a > img{
-			max-height: 212px;
-			max-width: inherit;
-			margin-left: -100px;
+			max-width: 100%;
 		}
 		
 	}
