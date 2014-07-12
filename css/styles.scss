@@ -3257,7 +3257,7 @@ div#thumbs{
 }
 
 /* MOBILE */
-@media (max-width: 767px){
+@media (max-width: 949px){
 	.payment-review {
 		.total {
 			margin-top: 20px!important;
@@ -3856,6 +3856,7 @@ div#thumbs{
 	.product-grid3 .product{
 		width: 48.33%;
 		margin: 0 3.33% 10px;
+		text-align: center;
 	}
 	.product-grid3 .product:first-child{
 		margin-left:0;
