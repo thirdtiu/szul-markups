@@ -17,7 +17,10 @@ $(function(){
     $(document.body).on('click', '#nav-toggle.active', function() {
         $("#mobile-nav").mmenu().trigger('close');
     });
-    jQuery('#mega-menu').dcMegaMenu();
+    jQuery('#mega-menu').dcMegaMenu({
+        speed: 10,
+        effect: 'slide'
+    });
     /* PRICE RANGE SLIDER */
     $('#range-slider').slider({
         value: [6000, 20000]
