@@ -1,4 +1,7 @@
 $(window).load(function(){
+    var is_mobile = false;
+
+    
     /*$('ul.products .product').syncHeight({
       updateOnResize:true
     });*/
