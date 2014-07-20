@@ -222,9 +222,18 @@ $(function(){
         return false;
     });
     $('.btn-mfilter').click(function(){
-        $('.mobile-overlay.filter').css('visibility', 'visible');
+        if($('.mobile-overlay.filter').css('visibility') == 'hidden'){
+            console.log('hidden');
+            $('.mobile-overlay.filter').css('visibility', 'visible');
+        }
+        else{
+            console.log('visible');
+            $('.mobile-overlay.filter').css('visibility', 'hidden');    
+        }
         return false;
     });
+
+
 
     /** slideUp animation on quicklook **/
 
@@ -277,7 +286,14 @@ $(function(){
             }
         });
     });
-
+    
+    /*quick look product description toggle*/
+    $('#prod-desc-collapsible').on('show.bs.collapse', function () {
+        $("#prod-desc").html("-");
+    });
+    $('#prod-desc-collapsible').on('hide.bs.collapse', function () {
+        $("#prod-desc").html("+");
+    });
     
     
 

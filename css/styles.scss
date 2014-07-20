@@ -3572,7 +3572,15 @@ div#thumbs{
 		margin-right:-3.125%;
 	}
 	.mod-breadcrumbs{
-		display: none;
+		// display: none;
+		margin: 0 10px 20px;
+		.mod-bd{
+			padding:10px 0;
+		}
+	}
+	ul.breadcrumbs{
+		font-size: 14px;
+		font-family: $museo-500; 
 	}
 	
 	.icon.icon-shopping-cart{
