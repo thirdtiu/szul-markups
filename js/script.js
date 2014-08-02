@@ -2,8 +2,18 @@
 
 $(function(){
 
+    //let's clone mega menu
+    var $cloneItem = $("#mega-menu").clone(),
+        $dropdownItems = $cloneItem.find('li.dropdown');
 
+    //after cloning remove extra ul
+    $dropdownItems.each(function(){
+        $(this).find('ul ul li').unwrap();
+    });
 
+    $("#mobile-nav").append("<ul>" + $cloneItem.html() + "</ul");
+    
+    
 
     $("#mobile-nav").mmenu({
         classes: "mm-fullscreen"
@@ -20,6 +30,8 @@ $(function(){
     $(document.body).on('click', '#nav-toggle.active', function() {
         $("#mobile-nav").mmenu().trigger('close');
     });
+
+
     jQuery('#mega-menu').dcMegaMenu({
         speed: 10,
         effect: 'slide'

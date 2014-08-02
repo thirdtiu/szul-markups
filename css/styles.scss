@@ -144,6 +144,9 @@ a.green{
 span.hidden-phone{
 	display:inline;
 }
+span.visible-phone-ib{
+	display:none;
+}
 a#nav-toggle{
 	text-decoration: none;
 	position: absolute;
@@ -3829,6 +3832,12 @@ div#thumbs{
 		a{
 			color:#575757;
 			padding: 25px 10px 25px 20px;
+			outline: none;
+		}
+		h4{
+			color:#575757;
+			padding: 25px 10px 25px 20px;
+			outline: none;	
 		}
 
 	}
@@ -3837,6 +3846,9 @@ div#thumbs{
 	}
 	.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-noresults):after{
 		margin-left: 0;
+	}
+	.mm-list a.mm-subclose{
+		margin-top:0;
 	}
 	.mm-list a.mm-subclose:before{
 		margin-bottom: -3px;

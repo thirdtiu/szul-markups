@@ -183,7 +183,7 @@
           <nav id="main_nav">
             <ul id="mega-menu">
               <li><a href="#">Rings</a></li>
-              <li>
+              <li class="dropdown"><!--add class .dropdown if navigation item has dropdown -->
                 <a href="#">Earrings</a>
                 <ul>
                   <li><h4>By Category</h4>
@@ -217,27 +217,7 @@
               <li><a href="#">Gift Ideas</a></li>
             </ul>
           </nav>
-          <div id="mobile-nav">
-            <ul class="visible-xs visible-sm">
-              <li><a href="login-mobile.html"><span class="icon icon-lock"></span> LOGIN/SIGUP</a></li>
-              <li><a href="#"><span class="icon icon-rings"></span> RINGS</a>
-                  <ul class="sub_menu">
-                    <li><a href="#"><span class="icon icon-diamondrings"></span> DIAMOND RINGS</a></li>
-                    <li><a href="#"><span class="icon icon-gemstonerings"></span> GEMSTONE RINGS</a></li>
-                    <li><a href="#"><span class="icon icon-engagementrings"></span> ENGAGEMENT RINGS</a></li>
-                    <li><a href="#"><span class="icon icon-weddingrings"></span> WEDDING RINGS</a></li>
-                    <li><a href="#"><span class="icon icon-promiserings"></span> PROMISE RINGS</a></li>
-                    <li><a href="#"><span class="icon icon-mensrings"></span> MEN'S RINGS</a></li>
-                    <li><a href="#"><span class="icon icon-pearlrings"></span> PEARL RINGS</a></li>
-                  </ul>
-              </li>
-              <li><a href="#"><span class="icon icon-earrings"></span> EARRINGS</a></li>
-              <li><a href="#"><span class="icon icon-pendants"></span> PENDANTS &amp; NECKLACES</a></li>
-              <li><a href="#"><span class="icon icon-bracelets"></span> BRACELETS</a></li>
-              <li><a href="#"><span class="icon icon-mensjewelry"></span> MEN'S JEWELRY</a></li>
-              <li><a href="#"><span class="icon icon-deals"></span> DEALS COLLECTION</a></li>
-            </ul>
-          </div>
+          <div id="mobile-nav"> <!-- js will create nav here --> </div>
         </div>
       </div>
       <form action="#" method="post" id="mobile-search" class="collapse">
