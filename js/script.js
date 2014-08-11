@@ -4,7 +4,7 @@ $(function(){
 
     //let's clone mega menu
     var $cloneItem = $("#mega-menu").clone(),
-        $dropdownItems = $cloneItem.find('li.dropdown');
+        $dropdownItems = $cloneItem.find('li.hasdropdown');
 
     //after cloning remove extra ul
     $dropdownItems.each(function(){
@@ -14,7 +14,7 @@ $(function(){
     $("#mobile-nav").append("<ul>" + $cloneItem.html() + "</ul");
     
     
-
+    // after cloning, execute mmenu
     $("#mobile-nav").mmenu({
         classes: "mm-fullscreen"
     }).on(
@@ -36,17 +36,8 @@ $(function(){
         speed: 10,
         effect: 'slide'
     });
-    /* PRICE RANGE SLIDER */
-    $('#range-slider').slider({
-        value: [6000, 20000]
-    }).on('slide', function(ev){
-        //console.log($('#range-slider').slider('getValue'));
-        //console.log(ev.value[0]);
-        var firstvalue = ev.value[0];
-        var secondvalue = ev.value[1];
-        $('#range-input1').val(firstvalue);
-        $('#range-input2').val(secondvalue);
-    });
+
+
 
     $('#carat-range-slider').slider({
         value:[2, 16]

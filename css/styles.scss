@@ -2898,9 +2898,9 @@ ul.steps{
 
 
 /* jcarousel */
-.jcarousel-wrapper {
-    margin: 20px auto;
-    position: relative;
+.jcarousel-wrapper{
+	margin: 20px auto;
+	position: relative;
 }
 
 
@@ -4154,6 +4154,19 @@ div#thumbs{
 	}
 	.product-filter-sidebar{
 		display: none;
+	}
+	.range-wrap{
+		padding:20px 0 0 0;
+		max-width: 180px;
+		.form-group{
+			margin-bottom: 40px;
+		}
+		.range-input{
+			width: 50px;
+		}
+		.slider{
+			margin-left: 20px;
+		}
 	}
 	.select-setting .product-filter-sidebar{
 		display: block;
