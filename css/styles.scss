@@ -2348,8 +2348,6 @@ ul.payment-icons{
 	.product:hover{
 		.overlay{		
 			height: 100px;
-
-
 		}
 	}
 }
@@ -4474,6 +4472,15 @@ div#thumbs{
 	.pagination{
 		.hidden-phone{
 			display: none;
+		}
+	}
+
+	.products{
+		.product{}
+		.product:hover{
+			.overlay{
+				height: 0;
+			}
 		}
 	}
 
