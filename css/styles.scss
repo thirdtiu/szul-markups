@@ -4564,6 +4564,22 @@ div#thumbs{
 			}
 		}
 	}
+
+	/* register-form */
+	.mobile-register-form {
+		margin: 40px 0 0 0;
+		width: 50%;
+
+		label.control-label {
+			text-align: left;
+		}
+
+		.btn-create {
+			margin-left: 35.5%;
+			width: 50%;
+		}
+	}
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
