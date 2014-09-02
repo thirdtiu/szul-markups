@@ -4498,6 +4498,37 @@ div#thumbs{
 	padding: 10px 20px;
 }
 
+/* DEAL OF THE DAY */
+.product-information {
+	.exclusive {
+		color: #9d54a8;
+		font-size: 18px;
+		font-family: "brandon_grotesquebold",sans-serif;
+		text-transform: uppercase;
+	}
+}
+
+.deal-expire {
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	color: #7b7b7b;
+	font-family: "museo_sans500";
+	padding: 20px 0;
+	margin-bottom: 24px;
+
+	.icon {
+		background: url('../images/sprite.png') no-repeat -308px -3px;
+		display: inline-block;
+		margin-right: 10px;
+		width: 32px;
+		height: 32px;
+	}
+
+	.de-time {
+		color: #39cca4;
+	}
+}
+
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
