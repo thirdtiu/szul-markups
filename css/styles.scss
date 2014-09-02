@@ -4529,9 +4529,80 @@ div#thumbs{
 	}
 }
 
+/* LUXURY DEAL OF THE WEEK */
+.luxury-header {
+	border-bottom: 1px solid #cccccc;
+	padding: 32px 0;
+	margin-bottom: 32px;
+
+	h2 {
+		color: #7b7b7b;
+		font-size: 24px;
+		line-height: 64px;
+		padding-left: 0;
+	}
+
+	a {
+		text-align: left;
+
+		.icon {
+			display: block;
+			float: left;
+			background: url('../images/sprite.png') no-repeat -344px -3px;
+			margin-right: 12px;
+			width: 47px;
+			height: 34px;
+		}
+	}
+
+	.lux-label {
+		font-family: $brandon-bold;
+		float: left;
+		line-height: 16px;
+	}
+}
+
+.luxury.deal-expire {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.link-size {
+	color: #8d8d8d;
+	font-size: 11px;
+	font-family: $brandon-bold;
+	margin-left: 8px;
+	text-decoration: underline;
+}
+
+.fcf-block {
+	.g-item {
+		background: #f8f6f6;
+		border: 1px solid #e1e1e1;
+		border-left: 0;
+		float: left;
+		width: 33.33333333333333%;
+		padding: 14px;
+		font-size: 12px;
+		height: 64px;
+		overflow: hidden;
+	}
+
+	.g-item:first-child {
+		border-left: 1px solid #e1e1e1;
+	}
+}
+
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	/* LUXURY DEAL OF THE WEEK */
+	.luxury-header {
+		h2 {
+			font-size: 26px;
+		}
+	}
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -4608,6 +4679,13 @@ div#thumbs{
 		.btn-create {
 			margin-left: 35.5%;
 			width: 50%;
+		}
+	}
+
+	/* LUXURY DEAL OF THE WEEK */
+	.luxury-header {
+		h2 {
+			font-size: 40px;
 		}
 	}
 
