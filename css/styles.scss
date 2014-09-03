@@ -4593,6 +4593,86 @@ div#thumbs{
 	}
 }
 
+/* WiSHLIST WISH LIST */
+.wishlist {
+	padding-top: 48px;
+	padding-bottom: 48px;
+
+	.wl-header,
+	.labels,
+	.item {
+		border-bottom: 1px solid #b8b8b8;
+	}
+
+	.wl-header {
+		padding-bottom: 16px;
+	}
+
+	.labels,
+	.item {
+		padding: 16px 0;
+	}
+
+	.labels,
+	.btn-email-friends,
+	.wl-header h2,
+	.prod-name,
+	.btn-remove-item {
+		text-transform: uppercase;
+	}
+
+	.labels {
+		color: #8d8d8d;
+		font-family: $brandon-italic;
+	}
+
+	.wl-header h2 {
+		color: #6a6a6a;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.btn-email-friends {
+		width: 100%;
+	}
+
+	.item .size,
+	.item .price,
+	.item .prod-name {
+		font-family: $brandon-bold;
+		color: #373737;
+		font-size: 12px;
+	}
+
+	.item .prod-name,
+	.item-num {
+		margin-bottom: 4px;
+	}
+
+	.item-num {
+		color: #6b6b6b;
+		font-size: 12px;
+		font-family: $museo-500;
+	}
+
+	.btn-remove-item {
+		font-size: 12px;
+		font-family: $brandon-bold;
+
+		.icon {
+			display: inline-block;
+			background: url("../images/sprite.png") no-repeat -396px -2px;
+			width: 14px;
+			height: 18px;
+		}
+	}
+
+	figure img {
+		max-width: 100%;
+		margin-bottom: 8px;
+	}
+}
+
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -4600,6 +4680,19 @@ div#thumbs{
 	.luxury-header {
 		h2 {
 			font-size: 26px;
+		}
+	}
+
+	/* WiSHLIST WISH LIST */
+	.wishlist {
+		.wl-header h2 {
+			text-align: left;
+		}
+
+		.item .size,
+		.item .price,
+		.item .prod-name {
+			font-size: 14px;
 		}
 	}
 }
