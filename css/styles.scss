@@ -4761,6 +4761,105 @@ div#thumbs{
 	}
 }
 
+/* LOGIN REGISTRATION LOGIN REGISTER */
+.login-register {
+	padding-top: 22px;
+	padding-bottom: 22px;
+
+	h2 {
+		border-bottom: 1px solid #b8b8b8;
+		color: #6a6a6a;
+		font-size: 24px;
+		padding-bottom: 16px;
+		margin-bottom: 24px;
+		text-transform: uppercase;
+	}
+
+	.frm-returning-customer {
+		margin-bottom: 24px;
+	}
+
+	.frm-returning-customer,
+	.frm-registration {
+		background: #efefef;
+		padding: 24px;
+
+		h3 {
+			border-bottom: 1px solid #cccccc;
+			color: #575757;
+			font-family: $brandon-italic;
+			font-size: 16px;
+			padding-bottom: 20px;
+			text-transform: uppercase;
+		}
+
+		label {
+			margin-top: 20px;
+			font-family: $museo-300;
+			text-transform: uppercase;
+
+			span {
+				text-transform: lowercase;
+			}
+		}
+
+		button {
+			font-size: 16px;
+			font-family: $brandon-bold;
+			margin-top: 20px;
+			margin-bottom: 4px;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.forgot-password {
+			font-size: 11px;
+			font-family: $brandon-bold;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+	}
+
+	.social-media-login {
+		margin-top: 8px;
+
+		button {
+			border: none;
+		}
+
+		p {
+			color: #8d8d8d;
+			font-size: 12px;
+			font-family: $museo-500;
+			margin: 0 0 8px 0;
+		}
+
+		.facebook,
+		.gplus,
+		.yahoo {
+			display: inline-block;
+			width: 48px;
+			height: 49px;
+			margin: 0 6px;
+		}
+
+		.facebook {
+			background: url("../images/sprite.png") no-repeat 0 0;
+		}
+
+		.gplus {
+			background: url("../images/sprite.png") no-repeat -48px -49px;
+		}
+
+		.yahoo {
+			background: url("../images/sprite.png") no-repeat -100px -83px;
+		}
+	}
+}
+
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -4809,6 +4908,19 @@ div#thumbs{
 			margin-bottom: 32px;
 		}
 	}
+
+	/* LOGIN REGISTRATION LOGIN REGISTER */
+	.login-register {
+		.frm-registration,
+		.frm-returning-customer {
+			min-height: 470px;
+		}
+
+		.social-media-login {
+			margin-top: 24px;
+		}
+	}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -4894,6 +5006,11 @@ div#thumbs{
 		h2 {
 			font-size: 40px;
 		}
+	}
+
+	/* LOGIN REGISTRATION LOGIN REGISTER */
+	.login-register {
+		min-height: 700px;
 	}
 
 }
