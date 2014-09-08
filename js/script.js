@@ -1,5 +1,3 @@
-
-
 $(function(){
 
     //let's clone mega menu
@@ -301,7 +299,27 @@ $(function(){
         $("#prod-desc").html("+");
     });
     
-    
+    /*product details*/
+
+    // GEMSTONE ITEM EVENT
+    $('.gemstone-types').on('click', '.type > a', function(e) {
+        e.preventDefault();
+
+        $('.gemstone-types li').removeClass('active');
+        $(this).parent().addClass('active');
+        $(this).parent().addClass('active');
+        $('.selected-gem-type').text($(this).data('type'));
+    });
+
+    // METAL TYPE ITEM EVENT
+    $('.metal-types').on('click', 'li > a', function(e) {
+        e.preventDefault();
+
+        $('.metal-types li').removeClass('active');
+        $(this).parent().addClass('active');
+        $(this).parent().addClass('active');
+        $('.selected-metal-type').text($(this).data('metal-name'));
+    });
 
 });
 

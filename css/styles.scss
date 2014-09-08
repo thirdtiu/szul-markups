@@ -160,6 +160,11 @@ a#nav-toggle{
 	outline:none;
 }
 
+#top_header {
+	position: relative;
+	z-index: 1000;
+}
+
 .page-header{
 	font-family:$brandon-thin;
 	color:#6a6a6a;
@@ -2376,7 +2381,7 @@ ul.payment-icons{
 					position:absolute;
 					right: 0;
 					top:0;
-					z-index: 99999;
+					z-index: 900;
 				}
 				img{}
 				margin-bottom: 20px;
@@ -2448,15 +2453,49 @@ ul.payment-icons{
 						list-style-type: none;
 						padding:0;
 						li{
-							display: inline-block;
-							width: 160px;
+							display: block;
+							float: left;
 							margin-bottom:10px;
-							a{color: #706770;}
-							.icon{
-								margin-right: 10px;
+							border: 2px solid #fff;
+							a{
+								color: #706770;
+								background: #fff;
+								display: inline-block;
+								padding: 1px 2px;
 							}
 						}
+						li.active {
+							border: 2px solid #55226A;
+						}
 					}
+
+					ul.metal-types {
+						list-style: none;
+						margin-bottom: 16px;
+						li {
+							float: left;
+							width: 32px;
+							height: 31px;
+							margin-right: 6px;
+							border: 2px solid #ccc;
+						}
+						li a.yellow-gold,
+						li a.white-gold {
+							display: inline-block;
+							width: 28px;
+							height: 27px;
+						}
+						li a.white-gold {
+							background: url(../images/10kWhiteGold.jpg) no-repeat center center;
+						}
+						li a.yellow-gold {
+							background: url(../images/10kYellowGold.jpg) no-repeat center center;
+						}
+						li.active {
+							border: 2px solid #55226A;	
+						}
+					}
+
 					.group{
 						border-top:1px solid #ccc;
 						.block-subhead{
@@ -3952,7 +3991,7 @@ div#thumbs{
 						.group{
 							.block-subhead{
 								display: inline-block;
-								width: 120px;
+								width: 320px;
 							}
 							p{
 								display: inline-block;
