@@ -4904,9 +4904,39 @@ div#thumbs{
 	}
 }
 
+/* MY ACCOUNT TAB */
+.my-account-tab {
+	.nav li {
+		width: 25%;
+		float: left;
+	}
+
+	.nav li a {
+		padding: 8px;
+		height: 48px;
+		font-size: 11px;
+		text-align: center;
+	}
+}
+
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	/* MY ACCOUNT TAB */
+	.my-account-tab {
+		.nav li {
+			width: auto;
+			float: left;
+		}
+
+		.nav li a {
+			padding: 10px 15px;
+			height: auto;
+			font-size: 14px;
+			text-align: left;
+		}
+	}
+
 	/* PRODUCTS DETAILS TAB */
 	.product-details-tabs {
 	.nav-tabs > li {
