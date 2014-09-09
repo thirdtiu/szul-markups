@@ -4508,12 +4508,6 @@ div#thumbs{
 
 /* MOBILE 320px and up */
 /* product detail tab */
-.product-details-tabs .nav-tabs,
-.product-details-tabs .left-content,
-.breakdown {
-	display: none;
-}
-
 .product-large-view .product-details .product-details-tabs {
 	float: none;
 	width: 100%;
@@ -4523,6 +4517,17 @@ div#thumbs{
 .product-details .mobile-details {
 	background: #efefef;
 	padding: 10px 20px;
+}
+
+.product-details-tabs {
+	.nav-tabs > li {
+		float: none;
+	}
+
+	.nav-tabs > li > a {
+		margin-right: 0;
+	}
+
 }
 
 /* DEAL OF THE DAY */
@@ -4902,6 +4907,17 @@ div#thumbs{
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	/* PRODUCTS DETAILS TAB */
+	.product-details-tabs {
+	.nav-tabs > li {
+			float: left;
+		}
+
+		.nav-tabs > li > a {
+			margin-right: 10px;
+		}
+
+	}
 	/* LUXURY DEAL OF THE WEEK */
 	.luxury-header {
 		h2 {
@@ -4964,12 +4980,6 @@ div#thumbs{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	/* product detail tab */
-	.product-details-tabs .nav-tabs,
-	.product-details-tabs .left-content,
-	.breakdown {
-		display: block;
-	}
 
 	.product-large-view .product-details .product-details-tabs {
 		width: 74%;
