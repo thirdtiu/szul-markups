@@ -1,0 +1,20 @@
+.product-listing-page {
+	.mobile-filters {
+		display: block;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.product-listing-page {
+		.mobile-filters {
+			display: none;
+		}
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

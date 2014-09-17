@@ -4,9 +4,6 @@ $(function(){
 		$filterHeaders = $productFilterSidebar.find('.block-head'); // get the headers
 		$filterItems = $productFilterSidebar.find('.block-body');
 
-	console.log($filterHeaders);
-	
-
 	//generate mobile tab filters header
 	$filterHeaders.each(function(key, value){
 		$('ul.mobile-filter-tabs').append('<li><a href="#filter-tab' + key + '" data-toggle="tab">'+ $(this).html() +'</a></li>');
