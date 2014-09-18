@@ -408,7 +408,6 @@
       </div>
     </section>
     <div class="mobile-overlay filter">
-      
       <form role="form" id="form-filter" class="tab-wrap form-inline visible-xs visible-sm">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs mobile-filter-tabs pull-left">
@@ -426,9 +425,18 @@
           <button id="btn-reset" class="btn pull-right" type="reset">Reset</button>
         </div>
       </form>
-
-
     </div>
+  
+    <div class="mobile-sorting" id="mobile-sorting">
+      <form>
+        <div class="sticky-footer">
+          <button id="btnsort-cancel" class="btn pull-left cancel" type="reset">Cancel</button>
+          <button id="btnsort-apply" class="btn apply" type="submit">Apply</button>
+          <button id="btnsort-reset" class="btn pull-right" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
     <div class="container pull-out">
       <div class="module mod-breadcrumbs">
         <div class="mod-bd">
@@ -556,10 +564,11 @@
         </form>
 
         <div class="main-content">
-          <form class="top-filters form-inline clearfix" role="form">
+          <form id="form-sorting" class="top-filters form-inline clearfix" role="form">
             <div class="form-group pull-left">
               <label for="items-per-page">ITEMS PER PAGE</label> 
               <select id="items-per-page">
+                <option value="-1">Select Page</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -570,7 +579,7 @@
             <div class="form-group pull-right">
               <label for="sortby">SORT BY</label> 
               <select id="sortby">
-                <option>Our Picks</option>
+                <option value="-1">Our Picks</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
@@ -583,7 +592,7 @@
               <span class="item-count">Showing 300 Items</span>
             </div>
             <div class="pull-right">
-              <a href="#" class="btn btn-default btn-sm"><span class="icon icon-msort"></span> Sort</a>
+              <a href="#" class="btn btn-default btn-sm" id="btn-sorting"><span class="icon icon-msort"></span> Sort</a>
               <a href="#" class="btn btn-default btn-sm btn-mfilter"><span class="icon icon-mfilter"></span> Filter</a><!-- $('.btn-mfilter').click() -->
             </div>
           </div>

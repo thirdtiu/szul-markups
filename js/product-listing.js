@@ -35,6 +35,52 @@ $(function(){
         $('.range-input2').val(secondvalue);
     });
 
+   	/* SORTING */
+   	var $productSortingFilter = $('#form-sorting .form-group').clone()
+   	$('#mobile-sorting').append($productSortingFilter);
 
+   	// show mobile sorting on click hide others
+   	$('#btn-sorting').on('click', function() {
+   		$('.mobile-overlay').hide();
+   		$('#mobile-sorting').show();
+   	})
+
+   	// event listener for select form
+   	$('#mobile-sorting').on('change', 'select', function() {
+   		var counter = 0;
+
+   		$('#mobile-sorting select').each(function() {
+	   		if( $(this).val() !== '-1' ) {
+	   			counter++;
+	   		}
+	   	});
+
+	   	if (counter > 0) {
+			$('.mobile-filters').hide();
+			$('#mobile-sorting .sticky-footer').show();
+		} else {
+			$('.mobile-filters').show();
+			$('#mobile-sorting .sticky-footer').hide();
+		}
+   	});
+
+   	// button sort cancel
+   	$('#btnsort-cancel').on('click', function() {
+   		$('#mobile-sorting').hide();
+   		$('.mobile-filters').show();
+
+   		$('#mobile-sorting select').each(function() {
+	   		$(this).prop('selectedIndex', 0);
+	   	});
+   	});
+
+   	// button sort reset
+   	$('#btnsort-reset').on('click', function() {
+   		$('#mobile-sorting select').each(function() {
+	   		$(this).prop('selectedIndex', 0);
+	   	});
+	   	$('#mobile-sorting .sticky-footer').hide();
+	   	$('.mobile-filters').show();
+   	});
 	
 });

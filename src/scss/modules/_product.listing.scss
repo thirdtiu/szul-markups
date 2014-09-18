@@ -4,6 +4,27 @@
 	}
 }
 
+.mobile-sorting {
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	padding-top: 72px;
+
+	.form-group {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	.form-group select {
+		width: 100%;
+	}
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
 
@@ -13,6 +34,10 @@
 		.mobile-filters {
 			display: none;
 		}
+	}
+
+	.mobile-sorting {
+		display: none;
 	}
 }
 

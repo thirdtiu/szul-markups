@@ -1,13 +1,15 @@
 // include gulp
 // include plug-ins
 var gulp = require('gulp'),
-	sass = require('gulp-ruby-sass');
+	sass = require('gulp-ruby-sass'),
+	livereload = require('gulp-livereload');
 
 // sass task
 gulp.task('sass', function() {
 	gulp.src('./src/scss/styles.scss')
 		.pipe(sass({ sourcemap: true, style: 'expanded' }))
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest('./css'))
+		.pipe(livereload());
 });
 
 gulp.task('default', ['sass'], function() {

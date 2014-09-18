@@ -263,12 +263,7 @@ $(function(){
 	// show filter options
 	$('.btn-mfilter').on('click', function() {
 		$('.mobile-overlay.filter').show();
-	});
-
-	// filter apply
-	$('#btn-apply').on('click', function() {
-		$('.mobile-filters').show();
-		$('.mobile-overlay.filter').hide();
+		$('#mobile-sorting').hide();
 	});
 
 	/** slideUp animation on quicklook **/
