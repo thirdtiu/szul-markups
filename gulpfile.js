@@ -1,7 +1,7 @@
 // include gulp
 // include plug-ins
 var gulp = require('gulp'),
-	sass = require('gulp-ruby-sass'),
+	sass = require('gulp-ruby-sass')
 	livereload = require('gulp-livereload');
 
 // sass task

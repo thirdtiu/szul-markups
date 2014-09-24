@@ -420,3 +420,50 @@ function carouselEnabler(){
 		}
 	}
 };
+
+// Order details
+enquire.register("screen and (min-width:768px)", {
+
+	match : function() {
+		console.log('768px up');
+		$('.panel-title a').removeAttr('data-toggle');
+		$('.order-details .panel-collapse').addClass('in').removeAttr('style');
+
+		// item details
+		$('.item-details .panel-heading a').each(function() {
+			var img = $(this).find('img'),
+				span = $(this).find('span'),
+				temp = [];
+
+			temp.push(img);
+			temp.push(span);
+
+			$(this).closest('.panel-heading')
+				.next()
+					.find('.desc')
+						.prepend(temp);
+		});
+	},
+
+	unmatch : function() {
+		console.log('768px down');
+		$('.panel-title a').attr('data-toggle', 'collapse');
+		$('.order-details .panel-collapse').removeClass('in');
+
+		// item details
+		$('.panel-body .desc').each(function() {
+			var img = $(this).find('img'),
+				span = $(this).find('span.prod-name'),
+				temp = [];
+
+			temp.push(img);
+			temp.push(span);
+
+			$(this).closest('.panel-collapse')
+				.siblings('.panel-heading')
+					.find('a')
+						.append(temp);
+		});
+	}
+
+});

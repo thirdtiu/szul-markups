@@ -390,7 +390,7 @@
 	</header>
 	<section class="windowshade">
 	  <div class="container pull-out">
-		<div class="windowshade-promo">
+		<div class="windowshade-promo hidden-xs">
 		  <div class="left-box hidden-xs hidden-sm">
 			<div class="large-object pull-left">30</div>
 			<div class="left-box-body">
@@ -408,74 +408,229 @@
 
 	<div class="container order-details">
 		<h2 class="page-header">ORDER DETAILS</h2>
-		<div class="row">
-			<div class="od-item col-xs-12">
-				<h3 class="od-heading">Info</h3>
-				<p><strong>Order#6355678</strong></p>
-				<p><strong>Shipping Status</strong></p>
-				<p>Delivered</p>
-				<p><strong>Tracking Number</strong></p>
-				<span class="dotted"></span>
-				<button class="btn btn-primary-gradient btn-sm col-xs-12">Track</button>
+		<div class="panel-group clearfix" id="accordion">
+		  <div class="panel panel-default">
+			<div class="panel-heading">
+			  <h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">INFO</a>
+			  </h4>
 			</div>
-			<div class="od-item col-xs-12">
-				<h3 class="od-heading">Shipping</h3>
-				<p><strong>John Edward Doe</strong></p>
-				<p>11234 Address Line 01 <br>Second Address Line <br>Woodside, NY 13377 <br>United States <br>371 1234</p>
-				<p><strong>Shipping Option</strong></p>
-				<p>Complimentary Express <br>Shipping - Free</p>
+			<div id="collapseOne" class="panel-collapse collapse in">
+			  <div class="panel-body">
+			  	<div class="panel-wrap">
+			  		<p class="panel-label">Order#6355687</p>
+			  	</div>
+			  	<div class="panel-wrap">
+				  	<p class="panel-label">Shipping status</p>
+				  	<span>Delivered</span>
+			  	</div>
+			  	<div class="panel-wrap">
+				  	<p class="panel-label">Tracking Number</p>
+				  	<span>---</span>
+			  	</div>
+			  	<a href="#" class="btn-track btn btn-primary-gradient btn-xs">Track</a>
+			  </div>
 			</div>
-			<div class="od-item col-xs-12">
-				<h3 class="od-heading">Billing Address</h3>
-				<p><strong>John Edward Doe</strong></p>
-				<p>11234 Address Line 01 <br>Second Address Line <br>Woodside, NY 13377 <br>United States <br>371 1234</p>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading">
+			  <h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">SHIPPING</a>
+			  </h4>
 			</div>
-			<div class="od-item col-xs-12">
-				<h3 class="od-heading">Payment</h3>
-				<img src="images/cc2.png" alt="cc2">
-				<p><strong>Visa XXXXX - 1898</strong></p>
-				<p>John Edward Doe <br>Expires 01/2016</p>
+			<div id="collapseTwo" class="panel-collapse collapse">
+			  <div class="panel-body">
+			  	<div class="panel-wrap">
+			  		<p class="panel-label">John Edward Doe</p>
+			  		<span>11234 Address Line 01 Second Address Line Woodside, NY 13377 United States 371 1234</span>
+			  	</div>
+			  	<div class="panel-wrap">
+			  		<p class="panel-label">Shipping Option</p>
+			  		<span>Complimentary Express Shipping - Free</span>
+			  	</div>
+			  </div>
 			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading">
+			  <h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">BILLING ADDRESS</a>
+			  </h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse">
+			  <div class="panel-body">
+			  	<div class="panel-wrap">
+				  	<p class="panel-label">John Edward Doe</p>
+			  		<span>11234 Address Line 01 Second Address Line Woodside, NY 13377 United States 371 1234</span>
+		  		</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="panel panel-default">
+			<div class="panel-heading">
+			  <h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">PAYMENT</a>
+			  </h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse">
+			  <div class="panel-body">
+			  	<img src="/images/cc2.png" alt="VISA">
+			  	<div class="panel-wrap">
+			  		<p class="panel-label">VISA XXXXX-1898</p>
+			  		<span>John Edward Doe Expires 01/2016</span>
+			  	</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-		
-		<div class="row">
-			<div class="prod-header">
-				<div class="col-md-8"><p>Item Description</p></div>
-				<div class="col-md-4"><p>Price</p></div>
-				<div class="col-md-4"><p>Total Price</p></div>
-			</div>
-		</div>
-		<div class="prod-items">
-			<div class="row">
-				<div class="col-xs-12">
-					<img src="" alt="">
-					<h4 class="prod-name">Diamond Swirl Promise Ringin 10K White Gold Longer content goes IN HERE CAN FIT 3 LINES</h4>
-					<p class="prod-id">rgif12398be</p>
-					<p class="prod-quantity">Quantity: 1</p>
-					<p class="prod-size">Size: 7.0</p>
+
+		<div class="item-details">
+			<h2 class="page-header visible-xs">ITEM DETAILS</h2>
+			<div class="item-header hidden-xs">
+				<div class="row">
+					<div class="col-sm-6 col-md-6">Item Description</div>
+					<div class="col-sm-3 col-md-3 h-price">Price</div>
+					<div class="col-sm-3 col-md-3 h-total-price">Total Price</div>
 				</div>
-				<div class="col-xs-12"><p class="prod-price">$2,899.00</p></div>
-				<div class="col-xs-12"><p class="prod-total-price">$2,899.00</p></div>
+			</div>
+			<div class="panel-group" id="accordion-item">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion-item" class="clearfix" href="#item-one">
+						<img src="images/sample/img_460x460.png" alt="">
+						<span class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</span>
+					</a>
+				  </h4>
+				</div>
+				<div id="item-one" class="panel-collapse collapse in">
+				  <div class="panel-body">
+				  	<div class="row">
+					  	<div class="desc col-xs-12 col-sm-6 col-md-6">
+					  		<span>RGIF12398BE</span>
+					  		<span>Quantity: 1</span>
+					  		<span>Size: 7.0</span>
+					  	</div>
+					  	<div class="price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+					  	<div class="total-price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Total Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+				  	</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion-item" class="clearfix" href="#item-two">
+						<img src="images/sample/img_460x460.png" alt="">
+						<span class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</span>
+					</a>
+				  </h4>
+				</div>
+				<div id="item-two" class="panel-collapse collapse">
+				  <div class="panel-body">
+				  	<div class="row">
+					  	<div class="desc col-xs-12 col-sm-6 col-md-6">
+					  		<span>RGIF12398BE</span>
+					  		<span>Quantity: 1</span>
+					  		<span>Size: 7.0</span>
+					  	</div>
+					  	<div class="price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+					  	<div class="total-price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Total Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+				  	</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion-item" class="clearfix" href="#item-three">
+						<img src="images/sample/img_460x460.png" alt="">
+						<span class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</span>
+					</a>
+				  </h4>
+				</div>
+				<div id="item-three" class="panel-collapse collapse">
+				  <div class="panel-body">
+				  	<div class="row">
+					  	<div class="desc col-xs-12 col-sm-6 col-md-6">
+					  		<span>RGIF12398BE</span>
+					  		<span>Quantity: 1</span>
+					  		<span>Size: 7.0</span>
+					  	</div>
+					  	<div class="price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+					  	<div class="total-price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Total Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+				  	</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion-item" class="clearfix" href="#item-four">
+						<img src="images/sample/img_460x460.png" alt="">
+						<span class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</span>
+					</a>
+				  </h4>
+				</div>
+				<div id="item-four" class="panel-collapse collapse">
+				  <div class="panel-body">
+				  	<div class="row">
+					  	<div class="desc col-xs-12 col-sm-6 col-md-6">
+					  		<span>RGIF12398BE</span>
+					  		<span>Quantity: 1</span>
+					  		<span>Size: 7.0</span>
+					  	</div>
+					  	<div class="price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+					  	<div class="total-price col-xs-12 col-sm-3 col-md-3">
+					  		<span class="price-label">Total Price</span>
+					  		<span>$2,884.00</span>
+					  	</div>
+				  	</div>
+				  </div>
+				</div>
+			  </div>
 			</div>
 		</div>
-		<div class="prod-summary">
-			<div class="row">
-				<div class="col-xs-12 sub-total">Sub Total</div>
-				<div class="col-xs-12 sub-amount">$5,799.00</div>
+
+		<div class="total-order">
+			<div class="item sub-total clearfix">
+				<div class="total-lbl">Sub total</div>
+				<div class="value">$5,799.00</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 shipping">Shipping</div>
-				<div class="col-xs-12 ship-amount">$0.00</div>
+			<div class="item shipping clearfix">
+				<div class="total-lbl">Shipping</div>
+				<div class="value">$0.00</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 custom">Customization Price</div>
-				<div class="col-xs-12 custom-price">$0.00</div>
+			<div class="item custom clearfix">
+				<div class="total-lbl">Customization price</div>
+				<div class="value">$0.00</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 total">Total</div>
-				<div class="col-xs-12 total-amount">$5,798.00</div>
+			<div class="item total clearfix">
+				<div class="total-lbl">Total</div>
+				<div class="value">$5,798.00</div>
 			</div>
-		</div>
+		</div><!-- total -->
 	</div><!-- order-details -->
 
 	<footer id="main_footer">
@@ -586,6 +741,7 @@
 	<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
 	<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
 	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<script type="text/javascript" src="js/enquire.min.js"></script>
 	<script src="js/script.js"></script>
   </body>
 </html>
