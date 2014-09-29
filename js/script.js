@@ -256,14 +256,14 @@ $(function(){
 	// filter reset
 	$('#btn-reset').on('click', function() {
 		notChecked = checked = 0;
-		$('.sticky-footer').hide();
-		$('.mobile-filters').show();
 	});
 
 	// show filter options
 	$('.btn-mfilter').on('click', function() {
 		$('.mobile-overlay.filter').show();
 		$('#mobile-sorting').hide();
+		$('.sticky-footer').show();
+   		$('.mobile-filters').hide();
 	});
 
 	/** slideUp animation on quicklook **/

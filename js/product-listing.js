@@ -43,6 +43,8 @@ $(function(){
    	$('#btn-sorting').on('click', function() {
    		$('.mobile-overlay').hide();
    		$('#mobile-sorting').show();
+   		$('.sticky-footer').show();
+   		$('.mobile-filters').hide();
    	})
 
    	// event listener for select form
@@ -79,8 +81,6 @@ $(function(){
    		$('#mobile-sorting select').each(function() {
 	   		$(this).prop('selectedIndex', 0);
 	   	});
-	   	$('#mobile-sorting .sticky-footer').hide();
-	   	$('.mobile-filters').show();
    	});
 	
 });
