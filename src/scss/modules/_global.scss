@@ -1,0 +1,22 @@
+.fixed-container {
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top: 1px solid #efefef;
+	background-color: #fff;
+	padding: 8px 15px;
+	margin: 0;
+	overflow: hidden;
+
+	a {
+		float: right;
+		padding: 8px 16px;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}

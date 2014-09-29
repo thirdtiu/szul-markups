@@ -515,5 +515,53 @@ if ($('#accordion-cart')) {
 		}
 
 	});
+}
 
+
+// Checkout/Place order buttons
+
+var checkoutPage = $('.checkout-cart-info').length,
+	// get length of my cart page
+	myCart = $('#cart-summary').length,
+	// create fixed-container
+	buttonContainer = '<p class="fixed-container" id="fixed-container"></p>';
+
+// append fixed-container to body element
+$('body').prepend($(buttonContainer));
+// store fixed-container element
+var fixedContainer = $('#fixed-container');
+
+// check if were in the checkout page
+if (checkoutPage) {
+	var btnContainer = $('.place-order-container'),
+	btn = $('#btn-place-order');
+
+	placeCheckoutButtonHelper(btnContainer, btn);
+}
+
+// check if cart page
+if (myCart) {
+	var btnContainer = $('.checkout-button-container'),
+		btn = $('#btn-checkout');
+
+	placeCheckoutButtonHelper(btnContainer, btn);
+}
+
+// helper function for floating checkout and place order buttons
+function placeCheckoutButtonHelper(buttonContainer, button) {
+	enquire.register("screen and (min-width:768px)", {
+		setup : function() {
+			$(fixedContainer).append($(button));
+		},
+
+		match : function() {
+			$(buttonContainer).append($(fixedContainer).find(button));
+			$(fixedContainer).hide();
+		},
+
+		unmatch : function() {
+			$(fixedContainer).append($(button));
+			$(fixedContainer).show();
+		}
+	});
 }
