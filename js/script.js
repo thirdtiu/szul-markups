@@ -30,10 +30,7 @@ $(function(){
 	});
 
 
-	jQuery('#mega-menu').dcMegaMenu({
-		speed: 10,
-		effect: 'slide'
-	});
+	jQuery('#mega-menu').dcMegaMenu();
 
 
 
