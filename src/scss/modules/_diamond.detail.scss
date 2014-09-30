@@ -1,0 +1,22 @@
+.diamond-detail-tabs {
+	.col-2 {
+		width: 100%;
+		float: none;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.diamond-detail-tabs {
+		.col-2 {
+			width: 48.41269841269841%;
+			float: left;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
