@@ -1,0 +1,173 @@
+// Star rating component
+.star-fill {
+	color: #fdd225;
+}
+
+.star-blank {
+	color: #bfbfbf;
+}
+
+.container {
+	// Card component
+	.card {
+		background-color: #efefef;
+		padding: 16px;
+
+		h3 {
+			border-bottom: 1px solid #cccccc;
+			color: #575757;
+			font-family: $brandon-italic;
+			font-size: 16px;
+			margin-bottom: 16px;
+			padding-bottom: 16px;
+			text-transform: uppercase;
+		}
+
+		.card-label {
+			font-family: $brandon-bold;
+			margin-bottom: 16px;
+			text-transform: uppercase;
+		}
+
+		.btn {
+			font-family: $brandon-bold;
+			padding: 4px 64px;
+			text-transform: uppercase;
+		}
+	}
+	
+	// Page header component
+	.page-header {
+		font-size: 20px;
+		margin: 32px 0 16px;
+		text-transform: uppercase;
+	}
+}
+
+// Item list component
+.item-list {
+	.list-header {
+		padding: 16px;
+		border: {
+			top: 1px solid #cccccc;
+			bottom: 1px solid #cccccc;
+		}
+	}
+
+	.list-label {
+		color: #8d8d8d;
+		font-family: $brandon-italic;
+		text-transform: uppercase;
+	}
+
+	.list-item {
+		border-bottom: 1px solid #cccccc;
+	}
+
+	%upper { text-transform: uppercase;	}
+	%font-gray { color: #8d8d8d; }
+
+	.item-name {
+		font-family: $brandon-bold;
+		@extend %upper;
+	}
+
+	.item-price,
+	.item-status,
+	.item-total,
+	.item-footer-label,
+	.item-footer-price {
+		font-family: $brandon-bold;
+		@extend %upper;
+	}
+
+	.item-footer-price {
+		font-size: 18px;
+	}
+
+	.item-footer-price.total {
+		color: #fd4b6d;
+	}
+
+	.item-status {
+		color: #38caa5;
+	}
+
+	.item-code {
+		@extend %upper;
+		@extend %font-gray;
+	}
+
+	.item-quantity,
+	.item-size {
+		@extend %font-gray;
+	}
+
+	.list-footer {
+		padding: 16px 0;
+		border-bottom: 1px solid #cccccc;
+
+		.btn {
+			@extend %upper;
+			padding-left: 56px;
+			padding-right: 56px;
+		}
+	}
+}
+
+/* confirmation */
+.confirmation {
+	background-color: #efefef;
+	padding: 16px 0;
+	margin: 16px 0;
+	width: 100%;
+	text-align: center;
+	-webkit-border-radius: 2px;
+			border-radius: 2px;
+
+	h3 {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-family: $brandon-bold;
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.confirmation-wrapper {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.content-wrapper {
+		float: left;
+		margin: 0 0 0 8px;
+	}
+
+	.confirm-icon {
+		float: left;
+		background: #15e16b;
+		color: #fff;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		-webkit-border-radius: 32px;
+				border-radius: 32px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		.page-header {
+			font-size: 24px;
+			margin: 40px 0 20px;
+		}
+	}
+}
+
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}

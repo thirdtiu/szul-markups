@@ -144,49 +144,6 @@
 	}
 } /* total-order */
 
-/* confirmation */
-.confirmation {
-	background-color: #efefef;
-	padding: 16px 0;
-	margin: 16px 0;
-	width: 100%;
-	-webkit-border-radius: 2px;
-			border-radius: 2px;
-
-	h3 {
-		font-size: 14px;
-		text-transform: uppercase;
-		font-family: $brandon-bold;
-		margin: 0;
-	}
-
-	p {
-		margin: 0;
-	}
-
-	.confirmation-wrapper {
-		width: 222px;
-		margin: 0 auto;
-	}
-
-	.content-wrapper {
-		float: left;
-		margin: 0 0 0 8px;
-	}
-
-	.confirm-icon {
-		float: left;
-		background: #15e16b;
-		color: #fff;
-		width: 32px;
-		height: 32px;
-		line-height: 32px;
-		text-align: center;
-		-webkit-border-radius: 32px;
-				border-radius: 32px;
-	}
-}
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.order-details {
@@ -335,10 +292,6 @@
 		.item.shipping {
 			padding-bottom: 16px;
 		}
-	}
-
-	.confirmation {
-		width: 99%;
 	}
 }
 

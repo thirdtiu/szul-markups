@@ -1,0 +1,45 @@
+/** MIXINS **/
+$bs-default: border-box !default;
+$br-default: 100% !default;
+
+@mixin bs ($bs-type: $bs-default) {
+	-webkit-box-sizing: $bs-type;
+	   -moz-box-sizing: $bs-type;
+			box-sizing: $bs-type;
+}
+
+@mixin transform ($trans-type) {
+	-webkit-transform: $trans-type;
+	    -ms-transform: $trans-type;
+		 -o-transform: $trans-type;
+			transform: $trans-type;
+}
+
+@mixin br ($br-px: $br-default) {
+	-webkit-border-radius: $br-px;
+	   -moz-border-radius: $br-px;
+		-ms-border-radius: $br-px;
+		 -o-border-radius: $br-px;
+			border-radius: $br-px;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin gradient($from, $to) {
+  /* fallback/image non-cover color */
+  background-color: $from; 
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient($from, $to);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient($from, $to);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient($from, $to);
+}

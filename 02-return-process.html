@@ -1,0 +1,1002 @@
+<!DOCTYPE html>  
+<html>
+  <head>
+    <title>SZUL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Mobile Menu -->
+    <link href="css/jquery.mmenu.css" rel="stylesheet">
+    <link href="css/jquery.mmenu.fullscreen.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+  	<header id="top_header">
+      <div class="top-links">
+        <div class="container">
+          <ul class="store-features pull-right ">
+            <li><a href="#">30 Day Money Back</a></li>
+            <li><a href="#">Free Shipping</a></li>
+            <li><a href="#">Certificate of Authenticity</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#mobile-nav" id="nav-toggle"><span class="icon icon-trigram"></span></a>
+  		<div class="top_primary">
+        <div class="container">
+          <h1 id="logo"><a href="/"><img src="images/logo.png" alt="SZUL" /></a></h1>
+          <div class="store-info">
+            <form action="#" role="form" class="form-inline search-form">
+              <div class="form-group">
+                <label class="sr-only" for="search">Email address</label>
+                <input type="text" class="form-control" name="search" id="search" placeholder="Search Title, Keyword, or SKU" />
+              </div>
+              <button type="submit" class="btn btn-transparent">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+          </div>
+          <ul class="top-columns hidden-xs hidden-sm">
+            <li>
+              <h2>
+                <span class="glyphicon glyphicon-earphone"></span>
+                CONTACT US
+              </h2>
+              088-432-8832
+            </li>
+            <li class="account" data-container="body" data-toggle="popover">
+              <h2>
+                <span class="glyphicon glyphicon-user"></span>
+                ACCOUNT
+              </h2>
+              <a href="#" class="sign-in">Sign in</a>
+              <span class="icon icon-chevron-down"></span>
+
+              <div class="account-popover-contents">
+                <!--MY ACCOUNT POPOVER-->
+                <div class="my-account-contents">
+                  <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Wish List</a></li>
+                  </ul>
+                </div>
+                <!--MY ACCOUNT POPOVER-->
+
+                <!--SIGN IN POPOVER-->
+                <div class="sign-in-contents" style="display:none;">
+                  <form action="#" role="form">
+                    <div class="form-group">
+                      <label for="username" class="sr-only">Usernam</label>
+                      <input type="text" class="form-control" id="username" placeholder="User ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="sr-only">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-green btn-block">SIGN-IN</button>
+                    <p class="text-center forgot-link">
+                      <a href="#">FORGOT PASSWORD?</a>
+                    </p>
+                  </form>
+
+                  <div class="other-signin">
+                    <h4 class="text-center">Sign-in Using</h4>
+                    <ul class="clearfix">
+                      <li class="facebook"><a href="#">Facebook</a></li>
+                      <li class="google"><a href="#">Google Plus</a></li>
+                      <li class="yahoo"><a href="#">Yahoo</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="no-account">
+                    <p class="clearfix">
+                      <span class="pull-left">No account yet?</span>
+                      <a href="#" class="pull-right register">REGISTER &gt;</a>
+                    </p>
+                  </div>
+                </div>
+                <!--END SIGN IN POPOVER-->
+              </div>
+            </li>
+            <li class="cart" data-container="body" data-toggle="popover">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+              <div class="cart-popover-contents">
+                <table>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="prod-img">
+                      <img src="images/popover-prod-img.png" alt="">
+                    </td>
+                    <td class="prod-info">
+                      <h2 class="prod-name">Diamond Swirl Promise Ring in 10K White Gold</h2>
+                      <p>Item Number: RGIF12398BE</p>
+                      <p>Quantity: 1</p>
+                    </td>
+                    <td class="prod-price">
+                      <h3>$399.00</h3>
+                    </td>
+                  </tr>
+                </table>
+                <p class="total text-right">
+                  Total: <strong>$1,000</strong>
+                </p>
+                <div class="ft clearfix">
+                  <a href="#" class="pull-left btn btn-transparent view-cart">VIEW CART &gt;</a>
+                  <a href="#" class="pull-right btn btn-primary-gradient">CHECKOUT &gt;</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="top-columns_mobile visible-xs visible-sm">
+            <li class="mobile-search">
+              <a href="#" class="" data-toggle="collapse" data-target="#mobile-search">
+                <span class="icon icon-spyglass"></span>
+              </a>
+            </li>
+            <li class="mobile-cart">
+              <h2>
+                <a href="#" class="cart-wrap">
+                  <span class="icon icon-shopping-cart"></span>
+                  <span class="badge">2</span>
+                </a>
+              </h2>
+            </li>
+          </ul>
+        </div><!--.container-->
+  		</div>
+  		<div class="top_secondary">
+        <div class="container">
+          <nav id="main_nav">
+            <ul id="mega-menu">
+              <li><a href="#">Rings</a></li>
+              <li class="hasdropdown"><!--add class .dropdown if navigation item has dropdown -->
+                <a href="#">Earrings</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hasdropdown">
+                <a href="#">Pendants &amp; Necklaces</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hasdropdown">
+                <a href="#">Bracelets</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Engagement &amp; Wedding</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hasdropdown">
+                <a href="#">Diamond</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hasdropdown">
+                <a href="#">Men's Jewelry</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hasdropdown">
+                <a href="#">Deals &amp; Collections</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hasdropdown">
+                <a href="#">Gift Ideas</a>
+                <ul>
+                  <li><h4>By Category</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                  <li class="popular-products"><h4>By Popular Products</h4>
+                    <ul>
+                      <li><a href="#">Diamond Earrings</a></li>
+                      <li><a href="#">Diamond Hoops</a></li>
+                      <li><a href="#">Diamond Studs</a></li>
+                      <li><a href="#">Gemstone Earrings</a></li>
+                      <li><a href="#">Silver Earrings</a></li>
+                      <li><a href="#">Pearl Earrings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div id="mobile-nav"> <!-- js will create nav here --> </div>
+        </div>
+  		</div>
+      <form action="#" method="post" id="mobile-search" class="collapse">
+        <div class="form-group">
+          <label for="search" class="sr-only">Email address</label>
+          <input type="text" class="form-control" id="search" placeholder="Search Title, Keyword, or SKU">
+        </div>
+      </form>
+  	</header>
+    <section class="windowshade">
+      <div class="container pull-out">
+        <div class="windowshade-promo">
+          <div class="left-box hidden-xs hidden-sm">
+            <div class="large-object pull-left">30</div>
+            <div class="left-box-body">
+              <p class="primary">DAY MONEY BACK GUARANTEE</p>
+              <p class="secondary">Free shipping on all orders!</p>
+            </div>
+          </div>
+          <div class="main-content">
+            <h2 class="primary">ENDS TONIGHT! WINTER WEEKEND CLEARANCE SALE <span class="hidden-phone">- UP TO 95% OFF JEWELRY!</span></h2>
+            <p class="secondary">These deals cannot be combined with any other offers, coupons, or gift certificates. Ends Jan. 26, 2014 at 11:59 PM EST.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container return-process">
+      <h2 class="page-header two">RETURN ORDER</h2>
+      <div class="item-list two">
+        <div class="list-header hidden-xs visible-sm">
+          <div class="row">
+            <div class="row">
+            <div class="col-sm-5"><span class="list-label">Item Description</span></div>
+            <div class="col-sm-2"><span class="list-label">Price</span></div>
+            <div class="col-sm-3"><span class="list-label">Status</span></div>
+            <div class="col-sm-2"><span class="list-label">Total Price</span></div>
+            </div>
+          </div>
+        </div><!-- list-header -->
+        
+        <div class="list-item two">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="list-label visible-xs">Item Description</div>
+              <div class="clearfix item-details-wrap">
+                <div class="image-wrapper">
+                  <input type="checkbox" class="chk-list-item">
+                  <img src="images/sample/img_300x300.jpg" alt="Product image">
+                </div>
+                <div class="item-details">
+                  <div class="item-name">Diamond Swirl PromisE Ring in 10K White Gold Longer content goes IN HERE CAN FIT 3 LINES</div>
+                  <div class="item-code">RGIF12398BE</div>
+                  <div class="item-quantity">Quantity: 1</div>
+                  <div class="item-size">Size: 7.0</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="row">
+                <div class="col-xs-5 col-sm-12 list-label visible-xs">Price</div>
+                <div class="col-xs-7 col-sm-12 item-price">$2,899.00</div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="col-xs-5 col-sm-12 list-label visible-xs">Status</div>
+                <div class="col-xs-7 col-sm-12 item-status">Returned Allowed</div>
+              </div>
+            </div>
+            <div class="col-sm-2 item-total-price">
+              <div class="row">
+                <div class="col-xs-5 col-sm-12 list-label visible-xs">Total Price</div>
+                <div class="col-xs-7 col-sm-12 item-total">$2,899.00</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-reasons-wrapper">
+            <div class="form-item-reasons">
+              <div class="card">
+                <p>WHAT IS THE REASON FOR RETURNING THIS PRODUCT?</p>
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox" id="chckbox1">
+                        </span>
+                        <label for="chckbox1">Didn't mean to order this item</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Found this item at a better price elsewhere</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Item is damaged</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Order was delayed</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Item not as described</label>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Received the wrong item</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>No longer needed</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Unauthorized purchase</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Other</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row additional-comments">
+                    <div class="col-sm-6">
+                      <p>ADDITIONAL COMMENTS</p>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div><!-- form-item-reasons -->
+          </div>
+        </div><!-- list-item -->
+        <div class="list-item two">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="list-label visible-xs">Item Description</div>
+              <div class="clearfix item-details-wrap">
+                <div class="image-wrapper">
+                  <input type="checkbox" class="chk-list-item">
+                  <img src="images/sample/img_300x300.jpg" alt="Product image">
+                </div>
+                <div class="item-details">
+                  <div class="item-name">Diamond Swirl PromisE Ring in 10K White Gold Longer content goes IN HERE CAN FIT 3 LINES</div>
+                  <div class="item-code">RGIF12398BE</div>
+                  <div class="item-quantity">Quantity: 1</div>
+                  <div class="item-size">Size: 7.0</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="row">
+                <div class="col-xs-5 col-sm-12 list-label visible-xs">Price</div>
+                <div class="col-xs-7 col-sm-12 item-price">$2,899.00</div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="col-xs-5 col-sm-12 list-label visible-xs">Status</div>
+                <div class="col-xs-7 col-sm-12 item-status">Returned Allowed</div>
+              </div>
+            </div>
+            <div class="col-sm-2 item-total-price">
+              <div class="row">
+                <div class="col-xs-5 col-sm-12 list-label visible-xs">Total Price</div>
+                <div class="col-xs-7 col-sm-12 item-total">$2,899.00</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-reasons-wrapper">
+            <div class="form-item-reasons">
+              <div class="card">
+                <p>WHAT IS THE REASON FOR RETURNING THIS PRODUCT?</p>
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox" id="chckbox1">
+                        </span>
+                        <label for="chckbox1">Didn't mean to order this item</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Found this item at a better price elsewhere</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Item is damaged</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Order was delayed</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Item not as described</label>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Received the wrong item</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>No longer needed</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Unauthorized purchase</label>
+                      </div>
+                      <div class="input-group">
+                        <span class="chkbox-wrapper">
+                          <input type="checkbox">
+                        </span>
+                        <label>Other</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row additional-comments">
+                    <div class="col-sm-6">
+                      <p>ADDITIONAL COMMENTS</p>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div><!-- form-item-reasons -->
+          </div>
+        </div><!-- list-item -->
+
+        <div class="list-footer two">
+          <div class="item-footer-subtotal">
+            <div class="row">
+              <div class="col-sm-6 col-xs-6">
+                <div class="item-footer-label">Sub total</div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="item-footer-price">$5,799.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer-shipping">
+            <div class="row">
+              <div class="col-sm-6 col-xs-6">
+                <div class="item-footer-label">Shipping</div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="item-footer-price">$0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="item-footer-total">
+            <div class="row">
+              <div class="col-sm-6 col-xs-6">
+                <div class="item-footer-label">Total</div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="item-footer-price total">$5,789.00</div>
+              </div>
+            </div>
+          </div>
+        </div><!-- list-footer -->
+      </div><!-- item-list -->
+
+      <div class="checkout">
+        <div class="main-content">
+          <div class="row">
+            <div class="block-forms col-md-9">
+              <div class="clearfix">
+                <div class="block pull-left col-md-9">
+                  <form>
+                    <h2 class="block-head">FROM SHIPPING ADDRESS</h2>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>FIRST NAME</label>
+                        <input type="text">
+                      </div>
+                      <div class="col-md-6">
+                        <label>LAST NAME</label>
+                        <input type="text">
+                      </div>
+                      <div class="col-md-6">
+                        <label>BUSINESS NAME (optional)</label>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6"></div>
+                      <div class="col-md-12">
+                        <label>ADDRESS LINE 1</label>
+                        <input type="text">
+                      </div>
+                      <div class="col-md-12">
+                        <label>ADDRESS LINE 2</label>
+                        <input type="text">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <label>CITY</label>
+                            <input type="text">
+                          </div>
+                          <div class="col-md-12">
+                            <label>STATE/PROVINCE</label>
+                            <select class="white">
+                              <option>1</option>
+                            </select>
+                          </div>
+                          <div class="col-md-12">
+                            <label>ZIP/POSTAL CODE</label>
+                            <input type="text">
+                          </div>
+                          <div class="col-md-12">
+                            <label>PHONE</label>
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <label>COUNTRY</label>
+                            <select>
+                              <option>1</option>
+                            </select>    
+                            <div class="boxed">
+                              <p class="radio">
+                                <input type="radio">
+                                <label>US</label>
+                              </p>
+                              <p class="radio">
+                                <input type="radio">
+                                <label>International</label>
+                              </p>
+                              <p class="radio">
+                                <input type="radio">
+                                <label>AFO/FPO</label>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="checkbox">THIS IS ALSO MY BILLING ADDRESS
+                  </form>
+                </div>
+                <div class="block pull-right col-md-3">
+                  <!--carousel-->
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <h2 class="block-head">MY ADDRESS BOOK</h2>
+                        <div class="boxed">
+                          <p>JOHN EDWARD DOE</p>
+                          <p>11234 Address Line 01</p>
+                          <p>Second Address Line</p>
+                          <p>Woodside, NY 13377</p>
+                          <p>United States</p>
+                          <p>371 1234</p>
+                          <div class="btns text-center">
+                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md">DELETE</a>
+                            <a href="#" class="btn btn-primary-gradient btn-md ">USE THIS ADDRESS</a>
+                          </div>
+                        </div>
+                        <div class="boxed">
+                          <p>JOHN EDWARD DOE</p>
+                          <p>11234 Address Line 01</p>
+                          <p>Second Address Line</p>
+                          <p>Woodside, NY 13377</p>
+                          <p>United States</p>
+                          <p>371 1234</p>
+                          <div class="btns text-center">
+                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md">DELETE</a>
+                            <a href="#" class="btn btn-primary-gradient btn-md">USE THIS ADDRESS</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <h2 class="block-head">MY ADDRESS BOOK</h2>
+                        <div class="boxed">
+                          <p>PABLO EDWARD DOE</p>
+                          <p>11234 Address Line 01</p>
+                          <p>Second Address Line</p>
+                          <p>Woodside, NY 13377</p>
+                          <p>United States</p>
+                          <p>371 1234</p>
+                          <div class="btns text-center">
+                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md">DELETE</a>
+                            <a href="#" class="btn btn-primary-gradient btn-md ">USE THIS ADDRESS</a>
+                          </div>
+                        </div>
+                        <div class="boxed">
+                          <p>SARAH EDWARD DOE</p>
+                          <p>11234 Address Line 01</p>
+                          <p>Second Address Line</p>
+                          <p>Woodside, NY 13377</p>
+                          <p>United States</p>
+                          <p>371 1234</p>
+                          <div class="btns text-center">
+                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md">DELETE</a>
+                            <a href="#" class="btn btn-primary-gradient btn-md">USE THIS ADDRESS</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                  </div>
+                  <!--/carousel-->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="block">
+                <h2 class="block-head">TO ADDRESS</h2>
+                <p class="site">SZUL.COM</p>
+                <p>12 East 46th Street, 3rd Floor West New York NY 10017</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- main-content -->
+        
+        <div class="block">
+          <h2 class="block-head">RETURN METHOD FOR THESE ITEMS</h2>
+            <p class="radio">
+              <input type="radio">
+              <label>USPS drop-off</label>
+              <span>Drop off at authorized USPS location or can be picked up by your USPS Delivery Person (if available). You will need a printer to print the pre-paid Shipping label and packing slip. $4.95 will be deducted from your refund.</span>
+            </p>
+            <p class="radio">
+              <input type="radio">
+              <label class="offer">Self-Return</label>
+              <span>Print your packagins slip and shup using shipping methods of your choice (you will pay for shippping). We highly recommend insuring your package to protect your shipment.</span>
+            </p>
+            <p class="address">
+                <span><strong>SZUL.COM</strong></span>
+                <span>12 East 46th Street, STE 2E New York, NY 10017</span>
+            </p>
+        </div>
+
+        <div class="proceed-payment">
+          <button type="submit" class="btn btn-primary-gradient btn-lg" href="#">CONTINUE</button>
+        </div>
+
+        <p class="text-center">All items must be returned by <strong>Friday, September 26, 2014</strong></p>
+      </div><!-- checkout -->
+    </div><!-- return-process -->
+
+  	<footer id="main_footer">
+  		<div class="affiliations">
+        <div class="container">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="images/affiliates-mobile.png" media="(max-width: 767px)">
+            <source srcset="images/affiliates.png" media="(min-width: 768px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="images/affiliates.png" alt="Affiliates">
+          </picture>
+        </div>
+      </div>
+
+  		<div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 hidden-xs hidden-sm">
+              <h3 class="col-heading">SOCIAL</h3>
+              <div class="col-body">
+                <ul class="social-links">
+                  <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form form-inline">
+                  <p>Sign-up for special offers. We don't spam and won't sell your data.</p>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                  </div>
+                  <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">SZUL</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services &amp; Policies</a></li>
+                  <li><a href="#">Site Map</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Szul Reviews</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">SHOP WITH CONFIDENCE</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li><a href="#">Free Shipping</a></li>
+                  <li><a href="#">30-Day Return Policy</a></li>
+                  <li><a href="#">Free Gift Packagin</a></li>
+                  <li><a href="#">Safe &amp; Secure</a></li>
+                  <li><a href="#">Jewelry Guide</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="col-heading">CUSTOMER SERVICE</h3>
+              <div class="col-body">
+                <ul class="links">
+                  <li class="white"><span class="glyphicon glyphicon-earphone"></span> <strong>800 332 4382</strong></li>
+                  <li class="white"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:customerservice@szul.com" class="white"><strong>customerservice@szul.com</strong></a></li>
+                  <li><a href="#">Order Status</a></li>
+                  <li><a href="#">Shipping Information</a></li>
+                  <li><a href="#">Returns &amp; Exchanges</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 visible-xs visible-sm">
+              <h3 class="col-heading">SOCIAL</h3>
+              <div class="col-body">
+                <ul class="social-links">
+                  <li class="facebook"><a href="#" class="sprite">Facebook</a></li><li class="twitter"><a href="#" class="sprite">Twitter</a></li><li class="google"><a href="#" class="sprite">Twitter</a></li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form form-inline">
+                  <p>Sign-up for special offers. We don't<br>spam and won't sell your data.</p>
+                  <input type="email" class="form-control" id="email" placeholder="Email Address">
+                  <button type="submit" class="btn btn-primary-gradient"><span class="glyphicon glyphicon-ok"></span></button>
+                </form>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+			  
+      <div class="copyright">
+        <div class="container">
+          Copyright &copy; 1999 - 2014. Szul. All rights reserved.
+        </div>
+      </div>
+  	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.syncHeight.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+    <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+    <script type="text/javascript" src="js/enquire.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

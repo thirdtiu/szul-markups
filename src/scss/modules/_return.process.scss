@@ -1,0 +1,353 @@
+.return-process {
+	.card {
+		height: auto;
+		margin-bottom: 16px;
+		padding-bottom: 48px;
+		position: relative;
+
+		.btn-wrap {
+			position: absolute;
+			bottom: 16px;
+			left: 50%;
+			@include transform(translateX(-50%));
+			@include bs;
+		}
+	}
+
+	.item-list {
+		margin-bottom: 32px;
+		p { margin: 0; }
+
+		.list-item {
+			padding: 16px 0;
+
+			img {
+				float: left;
+				width: 30%;
+				margin-bottom: 24px;
+			}
+
+			.item-details-wrap {
+				margin: 8px 0;
+			}
+
+			.image-wrapper {
+				float: left;
+				width: 30%;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			.item-details {
+				float: right;
+				width: 66%;
+			}
+		}
+
+		.list-item.two {
+			.image-wrapper {
+				position: relative;
+				float: left;
+				width: 30%;
+			}
+
+			input[type="checkbox"] {
+				position: absolute;
+				margin: 0;
+				top: 50%;
+				left: 0;
+				-webkit-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+					 -o-transform: translateY(-50%);
+						transform: translateY(-50%);
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				margin: 0 0 0 20px;
+			}
+
+			.item-details {
+				float: right;
+				width: 60%;
+			}
+		}
+
+		.list-footer {
+			text-align: center;
+		}
+
+		.list-footer.two {
+			text-align: left;
+			border-bottom: 0;
+		}
+
+		.list-notice {
+			padding: 16px 0;
+		}
+
+		.item-footer-shipping {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 16px;
+		}
+
+		.item-footer-total {
+			padding-top: 16px;
+		}
+	}
+
+	.steps {
+		margin-bottom: 32px;
+
+		%inlineb { 
+			display: inline-block;
+			width: 144px;
+		}
+
+		.card {
+			padding: 16px;
+			height: auto;
+		}
+
+		.card-label {
+			display: inline-block;
+			width: 160px;
+			height: 40px;
+		}
+
+		.row > div {
+			text-align: center;
+		}
+
+		.step-icon {
+			margin: 16px 0;
+			height: 166px;
+		}
+		
+		.step-print {
+			@extend %inlineb;
+			background: url('../images/steps-icon.png') no-repeat 22px 0;
+		}
+
+		.step-package {
+			@extend %inlineb;
+			background: url('../images/steps-icon.png') no-repeat 4px -647px;
+		}
+
+		.step-attach {
+			@extend %inlineb;
+			background: url('../images/steps-icon.png') no-repeat 0 -428px;
+		}
+
+		.step-ship {
+			@extend %inlineb;
+			background: url('../images/steps-icon.png') no-repeat 0 -219px;
+		}
+
+		.step-number {
+			background-color: #9026a0;
+			color: #fff;
+			display: inline-block;
+			font-family: $brandon-bold;
+			font-size: 24px;
+			margin-bottom: 16px;
+			width: 32px;
+			height: 32px;
+			@include br(32px);
+		}
+
+		.step-btns {
+			border-top: 1px solid #ccc;
+			padding-top: 16px;
+
+			.btn {
+				margin-bottom: 8px;
+				text-transform: uppercase;
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+
+	.checkout {
+		margin-bottom: $bottom32;
+	}
+
+	.block {
+		label {
+			font-weight: 700;
+		}
+
+		span {
+			display: block;
+		}
+
+		.site {
+			font-family: $brandon-bold;
+			margin-top: 20px;
+		}
+
+		.address {
+			padding-left: 20px;
+		}
+	}
+
+	.proceed-payment {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: $bottom16;
+		margin-bottom: $bottom16;
+		text-align: center;
+
+		.btn {
+			padding-left: 56px;
+			padding-right: 56px;
+		}
+	}
+
+	.checkout {
+		.main-content {
+			.block-forms .pull-left select {
+				background: #fff;
+				-webkit-appearance: normal;
+				   -moz-appearance: normal;
+						appearance: normal;
+			}
+		}
+	}
+
+	.form-reasons-wrapper {
+		margin-top: $bottom8;
+	}
+
+	.form-item-reasons {
+		display: none;
+
+		.card {
+			height: auto;
+			padding: 16px;
+			margin: 0;
+		}
+		
+		.input-group {
+			width: 100%;
+			margin-bottom: $bottom4;
+			overflow: hidden;
+
+			.chkbox-wrapper {
+				float: left;
+				margin-top: 3px;
+				width: 20px;
+			}
+
+			label {
+				margin: 0;
+				height: 20px;
+				line-height: 20px;
+				float: left;
+				display: inline-block;
+				width: 90%;
+			}
+		}
+
+		.additional-comments {
+			margin-top: $bottom16;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.return-process {
+		.card {
+			height: 332px;
+		}
+
+		.steps {
+			.card {
+				height: 444px;
+			}
+
+			.step-btns {
+				text-align: right;
+
+				.btn {
+					width: auto;
+				}
+			}
+		}
+
+		.item-list {
+			margin-top: 32px;
+			.list-item {
+				padding: 16px 0;
+
+				img { margin-bottom: 0; }
+
+				.reason { text-align: right; }
+
+				.item-details-wrap {
+					margin: 0;
+				}
+			}
+
+			.item-details {
+				margin-bottom: 0;
+			}
+
+			.list-footer {
+				text-align: right;
+			}
+		}
+
+		.page-header.two {
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		.item-list.two {
+			margin-top: 0;
+
+			.item-footer-price {
+				font-size: 20px;
+			}
+
+			.item-footer-price.total {
+				font-size: 24px;
+			}
+
+			.list-footer.two {
+				text-align: right;
+			}
+		}
+
+		.proceed-payment {
+			text-align: right;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.return-process {
+		.card {
+			height: 300px;
+
+			.address {
+				width: 190px;
+			}
+		}
+
+		.steps {
+			margin-bottom: 96px;
+
+			.step-btns {
+				.btn {
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {}

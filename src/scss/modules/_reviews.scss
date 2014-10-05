@@ -1,0 +1,46 @@
+.reviews {
+	margin-bottom: 32px;
+
+	.page-header {
+		margin: 24px 0 16px 0;
+		font-size: 18px;
+	}
+
+	& .item-wrap {
+		border-bottom: 1px solid #cccccc;
+		padding: 16px 0;
+	}
+
+	& .name {
+		text-transform: uppercase;
+		font-family: $brandon-bold;
+	}
+
+	& .date {
+		font-size: 12px;
+	}
+
+	& .comment p {
+		margin-bottom: 8px;
+	}
+
+	& .name-rating-wrap {
+		margin-bottom: 16px;
+	}
+
+	.pagination-wrap {
+		border-bottom: 1px solid #cccccc;
+	}
+}
+
+@media (min-width: 768px) {
+	.reviews {
+		.page-header {
+			margin: 40px 0 20px;
+			font-size: 24px;
+		}
+	}
+}
+
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}

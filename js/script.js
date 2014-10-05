@@ -565,3 +565,10 @@ function placeCheckoutButtonHelper(buttonContainer, button) {
 		}
 	});
 }
+
+/** RETURN ORDER **/
+if ($('.return-process')) {
+	$('.list-item').on('click', '.chk-list-item', function() {
+		$(this).closest('.list-item').find('.form-item-reasons').slideToggle();
+	});
+}
