@@ -1,0 +1,99 @@
+.product-large-view .the-product .product-information .info-bd .option-block ul.gemstone-types li{
+	padding:0px;
+}
+.product-large-view .the-product .product-information .info-bd .option-block ul.gemstone-types li .icon{
+	margin-right:5px;
+}
+.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li{
+	width:34%;
+	padding-right: 5px;
+	padding-left:0px;
+	margin-right:10px;
+}
+.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li span{
+	float: right;
+	margin-top: 5px;
+}
+#ring-size{
+	float:left;
+	margin-top: -7px;
+}
+.ring-size-cont{
+	margin-bottom:30px;
+	margin-top: 20px;
+}
+.other-size{
+	margin-top:10px;
+	margin-left:10px;
+}
+#ring-size .dd-selected-text{
+	margin: 5px 5px 5px 10px;
+}
+#ring-size .dd-selected{
+	padding:0px;
+	background: white;
+	color: #373737;
+}
+.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li a.white-gold, 
+.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li a.yellow-gold{
+	width: 145px;
+	line-height:12px;
+	background:none;
+	color: #373737;
+}
+.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li a.white-gold img, 
+.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li a.yellow-gold img{
+	margin-right:5px;
+}
+.m-atc-btn{
+	display:none;
+}
+
+.product-details-tabs {
+	.nav-tabs {
+		height: 48px;
+	}
+}
+
+@media (max-width:320px){
+	.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li{
+		width:53%;
+		margin-bottom:10px;
+	}
+	.atc-btn{
+		display:none
+	}
+	.m-atc-btn{
+		display:block;
+		position:fixed;
+		margin-bottom:7px !important;
+		bottom:0px;
+		padding: 8px 16px;
+		z-index:99999;
+		width:auto !important;
+		right:10px;
+		font-size:12px;
+	}
+	.m-atc-btn-cont{
+		height:50px;
+		width:100%;
+		position:fixed;
+		bottom:0px;
+		background:#fff;
+		z-index:999999;
+		left:0px;
+		border-top: 1px solid #efefef;
+	}
+}
+
+@media (min-width: 768px) {
+	.product-details-tabs {
+		.nav-tabs {
+			height: 42px;
+		}
+	}
+
+	.media {
+		width: 100%;
+	}
+}

@@ -12,6 +12,7 @@
     <!-- main style -->
     <link href="css/styles.css" rel="stylesheet">
     <script type="text/javascript" src="js/modernizr.js"></script>
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -433,7 +434,7 @@
       </div>
     </section>
 
-    <div class="container">
+    <div class="container" id="product-details">
       <div class="module mod-breadcrumbs">
         <div class="mod-bd">
           <ul class="breadcrumbs">
@@ -502,53 +503,91 @@
                       <div class="group">
                         <h3 class="block-subhead">GEMSTONE TYPE: <span class="selected-gem-type">Blue Topaz</span></h3>
                         <ul class="gemstone-types clearfix">
-                          <li class="type active">
-                            <a href="#" data-type="Blue Topaz"><span class="icon icon-gem icon-blue-topaz"></span></a>
+                          <li class="col-md-4 col-xs-6 type active">
+                            <a href="#" data-type="Blue Topaz">
+								<span class="icon icon-gem icon-blue-topaz"></span>
+								<span>Blue Topaz</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Green Amethyst"><span class="icon icon-gem icon-green-amethyst"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Green Amethyst">
+								<span class="icon icon-gem icon-green-amethyst"></span>
+								<span>Green Amethyst</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Green Amethyst"><span class="icon icon-gem icon-peridot"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Green Amethyst">
+								<span class="icon icon-gem icon-peridot"></span>
+								<span>Green Amethyst</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Pink Topaz"><span class="icon icon-gem icon-pink-topaz"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Pink Topaz">
+								<span class="icon icon-gem icon-pink-topaz"></span>
+								<span>Pink Topaz</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Garnet"><span class="icon icon-gem icon-garnet"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Garnet">
+								<span class="icon icon-gem icon-garnet"></span>
+								<span>Garnet</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Aquamarine"><span class="icon icon-gem icon-aquamarine"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Aquamarine">
+								<span class="icon icon-gem icon-aquamarine"></span>
+								<span>Aquamarine</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Amethyst"><span class="icon icon-gem icon-amethyst"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Amethyst">
+								<span class="icon icon-gem icon-amethyst"></span>
+								<span>Amethyst</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Citrine"><span class="icon icon-gem icon-citrine"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Citrine">
+								<span class="icon icon-gem icon-citrine"></span>
+								<span>Citrine</span>
+							</a>
                           </li>
-                          <li class="type">
-                            <a href="#" data-type="Smokey Quartz"><span class="icon icon-gem icon-smokey-quartz"></span></a>
+                          <li class="col-md-4 col-xs-6 type">
+                            <a href="#" data-type="Smokey Quartz">
+								<span class="icon icon-gem icon-smokey-quartz"></span>
+								<span>Smokey Quartz</span>
+							</a>
                           </li>
                         </ul>
                       </div>
                       <div class="group">
                         <h3 class="block-subhead">METAL TYPE: <span class="selected-metal-type">10k White Gold</span></h3>
                         <ul class="metal-types clearfix">
-                          <li class="active"><a href="#" class="white-gold" data-metal-name="10k White Gold"></a></li>
-                          <li><a href="#" class="yellow-gold" data-metal-name="10k Yellow Gold"></a></li>
+                          <li class="active">
+							<a href="#" class="white-gold" data-metal-name="10k White Gold"><img src="images/10kWhiteGold.jpg"/>10k White Gold</a>
+						  </li>
+                          <li>
+							<a href="#" class="yellow-gold" data-metal-name="10k Yellow Gold"><img src="images/10kYellowGold.jpg"/>10k Yellow Gold</a>
+						  </li>
                         </ul>
                       </div>
                       <div class="group ring-size">
                         <h3 class="block-subhead">RING SIZE</h3>
-                        <p>
+                        <p class="ring-size-cont">
                           <select name="ring-size" id="ring-size">
-                            <option value="">10cm</option>
                           </select> <a href="#" class="other-size">DONT SEE YOUR SIZE?</a>
                         </p>
                       </div>
-
-                      <a href="#" class="btn btn-primary-gradient btn-lg">ADD TO CART</a>
-                      <a href="#" class="btn btn-gray btn-lg">ADD TO WISHLIST</a>
+					            <div class="m-atc-btn-cont">
+                        <a href="#" class="btn btn-primary-gradient btn-lg m-atc-btn">ADD TO CART</a>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <a href="#" class="btn btn-primary-gradient btn-lg atc-btn">ADD TO CART</a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="#" class="btn btn-gray btn-lg">ADD TO WISHLIST</a>
+                        </div>
+                      </div>
 
                       <div class="socials-mobile">
                         <h4>
@@ -595,7 +634,7 @@
                 </ul>
                
                 <!-- Tab panes -->
-                <div class="tab-content">
+                <div class="tab-content clearfix">
                   <div class="tab-pane active" id="specs">
                     <div class="media">
                       <div class="left-content pull-left">
@@ -1340,6 +1379,7 @@
     <script type="text/javascript" src="js/jquery.mmenu.js"></script>
     <script type="text/javascript" src="js/product-gallery.js"></script>
     <script type="text/javascript" src="js/enquire.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ddslick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

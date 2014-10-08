@@ -363,6 +363,7 @@ form.diamond_filter{
 .product-details-tabs{
 	.nav-tabs{
 		border:none;
+		height: 42px;
 	}
 	.nav-tabs > li{
 		margin-bottom: 0px;
@@ -1350,8 +1351,16 @@ ul.payment-icons{
 					font-size: 14px;
 					font-family: $brandon-bold;
 					@include border-radius(3px);
-					margin: 0 auto 10px;
+					opacity: 0.7;
 					width: 120px;
+
+					-webkit-transition: all 0.3s linear;
+					-o-transition: all 0.3s linear;
+					transition: all 0.3s linear;
+
+					&:hover {
+						opacity: 1;
+					}
 				}
 			}
 		}
@@ -1391,7 +1400,7 @@ ul.payment-icons{
 	}
 	.product:hover{
 		.overlay{		
-			height: 100px;
+			height: 70px;
 		}
 	}
 }
@@ -1546,7 +1555,7 @@ ul.payment-icons{
 					}
 					.btn-lg{
 						font-family:$brandon-bold;
-						width: 48%;
+						width: 100%;
 					}
 				}
 				.socials{
@@ -2771,7 +2780,7 @@ div#thumbs{
 		.tab-wrap{
 			height: 100%;
 		}
-		z-index: 9998;
+		z-index: 9990;
 		width: 100%;
 		height: 100%;
 		/*display: block;*/

@@ -345,6 +345,59 @@ $(function(){
 
 });
 
+/* Product details ring size */
+$(window).load(function(){
+	var ddData = [
+		{
+			text: "10cm",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "11cm",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "12cm",
+			value: 3,
+			selected: false,
+		}
+	]; 
+
+	$('#ring-size').ddslick({
+		data: ddData,
+		width: 100,
+		imagePosition: "left",
+		selectText: "Select your favorite social network",
+		onSelected: function (data) {
+			console.log(data);
+		}
+	});
+
+	var ippData = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "3",
+			value: 3,
+			selected: false,
+		}
+	];
+
+	// Product listing mobile sorting
+	$('#items-per-page').ddslick({ width: 270 });
+	$('#sortby').ddslick({ width: 270 });
+});
+
 $(window).load(function(){
 	
 	$('.jcarousel').jcarousel();
@@ -466,7 +519,7 @@ if ($('.order-details').length) {
 }
 
 // Cart modal
-if ($('#accordion-cart')) {
+if ($('#accordion-cart').length) {
 
 	enquire.register("screen and (min-width:768px)", {
 
@@ -526,13 +579,13 @@ var checkoutPage = $('.checkout-cart-info').length,
 	// create fixed-container
 	buttonContainer = '<p class="fixed-container" id="fixed-container"></p>';
 
-// append fixed-container to body element
-$('body').prepend($(buttonContainer));
-// store fixed-container element
-var fixedContainer = $('#fixed-container');
-
 // check if were in the checkout page
 if (checkoutPage) {
+	// append fixed-container to body element
+	$('body').prepend($(buttonContainer));
+	// store fixed-container element
+	var fixedContainer = $('#fixed-container');
+
 	var btnContainer = $('.place-order-container'),
 	btn = $('#btn-place-order');
 
@@ -541,6 +594,11 @@ if (checkoutPage) {
 
 // check if cart page
 if (myCart) {
+	// append fixed-container to body element
+	$('body').prepend($(buttonContainer));
+	// store fixed-container element
+	var fixedContainer = $('#fixed-container');
+
 	var btnContainer = $('.checkout-button-container'),
 		btn = $('#btn-checkout');
 
