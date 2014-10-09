@@ -1,0 +1,25 @@
+.cart-item-cont{
+	width:15% !important;
+}
+.btn-turquoise, .btn-turquoise:hover{
+	background-color: #79e5c5 !important;
+}
+#btn-checkout{
+	background-color: #79e5c5 !important;
+	background-image:none !important;
+}
+@media (max-width:360px) {
+	.my-account-tab td:before, .cart-summary td:before{
+		top:16px !important;
+	}
+	.cart-summary #coupon-code button{
+		width:100%;
+		padding:5px;
+	}
+	.cart-item-cont{
+		width:50% !important;
+	}
+	.cart-summary td:nth-of-type(2) p:first-child{
+		margin-top: 25px;
+	}
+}

@@ -1166,9 +1166,7 @@ ul.payment-icons{
 
 /** PRODUCT LISTING **/
 .product-filter-sidebar{
-	float:left;
-	width:220px;
-	margin-right:20px;
+	
 	.block{
 		background:#efefef;
 		padding:10px 20px;
@@ -1205,7 +1203,7 @@ ul.payment-icons{
 
 .product-listing-page{
 	.main-content{
-		overflow: hidden;
+		
 		.products-head{
 			border-bottom:1px solid #ccc;
 			text-align:center;
@@ -1310,9 +1308,8 @@ ul.payment-icons{
 	.product{
 		list-style-type: none;
 		position: relative;
-		float:left;
-		width: 28.571429%;
-		margin:0 2.313% 30px;
+		margin-bottom: 32px;
+		
 		.product-image{
 			text-align: center;
 			height: 200px;
@@ -3250,12 +3247,6 @@ div#thumbs{
 		width: 100%;
 	}
 
-	ul.products{
-		.product{
-			width: 42.8125%;
-			margin:0 3.125%;
-		}
-	}
 	.product-listing-page{
 		.main-content{
 			.top-filters{
