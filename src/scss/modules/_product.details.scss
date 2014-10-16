@@ -5,7 +5,6 @@
 	margin-right:5px;
 }
 .product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li{
-	width:34%;
 	padding-right: 5px;
 	padding-left:0px;
 	margin-right:10px;
@@ -25,6 +24,10 @@
 .other-size{
 	margin-top:10px;
 	margin-left:10px;
+	cursor: pointer;
+}
+.other-size:hover {
+	color: #934295;
 }
 #ring-size .dd-selected-text{
 	margin: 5px 5px 5px 10px;

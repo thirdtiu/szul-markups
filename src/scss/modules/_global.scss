@@ -1,4 +1,16 @@
 /** GLOBAL **/
+
+/* ddslick */
+a.dd-selected {
+	padding: 0;
+	background: white;
+	color: #373737 !important;
+}
+
+label.dd-selected-text {
+	margin: 5px 5px 5px 10px;
+}
+
 /**typography**/
 .strike{
 	text-decoration:line-through;

@@ -449,10 +449,10 @@
         <div class="main-content">
           
           <div class="product-large-view">
-            <div class="the-product">
+            <div class="the-product row">
               
 
-              <div class="gallerific-wrap">
+              <div class="gallerific-wrap col-sm-6 col-md-6">
                 
                 <div class="stage">
                   <span class="ribbon active">
@@ -481,7 +481,7 @@
 
               </div><!-- .gallerific-wrap -->
 
-              <div class="product-information">
+              <div class="product-information col-sm-6 col-md-6">
                 <h1 class="info-head">1/2 Carat TW Blue Diamond Three Stone Pendant Necklace 14K White </h1>
                 <div class="info-bd">
                   <div class="info">
@@ -574,7 +574,16 @@
                         <h3 class="block-subhead">RING SIZE</h3>
                         <p class="ring-size-cont">
                           <select name="ring-size" id="ring-size">
-                          </select> <a href="#" class="other-size">DONT SEE YOUR SIZE?</a>
+                          </select> 
+
+                          <span class="other-size"
+                            id="example">
+                            DONT SEE YOUR SIZE?
+                          </span>
+
+
+                          
+
                         </p>
                       </div>
 					            <div class="m-atc-btn-cont">
@@ -582,12 +591,168 @@
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
-                          <a href="#" class="btn btn-primary-gradient btn-lg atc-btn">ADD TO CART</a>
+                          <a href="#" class="btn btn-lg btn-turquoise" data-toggle="modal" data-target="#cart-modal">ADD TO CART</a>
                         </div>
                         <div class="col-sm-6">
                           <a href="#" class="btn btn-gray btn-lg">ADD TO WISHLIST</a>
                         </div>
                       </div>
+
+                      <div class="modal fade cart-modal" id="cart-modal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <h4 class="modal-title">MY SHOPPING CART</h4>
+                              <div class="row cart-modal-header hidden-xs visible-sm">
+                                <div class="col-sm-5">Item description</div>
+                                <div class="col-sm-1">Size</div>
+                                <div class="col-sm-2">Quantity</div>
+                                <div class="col-sm-2">Price</div>
+                                <div class="col-sm-2">Total price</div>
+                              </div>
+                            </div>
+                            <div class="modal-body">
+                              <div class="panel-group clearfix" id="accordion-cart">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion-cart" href="#collapseOne">
+                                        <img src="images/sample/img_460x460.png" alt="">
+                                        <span class="prod-name">Diamond swirl promise ring in 10k while gold longer content</span>
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                      <div class="row cart-item">
+                                        <div class="col-xs-12 col-sm-5 item-detail">
+                                          <div class="prod-image"></div>
+                                          <div class="number-button-wrap">
+                                            <div class="item-number-label">
+                                              <span class="cart-item-label">Item Number</span>
+                                              <span>12301F102F</span>
+                                            </div>
+                                            <a href="#" class="btn-remove">
+                                              <span class="glyphicon glyphicon-remove"></span>
+                                              <span class="btn-label">Remove item</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-1">
+                                          <span class="cart-item-label">Size</span>
+                                          <span class="size">7.0</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-2">
+                                          <span class="cart-item-label pull-left">Quantity</span>
+                                          <form class="pull-left">
+                                            <div class="form-group">
+                                              <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                              </select>
+                                            </div>
+                                          </form>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-2">
+                                          <span class="cart-item-label">Price</span>
+                                          <span class="price">$2,899.00</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-2">
+                                          <span class="cart-item-label">Total price</span>
+                                          <span class="price">$2,899.00</span>
+                                        </div>
+                                      </div><!-- cart-item -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion-cart" href="#collapseTwo">
+                                        <img src="images/sample/img_460x460.png" alt="">
+                                        <span class="prod-name">Diamond swirl promise ring in 10k while gold longer content</span>
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="row cart-item">
+                                        <div class="col-xs-12 col-sm-5 item-detail">
+                                          <div class="prod-image"></div>
+                                          <div class="number-button-wrap">
+                                            <div class="item-number-label">
+                                              <span class="cart-item-label">Item Number</span>
+                                              <span>12301F102F</span>
+                                            </div>
+                                            <a href="#" class="btn-remove">
+                                              <span class="glyphicon glyphicon-remove"></span>
+                                              <span class="btn-label">Remove item</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-1">
+                                          <span class="cart-item-label">Size</span>
+                                          <span class="size">7.0</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-2">
+                                          <span class="cart-item-label pull-left">Quantity</span>
+                                          <form class="pull-left">
+                                            <div class="form-group">
+                                              <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                              </select>
+                                            </div>
+                                          </form>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-2">
+                                          <span class="cart-item-label">Price</span>
+                                          <span class="price">$2,899.00</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-2">
+                                          <span class="cart-item-label">Total price</span>
+                                          <span class="price">$2,899.00</span>
+                                        </div>
+                                      </div><!-- cart-item -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div><!-- end of panel-group -->
+                              <div class="row cart-modal-footer">
+                                  <div class="col-xs-12">
+                                    <div class="row">
+                                      <span class="cart-item-label col-xs-6">Sub total</span>
+                                      <span class="col-xs-6 sub-total">$5,999.00</span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12">
+                                    <div class="row">
+                                      <span class="cart-item-label col-xs-6">Coupon discount</span>
+                                      <span class="col-xs-6 discount">$0.00</span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12">
+                                    <div class="row">
+                                      <span class="cart-item-label col-xs-6">Total</span>
+                                      <span class="total col-xs-6">$5,789.00</span>
+                                    </div>
+                                  </div>
+                                </div><!-- cart-modal-footer -->
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CONTINUE SHOPPING</button>
+                              <button type="button" class="btn btn-primary-gradient btn-lg">CHECKOUT</button>
+                            </div>
+                          </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
 
                       <div class="socials-mobile">
                         <h4>

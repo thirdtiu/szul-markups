@@ -322,6 +322,13 @@ $(function(){
 	});
 	
 	/*product details*/
+	$('#example').popover({
+		placement : 'top',
+		'html' : true,
+		trigger: 'click',
+		content: '<p>Most rings can be easily resized by any local jeweler or by calling our customer service department and requesting a custom ring size. Please email us at <a href="mailto:customerservice@szul.com">customerservice@szul.com</a> or telephone us at 800-332-4382 and a representative will gladly coordinate a customized ring size.</p>',
+		template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+	})
 
 	// GEMSTONE ITEM EVENT
 	$('.gemstone-types').on('click', '.type > a', function(e) {
@@ -396,6 +403,15 @@ $(window).load(function(){
 	// Product listing mobile sorting
 	$('#items-per-page').ddslick({ width: 270 });
 	$('#sortby').ddslick({ width: 270 });
+	$('.product-information #metal-type').ddslick({ 
+		width: 200
+	});
+});
+
+$(window).load(function(){
+	$('ul.products .product').syncHeight({
+	    updateOnResize:true
+	});
 });
 
 $(window).load(function(){

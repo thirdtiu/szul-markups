@@ -16,7 +16,7 @@ img{
 }
 a{
 	color:#934295;
-	outline:none;
+	outline:none !important;
 }
 a:hover,
 a:active{
@@ -1371,8 +1371,10 @@ ul.payment-icons{
 			padding:10px 0;
 			font-size: 12px;
 			.product-name{
-				color: #373737;
-				font-size: 14px;
+				a {
+					color: #757575;
+				}
+				font-size: 13px;
 				font-family: $brandon-bold;
 				text-transform: uppercase;
 			}
@@ -1414,13 +1416,10 @@ ul.payment-icons{
 
 .product-large-view{
 	.the-product{
-		overflow: hidden;
+		
 		zoom:1;
 		margin-bottom: 20px;
 		.gallerific-wrap{
-			float:left;
-			width: 460px;
-			margin-right:40px;
 			.stage{
 				position:relative;
 				.ribbon{
@@ -1450,7 +1449,6 @@ ul.payment-icons{
 			
 		}
 		.product-information{
-			overflow: hidden;
 			zoom:1;
 			.info-head{
 				font-size: 22px;
@@ -1520,7 +1518,6 @@ ul.payment-icons{
 						margin-bottom: 16px;
 						li {
 							float: left;
-							width: 32px;
 							height: 31px;
 							margin-right: 6px;
 							border: 2px solid #ccc;
@@ -1690,7 +1687,6 @@ ul.payment-icons{
 .modal-dialog .product-large-view{
 	.the-product{
 		.gallerific-wrap{
-			width: 214px;
 			.stage{
 				height: 200px;
 				line-height: 200px;
@@ -3028,10 +3024,6 @@ div#thumbs{
 	.product-large-view{
 		.the-product{
 			.gallerific-wrap{
-				float:none;
-				width: 100%;
-				margin-right:0;
-				margin-bottom: 20px;
 			}
 			.product-information{
 				.info-head{
@@ -4155,7 +4147,7 @@ div#thumbs{
 	
 	#specs {
 		.left-content {
-			width: 28%;
+			width: 46%;
 			margin-right: 20px;
 			float: left !important;
 		}
