@@ -330,6 +330,42 @@ $(function(){
 		template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
 	})
 
+	$(document).ready(function(){
+		if ($(window).width() < 400) {
+		  $('#dont-see-size').tooltip({
+			'html': 'true',
+			'trigger': 'click',
+			'placement': 'bottom',
+			'title': '<span class="ttip-title">Product Size</span><span class="tooltip-cont">Most rings can be easily resized by any local jeweler or by calling our customer service department and requesting a custom ring size. <br/><br/>Please email us at <span style="color:#9026a0">customerservice@szul.com</span> or telephone us at 800-332-4382 and a representative will gladly coordinate a customized ring size.</span>'
+		  });
+		  $('#customize-tooltip').tooltip({
+			'html': 'true',
+			'trigger': 'click',
+			'placement': 'bottom',
+			'title': '<span class="ttip-title">Product Customization</span><span class="tooltip-cont">Because most of the items listed on the Szul.com website are items we manufacture, we can usually honor customization request. If you are looking for the same item but would like it in a different metal type, stone type or carat weight, we would be more than happy to research your request and let you know availability and pricing. Please email us with the Product ID of the item you would like to customize along with details of your request. <br/><br/>Please email us at <span style="color:#9026a0">customerservice@szul.com</span> or call us toll free at 1.800.332.4382 to speak with a product specialist.</span>'
+		  });
+		  } else{
+			$('#dont-see-size').tooltip({
+			'html': 'true',
+			'trigger': 'click',
+			'placement': 'right',
+			'title': '<span class="ttip-title">Product Size</span><span class="tooltip-cont">Most rings can be easily resized by any local jeweler or by calling our customer service department and requesting a custom ring size. <br/><br/>Please email us at <span style="color:#9026a0">customerservice@szul.com</span> or telephone us at 800-332-4382 and a representative will gladly coordinate a customized ring size.</span>'
+		  });
+		  $('#customize-tooltip').tooltip({
+			'html': 'true',
+			'trigger': 'click',
+			'placement': 'right',
+			'title': '<span class="ttip-title">Product Customization</span><span class="tooltip-cont">Because most of the items listed on the Szul.com website are items we manufacture, we can usually honor customization request. If you are looking for the same item but would like it in a different metal type, stone type or carat weight, we would be more than happy to research your request and let you know availability and pricing. Please email us with the Product ID of the item you would like to customize along with details of your request. <br/><br/>Please email us at <span style="color:#9026a0">customerservice@szul.com</span> or call us toll free at 1.800.332.4382 to speak with a product specialist.</span>'
+		  });
+		  $('#ataf-tooltip').tooltip({
+			'html': 'true',
+			'trigger': 'click',
+			'placement': 'right',
+			'title': '<span class="ttip-title">Email a Friend</span><span class="ataf-tooltip-container"><label class="col-md-4">Name</label><input class="col-md-8"/><br/><label class="col-md-4">Email</label><input class="col-md-8"/><br/><label class="col-md-4">Friends Email</label><textarea class="col-md-8"></textarea><br/><label class="col-md-4">Subject</label><input class="col-md-8"/><br/><button class="pull-right">Submit</button><div class="clearfix"></div></span>'
+		  });
+		  }
+	});
+
 	// GEMSTONE ITEM EVENT
 	$('.gemstone-types').on('click', '.type > a', function(e) {
 		e.preventDefault();

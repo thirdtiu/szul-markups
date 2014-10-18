@@ -58,6 +58,100 @@
 	}
 }
 
+#ataf-tooltip + .tooltip > .tooltip-inner, #customize-tooltip + .tooltip > .tooltip-inner, #dont-see-size + .tooltip > .tooltip-inner {
+	font-family: "museo_sans300", sans-serif; 
+	background-color: white; 
+	width:320px !important; 
+	max-width:320px; 
+	padding:0px; 
+	box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2); 
+	color:black; 
+	text-align:left;
+}
+#ataf-tooltip + .tooltip > .tooltip-arrow, #customize-tooltip + .tooltip > .tooltip-arrow, #dont-see-size + .tooltip > .tooltip-arrow { border-right-color:#9026a0; }
+.tooltip-cont, .ataf-tooltip-container{
+	font-size:14px; 
+	padding:10px; 
+	display:block;
+}
+.ttip-title{
+	font-size:16px;
+	padding:5px 10px; 
+	color:white; 
+	display:block; 
+	background-color:#9026a0;
+}
+.ataf-tooltip-container label{
+	text-align:left;
+	padding-left:0px;
+	line-height: 33px;
+}
+.tooltip.in{
+	opacity:1;
+}
+.ataf-tooltip-container input, .ataf-tooltip-container textarea{
+	margin-bottom:10px;
+	border: 1px solid #cccccc;
+	padding:5px;
+	resize:none;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.ataf-tooltip-container button{
+	background-color: #3ee1b7 !important;
+	border: 0px;
+	color: white;
+	padding: 5px 30px;
+	border-radius: 3px;
+}
+
+.diamond-information {
+	span {
+		color: #934295;
+		cursor: pointer;
+	}
+}
+
+#weight-modal {
+	.modal-header {
+		background: #9026a0;
+		color: #fff;
+	}
+
+	.modal-content {
+		border: 0;
+		-webkit-border-radius: 0;
+		   -moz-border-radius: 0;
+			-ms-border-radius: 0;
+			 -o-border-radius: 0;
+				border-radius: 0;
+	}
+
+	button.close {
+		color: #fff;
+	}
+
+	.table-responsive {
+		td {
+			width: 1px;
+		}
+	}
+}
+
+#cut-modal {
+	@extend #weight-modal;
+}
+
+#color-modal {
+	@extend #weight-modal;
+}
+
+#clarity-modal {
+	@extend #weight-modal;
+}
+
 @media (max-width:320px){
 	.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li{
 		width:53%;
@@ -86,6 +180,19 @@
 		z-index:999999;
 		left:0px;
 		border-top: 1px solid #efefef;
+	}
+}
+
+@media (max-width:400px){
+	#dont-see-size + .tooltip > .tooltip-inner {
+		font-family: "museo_sans300", sans-serif; 
+		background-color: white; 
+		width:200px !important; 
+		max-width:200px;
+	}
+	#dont-see-size + .tooltip > .tooltip-arrow { 
+		border-bottom-color:#9026a0;  
+		border-right-color:transparent;
 	}
 }
 

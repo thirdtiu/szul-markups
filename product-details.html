@@ -21,10 +21,10 @@
     <![endif]-->
 
     <!-- We only want the thunbnails to display when javascript is disabled -->
-    <script type="text/javascript">
+
+	<script type="text/javascript">
       document.write('<style>.noscript { display: none; }</style>');
     </script>
-
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
@@ -577,7 +577,7 @@
                           </select> 
 
                           <span class="other-size"
-                            id="example">
+                            id="dont-see-size" data-toggle="tooltip">
                             DONT SEE YOUR SIZE?
                           </span>
 
@@ -767,10 +767,10 @@
                       <div class="socials hidden-xs hidden-sm">
                         <ul>
                           <li>
-                            <a href="#">EMAIL TO A FRIEND <span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <a id="ataf-tooltip" data-toggle="tooltip">EMAIL TO A FRIEND <span class="glyphicon glyphicon-chevron-right"></span></a>
                           </li>
                           <li>
-                            <a href="#">CUSTOMIZE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <a id="customize-tooltip" data-toggle="tooltip">CUSTOMIZE <span class="glyphicon glyphicon-chevron-right"></span></a>
                           </li>
                         </ul>
                       </div>
@@ -853,13 +853,237 @@
                             <p><span class="field">Field</span>:14K White Gold</p>
                           </div>
                         </div>
-                        <div class="block">
+                        
+                        <!-- MODAL -->
+                        <div class="modal fade" id="weight-modal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">Diamond Carat Weight</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Diamonds are measured in terms of weight, not size. The heavier the diamond, the greater the carat weight. The name "carat" is derived from the carob seed. These seeds are remarkably consistent in weight and size and so were the favored scale balances in ancient markets. Carat weight should not be confused with "karat," the term used to describe gold's fineness or purity.</p>
+                                <p>A gem carat equals 200 milligrams, and there are 142 carats to every ounce. A carat is composed of one hundred points. Jewelers evaluate a diamond's carat weight by using an exceptionally sensitive metric scale that measures weight in points. So, a 1/4 carat diamond is also called a 25 point diamond. Because large diamonds are extremely rare -- and diamonds over one carat in size are becoming increasingly so -- every tiny increase in weight can result in a big increase in market value. Generally speaking, the larger the diamond, the higher the price. Even a large diamond that has so-so color and clarity will cost more than a smaller but finer diamond, simply because the larger ones are scarce.</p>
+                              </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+
+                        <div class="modal fade" id="cut-modal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">Jewelry Guide - Diamond Cut (Shape)</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>In the jewelry industry, the word "cut" usually brings to mind the shape or the outline of a diamond's front. The seven most popular and fashionable shapes are the round brilliant, marquise, pear, emerald, oval, princess, and heart.</p>
+                                <div class="table-responsive">
+                                  <table class="table table-bordered">
+                                    <tbody>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Round Brilliant</strong> -- The modern classic for cut diamonds. 58 facets offer great brilliance and stability. This shape is most common and most popular for solitaire pieces.</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Marquise</strong> -- Currently a very popular shape for engagement rings. The brilliant style marquise, with its distinctive pointed oval form, carries the name of a French noblewoman. The pointed ends make this shape the most fragile and the most expensive of brilliant style cuts.</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Pear</strong> -- Less expensive than the marquise, but just as distinguished looking. Cut to maximize brilliance like the round brilliant, the pear shape has one pointed end -- and so, it has the same issue of fragility as the marquise.</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Oval</strong> -- If you are looking for a unique alternative to the round brilliant, the oval may be just what you want. It has excellent light dispersal like the round, but its shape may make it look larger than a round diamond of the same weight and quality.</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Emerald</strong> -- So named because it is the shape most associated with emerald gemstones, this is the most expensive shape for cut diamonds. Fewer facets distract the eye from any inclusions, so the emerald cut diamond generally has higher clarity. But, with fewer facets comes less brilliance than the other shapes. And, the emerald cut can look dull quickly, especially if you tend to wash your hands and put lotion on while wearing your jewelry.</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Princess</strong> -- Remarkably lovely and eye catching, this diamond shape is very popular right now, especially in "invisible" settings. Better yet, its sparkle won't dull as quickly as the emerald cut.</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-center"><img src="images/type-cushion.png" alt=""></td>
+                                        <td><strong>Heart</strong> -- A very special and romantic shape. The heart shape diamond is difficult to make perfectly proportioned, but its not hard to love. This shape is full of fire and brilliance like the round and the marquise.</td>
+                                      </tr>
+                                      <tr>
+                                        <td></td>
+                                        <td><strong>Baguette</strong> -- These small, rectangular diamonds are cut to maximize brilliance like the shapes described above. But, their major duty is to fill in channels, or stable grooved tracks, around a gemstone centerpiece. Jewelry designers sometimes only use baguettes to create dramatic contemporary looks for rings and pendants.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+
+                        <div class="modal fade" id="color-modal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">Diamond Color</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Deep in the earth, when a diamond was being formed out of carbon, certain chemicals may have been drawn into the mix. The result is an added tinge of color in the transparent stone. Most common in diamonds is a degree of brown or yellow color, but diamonds have been found in all the colors of the rainbow.</p>
+                                <p>When jewelers talk about the "fine color" of a diamond, what they really want you to notice is how little visible color the stone has. Colorless, or icy white, diamonds are the most prized and most expensive. The slightly colored diamonds are less valuable than the perfectly white or boldly colored red, yellow, and blue "fancies." The 45.52 carat Hope Diamond, on display at the Smithsonian, is remarkable in part for its prized cornflower blue color.</p>
+                                <p>Diamonds are graded according to the GIA color chart.</p>
+                                <div class="table-responsive">
+                                  <table class="table table-bordered">
+                                    <tbody>
+                                      <tr>
+                                        <td><strong>GIA color grade</strong></td>
+                                        <td><strong>What is it called</strong></td>
+                                        <td><strong>What you see</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td>D</td>
+                                        <td rowspan="3">Colorless</td>
+                                        <td rowspan="3">Stone looks absolutely clear, with no hint of color to the eye in color grading or mounted</td>
+                                      </tr>
+                                      <tr>
+                                        <td>E</td>                                        
+                                      </tr>
+                                      <tr>
+                                        <td>F</td>
+                                      </tr>
+                                      <tr>
+                                        <td>G</td>
+                                        <td rowspan="4">Slight color</td>
+                                        <td rowspan="4">Some color tint is visible during grading. Mounted in a setting, stone appears colorless</td>
+                                      </tr>
+                                      <tr>
+                                        <td>H</td>
+                                      </tr>
+                                      <tr>
+                                        <td>I</td>
+                                      </tr>
+                                      <tr>
+                                        <td>J</td>
+                                      </tr>
+                                      <tr>
+                                        <td>K</td>
+                                        <td rowspan="3">Faint yellow</td>
+                                        <td rowspan="3">Yellow or grayish tint is obvious during color grading. Mounted, this stone still shows a tint of color</td>
+                                      </tr>
+                                      <tr>
+                                        <td>L</td>
+                                      </tr>
+                                      <tr>
+                                        <td>M</td>
+                                      </tr>
+                                      <tr>
+                                        <td>N-Z</td>
+                                        <td>Light yellow</td>
+                                        <td>Obvious yellow or grayish color</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Z+</td>
+                                        <td>Fancy</td>
+                                        <td>Bright, remarkable color - usually blue, pink, yellow</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <p>Private companies once used their own grading systems and called diamond colors AA+, AB, 1+, etc. The GIA (Gemological Institute of America) - an independent, non-commercial association - wanted to create a standard chart that couldn't be compared or confused with others. Thus, the perfectly colorless diamond is now given a color rating of D. Any company that tries to sell you a diamond they rate as "A+" in color is probably up to no good.</p>
+                              </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+
+                        <div class="modal fade" id="clarity-modal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">Jewelry Guide - Diamond Clarity</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p>Clarity is the term used to describe a diamond's clearness or purity. Taken into consideration are the number, size, nature, and location of imperfections on the finished gemstone. Internal flaws are called inclusions, and external ones are called blemishes. Many of these are not visible to the naked eye, but under magnification, tiny featherlike shapes, crystals, bubbles, and dark flecks become apparent. These marks are as distinctive and recognizable as fingerprints -- in fact, they are commonly referred to as the diamond's fingerprint. The more imperfections there are in a diamond and the more visible they are to the eye, the lower the market value.</p>
+                                <div class="table-responsive">
+                                  <table class="table table-bordered">
+                                    <tbody>
+                                      <tr>
+                                        <td><strong>Clarity mark</strong></td>
+                                        <td><strong>What it is called</strong></td>
+                                        <td><strong>What you see</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td>F</td>
+                                        <td>Flawless</td>
+                                        <td>Clear stone, free of all flaws, even under 10x magnification</td>
+                                      </tr>
+                                      <tr>
+                                        <td>IF</td>
+                                        <td>Internally Flawless</td>
+                                        <td>clarity diamonds have no visible inclusions even under extreme magnification and contain extremely minor surface marks. IF diamonds are very rare and are considered very valuable.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>VVS1</td>
+                                        <td>Very Very Slight Inclusion #1</td>
+                                        <td>VVSI clarity diamonds have very tiny inclusions and are extremely difficult to find, even under extreme magnification. VVSI diamonds are very rare are considered very valuable.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>VVS2</td>
+                                        <td>Very Very Slight Inclusion #2</td>
+                                        <td>VVS2 clarity diamonds have very few and very tiny inclusions. Inclusions are impossible to locate with the naked eye and are also extremely difficult to locate under 10x magnification. VVS2 diamonds are very clean stones and considered top of the line.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>VS1</td>
+                                        <td>Very Slight Inclusion #1</td>
+                                        <td>VSI clarity diamonds have a very few, difficult to see inclusions. The minor inclusions are very difficult to see under 10x magnification and close to invisible to the naked eye. VS1 diamonds present a very good value opportunity because they are considered extremely clean stones and are considerably less expensive than the higher clarity grades.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>VS2</td>
+                                        <td>Very Slight Inclusion #2</td>
+                                        <td>VS2 clarity diamonds have a very few small inclusions which are difficult to see under 10x magnification and would be extremely difficult to locate with the unaided eye. VS2 diamonds present a great value opportunity because they are considered very clean stones and are priced much lower than higher clarity grades.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>SI1</td>
+                                        <td>Slight Inclusion #1</td>
+                                        <td>SI1 clarity stones contain a few inclusions which are usually visible under 10x magnification. To the naked eye, inclusions are difficult to see and are considered very good stones. SI1 stones are less rare than higher clarity grades and thus offer a very good value.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>SI2</td>
+                                        <td>Slight Inclusion #2</td>
+                                        <td>SI2 clarity diamonds contain inclusions which are easy to see under 10x magnification. To the naked eye, inclusions are still difficult to see but if studied extremely closely, they may be slightly visible. SI2 stones offer a very good value and are considered very good stones.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>I1</td>
+                                        <td>Included #1</td>
+                                        <td>I1 clarity stones contain inclusions that are rather obvious under 10x magnification. To the naked eye, minor inclusions can be seen but they do not detract from the stones overall natural sparkle and fire.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>I2</td>
+                                        <td>Included #2</td>
+                                        <td>I2 clarity stones contain inclusions that are obvious under 10x magnification and can usually be located by the unaided eye. Once an I2 clarity stone is set in jewelry, it becomes more difficult to see, but if studied closely inclusions may be visible.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Eye Clean</td>
+                                        <td>Eye Clean</td>
+                                        <td>Eye clean stones do not consist of an exact clarity standard. They fall in the approximate range of I1-I3 stones. The diamonds are hand picked and any inclusions are not immediately visible to the naked eye. Under 10X magnification impurities and inclusions can be located. Eye-Clean stones present a tremendous value. The overall brilliance and sparkle is not hindered by the inclusions and all stones are inspected to ensure an overall brilliant look.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                        <!-- MODAL -->
+
+                        <div class="block diamond-information">
                           <h4 class="block-head">DIAMOND INFORMATION</h4>
                           <div class="block-body data">
-                            <p><span class="field">Field</span>:14K White Gold</p>
-                            <p><span class="field">Field</span>:14K White Gold</p>
-                            <p><span class="field">Field</span>:14K White Gold</p>
-                            <p><span class="field">Field</span>:14K White Gold</p>
+                            <p><span class="field weight" data-toggle="modal" data-target="#weight-modal">Weight</span>:14K White Gold</p>
+                            <p><span class="field cut" data-toggle="modal" data-target="#cut-modal">Cut</span>:14K White Gold</p>
+                            <p><span class="field color" data-toggle="modal" data-target="#color-modal">Color</span>:14K White Gold</p>
+                            <p><span class="field clarity" data-toggle="modal" data-target="#clarity-modal">Clarity</span>:14K White Gold</p>
                           </div>
                         </div>
 
