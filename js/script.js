@@ -238,9 +238,6 @@ $(function(){
 			$('.mobile-filters').hide();
 			$('.sticky-footer').show();	
 		}
-
-		console.log("Checked", checked);
-		console.log("Not Checked", notChecked);
 	});
 
 	// filter cancel
@@ -413,9 +410,7 @@ $(window).load(function(){
 		width: 100,
 		imagePosition: "left",
 		selectText: "Select your favorite social network",
-		onSelected: function (data) {
-			console.log(data);
-		}
+		onSelected: function (data) {}
 	});
 
 	var ippData = [
@@ -576,13 +571,11 @@ if ($('#accordion-cart').length) {
 	enquire.register("screen and (min-width:768px)", {
 
 		match : function() {
-			console.log('768px up');
 			$('.panel-title a').removeAttr('data-toggle');
 			$('.panel-collapse').addClass('in').removeAttr('style');
 
 			// item details
 			$('.panel-heading a').each(function() {
-				console.log($(this));
 				var img = $(this).find('img'),
 					span = $(this).find('span');
 
@@ -599,7 +592,6 @@ if ($('#accordion-cart').length) {
 		},
 
 		unmatch : function() {
-			console.log('768px down');
 			$('.panel-title a').attr('data-toggle', 'collapse');
 			$('.panel-collapse').removeClass('in');
 

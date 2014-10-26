@@ -4346,3 +4346,184 @@ div#thumbs{
 	    left: 55.2% !important;
 	}
 }
+
+@media (max-width:360px){
+
+	/*Footer copyright*/
+	.copyright .container{
+		font-size:12px;
+	}
+
+	/*Mobile Login*/
+	
+	.mobile-login-form label, form.mobile-register-form  label{
+		font-size:12px;
+	}
+	.submit-forgot .forgot{
+		font-size:11px;
+	}
+	form.mobile-login-form .form-group, form.mobile-register-form .form-group{
+		padding:5px;
+		margin-right:0px;
+	}
+	form.mobile-login-form  div .form-control, form.mobile-register-form div .form-control{
+		height:25px;
+		border-radius:3px !important;
+	}
+	form.mobile-register-form  .confirm-pass{
+		padding-top: 0px !important;
+		line-height: 13px !important;
+	}
+	form.mobile-login-form  div.col-xs-9{
+		padding-right:5px;
+	}
+	.actions .submit-forgot .btn-lg, .actions .btn-register, .btn-create{
+		border-radius:3px !important;
+	}
+	.actions .submit-forgot{
+		margin-bottom:10px;
+	}
+	.social-links .yahoo a{
+		background-position: -100px -83px !important;
+	}
+	
+	/*Checkout payment*/
+	.product-details-tabs .tab-content{
+		padding:10px !important; 
+	}
+	.payment-tabs .cc-type, .cc-cnumber, .payment-tabs .cc-exp-date{
+		float: left;
+		font-size: 12px;
+		line-height: 28px;
+	}
+	.payment-tabs .cc-options, .payment-tabs .cc-cnumber-input, .cc-cname-input{
+		float: right;
+		width: 53% !important;
+		margin-bottom:10px;
+	}
+	.payment-tabs .cc-exp-date{
+		margin-left: 5px;
+	}
+	.cc-exp-date-options{
+		margin-left: 25px;
+	}
+	.cc-exp-date-year, .cc-exp-date-options{
+		font-size: 11px;
+		width:25% !important;
+	}
+	.cc-cname{
+		margin-left: 0px !important;
+	}
+	.cc-cverification, .cc-cname{
+		float: left;
+		font-size: 11px;
+		line-height: 14px;
+		width: 117px;
+		margin-left: 5px;
+		width:110px;
+	}
+	.cc-cverification-input{
+		float: right;
+		width: 52% !important;
+	}
+	.payment-tabs .mmspace{
+		margin-bottom:10px !important;
+	}
+	.cc-name-cont{
+		margin: -20px 0px 0px!important;
+	}
+}
+
+.m-checkout-level{
+	display: none;
+	text-align: center;
+}
+
+@media (max-width:360px){
+	.checkout-mycart-promo, .my-account-promo, 
+	.shipping-promo, .payment-promo, 
+	.review-promo{
+		display:none;
+	}
+	.mm-page .page-header{
+		margin: 12px 0 12px !important;
+	}
+	tr td.col-xs-6.cart-item-cont{
+		width:10% !important;
+	}
+	.cart-summary td:nth-of-type(2):before{
+		content:"";
+	}
+	.cart-summary td:nth-of-type(2) p:first-child{
+		margin-top: 7px !important;
+	}
+	.checkout .in-cart tbody td{
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+	.my-account-tab table tbody td{
+		padding: 10px 8px !important;
+	}
+	.my-account-tab table tbody td.text-right:not(.m-wishlist-price){
+		margin-bottom: 20px !important;
+	}
+	.my-account-tab table tbody td:last-child{
+		padding-left: 50% !important;
+	}
+	.my-account-tab td:before, .cart-summary td:before{
+		top: 12px !important;
+	}
+	.cart-summary td:nth-of-type(3), 
+	.cart-summary td:nth-of-type(4), 
+	#orders tr td
+	{
+		text-align: right !important;
+	}
+	.cart-summary #orders td:before, 
+	.attc-btn{
+		font-size:12px;
+	}
+	.mo-btn:before{
+		content: "" !important;
+	}
+	.m-wishlist-price:before{
+		content:"PRICE" !important;
+	}
+	.m-wishlist-price{
+		margin:0px 5px;
+		border-bottom: 1px solid #b0b0b0 !important;
+		margin-bottom: 0px !important;
+	}
+	.table-wishlist .media-object-container{
+		width: 25%;
+		margin-right: 20px;
+	}
+	.table-wishlist .wishlist-des{
+		float: right;
+		width: 67% !important;
+		margin-top: 20px;
+	}
+	.my-account-tab .tab-content, .cart-summary .tab-content{
+		padding:0px;
+	}
+	.cart-summary #wishlist .media{
+		margin-top:0px;
+	}
+	.my-account-tab .boxed, 
+	.my-account-tab #passwd form{
+		background:#eee;
+	}
+	.create-steps li{
+		display:none;
+	}
+	.m-checkout-level{
+		display: block !important;
+	}
+	.checkout .steps li{
+		font-size:16px;
+	}
+	.checkout .main-content .btn-lg{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
