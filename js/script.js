@@ -674,3 +674,10 @@ if ($('.return-process')) {
 		$(this).closest('.list-item').find('.form-item-reasons').slideToggle();
 	});
 }
+
+$(document).ready(function($) {
+	if ($(window).width() < 767) {
+		$('.mob-promo-hide').prev().hide();
+		$('.mob-promo-hide').parent().prev().hide();
+	}
+});

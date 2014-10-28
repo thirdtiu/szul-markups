@@ -4527,3 +4527,62 @@ div#thumbs{
 		padding-right: 30px;
 	}
 }
+
+.m-clearfix{
+	display:none;
+}
+@media(max-width:768px){
+
+	/*WISHLIST TAB*/
+	#wishlist .m-wishlist-col1:before, 
+	#wishlist .m-wishlist-col3:before, 
+	#wishlist .m-wishlist-col4:before, 
+	.m-uta-btn{
+		display:none !important;
+	}
+
+	/*CHECKOUT 1*/
+	.checkout .block-forms .m-step1-label{
+		float: left;
+		font-size: 12px;
+		width: 40% !important;
+	}
+	.m-bmo-label{
+		margin-top: 10px !important;
+	}
+	.checkout .block-forms .m-step1-input{
+		float: right;
+		width: 56% !important;
+		margin-top: 12px;
+	}
+	.checkout .block-forms .halvs .m-step1-label{
+		margin-left:11px !important;
+	}
+	.checkout .block-forms .halvs .m-step1-input{
+		float: right;
+		width: 52% !important;
+		margin-top: 12px;
+		margin-right:10px !important;
+		background:white !important;
+	}
+	.m-clearfix{
+		display:block;
+	}
+	.btns .m-mab-btn, .btns .m-umab-btn{
+		float:left;
+		width:29%;
+		font-size:12px;
+	}
+	.btns .m-umab-btn{
+		width:34% !important;
+	}
+	.checkout .main-content .pull-right .carousel{
+		min-height:590px;
+	}
+
+	/*CHECKOUT 2*/
+	#gift-cert button{
+		margin-left:0px;
+		margin-top:8px;
+	}
+}
