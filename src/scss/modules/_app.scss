@@ -4586,3 +4586,110 @@ div#thumbs{
 		margin-top:8px;
 	}
 }
+
+.m-clearfix{
+	display: none;
+}
+.m-type-cert{
+	padding-left:0px;
+}
+@media(max-width:360px){
+	
+
+	/*HOME PAGE*/
+	.jcarousel.jcarousel-disabled ul.products-carousel li.product{
+		width:50% !important;
+		padding: 0 5px;
+	}
+	.m-clearfix{
+		display: block;
+	}
+	.products-carousel .product .ribbon{
+		height: 50px;
+		width: 50px;
+		line-height: 52px;
+	}
+	.products-carousel .product .ribbon em{
+		font-size: 12px;
+		line-height: 13px;
+	}
+	.product-tabs ul.nav-tabs.centered-tabs{
+		margin-bottom:0px;
+	}
+
+	/*CREATE PAGE*/
+	.create-form .create-intro .block .block-body ul.types li{
+		margin: 0 6px 20px;
+	}
+	.create-form .create-intro .block .block-body{
+		padding: 10px 15px 0;
+	}
+	.create-form .create-intro .block .block-head{
+		margin: 0px 15px;
+	}
+	.block-advanced-search .block-head{
+		margin: 0px 15px;
+	}
+	.block-advanced-search .block-body{
+		padding: 10px 15px 20px;
+	}
+	.block-advanced-search .block-body .form-group p.dc-label-cont{
+		margin-bottom:10px;
+	}
+	.block-advanced-search .block-body .form-group.diamond-color label, 
+	.block-advanced-search .block-body .form-group.diamond-grades label{
+		display: inline-block;
+		margin-right: 35px;
+		margin-top:10px;
+	}
+	.block-advanced-search .block-body .form-group.diamond-color label.mrg-fix{
+		margin-right: 39px;
+	}
+	.block-advanced-search .block-body .form-group.diamond-grades label.mrg-fix{
+		margin-right:55px;
+	}
+}
+
+.m-uta-btn{
+	display:inline !important;
+}
+
+/*CREATE ADVANCED SEARCH*/
+
+.advanced-search-wrap #range-slider{
+}
+
+@media (max-width: 360px){
+
+	/*RETURN PROCESS STEP 1*/
+	.checkout .main-content .block-forms label, .checkout .main-content .block-forms .m-country-label{
+		margin-top: 18px;
+		float: left;
+		font-size: 12px;
+		width: 40% !important; 
+		font-weight: 400;
+	}
+	.checkout .main-content .block-forms .pull-left .m-co1{
+		float: right;
+		width: 56% !important;
+		margin-top: 12px;
+	}
+	.checkout .main-content .block-forms .pull-left select.m-state-province{
+		float: right;
+		width: 56% !important;
+		margin-top: 12px;
+	}
+	
+	.checkout .main-content .block-forms .m-phone-label{
+		width:auto !important;
+	}
+	.m-uta-btn{
+		display:none !important;
+	}
+	.m-co1-bs-cont > label, .m-co1-zpc{
+		line-height: 12px;
+	}
+	.item-details-wrap .item-name, .item-details-wrap .item-code, .item-details-wrap .item-quantity, .item-details-wrap .item-size{
+		margin-left: 17px;
+	}
+}
