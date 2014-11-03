@@ -4745,3 +4745,34 @@ div#thumbs{
 		margin-bottom:5px;
 	}
 }
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+#rp1-sp-input, #c-sp-input{
+	float: right;
+	width: 100% !important;
+}
+#rp1-sp-input .dd-select, #c-sp-input .dd-select{
+	width:auto !important;
+}
+#rp1-sp-input label, #c-sp-input label{
+	margin-top:5px;
+}
+/* for ipad and mobile */
+@media(max-width: 1024px){
+	.product-image .overlay{
+		display:none;
+	}
+}
+@media(max-width: 360px){
+	#rp1-sp-input, #c-sp-input{
+		float: right;
+		width: 56% !important;
+		margin-top: 11px;
+	}
+	#rp1-sp-input .dd-options{
+		width:160px;
+	}
+}

@@ -681,3 +681,55 @@ $(document).ready(function($) {
 		$('.mob-promo-hide').parent().prev().hide();
 	}
 });
+
+$(window).load(function(){
+	var stateProvinceData = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "3",
+			value: 3,
+			selected: false,
+		}
+	]; 
+
+	$('#rp1-sp-input').ddslick({
+		data: stateProvinceData,
+		imagePosition: "left",
+		selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+	var country = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "3",
+			value: 3,
+			selected: false,
+		}
+	]; 
+
+	$('#c-sp-input').ddslick({
+		data: country,
+		imagePosition: "left",
+		selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+});
