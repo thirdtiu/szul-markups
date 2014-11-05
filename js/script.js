@@ -733,3 +733,83 @@ $(window).load(function(){
 		onSelected: function (data) {}
 	});
 });
+
+$(window).load(function(){
+	if ($(window).width() < 800) {
+		$('.mob-promo-hide').prev().hide();
+		$('.mob-promo-hide').parent().prev().hide();
+	}
+	var stateProvinceData = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#rp1-sp-input').ddslick({
+		data: stateProvinceData,
+		onSelected: function (data) {}
+	});
+
+	var stateProvinceData = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#rp1-sp2-input').ddslick({
+		data: stateProvinceData,
+		onSelected: function (data) {}
+	});
+
+	var country = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#rp1-c-input').ddslick({
+		data: country,
+		onSelected: function (data) {}
+	});
+
+	var country = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#rp1-c2-input').ddslick({
+		data: country,
+		onSelected: function (data) {}
+	});
+
+	
+});
