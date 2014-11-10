@@ -813,3 +813,9 @@ $(window).load(function(){
 
 	
 });
+
+$(document).ready(function($) {
+	$(document).on('click', '.mobile-search', function(event) {
+		$('input#search').focus();
+	});
+});

@@ -4884,3 +4884,70 @@ body.modal-open {
 		margin-top:3px;
 	}
 }
+
+.product-filter-sidebar .dr-checkbox-lists li, 
+.product-filter-sidebar .ss-checkbox-lists li{
+	width:33%;
+	float:left;
+}
+@media(min-width:361px) and (max-width: 768px){
+	#sort-by-container{
+		float:right !important;
+	}
+	ul.create-steps{
+		display:block !important;
+	}
+}
+@media(max-width: 360px){
+	.dr-checkbox-lists, 
+	.ss-checkbox-lists{
+		font-size: 10px;
+	}
+	.dr-checkbox-lists li, 
+	.ss-checkbox-lists li{
+		width:50% !important;
+	}
+	#items-per-page.dd-container, 
+	#items-per-page.dd-container .dd-select, 
+	#sortby.dd-container, #sortby .dd-select{
+		width:100% !important;
+	}
+	ul.create-steps{
+		display:block !important;
+	}
+}
+
+.banner_section{
+	background:transparent !important;
+}
+.color-certificate-container{
+	padding:0px 0px 0px 20px !important;
+}
+form.diamond_filter .form-group .sub-group input[type="text"]{
+	margin-bottom:20px !important;
+}
+@media(min-width: 361px) and (max-width:768px){
+	.product-grid3 .product{
+		width: 38.33% !important;
+	}
+	.dwb-container{
+		margin-left: 50px !important;
+	}
+	.mensgift-container{
+		margin-right: 50px !important;
+	}
+	.product-grid2 .product{
+		margin:15px auto !important;
+		width:60% !important;
+		float:none !important;
+	}
+	.jcarousel.jcarousel-disabled ul.products-carousel li.product{
+		width:33% !important;
+	}
+}
+@media(max-width:360px){
+	#home-carousel .item{
+		height:167px !important;
+		background:black;
+	}
+}
