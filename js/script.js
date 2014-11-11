@@ -139,7 +139,7 @@ $(function(){
 		};
 		some_function();
 	});
-	$('.account .sign-in, .cart .cart-wrap').removeAttr('href');
+
 	/** modifies the position of the popover arrow **/
 	$('li.account').on('shown.bs.popover', function () {
 	  $('#account-popover .arrow').css('margin-left', '58px');
@@ -818,4 +818,14 @@ $(document).ready(function($) {
 	$(document).on('click', '.mobile-search', function(event) {
 		$('input#search').focus();
 	});
+});
+
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    slideshow: true,
+    prevText: "",
+    nextText: ""
+  });
 });

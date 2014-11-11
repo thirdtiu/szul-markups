@@ -1,54 +1,42 @@
 <?php include_once('header.html'); ?>
 
-    <section class="banner_section">
-      <div class="container">
-        <div id="home-carousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-indicator-wrap text-center">
-            <a class="left carousel-control" href="#home-carousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <ol class="carousel-indicators">
-              <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#home-carousel" data-slide-to="1"></li>
-              <li data-target="#home-carousel" data-slide-to="2"></li>
-            </ol>
-            <a class="right carousel-control" href="#home-carousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="flex-caption">
+            <h2 class="item-heading">ULTIMATE JEWELRY SALE</h2>
+            <p>All product deals from just $99</p>
+            <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
           </div>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/banner.jpg" alt="...">
-              <div class="carousel-caption">
-                <h2 class="item-heading">ULTIMATE JEWELRY SALE</h2>
-                <p>All product deals from just $99</p>
-                <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="images/banner.jpg" alt="...">
-              <div class="carousel-caption">
-                <h2 class="item-heading">THIS IS ITEM 2</h2>
-                <p>All product deals from just $99</p>
-                <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="images/banner.jpg" alt="...">
-              <div class="carousel-caption">
-                <h2 class="item-heading">AND THIS IS ITEM 3</h2>
-                <p>All product deals from just $99</p>
-                <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
-              </div>
-            </div>
-            
+          <img src="images/banner.jpg" alt="...">
+        </li>
+        <li>
+          <div class="flex-caption">
+            <h2 class="item-heading">THIS IS ITEM 2</h2>
+            <p>All product deals from just $99</p>
+            <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
           </div>
-        </div>
-      </div>
-    </section>
+          <img src="images/banner.jpg" alt="...">
+        </li>
+        <li>
+          <div class="flex-caption">
+            <h2 class="item-heading">THIS IS ITEM 3</h2>
+            <p>All product deals from just $99</p>
+            <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
+          </div>
+          <img src="images/banner.jpg" alt="...">
+        </li>
+        <li>
+          <div class="flex-caption">
+            <h2 class="item-heading">ANOTHER ITEM</h2>
+            <p>All product deals from just $99</p>
+            <p class="hidden-xs hidden-sm"><a href="#" class="btn btn-primary-gradient btn-lg">SEE DEALS</a></p>
+          </div>
+          <img src="images/banner.jpg" alt="...">
+        </li>
+      </ul>
+    </div><!-- flexslider -->
+    
     <div class="container">
       <div class="module mod-diamond-search hidden-xs hidden-sm">
         <form action="create-advanced-search.html" method="post" class="form-horizontal diamond_filter">
