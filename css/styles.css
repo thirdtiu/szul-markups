@@ -7094,6 +7094,39 @@ body.modal-open {
   position: initial !important;
 }
 
+@media (min-width: 361px) and (max-width: 768px) {
+  table.in-cart tr .cart-img-cont {
+    width: 3% !important;
+  }
+
+  table.in-cart tr td.text-center {
+    text-align: right;
+  }
+
+  .coupon-container form#coupon-code input {
+    width: 50%;
+  }
+
+  .coupon-container form#coupon-code button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .coupon-container {
+    text-align: center;
+  }
+
+  .checkout-button-container #btn-checkout,
+  .continue-shopping-container .btn-lg {
+    width: 50% !important;
+    margin-bottom: 10px;
+  }
+
+  .checkout-button-container,
+  .continue-shopping-container {
+    text-align: center;
+  }
+}
 @media (max-width: 360px) {
   body.modal-open {
     overflow: hidden;
