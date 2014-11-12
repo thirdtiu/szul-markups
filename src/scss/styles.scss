@@ -3,6 +3,22 @@ body.modal-open {
   overflow: hidden;
   position:initial !important;
 }
+#clarity, #clarity2{
+	display:inline-block;
+	width:50px !important;
+	font-size:12px;
+}
+#clarity .dd-select, #clarity2 .dd-select{
+	width:50px !important;
+}
+.clarity-separator{
+	display: inline-block;
+	line-height: 30px;
+	vertical-align: top;
+}
+#clarity .dd-options, #clarity2 .dd-options{
+	width:50px !important;
+}
 @media (min-width:361px) and (max-width:768px){
 	table.in-cart tr .cart-img-cont{
 		width: 3% !important;
@@ -28,6 +44,38 @@ body.modal-open {
 	.checkout-button-container, 
 	.continue-shopping-container{
 		text-align:center;
+	}
+	div.module.mod-diamond-search{
+		display:block !important;
+	}
+	div.module.mod-diamond-search form .form-group{
+		width:50% !important;
+	}
+	form.diamond_filter .form-group:last-child{
+		margin: 0px auto;
+		float: none;
+	}
+	form.diamond_filter .form-group:last-child button{
+		width:100% !important;
+	}
+	.windowshade{
+		padding-top:10px;
+	}
+	.top_primary .container{
+		height:50px;
+	}
+	.product-grid2 .product{
+		width: 38% !important;
+		float: left!important;
+	}
+	.product-grid2 .product.grid.hidden-xs{
+		display:block !important;
+	}
+	.product-grid2 .product{
+		margin-left: 51px !important;
+	}
+	.product-grid2 .product.grid:last-child{
+		margin-left: 75px !important;
 	}
 }
 @media (max-width: 360px) {

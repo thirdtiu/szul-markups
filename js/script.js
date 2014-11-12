@@ -811,6 +811,42 @@ $(window).load(function(){
 		onSelected: function (data) {}
 	});
 
+	var clarityInitial = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#clarity').ddslick({
+		data: clarityInitial,
+		onSelected: function (data) {}
+	});
+
+	var clarityFinal = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#clarity2').ddslick({
+		data: clarityFinal,
+		onSelected: function (data) {}
+	});
+
 	
 });
 
