@@ -90,3 +90,10 @@ body.modal-open {
 .product-filter-sidebar .block .block-body ul li label {
 	text-transform: capitalize;
 }
+
+@media (min-width:361px) and (max-width:1024px){
+	.product-listing-page .main-content .mobile-filters #btn-sorting, .product-listing-page .main-content .mobile-filters #btn-filter {
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+}

@@ -7575,4 +7575,11 @@ body.modal-open {
   text-transform: capitalize;
 }
 
+@media (min-width: 361px) and (max-width: 768px) {
+  .btn-sm {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
