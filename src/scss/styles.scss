@@ -84,3 +84,9 @@ body.modal-open {
 	  position:fixed;
 	}
 }
+
+/*--------- Martino Chnages for product-listing.html ---------*/
+
+.product-filter-sidebar .block .block-body ul li label {
+	text-transform: capitalize;
+}
