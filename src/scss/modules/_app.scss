@@ -1128,7 +1128,7 @@ ul.payment-icons{
 }
 .btn-turquoise,
 .btn-turquoise:hover {
-	background-color: #abe7d5;
+	background-color: #abe7d5 !important;
 	color: #fff;
 	font-family: $brandon-bold;
 }
@@ -1196,7 +1196,7 @@ ul.payment-icons{
 			margin:0;
 		}
 		input.range-input{
-			width: 74px
+			width: 72px;
 		}
 	}
 }
@@ -4951,3 +4951,6 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 		background:black;
 	}
 }
+
+
+

@@ -43,7 +43,7 @@
 
       <div class="page-container product-listing-page">
         <div class="row">
-          <form action="#" role="form" class="product-filter-sidebar col-md-3">
+          <form action="#" role="form" id="product-filter-sidebar" class="product-filter-sidebar col-md-3">
             <div class="block">
               <h3 class="block-head"><span class="icon icon-mdiamond-rings visible-sm visible-xs"></span>DIAMOND RINGS</h3>
               <div class="block-body">
@@ -158,27 +158,28 @@
           <div class="main-content col-md-9">
             
                 <form id="form-sorting" class="top-filters form-inline  clearfix" role="form">
-                  <div class="form-group pull-left">
-                    <label for="items-per-page">ITEMS PER PAGE</label> 
-                    <select id="items-per-page">
-                      <option value="-1">Select Page</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group pull-right">
-                    <label for="sortby">SORT BY</label> 
-                    <select id="sortby">
-                      <option value="-1">Our Picks</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
+
+                      <div class="form-group pull-left">
+                        <label for="items-per-page">ITEMS PER PAGE</label> 
+                        <select id="items-per-page">
+                          <option value="-1">Select Page</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group pull-right">
+                        <label for="sortby">SORT BY</label> 
+                        <select id="sortby">
+                          <option value="-1">Our Picks</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
                 </form>
                 <div class="mobile-filters clearfix row">
                   <div class="pull-left">

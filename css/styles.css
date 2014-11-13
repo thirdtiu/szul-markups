@@ -2716,7 +2716,7 @@ ul.payment-icons li {
 
 .btn-turquoise,
 .btn-turquoise:hover {
-  background-color: #abe7d5;
+  background-color: #abe7d5 !important;
   color: #fff;
   font-family: "brandon_grotesquebold", sans-serif;
 }
@@ -2781,7 +2781,7 @@ ul.payment-icons li {
   margin: 0;
 }
 .product-filter-sidebar .price-range-block input.range-input {
-  width: 74px;
+  width: 72px;
 }
 
 .product-listing-page .main-content .products-head {
@@ -6702,6 +6702,39 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
+/*--------- Martino Changes for product-listing.html ---------*/
+.product-filter-sidebar .block .block-body ul li label {
+  text-transform: capitalize;
+}
+
+@media (min-width: 361px) and (max-width: 1024px) {
+  .product-listing-page .main-content .mobile-filters #btn-sorting, .product-listing-page .main-content .mobile-filters #btn-filter {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  #items-per-page, #sortby {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .mobile-sorting .form-group label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+  }
+
+  .mobile-sorting {
+    position: absolute;
+    top: 490px;
+  }
+}
+#product-filter-sidebar .price-range-block input.range-input {
+  font-size: 13px;
+  width: 72px !important;
+}
+
 .product-information {
   /* cart-modal */
 }
@@ -7105,6 +7138,11 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     width: 100%;
   }
 }
+/*--------- Martino Changes for product-details.html ---------*/
+.row .btn-turquoise:hover {
+  background-color: #ABE7D5 !important;
+}
+
 .diamond-detail-tabs .col-2 {
   width: 100%;
   float: none;
@@ -7489,6 +7527,10 @@ body.modal-open {
   width: 50px !important;
 }
 
+form.diamond_filter {
+  background: none;
+}
+
 @media (min-width: 361px) and (max-width: 768px) {
   table.in-cart tr .cart-img-cont {
     width: 3% !important;
@@ -7568,17 +7610,6 @@ body.modal-open {
   body.modal-open {
     overflow: hidden;
     position: fixed;
-  }
-}
-/*--------- Martino Chnages for product-listing.html ---------*/
-.product-filter-sidebar .block .block-body ul li label {
-  text-transform: capitalize;
-}
-
-@media (min-width: 361px) and (max-width: 768px) {
-  .btn-sm {
-    font-size: 14px;
-    padding: 10px 15px;
   }
 }
 
