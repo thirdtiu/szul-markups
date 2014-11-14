@@ -680,6 +680,22 @@ $(document).ready(function($) {
 		$('.mob-promo-hide').prev().hide();
 		$('.mob-promo-hide').parent().prev().hide();
 	}
+	if ($(window).width() < 1025){
+		$(document).on('click', '.zoomContainer', function(event) {
+			$('.product-doverlay, .zoomWindow').show();
+			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
+			/* Act on the event */
+		});
+		$(document).on('click', '.product-doverlay, .p-dialog-close-btn', function(event) {
+			$('.product-doverlay, .zoomWindow').hide();
+			$( ".p-dialog-close-btn" ).remove();
+			/* Act on the event */
+		});
+		$(document).on('click', '.zoomWindow', function(event) {
+			event.stopPropagation();
+		});
+
+	}
 });
 
 $(window).load(function(){
