@@ -78,3 +78,12 @@
 	font-size: 13px;
 	width: 72px !important;
 }
+
+@media (max-width: 949px) {
+	.range-wrap .form-group {
+		width: 208px !important;
+	}
+	.range-wrap .range-input {
+		width: 80px;
+	}
+}

@@ -6735,6 +6735,15 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   width: 72px !important;
 }
 
+@media (max-width: 949px) {
+  .range-wrap .form-group {
+    width: 208px !important;
+  }
+
+  .range-wrap .range-input {
+    width: 80px;
+  }
+}
 .product-information {
   /* cart-modal */
 }
@@ -7500,6 +7509,14 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 
   .cart-summary td:nth-of-type(2) p:first-child {
     margin-top: 25px;
+  }
+}
+@media (max-width: 768px) and (min-width: 361px) {
+  table.in-cart tr td.text-center, table.in-cart tr td.text-right {
+    border-bottom: 0px !important;
+    float: left;
+    margin-left: 8px;
+    width: 48% !important;
   }
 }
 body.modal-open {

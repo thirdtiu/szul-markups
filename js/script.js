@@ -732,6 +732,61 @@ $(window).load(function(){
 		selectText: "Select your favorite social network",
 		onSelected: function (data) {}
 	});
+
+// Martino JS changes for product-listing.html dropdowns
+
+	var itemsperpage = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "3",
+			value: 3,
+			selected: false,
+		}
+	]; 
+
+	$('.items-per-page').ddslick({
+		data: itemsperpage,
+		imagePosition: "left",
+		selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+	var sortby = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "3",
+			value: 3,
+			selected: false,
+		}
+	]; 
+
+	$('.sortby').ddslick({
+		data: sortby,
+		imagePosition: "left",
+		selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+// end of Martino JS Changes
+
 });
 
 $(window).load(function(){
