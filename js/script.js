@@ -686,10 +686,13 @@ $(document).ready(function($) {
 			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
 			/* Act on the event */
 		});
-		$(document).on('click', '.product-doverlay, .p-dialog-close-btn, .zoomWindow', function(event) {
+		$(document).on('mouseover', '.product-doverlay, .p-dialog-close-btn', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
 			/* Act on the event */
+		});
+		$(document).on('mouseover', '.zoomWindow', function(event) {
+			event.stopPropagation();
 		});
 
 	}
