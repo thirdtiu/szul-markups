@@ -6294,6 +6294,11 @@ body.modal-open {
     margin-left: 0px;
     margin-right: 3px;
   }
+
+  .diamond-grades label {
+    width: 25%;
+    float: left;
+  }
 }
 @media (max-width: 360px) {
   #rp1-sp-input, #rp1-c-input,
