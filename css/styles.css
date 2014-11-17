@@ -7572,6 +7572,21 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     margin-left: 8px;
   }
 }
+/*----Martino Changes for 03-return-process.html----*/
+@media (max-width: 360px) {
+  .return-process .item-list .list-item .image-wrapper {
+    width: 35%;
+  }
+
+  .return-process .item-list .list-item .item-details {
+    font-size: 12px;
+    width: 64%;
+  }
+
+  .reason {
+    font-size: 12px;
+  }
+}
 .cart-item-cont {
   width: 15% !important;
 }
