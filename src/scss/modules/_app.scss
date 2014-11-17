@@ -4952,5 +4952,27 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	}
 }
 
+/*------Martino changes for create.html---------*/
+@media(max-width:360px){
+	.block-advanced-search .block-body .form-group.diamond-clarity label {
+		float: left;
+		width: 50%;
+	}
+}
 
+
+/*--------clearfix----------*/
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
 
