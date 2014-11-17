@@ -4962,6 +4962,23 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	}
 }
 
+@media(min-width:361px) and (max-width: 768px){
+	#sort-by-container{
+		float:right !important;
+	}
+	ul.create-steps{
+		display:block !important;
+	}
+	.block-advanced-search .block-body .form-group.diamond-color label {
+		float: left;
+		width: 25%;
+	}
+	.block-advanced-search .block-body .form-group.diamond-clarity label {
+		float: left;
+		width: 33%;
+	}
+}
+
 
 /*--------clearfix----------*/
 .clearfix:before,
