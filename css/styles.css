@@ -6766,6 +6766,18 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     width: 80px;
   }
 }
+/* Cyrus changes for product-listingb.html */
+@media (min-width: 361px) and (max-width: 768px) {
+  .product-grid3 .product:last-child {
+    margin-right: 51px !important;
+    width: 38% !important;
+  }
+
+  .product-grid3 .product:first-child {
+    margin-left: 51px !important;
+    width: 38% !important;
+  }
+}
 .product-information {
   /* cart-modal */
 }
