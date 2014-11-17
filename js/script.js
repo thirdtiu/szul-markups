@@ -691,9 +691,6 @@ $(document).ready(function($) {
 			$( ".p-dialog-close-btn" ).remove();
 			/* Act on the event */
 		});
-		$(document).on('click', '.zoomWindow', function(event) {
-			event.stopPropagation();
-		});
 
 	}
 });
