@@ -8,6 +8,9 @@
 	background-color: #79e5c5 !important;
 	background-image:none !important;
 }
+.dd-select{
+	background: white !important;
+}
 @media (max-width:360px) {
 	.my-account-tab td:before, .cart-summary td:before{
 		top:16px !important;
@@ -30,5 +33,12 @@
 		float: left;
 		margin-left: 8px;
 		width: 48% !important;
+	}
+	.checkout .main-content .block-forms .pull-right .boxed .btn{
+		margin-left: 12px;
+		margin-bottom: 12px;
+	}
+	.checkout .main-content .block-forms .pull-right .boxed{
+		padding-top:5px !important;
 	}
 }

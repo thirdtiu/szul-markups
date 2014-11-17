@@ -7504,6 +7504,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   margin-top: 16px;
 }
 
+#cs1-sp-input label {
+  margin-top: 5px;
+}
+
 @media (min-width: 768px) {
   .return-process .card {
     height: 332px;
@@ -7586,6 +7590,111 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   .reason {
     font-size: 12px;
   }
+
+  #cs1-sp-input {
+    float: right;
+    width: 52% !important;
+    margin-top: 12px;
+    margin-right: 10px !important;
+  }
+
+  #cs1-sp-input .dd-select, #cs1-sp-input .dd-options, #c-sp-input .dd-options {
+    width: 100% !important;
+  }
+
+  #cs1-sp-input label {
+    margin-top: 5px;
+  }
+
+  .item-list .list-label {
+    font-size: 12px;
+  }
+
+  .page-header.two {
+    margin-bottom: 0px !important;
+  }
+
+  .return-process .item-list .list-item.two .image-wrapper {
+    width: 33% !important;
+  }
+
+  .item-details-wrap .item-name {
+    font-size: 10px !important;
+  }
+
+  .checkout .main-content .block p.radio:first-child {
+    float: left;
+    width: 20% !important;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+
+  .checkout .main-content .block p.radio {
+    float: left;
+    width: 38%;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .checkout .main-content .block-forms label {
+    margin-top: 18px;
+    float: left;
+    font-size: 12px;
+    width: 40% !important;
+  }
+
+  .checkout .main-content .block-forms .halvs input[type="text"] {
+    float: right;
+    width: 54% !important;
+    margin-top: 12px;
+    margin-right: 10px;
+    background: white !important;
+  }
+
+  .checkout .main-content .block-forms .m-co1 {
+    float: right;
+    width: 56% !important;
+    margin-top: 12px;
+  }
+
+  #cs1-sp-input {
+    float: right;
+    width: 54% !important;
+    margin-top: 12px;
+    margin-right: 10px !important;
+  }
+
+  #rp1-sp-input, #c-sp-input {
+    float: right;
+    width: 56% !important;
+    margin-top: 12px;
+    margin-right: 0px !important;
+  }
+
+  #cs1-sp-input .dd-options, #c-sp-input .dd-options {
+    width: 100% !important;
+  }
+
+  .checkout .main-content .block p.radio {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+
+  .checkout .main-content .block .boxed label {
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  #cs1-sp-input .dd-select {
+    width: auto !important;
+  }
+
+  #cs1-sp-input label {
+    margin-top: 5px;
+  }
 }
 .cart-item-cont {
   width: 15% !important;
@@ -7598,6 +7707,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 #btn-checkout {
   background-color: #79e5c5 !important;
   background-image: none !important;
+}
+
+.dd-select {
+  background: white !important;
 }
 
 @media (max-width: 360px) {
@@ -7624,6 +7737,15 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     float: left;
     margin-left: 8px;
     width: 48% !important;
+  }
+
+  .checkout .main-content .block-forms .pull-right .boxed .btn {
+    margin-left: 12px;
+    margin-bottom: 12px;
+  }
+
+  .checkout .main-content .block-forms .pull-right .boxed {
+    padding-top: 5px !important;
   }
 }
 body.modal-open {

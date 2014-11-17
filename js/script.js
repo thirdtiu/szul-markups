@@ -724,6 +724,31 @@ $(window).load(function(){
 		onSelected: function (data) {}
 	});
 
+	var stateProvinceData2 = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "3",
+			value: 3,
+			selected: false,
+		}
+	]; 
+
+	$('#cs1-sp-input').ddslick({
+		data: stateProvinceData,
+		imagePosition: "left",
+		selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
 	var country = [
 		{
 			text: "1",
