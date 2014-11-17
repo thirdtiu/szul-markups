@@ -7771,6 +7771,24 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   .cart-summary td:nth-of-type(2) p:first-child {
     margin-top: 25px;
   }
+
+  .items-list .entry .total {
+    float: right;
+    margin: 0px 65px 0px 0px;
+    margin-top: 5px !important;
+  }
+
+  .payment-review .items-list {
+    font-size: 10px;
+  }
+
+  #fixed-container .btn-turquoise, .checkout-cart-info .btn-turquoise {
+    display: block !important;
+  }
+
+  .main-content #gift-cert {
+    text-align: center;
+  }
 }
 @media (max-width: 768px) and (min-width: 361px) {
   table.in-cart tr td.text-center, table.in-cart tr td.text-right {
