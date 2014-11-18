@@ -681,18 +681,15 @@ $(document).ready(function($) {
 		$('.mob-promo-hide').parent().prev().hide();
 	}
 	if ($(window).width() < 1025){
-		$(document).on('mouseover', '.zoomContainer', function(event) {
+		$(document).on('mouseup', '.zoomContainer', function(event) {
 			$('.product-doverlay, .zoomWindow').show();
 			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
 			/* Act on the event */
 		});
-		$(document).on('mouseover', '.product-doverlay, .p-dialog-close-btn', function(event) {
+		$(document).on('click', '.product-doverlay, .p-dialog-close-btn, .zoomWindow', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
 			/* Act on the event */
-		});
-		$(document).on('mouseover', '.zoomWindow', function(event) {
-			event.stopPropagation();
 		});
 
 	}
