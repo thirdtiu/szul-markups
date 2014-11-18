@@ -100,4 +100,17 @@
 		margin-left: 51px !important;
 		width: 38% !important;
 	}
+	.product-listing-page .main-content .mobile-filters{
+		border-top:1px solid #cccccc;
+	}
+	.mobile-filters .pull-left{
+		line-height: 40px;
+	}
+}
+
+/* Cyrus changes for product-listing.html */
+
+#quick-look-modal .modal-dialog .col-md-6 .btn-primary-gradient{
+	background-color: #38caa5 !important;
+	background-image: none;
 }
