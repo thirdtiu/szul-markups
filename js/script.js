@@ -692,7 +692,7 @@ $(document).ready(function($) {
 			location.reload();
 			/* Act on the event */
 		});
-		$(document).on('mouseenter', '.product-doverlay', function(event) {
+		$(document).on('click', '.product-doverlay', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
 			location.reload();
