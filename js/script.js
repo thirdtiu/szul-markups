@@ -683,11 +683,6 @@ $(document).ready(function($) {
 	if ($(window).width() < 1025){
 		$(document).on('mouseenter', '.zoomContainer', function(event) {
 			$('.product-doverlay, .zoomWindow').show();
-			$('body').css({
-				'position' : 'fixed',
-				'width' : '100%',
-				'overflow' : 'hidden'
-			});
 			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
 			/* Act on the event */
 		});
@@ -697,7 +692,7 @@ $(document).ready(function($) {
 			location.reload(true);
 			/* Act on the event */
 		});
-		$(document).on('click', '.product-doverlay', function(event) {
+		$(document).on('mouseenter', '.product-doverlay', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
 			location.reload(true);
