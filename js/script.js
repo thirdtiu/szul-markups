@@ -689,15 +689,18 @@ $(document).ready(function($) {
 		$(document).on('mouseenter', '.p-dialog-close-btn', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
+			location.reload();
 			/* Act on the event */
 		});
 		$(document).on('mouseenter', '.product-doverlay', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
+			location.reload();
 		});
 		$(document).on('mouseenter', '.zoomWindow', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
+			location.reload();
 		});
 
 	}
