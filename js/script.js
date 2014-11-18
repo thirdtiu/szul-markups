@@ -691,6 +691,9 @@ $(document).ready(function($) {
 			$( ".p-dialog-close-btn" ).remove();
 			/* Act on the event */
 		});
+		$(document).on('mouseenter', '.zoomWindow', function(event) {
+			$('.product-doverlay, .zoomWindow').hide();
+			$( ".p-dialog-close-btn" ).remove();		});
 
 	}
 });
