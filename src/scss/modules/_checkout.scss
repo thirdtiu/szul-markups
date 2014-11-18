@@ -56,3 +56,28 @@
 		padding-top:5px !important;
 	}
 }
+
+/*---------Martino Changes for Mobile 05-checkout-my-cart.html----------*/
+
+@media (max-width: 360px) {
+	.checkout .in-cart tbody .text-center, .checkout .in-cart tbody .text-right {
+		float: left;
+		font-size: 12px;
+		width: 50%;
+	}
+	.checkout .in-cart tbody .less-width {
+		margin-right: 2%;
+		width: 48%;
+	}
+
+	.checkout .in-cart tbody td {
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+	}
+	.my-account-tab td:before, .cart-summary td:before {
+		top: 6px !important;
+	}
+	.cart-summary td:nth-of-type(6) {
+		border-bottom: 0px;
+	}
+}
