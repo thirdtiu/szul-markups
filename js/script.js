@@ -681,7 +681,7 @@ $(document).ready(function($) {
 		$('.mob-promo-hide').parent().prev().hide();
 	}
 	if ($(window).width() < 1025){
-		$(document).on('mousedown', '.zoomContainer', function(event) {
+		$(document).on('mouseover', '.zoomContainer', function(event) {
 			$('.product-doverlay, .zoomWindow').show();
 			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
 			/* Act on the event */
