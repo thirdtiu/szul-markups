@@ -683,6 +683,11 @@ $(document).ready(function($) {
 	if ($(window).width() < 1025){
 		$(document).on('mouseenter', '.zoomContainer', function(event) {
 			$('.product-doverlay, .zoomWindow').show();
+			$('body').css({
+				'position' : 'fixed',
+				'width' : '100%',
+				'overflow' : 'hidden'
+			});
 			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
 			/* Act on the event */
 		});
