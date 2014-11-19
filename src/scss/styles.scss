@@ -22,7 +22,36 @@ body.modal-open {
 form.diamond_filter{
 	background:none;
 }
+.luxury-header{
+	padding: 10px 0;
+}
+.luxury-header h2{
+	line-height: 55px;
+	font-size:24px;
+}
+.ldotw-buttons-container a:first-child{
+	width:45% !important;
+	float:right;
+	background: #38caa5 !important;
+}
+.ldotw-buttons-container a:last-child{
+	width:48% !important;
+	float:left;
+}
+.fcf-block .g-item{
+	padding:12px;
+}
 @media (min-width:361px) and (max-width:768px){
+	.luxury-header .lux-label{
+		font-size:14px;
+	}
+	.luxury-header{
+		padding:15px 0px 10px;
+	}
+	.fcf-block .g-item{
+		padding:5px;
+		font-size:11px;
+	}
 	table.in-cart tr .cart-img-cont{
 		width: 3% !important;
 	}
@@ -123,6 +152,34 @@ form.diamond_filter{
 	}
 	.advanced-results .results-heading a{
 		font-size:12px;
+	}
+
+	/* for luxury deal of the week */
+
+	.product-large-view .the-product .product-information .info-bd .option-block .group .block-subhead{
+		display:block;
+	}
+	.product-large-view .the-product .product-information .info-bd .option-block .group p{
+		display:inline;
+	}
+	.product-large-view .the-product .product-information .info-bd .option-block #metal-type, 
+	.product-large-view .the-product .product-information .info-bd .option-block #metal-type .dd-select{
+		width:100px !important;
+	}
+	.product-large-view .the-product .product-information .info-bd .option-block #metal-type{
+		float:left;
+	}
+	.product-large-view .the-product .product-information .info-bd .option-block .link-size{
+		line-height: 32px;
+	}
+	.product-large-view .the-product .product-information .info-bd .option-block .luxury.deal-expire{
+		margin-top:10px;
+	}
+	.product-large-view .the-product .product-information .info-bd .option-block .luxury.deal-expire .de-time{
+		margin-left:45px;
+	}
+	.ldotw-buttons-container a:last-child, .ldotw-buttons-container a:first-child{
+		width:100% !important;
 	}
 }
 
