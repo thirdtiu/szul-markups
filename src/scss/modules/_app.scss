@@ -5004,6 +5004,33 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	.product-large-view .the-product .product-information .info-head {
 		font-size: 14px !important;
 	}
+	.wishlist {
+		padding-top: 12px !important;
+	}
+	.wishlist .wl-header h2 {
+		font-size: 20px !important;
+		padding-bottom: 5px !important;
+	}
+	.wishlist .labels {
+		display: none !important;
+	}
+	.wishlist .item .price, .wishlist .item .size {
+		border-top: 1px solid #d0cece !important;
+		padding-top: 10px !important;
+		text-align: right !important;
+	}
+	.wishlist .item .price:before {
+		content: 'Price' !important;
+		float: left !important;
+	}
+	.wishlist .item .size:before {
+		content: 'Size' !important;
+		float: left !important;
+	}
+	.wishlist .item .row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
 }
 
 @media(min-width:361px) and (max-width: 768px){
