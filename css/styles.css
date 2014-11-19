@@ -7961,11 +7961,59 @@ form.diamond_filter {
   .product-grid2 .product.grid:last-child {
     margin-left: 75px !important;
   }
+
+  .advanced-search-form .form-group {
+    width: 45%;
+    margin-right: 3%;
+    float: left;
+    margin-left: 2%;
+  }
+
+  .cas-pricerange-container #range-slider {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+
+  .cas-certificate-container label {
+    margin-right: 50px;
+  }
+
+  .advanced-search-wrap .advanced-results .results-heading .pull-left {
+    float: left !important;
+    margin-bottom: 0px;
+    line-height: 38px;
+  }
+
+  .advanced-search-wrap .advanced-results .results-heading .pull-right {
+    float: right !important;
+  }
 }
 @media (max-width: 360px) {
   body.modal-open {
     overflow: hidden;
     position: fixed;
+  }
+
+  .advanced-search-wrap form.advanced-search-form ul.types li {
+    margin: 0 6px 20px;
+  }
+
+  .cas-certificate-container label {
+    margin-right: 75px;
+  }
+
+  .cas-certificate-container p, .cas-pricerange-container p, .cas-caratrange-container p {
+    margin-bottom: 5px;
+  }
+
+  .cas-pricerange-container #range-slider {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .advanced-results .results-heading a {
+    font-size: 12px;
   }
 }
 

@@ -43,6 +43,15 @@ $(function(){
 		$('#carat-range2').val(secondvalue);
 	});
 
+	$('#range-slider').slider({
+		value:[0, 16]
+	}).on('slide', function(ev){
+		var rangefirstvalue = ev.value[0];
+		var rangesecondvalue = ev.value[1];
+		$('#range-input1').val(rangefirstvalue);
+		$('#range-input2').val(rangesecondvalue);
+	});
+
 	$('#color-grade-range-slider').slider({
 		value:[0, 7]
 	}).on('slide', function(ev){
