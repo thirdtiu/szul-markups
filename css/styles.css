@@ -6794,6 +6794,16 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
+/*--------Martino Chnages for order-details.html mobile view-----------*/
+@media (max-width: 375px) {
+  .order-details .page-header {
+    padding: 0 !important;
+  }
+
+  .order-details .btn-track {
+    width: 100% !important;
+  }
+}
 .product-listing-page .mobile-filters {
   display: block;
 }
