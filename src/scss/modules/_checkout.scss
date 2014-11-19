@@ -23,6 +23,7 @@
 		width:50% !important;
 	}
 	.cart-summary td:nth-of-type(2) p:first-child{
+		font-size: 12px;
 		margin-top: 25px;
 	}
 	.items-list .entry .total{
@@ -79,5 +80,9 @@
 	}
 	.cart-summary td:nth-of-type(6) {
 		border-bottom: 0px;
+		margin-bottom: 12px;
+	}
+	.cart-summary td:nth-of-type(2) p:first-child {
+		font-size: 12px;
 	}
 }

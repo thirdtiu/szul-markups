@@ -7788,6 +7788,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   }
 
   .cart-summary td:nth-of-type(2) p:first-child {
+    font-size: 12px;
     margin-top: 25px;
   }
 
@@ -7850,6 +7851,11 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 
   .cart-summary td:nth-of-type(6) {
     border-bottom: 0px;
+    margin-bottom: 12px;
+  }
+
+  .cart-summary td:nth-of-type(2) p:first-child {
+    font-size: 12px;
   }
 }
 body.modal-open {
