@@ -1,9 +1,10 @@
 <?php include_once('header.html'); ?>
 
-    <div class="container">
+    <div class="container mob-promo-hide">
       <h1 class="page-header">CREATE YOUR OWN RING</h1>
 
       <ul class="steps create-steps clearfix">
+        <li class="m-checkout-level">Create (step 1 of 3)</li>
         <li class="active"><span>01</span> SELECT YOUR DIAMOND</li>
         <li><span>02</span> CHOOSE RING SETTING</li>
         <li><span>03</span> PREVIEW YOUR RING</li>
@@ -50,8 +51,9 @@
                 </li>
               </ul>
             </ul>
+            <div class="clearfix m-clearfix"></div>
           </div>
-          <div class="form-group">
+          <div class="form-group cas-certificate-container">
             <p>CERTIFICATE</p>
             <label>
               <input type="checkbox"> GIA
@@ -60,7 +62,8 @@
               <input type="checkbox"> EGL
             </label>
           </div>
-          <div class="form-group">
+          <div class="clearfix t-clearfix"></div>
+          <div class="form-group cas-pricerange-container">
             <p>PRICE RANGE</p>
             <div class="text-center">
             <input type="text" class="range-input" id="range-input1"> TO <input type="text" class="range-input" id="range-input2">
@@ -68,7 +71,7 @@
             <input id="range-slider" type="text" class="span2" value="" data-slider-min="6000" data-slider-max="20000" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide">
           </div>
 
-          <div class="form-group">
+          <div class="form-group cas-caratrange-container">
             <p>CARAT RANGE</p>
             <div class="text-center">
             <input type="text" class="range-input" id="carat-range1"> TO <input type="text" class="range-input" id="carat-range2">
@@ -112,6 +115,8 @@
 
             <input id="fluorescence-range-slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
           </div>
+
+          <div class="clearfix t-clearfix"></div>
 
 
         </form>
