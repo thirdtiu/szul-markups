@@ -6447,6 +6447,30 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     font-size: 11px !important;
     width: 18% !important;
   }
+
+  .luxury-header {
+    border-bottom: 0px !important;
+    padding: 3px 0 !important;
+  }
+
+  .luxury-header h2 {
+    font-size: 18px !important;
+    line-height: 40px !important;
+  }
+
+  .luxury-header .lux-label {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .fcf-block .g-item {
+    font-size: 10px !important;
+    padding: 4px !important;
+  }
+
+  .block .block-body.data p span.field {
+    width: 65% !Important;
+  }
 }
 @media (min-width: 361px) and (max-width: 768px) {
   #sort-by-container {
