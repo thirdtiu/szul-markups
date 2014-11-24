@@ -63,7 +63,7 @@ label.dd-selected-text {
 }
 
 #nav-toggle .icon {
-  background: url(../images/mobile-nav-bg.png) no-repeat !important;
+  background: url(../images/mobile-nav-bg2.png) no-repeat !important;
 }
 
 .account .icon {
@@ -4227,7 +4227,7 @@ div#thumbs .thumbs li.selected a.thumb {
   .icon.icon-trigram {
     width: 46px;
     height: 38px;
-    margin-top: 13px;
+    margin-top: 15px;
     background-position: -100px -132px;
   }
 
@@ -4404,9 +4404,12 @@ div#thumbs .thumbs li.selected a.thumb {
     position: absolute;
     line-height: 44px;
     height: 44px;
-    width: 100px;
-    left: 50%;
-    margin-left: -55px;
+    width: 84px;
+    left: 49%;
+    margin-left: -38px;
+  }
+  .top_primary #logo a img {
+    width: 100% !important;
   }
   .top_primary .top-columns_mobile li {
     width: auto;
@@ -6583,11 +6586,11 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .top_primary .container {
-    height: 64px !important;
+    height: 53px !important;
   }
 
   .windowshade {
-    padding-top: 33px !important;
+    padding-top: 11px !important;
   }
 }
 /*--------clearfix----------*/

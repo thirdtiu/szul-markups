@@ -2681,7 +2681,7 @@ div#thumbs{
 	.icon.icon-trigram{
 		width: 46px;
 		height: 38px;
-		margin-top: 13px;
+		margin-top: 15px;
 		background-position: -100px -132px;
 	}
 	.icon.icon-lock{
@@ -2840,10 +2840,16 @@ div#thumbs{
 			position:absolute;
 			line-height: 44px;
 			height: 44px;
-			width: 100px;
-			left:50%;
-			margin-left:-55px;
+			width: 84px;
+			left:49%;
+			margin-left:-38px;
+			a {
+				img {
+					width: 100% !important;
+				}	
+			}
 		}
+
 		.top-columns_mobile{
 			li{
 				width: auto;
@@ -5064,10 +5070,10 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 
 @media(min-width:320px) and (max-width: 768px){
 	.top_primary .container {
-		height: 64px !important;
+		height: 53px !important;
 	}
 	.windowshade {
-		padding-top: 33px !important;
+		padding-top: 11px !important;
 	}
 }
 
