@@ -8128,6 +8128,14 @@ li.deals-collections-dd ul.sub {
   border-radius: 3px;
 }
 
+#mega-menu li.hasdropdown:hover {
+  box-shadow: 0px 0px 1px 1px #eeeeee;
+}
+
+.hasdropdown .sub {
+  box-shadow: 0px 2px 1px 1px #eeeeee;
+}
+
 @media (min-width: 361px) and (max-width: 768px) {
   .luxury-header .lux-label {
     font-size: 14px;
