@@ -63,11 +63,11 @@ a#nav-toggle{
 	position: absolute;
 	left:0px;
 	z-index: 88;
-	top:0px;
+	top: 0px;
 	display: none;
 	color: #fff;
-	width: 44px;
-	height:44px;
+	width: 58px;
+	height:65px;
 	outline:none;
 }
 
@@ -2674,8 +2674,8 @@ div#thumbs{
 		background-position: -100px -149px;
 	}
 	.icon.icon-spyglass{
-		width: 24px;
-		height: 24px;
+		width: 48px;
+		height: 48px;
 		background-position: -124px -132px;
 	}
 	.icon.icon-trigram{
@@ -2849,6 +2849,8 @@ div#thumbs{
 				width: auto;
 			}
 			li.mobile-search{
+				margin-top: 5px;
+
 				a{
 					display: block;
 					margin-top:-9px;
@@ -5047,6 +5049,22 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	.block-advanced-search .block-body .form-group.diamond-clarity label {
 		float: left;
 		width: 33%;
+	}
+
+	.top_primary .container {
+		height: 64px !important;
+	}
+	.windowshade {
+		padding-top: 33px !important;
+	}
+}
+
+@media(min-width:320px) and (max-width: 768px){
+	.top_primary .container {
+		height: 64px !important;
+	}
+	.windowshade {
+		padding-top: 33px !important;
 	}
 }
 
