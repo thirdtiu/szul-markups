@@ -151,7 +151,7 @@ $(function(){
 
 	/** modifies the position of the popover arrow **/
 	$('li.account').on('shown.bs.popover', function () {
-	  $('#account-popover .arrow').css('margin-left', '58px');
+	  $('#account-popover .arrow').css('margin-left', '-7px');
 	  $('li.cart').popover('hide');
 	})
 
@@ -184,7 +184,39 @@ $(function(){
 	});
 
 	$('li.cart').on('shown.bs.popover', function () {
+		$('#cart-popover .arrow').css('margin-left', '20px');
 		$('li.account').popover('hide');
+	});
+
+	$('.z-contact-item').popover({
+		placement : 'bottom',
+		'html' : true,
+		trigger : 'manual',
+		content: $('.contact-item-popover-contents').html(),
+		container : 'body',
+		template: '<div id="contact-item-popover" class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content">sss</div></div>'
+	}).on('mouseenter', function(){
+		var _this = this;
+		$(this).popover('show');
+		$(this).siblings('.popover').on('mouseleave', function(){
+			$(_this).popover('hide');
+		});
+	}).on('mouseleave',function(){
+		var _this = this;
+		var some_function = function(){
+			setTimeout(function(){
+				if(!$('.popover:hover').length){
+					$(_this).popover('hide');
+				}else{
+					some_function();
+				}
+			}, 50);
+		};
+		some_function();
+	});
+
+	$('li.contact-item').on('shown.bs.popover', function () {
+		$('li.contact-item').popover('hide');
 	});
 
 
