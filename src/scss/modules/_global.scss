@@ -21,6 +21,23 @@ label.dd-selected-text {
 	position:relative;
 	background:url(../images/sprite.png) no-repeat;
 }
+#nav-toggle .icon {
+	background: url(../images/mobile-nav-bg.png) no-repeat !important;
+}
+
+.account .icon {
+	background: none !important;
+}
+
+.mobile-search a {
+	height: 34px !important;
+	width: 20px !important;
+}
+
+.mobile-search a .icon {
+	background: url("../images/search-mobile-icon.png") no-repeat !important;
+}
+
 .icon-gt{
 	width:7px;
 	height:10px;
@@ -371,16 +388,16 @@ label.dd-selected-text {
 
 /** HEADER **/
 .top-links{
-	background:#efefef;
+	background:#f8f8f8;
 	font-size: 13px;
 	li{
 		list-style-type:none;
 		float:left;
 		a{
-			color: #706770;
-			font-style: italic;
+			color: #928b92;
+			font-style: normal;
 			display: block;
-			padding:4px 5px;
+			padding:4px 14px;
 		}
 	}
 	li:last-child{
@@ -390,7 +407,7 @@ label.dd-selected-text {
 	}
 }
 .top_primary{
-	background:$purple;
+	background: #f8f8f8;
 	color:#fff;
 	.container{
 		position: relative;
@@ -409,7 +426,7 @@ label.dd-selected-text {
 	}
 	.store-info{
 		float:left;
-		width: 390px;
+		width: 69%;
 		font-family: $museo-500;
 		margin-top:15px;
 		ul{
@@ -429,15 +446,17 @@ label.dd-selected-text {
 	}
 
 	.search-form{
-		background: #6c1c78;
+		background: #dfdfdf;
+		float: right;
 		input,
 		.btn{
 			background:none;
+			color: #8b8b8b;
 			@include border-radius(0);
 		}
 		.form-control{
 			border:none;
-			color:#fff;
+			color:#6f6f6f;
 			width:344px;
 			height: 33px;
 			font-size: .90em;
@@ -452,23 +471,23 @@ label.dd-selected-text {
 			box-shadow:none;
 		}
 		::-webkit-input-placeholder {
-		   color: #e0d6e2;
+		   color: #8b8b8b;
 		}
 
 		:-moz-placeholder { /* Firefox 18- */
-		   color: #e0d6e2;  
+		   color: #8b8b8b;  
 		}
 
 		::-moz-placeholder {  /* Firefox 19+ */
-		   color: #e0d6e2;  
+		   color: #8b8b8b;  
 		}
 
 		:-ms-input-placeholder {  
-		   color: #e0d6e2;  
+		   color: #8b8b8b;  
 		}
 	}
 	.search-form.active{
-		background:lighten(#751e82, 15%);
+		background:lighten(#dfdfdf, 15%);
 		-webkit-transition: background-color 300ms linear;
 	    -moz-transition: background-color 300ms linear;
 	    -o-transition: background-color 300ms linear;
@@ -478,17 +497,18 @@ label.dd-selected-text {
 
 	.top-columns,
 	.top-columns_mobile{
-		margin-top:20px;
+		margin-top:14px;
 		float:right;
 		li{
 			list-style-type:none;
 			position:relative;
 			float:left;
 			text-align:right;
-			width:115px;
+			width: 36px;
 			font-family: $museo-500;
 			font-size: 16px;
 			color: #e6d6a5;
+			margin-left: 28px;
 			a{
 				color: #e6d6a5;	
 			}
@@ -500,7 +520,7 @@ label.dd-selected-text {
 			.icon{
 				position:absolute;
 				top:50%;
-				right:-30px;
+				right: 0px;
 				margin-top:-5px;
 			}
 		}
@@ -516,10 +536,10 @@ label.dd-selected-text {
 			cursor:pointer;
 			text-align: center;
 			position:relative;
-			margin-left:32px;
+			margin-left: 28px;
 			.badge{
 				position:absolute;
-				right:15px;
+				right:-26px;
 				top:-10px;
 				background:#fd4b6d;
 				font-size: 16px;
@@ -537,21 +557,25 @@ label.dd-selected-text {
 				left: -9999px;
 			}
 		}
+		li.contact-item {
+			margin-left: 0px;
+		}
 	}
 }
 .top_secondary{
-	background:#312a31;
+	background:#f8f8f8;
 	height:50px;
 	#main_nav{
-		font-family: $museo-300;
+		font-family: $museo-500;
 		text-align:left;
-		font-size: 14px;
+		font-size: 12px;
 		li{
 			a{
 				height:50px;
 				line-height:50px;
-				color:#bdbdbd;
-				padding:0 8px;
+				color:#575757;
+				padding:0 7px;
+				text-transform: uppercase;
 			}
 			:hover{
 				text-decoration:none;
@@ -608,7 +632,7 @@ position: absolute;
 background: #fff;
 padding: 30px 30px;
 color:#706770;
-border:1px solid #ccc;
+/*border:1px solid #ccc;*/
 border-top:none;
 }
 #mega-menu li .sub .mrow {
@@ -689,15 +713,20 @@ color: #a32403;
 background: #efefef;
 }
 .windowshade{
-	background: rgba(246,245,236,1);
+	/*background: rgba(246,245,236,1);
 	background: -moz-linear-gradient(left, rgba(246,245,236,1) 0%, rgba(246,245,236,1) 49%, rgba(247,244,206,1) 49%, rgba(247,244,206,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246,245,236,1)), color-stop(49%, rgba(246,245,236,1)), color-stop(49%, rgba(247,244,206,1)), color-stop(100%, rgba(247,244,206,1)));
 	background: -webkit-linear-gradient(left, rgba(246,245,236,1) 0%, rgba(246,245,236,1) 49%, rgba(247,244,206,1) 49%, rgba(247,244,206,1) 100%);
 	background: -o-linear-gradient(left, rgba(246,245,236,1) 0%, rgba(246,245,236,1) 49%, rgba(247,244,206,1) 49%, rgba(247,244,206,1) 100%);
 	background: -ms-linear-gradient(left, rgba(246,245,236,1) 0%, rgba(246,245,236,1) 49%, rgba(247,244,206,1) 49%, rgba(247,244,206,1) 100%);
 	background: linear-gradient(to right, rgba(246,245,236,1) 0%, rgba(246,245,236,1) 49%, rgba(247,244,206,1) 49%, rgba(247,244,206,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f5ec', endColorstr='#f7f4ce', GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f5ec', endColorstr='#f7f4ce', GradientType=1 );*/
 }
+
+.windowshade {
+	background: #f8f8f8;
+}
+
 .windowshade-promo{
 	height:50px;
 	overflow:hidden;
@@ -705,7 +734,7 @@ background: #efefef;
 		height:50px;
 		float:left;
 		width: 28.75%;
-		background:#f6f5ec;
+		background:#f8f8f8;
 		overflow: hidden;
 		zoom:1;
 		.large-object{
@@ -896,6 +925,16 @@ ul.breadcrumbs{
 		font-size: 12px;
 	}
 }
+
+
+.btn-transparent .glyphicon {
+	color: #6f6f6f !important;
+}
+
+.sign-in img {
+	margin-top: 3px;
+}
+
 
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
