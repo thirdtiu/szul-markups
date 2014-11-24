@@ -8314,6 +8314,10 @@ li.deals-collections-dd ul.sub {
   .ldotw-buttons-container a:last-child, .ldotw-buttons-container a:first-child {
     width: 100% !important;
   }
+
+  .my-account-tab td:before, .cart-summary td:before {
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
