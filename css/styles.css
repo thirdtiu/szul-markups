@@ -899,6 +899,7 @@ label.dd-selected-text {
 .windowshade-promo {
   height: 50px;
   overflow: hidden;
+  width: 100%;
 }
 .windowshade-promo div.left-box {
   height: 50px;
@@ -8119,7 +8120,6 @@ li.deals-collections-dd ul.sub {
 
 #mega-menu {
   height: 50px;
-  margin-top: -3px;
   border-bottom: 4px solid #ac47ad;
 }
 
