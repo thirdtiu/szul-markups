@@ -31,7 +31,8 @@ $(function(){
 
 
 	jQuery('#mega-menu').dcMegaMenu({
-		speed: 'fast'
+		speed: 'fast',
+		effect: 'slide'
 	});
 
 
