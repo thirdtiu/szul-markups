@@ -30,7 +30,9 @@ $(function(){
 	});
 
 
-	jQuery('#mega-menu').dcMegaMenu();
+	jQuery('#mega-menu').dcMegaMenu({
+		speed: 'fast'
+	});
 
 
 
