@@ -532,6 +532,13 @@ label.dd-selected-text {
   padding-right: 0;
 }
 
+.header-phone {
+  color: #928B92;
+  font-style: normal;
+  display: block;
+  padding: 4px 14px;
+}
+
 .top_primary {
   background: #f8f8f8;
   color: #fff;
@@ -552,7 +559,7 @@ label.dd-selected-text {
 }
 .top_primary .store-info {
   float: left;
-  width: 69%;
+  width: 73%;
   font-family: "museo_sans500", sans-serif;
   margin-top: 15px;
 }
@@ -587,8 +594,8 @@ label.dd-selected-text {
 .top_primary .search-form .form-control {
   border: none;
   color: #6f6f6f;
-  width: 344px;
-  height: 33px;
+  width: 388px;
+  height: 38px;
   font-size: .90em;
 }
 .top_primary .search-form .btn {
@@ -624,7 +631,7 @@ label.dd-selected-text {
 }
 .top_primary .top-columns,
 .top_primary .top-columns_mobile {
-  margin-top: 14px;
+  margin-top: 23px;
   float: right;
 }
 .top_primary .top-columns li,
@@ -635,13 +642,13 @@ label.dd-selected-text {
   text-align: right;
   width: 36px;
   font-family: "museo_sans500", sans-serif;
-  font-size: 16px;
-  color: #e6d6a5;
+  font-size: 14px;
+  color: #928B92;
   margin-left: 28px;
 }
 .top_primary .top-columns li a,
 .top_primary .top-columns_mobile li a {
-  color: #e6d6a5;
+  color: #928B92;
 }
 .top_primary .top-columns li h2,
 .top_primary .top-columns_mobile li h2 {
@@ -659,6 +666,7 @@ label.dd-selected-text {
 .top_primary .top-columns li.account,
 .top_primary .top-columns_mobile li.account {
   cursor: pointer;
+  width: 94px;
 }
 .top_primary .top-columns li.account .account-popover-contents,
 .top_primary .top-columns_mobile li.account .account-popover-contents {
@@ -724,7 +732,7 @@ label.dd-selected-text {
   height: 50px;
   line-height: 50px;
   color: #575757;
-  padding: 0 7px;
+  padding: 0;
   text-transform: uppercase;
 }
 .top_secondary #main_nav li :hover {
@@ -765,7 +773,12 @@ label.dd-selected-text {
 #mega-menu li {
   float: left;
   margin: 0;
+  margin-right: 42px;
   padding: 0;
+}
+
+#mega-menu li:last-child {
+  margin-right: 0px;
 }
 
 #mega-menu li a {
@@ -1102,6 +1115,16 @@ ul.breadcrumbs li span {
   margin-top: 3px;
 }
 
+@media (max-width: 1199px) {
+  #mega-menu li {
+    margin-right: 17px;
+  }
+}
+@media (max-width: 992px) {
+  #mega-menu li {
+    margin-right: 15px;
+  }
+}
 .star-fill {
   color: #fdd225;
 }
@@ -1283,7 +1306,7 @@ ul.breadcrumbs li span {
 .flexslider {
   margin: 0 auto 20px;
   padding: 0;
-  max-width: 940px;
+  max-width: 1142px;
 }
 
 .flexslider .slides > li {
@@ -1604,6 +1627,11 @@ html[xmlns] .slides {
     width: 50px;
   }
 }
+@media (max-width: 1199px) {
+  .flexslider {
+    max-width: 942px;
+  }
+}
 @media (min-width: 992px) {
   .flex-caption .item-heading {
     font-size: 63px;
@@ -1763,7 +1791,7 @@ a#nav-toggle {
 
 /** BASE **/
 .container {
-  max-width: 970px;
+  max-width: 1180px;
 }
 
 /** HOME BANNER SECTION **/
@@ -3039,7 +3067,7 @@ ul.payment-icons li {
   margin: 0;
 }
 .products-carousel .product {
-  width: 200px;
+  width: 245px;
   margin: 0 40px 0 0;
 }
 .products-carousel li:last-child {
@@ -3055,13 +3083,16 @@ ul.payment-icons li {
 }
 .product-large-view .the-product .gallerific-wrap .stage {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .product-large-view .the-product .gallerific-wrap .stage .ribbon {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 900;
+}
+.product-large-view .the-product .gallerific-wrap .stage img {
+  width: 100% !important;
 }
 .product-large-view .the-product .gallerific-wrap #gal1 {
   /*Change the colour*/
@@ -5584,10 +5615,11 @@ div#thumbs .thumbs li.selected a.thumb {
   }
   .product-large-view .the-product .gallerific-wrap #gal1 img {
     display: block;
+    width: 100%;
   }
   .product-large-view .the-product .gallerific-wrap #gal1 a {
     border: 2px solid #eee;
-    width: auto;
+    width: 24.46%;
     height: auto;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -5754,7 +5786,7 @@ div#thumbs .thumbs li.selected a.thumb {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #cart-popover.popover {
-    left: 55.2% !important;
+    left: 59.8% !important;
   }
 }
 @media (max-width: 360px) {
@@ -6594,6 +6626,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     padding-top: 11px !important;
   }
 }
+.product-grid3 .product img, .product-grid2 .product img {
+  width: 100% !important;
+}
+
 /*--------clearfix----------*/
 .clearfix:before,
 .clearfix:after {

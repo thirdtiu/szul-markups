@@ -406,6 +406,14 @@ label.dd-selected-text {
 		}
 	}
 }
+
+.header-phone {
+	color: #928B92;
+	font-style: normal;
+	display: block;
+	padding: 4px 14px;
+}
+
 .top_primary{
 	background: #f8f8f8;
 	color:#fff;
@@ -426,7 +434,7 @@ label.dd-selected-text {
 	}
 	.store-info{
 		float:left;
-		width: 69%;
+		width: 73%;
 		font-family: $museo-500;
 		margin-top:15px;
 		ul{
@@ -457,8 +465,8 @@ label.dd-selected-text {
 		.form-control{
 			border:none;
 			color:#6f6f6f;
-			width:344px;
-			height: 33px;
+			width:388px;
+			height: 38px;
 			font-size: .90em;
 		}
 		.btn{
@@ -497,7 +505,7 @@ label.dd-selected-text {
 
 	.top-columns,
 	.top-columns_mobile{
-		margin-top:14px;
+		margin-top:23px;
 		float:right;
 		li{
 			list-style-type:none;
@@ -506,11 +514,11 @@ label.dd-selected-text {
 			text-align:right;
 			width: 36px;
 			font-family: $museo-500;
-			font-size: 16px;
-			color: #e6d6a5;
+			font-size: 14px;
+			color: #928B92;
 			margin-left: 28px;
 			a{
-				color: #e6d6a5;	
+				color: #928B92;	
 			}
 			h2{
 				font-size:12px;
@@ -530,6 +538,7 @@ label.dd-selected-text {
 				position:absolute;
 				visibility: hidden;
 			}
+			width: 94px;
 		}
 		li.cart,
 		li.mobile-cart{
@@ -574,7 +583,7 @@ label.dd-selected-text {
 				height:50px;
 				line-height:50px;
 				color:#575757;
-				padding:0 7px;
+				padding:0;
 				text-transform: uppercase;
 			}
 			:hover{
@@ -613,8 +622,13 @@ position: relative;
 #mega-menu li {
 float: left;
 margin: 0;
+margin-right: 42px;
 padding: 0;
 }
+#mega-menu li:last-child {
+	margin-right: 0px;
+}
+
 #mega-menu li a {
 float: left;
 display: block;
@@ -940,3 +954,16 @@ ul.breadcrumbs{
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
 @media (min-width: 1200px) {}
+
+@media (max-width: 1199px) {
+	#mega-menu li {
+		margin-right: 17px;
+	}
+
+}
+@media (max-width: 992px) {
+	#mega-menu li {
+		margin-right: 15px;
+	}
+
+}

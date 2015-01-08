@@ -47,7 +47,7 @@
 .flexslider {
 	margin: 0 auto 20px;
 	padding: 0;
-	max-width: 940px;
+	max-width: 1142px;
 }
 .flexslider .slides > li { 
 	position: relative; 
@@ -232,6 +232,14 @@ html[xmlns] .slides {display: block;}
 		width: 50px;
 	}
 }
+
+@media (max-width: 1199px) {
+	.flexslider {
+		max-width: 942px;
+	}
+
+}
+
 
 @media (min-width: 992px) {
 	.flex-caption {
