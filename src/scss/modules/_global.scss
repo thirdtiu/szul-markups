@@ -255,6 +255,14 @@ label.dd-selected-text {
 		padding:10px 0;
 	}
 }
+.mod-diamond-search {
+	background: #efefef;
+}
+
+.mod-diamond-search .form-body {
+	padding-left: 78px;
+	padding-right: 78px;
+}
 .block{
 	margin-bottom:20px;
 	.block-head{
@@ -981,6 +989,10 @@ ul.breadcrumbs{
 	#mega-menu li:last-child a {
 		padding-left: 12px;
 		padding-right: 12px;
+	}
+	.mod-diamond-search .form-body {
+	padding-left: 10px;
+	padding-right: 10px;
 	}
 
 }

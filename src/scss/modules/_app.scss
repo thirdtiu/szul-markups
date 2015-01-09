@@ -246,6 +246,17 @@ form.diamond_filter{
 		border-bottom:none;
 	}
 
+	.diamond-checkboxes {
+		width: 33%;
+	}
+
+	.diamond-specs {
+		width: 45%;
+	}
+	.search-diamond-button {
+		width: 20%;
+	}
+
 	ul.types{
 		margin:0;
 		padding:0;
@@ -272,6 +283,8 @@ form.diamond_filter{
 		}
 	}
 }
+
+
 
 /** HOME GRIDS **/
 .home-grids{

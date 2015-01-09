@@ -369,6 +369,15 @@ label.dd-selected-text {
   padding: 10px 0;
 }
 
+.mod-diamond-search {
+  background: #efefef;
+}
+
+.mod-diamond-search .form-body {
+  padding-left: 78px;
+  padding-right: 78px;
+}
+
 .block {
   margin-bottom: 20px;
 }
@@ -1141,6 +1150,11 @@ ul.breadcrumbs li span {
   #mega-menu li:last-child a {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .mod-diamond-search .form-body {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (max-width: 992px) {
@@ -1943,6 +1957,15 @@ form.diamond_filter .form-group button[type="submit"] {
 }
 form.diamond_filter .form-group:last-child {
   border-bottom: none;
+}
+form.diamond_filter .diamond-checkboxes {
+  width: 33%;
+}
+form.diamond_filter .diamond-specs {
+  width: 45%;
+}
+form.diamond_filter .search-diamond-button {
+  width: 20%;
 }
 form.diamond_filter ul.types {
   margin: 0;

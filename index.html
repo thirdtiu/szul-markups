@@ -40,77 +40,85 @@
     <div class="container">
       <div class="module mod-diamond-search hidden-xs hidden-sm">
         <form action="create-advanced-search.html" method="post" class="form-horizontal diamond_filter">
-          <h2 class="form-header">CERTIFIED LOOSE DIAMONDS</h2>
+          <h2 class="form-header">CERTIFIED DIAMOND SEARCH</h2>
           <div class="form-body clearfix">
-            <div class="form-group">
-              <ul class="types">
-                <li class="type">
-                  <label for="type-round" class="type-header">Round
-                    <img src="images/type-round.png" alt="" class="type-image">
-                  </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-round" />
-                  </div>
-                </li>
-                <li class="type">
-                  <label for="type-princess" class="type-header">Princess
-                    <img src="images/type-princess.png" alt="" class="type-image">
-                  </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-princess" />
-                  </div>
-                </li>
-                <li class="type">
-                  <label for="type-radiant" class="type-header">Radiant
-                    <img src="images/type-radiant.png" alt="" class="type-image">
-                  </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-radiant" />
-                  </div>
-                </li>
-                <li class="type">
-                  <label for="type-cushion" class="type-header">Cushion
-                    <img src="images/type-cushion.png" alt="" class="type-image">
-                  </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-cushion" />
-                  </div>
-                </li>
-                <li class="type">
-                  <label for="type-oval" class="type-header">Oval
-                    <img src="images/type-oval.png" alt="" class="type-image">
-                  </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval" />
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="form-group">
-                <div class="sub-group">
-                  <label for="carat">CARAT</label><br>
-                  <input type="text" class="" id="carat"> TO <input type="text" id="carat2">
 
-                  <label for="clarity">CLARITY</label><br>
-                  <select id="clarity"></select> 
-                  <span class="clarity-separator">TO</span> 
-                  <select id="clarity2"></select>
-                </div>
-                
-                <div class="sub-group color-certificate-container">
-                  <label for="color">COLOR</label><br>
-                  <input type="text" class="" id="color"> TO <input type="text" id="carat2">
+              <div class="form-wrap clearfix">
 
-                  <label>CERTIFICATE</label><br>
-                  <label><input type="checkbox" id="GIA"> GIA</label>&nbsp;
-                  <label><input type="checkbox" id="EGL"> EGL</label>
+                <div class="form-group diamond-checkboxes">
+                  <ul class="types">
+                    <li class="type">
+                      <label for="type-round" class="type-header">Round
+                        <img src="images/type-round.png" alt="" class="type-image">
+                      </label>
+                      <div class="type-checkbox">
+                        <input type="checkbox" id="type-round" />
+                      </div>
+                    </li>
+                    <li class="type">
+                      <label for="type-princess" class="type-header">Princess
+                        <img src="images/type-princess.png" alt="" class="type-image">
+                      </label>
+                      <div class="type-checkbox">
+                        <input type="checkbox" id="type-princess" />
+                      </div>
+                    </li>
+                    <li class="type">
+                      <label for="type-radiant" class="type-header">Radiant
+                        <img src="images/type-radiant.png" alt="" class="type-image">
+                      </label>
+                      <div class="type-checkbox">
+                        <input type="checkbox" id="type-radiant" />
+                      </div>
+                    </li>
+                    <li class="type">
+                      <label for="type-cushion" class="type-header">Cushion
+                        <img src="images/type-cushion.png" alt="" class="type-image">
+                      </label>
+                      <div class="type-checkbox">
+                        <input type="checkbox" id="type-cushion" />
+                      </div>
+                    </li>
+                    <li class="type">
+                      <label for="type-oval" class="type-header">Oval
+                        <img src="images/type-oval.png" alt="" class="type-image">
+                      </label>
+                      <div class="type-checkbox">
+                        <input type="checkbox" id="type-oval" />
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <div class="form-group">
-              <p class="text-center">
-                <button type="submit" class="btn btn-primary-gradient btn-lg">SEARCH DIAMONDS</button>
-              </p>
-            </div>
+
+                <div class="form-group diamond-specs">
+                    <div class="sub-group">
+                      <label for="carat">CARAT</label><br>
+                      <input type="text" class="" id="carat"> TO <input type="text" id="carat2">
+
+                      <label for="clarity">CLARITY</label><br>
+                      <select id="clarity"></select> 
+                      <span class="clarity-separator">TO</span> 
+                      <select id="clarity2"></select>
+                    </div>
+                    
+                    <div class="sub-group color-certificate-container">
+                      <label for="color">COLOR</label><br>
+                      <input type="text" class="" id="color"> TO <input type="text" id="carat2">
+
+                      <label>CERTIFICATE</label><br>
+                      <label><input type="checkbox" id="GIA"> GIA</label>&nbsp;
+                      <label><input type="checkbox" id="EGL"> EGL</label>
+                    </div>
+                </div>
+
+                <div class="form-group search-diamond-button">
+                  <p class="text-right">
+                    <button type="submit" class="btn btn-primary-gradient btn-lg">SEARCH DIAMONDS</button>
+                  </p>
+                </div>
+
+              </div>
+
           </div>
         </form>
       </div><!--.module-->
