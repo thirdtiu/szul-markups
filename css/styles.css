@@ -524,7 +524,7 @@ label.dd-selected-text {
 
 /** HEADER **/
 .top-links {
-  background: #f8f8f8;
+  background: #ffffff;
   font-size: 13px;
 }
 .top-links li {
@@ -554,7 +554,7 @@ label.dd-selected-text {
 }
 
 .top_primary {
-  background: #f8f8f8;
+  background: #ffffff;
   color: #fff;
 }
 .top_primary .container {
@@ -734,7 +734,7 @@ label.dd-selected-text {
 }
 
 .top_secondary {
-  background: #f8f8f8;
+  background: #ffffff;
   height: 50px;
 }
 .top_secondary #main_nav {
@@ -929,7 +929,7 @@ label.dd-selected-text {
 }
 
 .windowshade {
-  background: #f8f8f8;
+  background: #ffffff;
 }
 
 .windowshade-promo {
