@@ -2866,12 +2866,14 @@ div#thumbs{
 					width: 24px;
 					height: 24px;
 					span.icon{
+						background-size: 25px 25px !important;
 						position:static;
 						margin-top:0;
 					}
 				}
 			}
 			li.mobile-cart{
+				margin-top: -4px;
 				margin-right:10px;
 				margin-left: 20px;
 				.badge{
@@ -2882,6 +2884,12 @@ div#thumbs{
 					right:-10px;
 					margin-left:0;
 				}
+			}
+			.mobile-cart-icon {
+				img {
+					width: 28px !important;
+				}
+
 			}
 		}
 	}

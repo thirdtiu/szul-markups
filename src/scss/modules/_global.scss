@@ -407,6 +407,11 @@ label.dd-selected-text {
 	}
 }
 
+.links-wrap {
+	border-bottom: 1px solid #dadddf;
+	margin-bottom: 8px;
+}
+
 .header-phone {
 	color: #928B92;
 	font-style: normal;
@@ -583,7 +588,7 @@ label.dd-selected-text {
 				height:50px;
 				line-height:50px;
 				color:#575757;
-				padding:0;
+				padding:0 18px;
 				text-transform: uppercase;
 			}
 			:hover{
@@ -622,12 +627,18 @@ position: relative;
 #mega-menu li {
 float: left;
 margin: 0;
-margin-right: 42px;
+margin-right: 0;
 padding: 0;
 }
 #mega-menu li:last-child {
 	margin-right: 0px;
 }
+#mega-menu li:last-child a {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+
 
 #mega-menu li a {
 float: left;
@@ -649,6 +660,11 @@ color:#706770;
 /*border:1px solid #ccc;*/
 border-top:none;
 }
+
+#mega-menu .deals-collections-dd .sub-container {
+	right: 0 !important;
+}
+
 #mega-menu li .sub .mrow {
 width: 100%;
 overflow: hidden;
@@ -956,8 +972,15 @@ ul.breadcrumbs{
 @media (min-width: 1200px) {}
 
 @media (max-width: 1199px) {
-	#mega-menu li {
-		margin-right: 17px;
+	.top_primary .store-info {
+		width: 67%;
+	}
+	.top_secondary #main_nav li a {
+		padding: 0 7px;
+	}
+	#mega-menu li:last-child a {
+		padding-left: 12px;
+		padding-right: 12px;
 	}
 
 }
