@@ -296,26 +296,38 @@ form.diamond_filter{
 }
 .product-grid3{
 	.product{
-		width: 31.25%;
+		width: 32.08%;
 		float: left;
-		margin:0 1.0416666666666665% 20px;
+		margin:0 1.8416666666666665% 20px 0px;
 	}
 	.product:hover{
 		.grid-header{
 			background:rgba(157, 84, 168, .6) !important;
 		}
+	}
+	.product:last-child {
+	margin-right: 0px !important;
 	}
 }
 .product-grid2{
 	.product{
-		width: 47.91666666666667%;
+		/*width: 47.91666666666667%;*/
 		float: left;
-		margin:0 1.0416666666666665% 20px;
+		margin:0 2.0416666666666665% 20px 0px;
 	}
 	.product:hover{
 		.grid-header{
 			background:rgba(157, 84, 168, .6) !important;
 		}
+	}
+	.product:last-child {
+	margin-right: 0px !important;
+	}
+	.home-product-left {
+		width: 38.6%;
+	}
+	.home-product-right {
+		width: 58.8%;
 	}
 }
 
