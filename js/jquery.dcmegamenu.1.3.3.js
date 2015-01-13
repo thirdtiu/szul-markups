@@ -200,9 +200,9 @@
 					// HoverIntent Configuration
 					var config = {
 						sensitivity: 2,
-						interval: 100,
+						interval: 1,
 						over: megaOver,
-						timeout: 400,
+						timeout: 1,
 						out: megaOut
 					};
 					$('li',$dcMegaMenuObj).hoverIntent(config);

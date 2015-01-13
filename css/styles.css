@@ -828,6 +828,14 @@ label.dd-selected-text {
   right: 0 !important;
 }
 
+#mega-menu .bracelets-dd .sub-container {
+  left: 352px !important;
+}
+
+#mega-menu .engagement-wedding-dd .sub-container {
+  left: 446px !important;
+}
+
 #mega-menu li .sub .mrow {
   width: 100%;
   overflow: hidden;
@@ -2030,7 +2038,7 @@ form.diamond_filter ul.types li label img {
   width: 38.6%;
 }
 .product-grid2 .home-product-right {
-  width: 58.8%;
+  width: 59.2%;
 }
 
 .grid-header {
