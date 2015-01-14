@@ -1399,6 +1399,7 @@ html[xmlns] .slides {
 *********************************/
 .flexslider {
   background: #fff;
+  max-height: 450px;
   position: relative;
   zoom: 1;
   overflow: hidden;
@@ -4589,6 +4590,9 @@ div#thumbs .thumbs li.selected a.thumb {
     color: #575757;
     padding: 25px 10px 25px 20px;
     outline: none;
+  }
+  .mm-menu > .mm-list .mm-subopen {
+    border-left: 1px solid #DDD;
   }
 
   .mm-menu > .mm-list.sub_menu {
