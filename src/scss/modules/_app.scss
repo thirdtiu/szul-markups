@@ -2784,6 +2784,7 @@ div#thumbs{
 	}
 	a#nav-toggle{
 		display: block;
+		margin-top: 3px;
 		text-align: center;
 	}
 	a#nav-toggle.active{
@@ -2876,6 +2877,10 @@ div#thumbs{
 					width: 100% !important;
 				}	
 			}
+		}
+
+		.mobile-logo {
+			margin-top: 18px;
 		}
 
 		.top-columns_mobile{
@@ -5112,6 +5117,7 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 
 @media(min-width:320px) and (max-width: 768px){
 	.top_primary .container {
+		background: #f8f8f8;
 		height: 53px !important;
 	}
 	.windowshade {

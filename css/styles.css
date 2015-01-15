@@ -64,6 +64,7 @@ label.dd-selected-text {
 
 #nav-toggle .icon {
   background: url(../images/mobile-nav-bg2.png) no-repeat !important;
+  background-size: 32px !important;
 }
 
 .account .icon {
@@ -4416,6 +4417,7 @@ div#thumbs .thumbs li.selected a.thumb {
 
   a#nav-toggle {
     display: block;
+    margin-top: 3px;
     text-align: center;
   }
 
@@ -4509,6 +4511,9 @@ div#thumbs .thumbs li.selected a.thumb {
   }
   .top_primary #logo a img {
     width: 100% !important;
+  }
+  .top_primary .mobile-logo {
+    margin-top: 18px;
   }
   .top_primary .top-columns_mobile li {
     width: auto;
@@ -6694,6 +6699,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .top_primary .container {
+    background: #f8f8f8;
     height: 53px !important;
   }
 
