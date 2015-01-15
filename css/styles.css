@@ -67,6 +67,56 @@ label.dd-selected-text {
   background-size: 32px !important;
 }
 
+#mobile-nav {
+  transition: .15s all;
+  -webkit-transition: .15s all;
+  -moz-transition: .15s all;
+}
+
+.windowshade {
+  transition: 2s all;
+  -webkit-transition: 2s all;
+  -moz-transition: 2s all;
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+  #mobile-nav {
+    display: block !important;
+    left: -50%;
+  }
+
+  #mobile-nav.move-right {
+    left: 0% !important;
+  }
+
+  .mm-page.move-right {
+    left: 50% !important;
+  }
+
+  .windowshade.move-right {
+    left: 50% !important;
+    position: relative;
+  }
+}
+@media (max-width: 400px) {
+  #mobile-nav {
+    display: block !important;
+    left: -75%;
+  }
+
+  #mobile-nav.move-right {
+    left: 0% !important;
+  }
+
+  .mm-page.move-right {
+    left: 75% !important;
+  }
+
+  .windowshade.move-right {
+    left: 75% !important;
+    position: relative;
+  }
+}
 .account .icon {
   background: none !important;
 }
@@ -1770,7 +1820,7 @@ a#nav-toggle {
   display: none;
   color: #fff;
   width: 58px;
-  height: 53px;
+  height: 50px;
   outline: none;
 }
 

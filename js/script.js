@@ -27,6 +27,10 @@ $(function(){
 
 	$(document.body).on('click', '#nav-toggle.active', function() {
 		$("#mobile-nav").mmenu().trigger('close');
+		$('.mm-page').css('left', '75%');
+	});
+	$(document.body).on('click', '#nav-toggle', function() {
+		$('.mm-page, .windowshade, #mobile-nav').toggleClass('move-right');
 	});
 
 
