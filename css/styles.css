@@ -4577,6 +4577,7 @@ div#thumbs .thumbs li.selected a.thumb {
 
   #mobile-nav {
     z-index: 9998;
+    width: 75%;
   }
 
   .mm-ismenu {
@@ -4597,7 +4598,7 @@ div#thumbs .thumbs li.selected a.thumb {
     outline: none;
   }
   .mm-menu > .mm-list .mm-subopen {
-    border-left: 1px solid #DDD;
+    /*border-left: 1px solid #DDD;*/
   }
 
   .mm-menu > .mm-list.sub_menu {
@@ -5981,6 +5982,10 @@ div#thumbs .thumbs li.selected a.thumb {
   .shipping-promo, .payment-promo,
   .review-promo {
     display: none;
+  }
+
+  .mm-page {
+    left: 0 !important;
   }
 
   .mm-page .page-header {

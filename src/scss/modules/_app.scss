@@ -2946,6 +2946,7 @@ div#thumbs{
 	}
 	#mobile-nav{
 		z-index: 9998;
+		width: 75%;
 	}
 	.mm-ismenu{
 		background:#fff;
@@ -2963,7 +2964,7 @@ div#thumbs{
 			outline: none;	
 		}
 		.mm-subopen {
-			border-left: 1px solid #DDD;
+			/*border-left: 1px solid #DDD;*/
 		}
 
 	}
@@ -4499,6 +4500,9 @@ div#thumbs{
 	.shipping-promo, .payment-promo, 
 	.review-promo{
 		display:none;
+	}
+	.mm-page {
+	left: 0!important;	
 	}
 	.mm-page .page-header{
 		margin: 12px 0 12px !important;
