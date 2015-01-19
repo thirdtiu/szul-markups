@@ -251,5 +251,16 @@ li.deals-collections-dd ul.sub{
 	.product-grid2 .product img {
 		height: 204px;
 	}
+	.spec-separator {
+		display: block;
+		font-size: 12px;
+		padding-left: 15px;
+	}
+	form.diamond_filter .form-group .sub-group input[type="text"] {
+		margin-bottom: 4px !important;
+	}
+	.jcarousel.jcarousel-disabled ul.products-carousel li.product {
+		min-height: 354px;
+	}
 }
 
