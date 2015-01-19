@@ -8491,5 +8491,14 @@ li.deals-collections-dd ul.sub {
     width: 100px;
   }
 }
+@media (max-width: 570px) {
+  .product-grid2 .product.grid:last-child {
+    margin-left: 29px !important;
+  }
+
+  .product-grid2 .product img {
+    height: 204px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
