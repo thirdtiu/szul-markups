@@ -8514,5 +8514,11 @@ li.deals-collections-dd ul.sub {
     min-height: 354px;
   }
 }
+@media (min-width: 340px) and (max-width: 570px) {
+  .mobile-sorting {
+    position: fixed !important;
+    top: 0 !important;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

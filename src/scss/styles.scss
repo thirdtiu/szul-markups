@@ -264,3 +264,10 @@ li.deals-collections-dd ul.sub{
 	}
 }
 
+@media (min-width:340px) and (max-width:570px){
+	.mobile-sorting {
+		position: fixed !important;
+		top: 0 !important;
+	}
+}
+
