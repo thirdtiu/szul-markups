@@ -479,6 +479,35 @@ $(window).load(function(){
 		}
 	];
 
+
+	var colorData = [
+		{
+			text: "Red",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "Green",
+			value: 2,
+			selected: false,
+		},
+		{
+			text: "Blue",
+			value: 3,
+			selected: false,
+		}
+	];
+
+	$('#color').ddslick({
+		data: colorData,
+		width: 100,
+		imagePosition: "left",
+		//selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+	
+
 	// Product listing mobile sorting
 	$('#items-per-page').ddslick({ width: 270 });
 	$('#sortby').ddslick({ width: 270 });
