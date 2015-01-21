@@ -2002,6 +2002,10 @@ form.diamond_filter .form-group label {
 form.diamond_filter .form-group label input[type="checkbox"] {
   vertical-align: top;
 }
+form.diamond_filter .form-group .certificate-label {
+  display: block;
+  margin-top: 13px;
+}
 form.diamond_filter .form-group .clarity-label {
   display: block;
 }
