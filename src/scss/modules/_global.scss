@@ -588,6 +588,8 @@ label.dd-selected-text {
 				margin-top:-5px;
 			}
 		}
+
+
 		li.account{
 			cursor: pointer;
 			.account-popover-contents{
@@ -689,7 +691,9 @@ padding: 0;
 	padding-right: 28px;
 }
 
-
+.header-contact-icon {
+	display: none;
+}
 
 #mega-menu li a {
 float: left;
