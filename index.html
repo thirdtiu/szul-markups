@@ -40,7 +40,13 @@
     <div class="container">
       <div class="module mod-diamond-search hidden-xs hidden-sm">
         <form action="create-advanced-search.html" method="post" class="form-horizontal diamond_filter">
-          <h2 class="form-header">CERTIFIED DIAMOND SEARCH</h2>
+          <div class="diamon-search-header clearfix">
+             <h2 class="form-header pull-left">CERTIFIED DIAMOND SEARCH</h2>
+              <div class="pull-right more-fields visible-xs">
+                <a href="#" class="show-more">Show More</a>
+                <a href="#" class="show-less">Show Less</a>
+              </div>
+          </div>
           <div class="form-body clearfix">
 
               <div class="form-wrap clearfix">
@@ -90,7 +96,7 @@
                   </ul>
                 </div>
 
-                <div class="form-group diamond-specs">
+                <div class="form-group diamond-specs hidden-xs">
                     <div class="sub-group">
                       <label for="carat">CARAT</label><br>
                       <input type="text" class="" id="carat"> <span class="spec-separator">TO</span> <input type="text" id="carat2">
@@ -109,6 +115,30 @@
                       <label><input type="checkbox" id="GIA"> GIA</label>&nbsp;
                       <label><input type="checkbox" id="EGL"> EGL</label>
                     </div>
+                </div>
+
+                <div class="form-group diamond-specs mobile-fields visible-xs">
+                    <div class="sub-group">
+                      
+
+                      <label for="clarity" class="clarity-label">CLARITY</label>
+                      <select id="clarity"></select> 
+                      <span class="clarity-separator spec-separator">TO</span> 
+                      <select id="clarity2"></select>
+
+                      <div class="color-certificate-container">
+                        <label class="certificate-label">CERTIFICATE</label>
+                        <label><input type="checkbox" id="GIA"> GIA</label>&nbsp;
+                        <label class="egl"><input type="checkbox" id="EGL"> EGL</label>
+                      </div>
+                      <label for="carat" id="carat-label">CARAT</label><br>
+                      <input type="text" class="" id="carat"> <span class="spec-separator">TO</span> <input type="text" id="carat2">
+                      <label for="color" id="color-label">COLOR</label><br>
+                      <select id="color"></select> 
+
+                    </div>
+                    
+                    
                 </div>
 
                 <div class="form-group search-diamond-button">
