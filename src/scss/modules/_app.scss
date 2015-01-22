@@ -4834,6 +4834,54 @@ div#thumbs{
 .m-jg-dc-container{
 	display:none;
 }
+
+
+@media(max-width:400px){
+form.diamond_filter {
+
+		.mobile-fields {
+
+			.sub-group {
+				width: 100% !important;
+
+				.spec-separator {
+					display: inline-block !important;
+					padding-right: 7px;
+					padding-left: 7px
+				}
+				#clarity, #clarity2 {
+					width: 80px !important;
+					height: 30px;
+				}
+				.color-certificate-container {
+					padding-left: 0px !important;
+
+					.egl {
+						margin-left: 38px;
+					}
+					.certificate-label {
+						margin-top: 4px !important;
+					}
+				}
+				#carat, #carat2, #color {
+					height: 30px;
+					width: 80px;
+				}
+				#color-label, #carat-label {
+					margin-top: 10px;
+				}
+
+
+			}
+		}
+	}
+
+}
+
+
+
+
+
 @media(max-width:360px){
 	.modal-dialog{
 	margin:0px;

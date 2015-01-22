@@ -133,6 +133,10 @@ label.dd-selected-text {
   }
 }
 @media (max-width: 400px) {
+  body > div.mm-page > div.container > div.module.mod-diamond-search.hidden-sm > form > div.form-body.clearfix.mob-form-body.active > div > div.form-group.search-diamond-button > p {
+    text-align: center !important;
+  }
+
   .mm-menu > .mm-list {
     padding-top: 0px !important;
   }
@@ -200,6 +204,40 @@ label.dd-selected-text {
   .mobile-nav-control.move-right {
     display: block;
     opacity: .7;
+  }
+
+  .mob-form-body {
+    height: 120px;
+    overflow: hidden;
+    transition: .5s all ease !important;
+    -webkit-transition: .5s all ease !important;
+    -moz-transition: .5s all ease !important;
+  }
+
+  .mob-form-body.active {
+    height: 625px;
+  }
+
+  form.diamond_filter ul.types li {
+    margin-top: 5px !important;
+  }
+
+  a.show-more img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    width: 15px;
+    margin-left: 10px;
+  }
+
+  a.show-less img {
+    width: 15px;
+    margin-left: 10px;
+    margin-top: -3px;
+  }
+
+  a.show-less {
+    display: none;
   }
 }
 .account .icon {
@@ -6477,6 +6515,36 @@ div#thumbs .thumbs li.selected a.thumb {
   display: none;
 }
 
+@media (max-width: 400px) {
+  form.diamond_filter .mobile-fields .sub-group {
+    width: 100% !important;
+  }
+  form.diamond_filter .mobile-fields .sub-group .spec-separator {
+    display: inline-block !important;
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  form.diamond_filter .mobile-fields .sub-group #clarity, form.diamond_filter .mobile-fields .sub-group #clarity2 {
+    width: 80px !important;
+    height: 30px;
+  }
+  form.diamond_filter .mobile-fields .sub-group .color-certificate-container {
+    padding-left: 0px !important;
+  }
+  form.diamond_filter .mobile-fields .sub-group .color-certificate-container .egl {
+    margin-left: 38px;
+  }
+  form.diamond_filter .mobile-fields .sub-group .color-certificate-container .certificate-label {
+    margin-top: 4px !important;
+  }
+  form.diamond_filter .mobile-fields .sub-group #carat, form.diamond_filter .mobile-fields .sub-group #carat2, form.diamond_filter .mobile-fields .sub-group #color {
+    height: 30px;
+    width: 80px;
+  }
+  form.diamond_filter .mobile-fields .sub-group #color-label, form.diamond_filter .mobile-fields .sub-group #carat-label {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 360px) {
   .modal-dialog {
     margin: 0px;
