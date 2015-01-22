@@ -2035,6 +2035,11 @@ a#nav-toggle {
   z-index: 9;
 }
 
+.diamon-search-header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
 form.diamond_filter {
   padding: 20px;
   background: #efefef;
@@ -2043,7 +2048,7 @@ form.diamond_filter .form-header {
   color: #575757;
   font-size: 14px;
   font-style: italic;
-  border-bottom: 1px solid #ccc;
+  /*border-bottom:1px solid #ccc;*/
   padding-bottom: 15px;
 }
 form.diamond_filter .form-group {
@@ -2119,6 +2124,41 @@ form.diamond_filter ul.types li label {
 form.diamond_filter ul.types li label img {
   margin-top: 5px;
   display: block;
+}
+
+.more-fields a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form.diamond_filter .mobile-fields .sub-group {
+  width: 100% !important;
+}
+form.diamond_filter .mobile-fields .sub-group .spec-separator {
+  display: inline-block !important;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+form.diamond_filter .mobile-fields .sub-group #clarity, form.diamond_filter .mobile-fields .sub-group #clarity2 {
+  width: 90px !important;
+  height: 30px;
+}
+form.diamond_filter .mobile-fields .sub-group .color-certificate-container {
+  padding-left: 0px !important;
+}
+form.diamond_filter .mobile-fields .sub-group .color-certificate-container .egl {
+  margin-left: 38px;
+}
+form.diamond_filter .mobile-fields .sub-group .color-certificate-container .certificate-label {
+  margin-top: 4px !important;
+}
+form.diamond_filter .mobile-fields .sub-group #carat, form.diamond_filter .mobile-fields .sub-group #carat2, form.diamond_filter .mobile-fields .sub-group #color {
+  height: 30px;
+  width: 90px;
+}
+form.diamond_filter .mobile-fields .sub-group #color-label, form.diamond_filter .mobile-fields .sub-group #carat-label {
+  margin-top: 10px;
 }
 
 /** HOME GRIDS **/
@@ -6841,6 +6881,18 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 
   .windowshade {
     padding-top: 11px !important;
+  }
+
+  .header-contact-icon {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 52px;
+    z-index: 1000;
+  }
+
+  .glyphicon-earphone {
+    display: none;
   }
 }
 .product-grid3 .product img, .product-grid2 .product img {

@@ -202,6 +202,11 @@ a#nav-toggle{
 	position:relative;
 	z-index:9;
 }
+
+.diamon-search-header {
+	border-bottom:1px solid #ccc;
+	margin-bottom: 8px;
+}
 form.diamond_filter{
 	padding:20px;
 	background:#efefef;
@@ -209,7 +214,7 @@ form.diamond_filter{
 		color: #575757;
 		font-size: 14px;
 		font-style: italic;
-		border-bottom:1px solid #ccc;
+		/*border-bottom:1px solid #ccc;*/
 		padding-bottom:15px;
 	}
 	.form-group{
@@ -289,6 +294,54 @@ form.diamond_filter{
 			}
 		}
 	}
+}
+
+.more-fields {
+	a {
+		color: #000;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+}
+
+form.diamond_filter {
+
+		.mobile-fields {
+
+			.sub-group {
+				width: 100% !important;
+
+				.spec-separator {
+					display: inline-block !important;
+					padding-right: 7px;
+					padding-left: 7px
+				}
+				#clarity, #clarity2 {
+					width: 90px !important;
+					height: 30px;
+				}
+				.color-certificate-container {
+					padding-left: 0px !important;
+
+					.egl {
+						margin-left: 38px;
+					}
+					.certificate-label {
+						margin-top: 4px !important;
+					}
+				}
+				#carat, #carat2, #color {
+					height: 30px;
+					width: 90px;
+				}
+				#color-label, #carat-label {
+					margin-top: 10px;
+				}
+
+
+			}
+		}
 }
 
 
@@ -4672,6 +4725,11 @@ div#thumbs{
 .m-type-cert{
 	padding-left:0px;
 }
+
+@media(max-width:570px){
+	
+}
+
 @media(max-width:360px){
 	
 
@@ -5146,6 +5204,16 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	}
 	.windowshade {
 		padding-top: 11px !important;
+	}
+	.header-contact-icon {
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: 52px;
+		z-index: 1000;
+	}
+	.glyphicon-earphone {
+		display: none;
 	}
 }
 
