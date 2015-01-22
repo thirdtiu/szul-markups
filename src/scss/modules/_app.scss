@@ -5147,6 +5147,16 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	.windowshade {
 		padding-top: 11px !important;
 	}
+	.header-contact-icon {
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: 52px;
+		z-index: 1000;
+	}
+	.glyphicon-earphone {
+		display: none;
+	}
 }
 
 
