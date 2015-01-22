@@ -29,14 +29,15 @@ $(function(){
 		$("#mobile-nav").mmenu().trigger('close');
 	});
 	$(document.body).on('click', '#nav-toggle, .mobile-nav-control', function() {
-		$('.mm-page, .windowshade, #mobile-nav, #top_header, .mobile-nav-control').toggleClass('move-right');
+		$('.mm-page, .windowshade, #mobile-nav, #top_header').toggleClass('move-right');
+		$('.mobile-nav-control').fadeToggle(300);
 	});
 	$('.mobile-nav-control').on('click', function() {
 		$("#mobile-nav").mmenu().trigger('close');
 	});
 	$('.hasdropdown a:last-child').on('click', function(){
 		var location = $(this).attr("href");
-
+		$('.mobile-nav-control').fadeOut(100);
 		$('.mm-page, .windowshade, #mobile-nav, #top_header').removeClass('move-right');
 
 		setTimeout(function(){window.location.href= location;},1000);

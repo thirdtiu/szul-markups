@@ -58,13 +58,13 @@ label.dd-selected-text {
 	#mobile-nav{
 		display:block !important;
 		z-index:-1 !important;
-		-webkit-transition-delay: 0s; /* Safari */
-    	transition-delay: 0s;
+		
 	}
 	#mobile-nav.move-right{
-		z-index:1 !important;
-		-webkit-transition-delay: .8s; /* Safari */
-    	transition-delay: .8s;
+		z-index:99999 !important;
+		-webkit-transition-delay: .3s; /* Safari */
+    	transition-delay: .3s;
+		
 	}
 	.mm-page{
 		background:white;
@@ -102,15 +102,19 @@ label.dd-selected-text {
 	}
 	.mobile-nav-control{
 		position: fixed;
-		width: 100px;
+		width: 82px;
 		height: 100%;
 		z-index: 999;
 		right:0px;
+		background:black;
+		opacity:.7;
 		top:50px;
-		display:none;
+    	display:none;
+    	left: 240px;
 	}
 	.mobile-nav-control.move-right{
 		display:block;
+		opacity:.7;
 	}
 }
 
