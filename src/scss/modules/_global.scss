@@ -138,6 +138,9 @@ label.dd-selected-text {
 	.mobile-nav-control.move-right{
 		display:block;
 	}
+	#mobile-nav .mm-list{
+		padding-top:0px;
+	}
 }
 @media(max-width:400px){
 

@@ -197,6 +197,10 @@ label.dd-selected-text {
   .mobile-nav-control.move-right {
     display: block;
   }
+
+  #mobile-nav .mm-list {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 400px) {
   body > div.mm-page > div.container > div.module.mod-diamond-search.hidden-sm > form > div.form-body.clearfix.mob-form-body.active > div > div.form-group.search-diamond-button > p {
