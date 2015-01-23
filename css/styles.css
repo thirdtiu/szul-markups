@@ -102,14 +102,18 @@ label.dd-selected-text {
 
   #mobile-nav {
     display: block !important;
-    z-index: -1 !important;
-    -webkit-transition-delay: .3s;
-    /* Safari */
-    transition-delay: .3s;
+    transform: translate3d(-100%, 0px, 1px);
+    -webkit-transform: translate3d(-100%, 0px, 1px);
+    -moz-transform: translate3d(-100%, 0px, 1px);
+    transition: .5s all ease !important;
+    -webkit-transition: .5s all ease !important;
+    -moz-transition: .5s all ease !important;
   }
 
   #mobile-nav.move-right {
-    z-index: 99999 !important;
+    transform: translate3d(0%, 0px, 1px);
+    -webkit-transform: translate3d(0%, 0px, 1px);
+    -moz-transform: translate3d(0%, 0px, 1px);
   }
 
   .mm-page {
