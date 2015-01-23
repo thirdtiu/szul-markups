@@ -8,8 +8,27 @@ body.modal-open {
 	width:50px !important;
 	font-size:12px;
 }
-#clarity .dd-select, #clarity2 .dd-select{
+#clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select{
 	width:50px !important;
+}
+
+.color-separator {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+
+
+.color-separator, #color-range, #color-range2 {
+	float: left;
+}
+
+#color-range .dd-options, #color-range2 .dd-options {
+	width: 54px !important;	
+}
+
+#color-range, #color-range2 {
+	width: 50px !important;
 }
 .clarity-separator{
 	display: inline-block;

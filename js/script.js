@@ -1054,6 +1054,36 @@ $(window).load(function(){
 		onSelected: function (data) {}
 	});
 
+
+
+	var colorInital = [
+		{
+			text: "D",
+			value: 1,
+			selected: true,
+		}
+	
+	]; 
+
+	$('#color-range').ddslick({
+		data: colorInital,
+		onSelected: function (data) {}
+	});
+
+	var colorFinal = [
+		{
+			text: "J",
+			value: 1,
+			selected: true,
+		}
+	
+	]; 
+
+	$('#color-range2').ddslick({
+		data: colorFinal,
+		onSelected: function (data) {}
+	});
+
 	
 });
 

@@ -2138,6 +2138,9 @@ form.diamond_filter .form-group .certificate-label {
   display: block;
   margin-top: 13px;
 }
+form.diamond_filter .form-group .web-certificate-label {
+  padding-top: 33px !important;
+}
 form.diamond_filter .form-group .clarity-label {
   display: block;
 }
@@ -6639,6 +6642,10 @@ body.modal-open {
   #rp1-sp-input .dd-options {
     width: 160px;
   }
+
+  .hidden-xs-portrait {
+    display: none;
+  }
 }
 .windowshade-promo div.main-content {
   padding-left: 10px !important;
@@ -8426,7 +8433,24 @@ body.modal-open {
   font-size: 12px;
 }
 
-#clarity .dd-select, #clarity2 .dd-select {
+#clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select {
+  width: 50px !important;
+}
+
+.color-separator {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.color-separator, #color-range, #color-range2 {
+  float: left;
+}
+
+#color-range .dd-options, #color-range2 .dd-options {
+  width: 54px !important;
+}
+
+#color-range, #color-range2 {
   width: 50px !important;
 }
 

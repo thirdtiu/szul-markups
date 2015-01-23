@@ -217,6 +217,8 @@ form.diamond_filter{
 		/*border-bottom:1px solid #ccc;*/
 		padding-bottom:15px;
 	}
+
+
 	.form-group{
 		width: 33%;
 		float:left;
@@ -236,6 +238,9 @@ form.diamond_filter{
 		.certificate-label {
 			display: block;
 			margin-top: 13px;
+		}
+		.web-certificate-label {
+			padding-top: 33px !important;
 		}
 		.clarity-label {
 			display: block;
@@ -4491,6 +4496,7 @@ div#thumbs{
 	.submit-forgot .forgot{
 		font-size:11px;
 	}
+
 	form.mobile-login-form .form-group, form.mobile-register-form .form-group{
 		padding:5px;
 		margin-right:0px;
@@ -4960,6 +4966,11 @@ body.modal-open {
 	#rp1-sp-input .dd-options{
 		width:160px;
 	}
+
+	.hidden-xs-portrait {
+		display: none;
+	}
+
 }
 
 .windowshade-promo div.main-content{

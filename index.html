@@ -85,7 +85,7 @@
                         <input type="checkbox" id="type-cushion" />
                       </div>
                     </li>
-                    <li class="type">
+                    <li class="type hidden-xs-portrait">
                       <label for="type-oval" class="type-header">Oval
                         <img src="images/type-oval.png" alt="" class="type-image">
                       </label>
@@ -109,9 +109,12 @@
                     
                     <div class="sub-group color-certificate-container">
                       <label for="color">COLOR</label><br>
-                      <select id="color"></select> 
+                      <select id="color-range"></select> 
+                      <span class="clarity-separator spec-separator color-separator">TO</span> 
+                      <select id="color-range2"></select>
 
-                      <label class="certificate-label">CERTIFICATE</label>
+
+                      <label class="certificate-label web-certificate-label">CERTIFICATE</label>
                       <label><input type="checkbox" id="GIA"> GIA</label>&nbsp;
                       <label><input type="checkbox" id="EGL"> EGL</label>
                     </div>
