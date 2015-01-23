@@ -24,7 +24,9 @@ $(function(){
 		function(){
 			$('#nav-toggle').removeClass('active');
 		});
-	$('#mobile-nav').fastClick();
+	$('#mobile-nav').fastClick(function(){
+		alert('test');
+	});
 	$(document.body).on('click', '#nav-toggle.active', function() {
 		$("#mobile-nav").mmenu().trigger('close');
 	});
