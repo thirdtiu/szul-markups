@@ -133,6 +133,9 @@ label.dd-selected-text {
     transform: translate3d(0px, 0px, 1px);
     -webkit-transform: translate3d(0px, 0px, 1px);
     -moz-transform: translate3d(0px, 0px, 1px);
+    transition: .5s all ease !important;
+    -webkit-transition: .5s all ease !important;
+    -moz-transition: .5s all ease !important;
   }
 
   .windowshade.move-right {
@@ -142,7 +145,7 @@ label.dd-selected-text {
   }
 
   .mob-form-body {
-    height: 130px;
+    height: 140px;
     overflow: hidden;
     transition: .5s all ease !important;
     -webkit-transition: .5s all ease !important;
