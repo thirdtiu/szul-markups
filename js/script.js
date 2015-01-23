@@ -503,17 +503,37 @@ $(window).load(function(){
 
 	var colorData = [
 		{
-			text: "Red",
+			text: "D",
 			value: 1,
 			selected: true,
 		},
 		{
-			text: "Green",
+			text: "E",
 			value: 2,
 			selected: false,
 		},
 		{
-			text: "Blue",
+			text: "F",
+			value: 3,
+			selected: false,
+		},
+		{
+			text: "G",
+			value: 3,
+			selected: false,
+		},
+		{
+			text: "H",
+			value: 3,
+			selected: false,
+		},
+		{
+			text: "I",
+			value: 3,
+			selected: false,
+		},
+		{
+			text: "J",
 			value: 3,
 			selected: false,
 		}
@@ -528,6 +548,95 @@ $(window).load(function(){
 	});
 
 	
+
+	var clarityInitial = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#clarity').ddslick({
+		data: clarityInitial,
+		width: 100,
+		imagePosition: "left",
+		//selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+	var clarityFinal = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#clarity2').ddslick({
+		data: clarityFinal,
+		width: 100,
+		imagePosition: "left",
+		//selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+
+
+	var clarityInitial2 = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#clarity3').ddslick({
+		data: clarityInitial2,
+		width: 100,
+		imagePosition: "left",
+		//selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+	var clarityFinal2 = [
+		{
+			text: "1",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "2",
+			value: 2,
+			selected: false,
+		}
+	]; 
+
+	$('#clarity4').ddslick({
+		data: clarityFinal2,
+		width: 100,
+		imagePosition: "left",
+		//selectText: "Select your favorite social network",
+		onSelected: function (data) {}
+	});
+
+
+
 
 	// Product listing mobile sorting
 	$('#items-per-page').ddslick({ width: 270 });
@@ -1017,41 +1126,7 @@ $(window).load(function(){
 		onSelected: function (data) {}
 	});
 
-	var clarityInitial = [
-		{
-			text: "1",
-			value: 1,
-			selected: true,
-		},
-		{
-			text: "2",
-			value: 2,
-			selected: false,
-		}
-	]; 
-
-	$('#clarity').ddslick({
-		data: clarityInitial,
-		onSelected: function (data) {}
-	});
-
-	var clarityFinal = [
-		{
-			text: "1",
-			value: 1,
-			selected: true,
-		},
-		{
-			text: "2",
-			value: 2,
-			selected: false,
-		}
-	]; 
-
-	$('#clarity2').ddslick({
-		data: clarityFinal,
-		onSelected: function (data) {}
-	});
+	
 
 
 

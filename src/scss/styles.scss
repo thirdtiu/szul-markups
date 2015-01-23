@@ -3,14 +3,25 @@ body.modal-open {
   overflow: hidden;
   position:initial !important;
 }
-#clarity, #clarity2{
+#clarity, #clarity2 {
 	display:inline-block;
 	width:50px !important;
 	font-size:12px;
 }
-#clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select{
+
+#clarity3, #clarity4 {
+	display:inline-block;
+	width:79px !important;
+	font-size:12px;
+}
+
+#clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select {
 	width:50px !important;
 }
+
+ #clarity3 .dd-select, #clarity4 .dd-select {
+ 	width: 79px !important;
+ }
 
 .color-separator {
 	padding-left: 3px;
@@ -35,9 +46,14 @@ body.modal-open {
 	line-height: 30px;
 	vertical-align: top;
 }
-#clarity .dd-options, #clarity2 .dd-options{
+#clarity .dd-options, #clarity2 .dd-options {
 	width:50px !important;
 }
+
+#clarity3 .dd-options, #clarity4 .dd-options {
+	width: 79px !important;
+}
+
 form.diamond_filter{
 	background:none;
 }
