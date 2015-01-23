@@ -181,6 +181,22 @@ label.dd-selected-text {
   a.show-less {
     display: none;
   }
+
+  .mobile-nav-control {
+    position: fixed;
+    width: 100%;
+    height: 999px;
+    z-index: 999;
+    right: 0px;
+    background: black;
+    opacity: .7;
+    top: 50px;
+    display: none;
+  }
+
+  .mobile-nav-control.move-right {
+    display: block;
+  }
 }
 @media (max-width: 400px) {
   body > div.mm-page > div.container > div.module.mod-diamond-search.hidden-sm > form > div.form-body.clearfix.mob-form-body.active > div > div.form-group.search-diamond-button > p {
