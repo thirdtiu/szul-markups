@@ -56,11 +56,12 @@ label.dd-selected-text {
 	#mobile-nav{
 		display:block !important;
 		z-index:-1 !important;
+		-webkit-transition-delay: .3s; /* Safari */
+    	transition-delay: .3s;
 	}
 	#mobile-nav.move-right{
 		z-index:99999 !important;
-		-webkit-transition-delay: .3s; /* Safari */
-    	transition-delay: .3s;
+		
 	}
 	.mm-page{
 		transform: translate3d(0px ,0px, 1px);
