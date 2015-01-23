@@ -1060,6 +1060,36 @@ $(window).load(function(){
 			text: "D",
 			value: 1,
 			selected: true,
+		},
+		{
+			text: "E",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "F",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "G",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "H",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "I",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "J",
+			value: 1,
+			selected: true,
 		}
 	
 	]; 
@@ -1070,6 +1100,36 @@ $(window).load(function(){
 	});
 
 	var colorFinal = [
+		{
+			text: "D",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "E",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "F",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "G",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "H",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "I",
+			value: 1,
+			selected: true,
+		},
 		{
 			text: "J",
 			value: 1,
