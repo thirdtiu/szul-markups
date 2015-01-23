@@ -24,15 +24,12 @@ $(function(){
 		function(){
 			$('#nav-toggle').removeClass('active');
 		});
-	$('.form-header').fastClick(function(){
-		alert('test');
+	$('#nav-toggle, .mobile-nav-control').fastClick(function(){
+		$('.mm-page, .windowshade, #mobile-nav, #top_header').toggleClass('move-right');
+		$('.mobile-nav-control').toggle();
 	});
 	$(document.body).on('click', '#nav-toggle.active', function() {
 		$("#mobile-nav").mmenu().trigger('close');
-	});
-	$(document.body).on('click', '#nav-toggle, .mobile-nav-control', function() {
-		$('.mm-page, .windowshade, #mobile-nav, #top_header').toggleClass('move-right');
-		$('.mobile-nav-control').toggle();
 	});
 	$('.mobile-nav-control').on('click', function() {
 		$("#mobile-nav").mmenu().trigger('close');
