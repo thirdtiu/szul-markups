@@ -8904,5 +8904,10 @@ li.deals-collections-dd ul.sub {
     top: 0 !important;
   }
 }
+@media (min-width: 580px) and (max-width: 768px) {
+  .home-product-right .grid-image img {
+    height: 280px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
