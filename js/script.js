@@ -25,7 +25,7 @@ $(function(){
 			$('#nav-toggle').removeClass('active');
 		});
 	$('.z-contact-item').fastClick(function(){
-		$('.z-contact-item').trigger('click');
+		$('.contact-item-popover-contents').show();
 	});	
 	$('#nav-toggle, .mobile-nav-control').fastClick(function(){
 		$('.mm-page, .windowshade, #mobile-nav, #top_header').toggleClass('move-right');
