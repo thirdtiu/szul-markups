@@ -163,15 +163,17 @@ label.dd-selected-text {
 		-moz-transition: .5s all ease !important;
 		-webkit-backface-visibility: hidden;
         -webkit-perspective: 1000;
+        -webkit-transition-delay: 2s; /* Safari */
+    	transition-delay: 2s;
 	}
 	#mobile-nav{
 		display:block !important;
 		transform: translate3d(-100% ,0px, 1px);
 		-webkit-transform: translate3d(-100%, 0px, 1px);
 		-moz-transform: translate3d(-100%, 0px, 1px);
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .5s transform ease !important;
+		-webkit-transition: .5s -webkit-transform ease !important;
+		-moz-transition: .5s -moz-transform ease !important;
 		z-index: 99999999 !important;
 		-webkit-backface-visibility: hidden;
         -webkit-perspective: 1000;
