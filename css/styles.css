@@ -88,6 +88,10 @@ h2.contact-number {
 }
 
 @media (min-width: 401px) and (max-width: 768px) {
+  #contact-item-popover {
+    display: block;
+  }
+
   a#nav-toggle {
     width: 55px !important;
     height: 49px !important;
