@@ -158,9 +158,9 @@ label.dd-selected-text {
 		padding-top:0px !important;
 	}
 	.mm-page, .mm-fixed-top, .mm-fixed-bottom, .mm-menu.mm-horizontal > .mm-panel{
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .1s all ease !important;
+		-webkit-transition: .1s all ease !important;
+		-moz-transition: .1s all ease !important;
 		-webkit-backface-visibility: hidden;
         -webkit-perspective: 1000;
 	}
@@ -169,9 +169,9 @@ label.dd-selected-text {
 		transform: translate3d(-100% ,0px, 1px);
 		-webkit-transform: translate3d(-100%, 0px, 1px);
 		-moz-transform: translate3d(-100%, 0px, 1px);
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .1s all ease !important;
+		-webkit-transition: .1s all ease !important;
+		-moz-transition: .1s all ease !important;
 		z-index: 99999999 !important;
 		-webkit-backface-visibility: hidden;
         -webkit-perspective: 1000;
