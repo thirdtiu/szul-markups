@@ -61,7 +61,6 @@ label.dd-selected-text {
 		transition: .5s all ease !important;
 		-webkit-transition: .5s all ease !important;
 		-moz-transition: .5s all ease !important;
-		z-index: 99999999 !important;
 	}
 	#mobile-nav.move-right{
 		transform: translate3d(0% ,0px, 1px);
@@ -174,7 +173,6 @@ label.dd-selected-text {
 		transition: .5s transform ease !important;
 		-webkit-transition: .5s -webkit-transform ease !important;
 		-moz-transition: .5s -moz-transform ease !important;
-		z-index: 99999999 !important;
 		-webkit-backface-visibility: hidden;
         -webkit-perspective: 1000;
 		
