@@ -46,9 +46,13 @@ h2.contact-number{
 		display:block;
 	}
 	.contact-item-popover-contents{
-		background: white;
+		background: #eee;
 		padding: 10px;
 		margin-top: 10px;
+
+	}
+	.contact-item-popover-contents.showtooltip{
+		display:block;
 	}
 	a#nav-toggle {
 		width: 55px !important;

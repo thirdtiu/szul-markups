@@ -93,9 +93,13 @@ h2.contact-number {
   }
 
   .contact-item-popover-contents {
-    background: white;
+    background: #eee;
     padding: 10px;
     margin-top: 10px;
+  }
+
+  .contact-item-popover-contents.showtooltip {
+    display: block;
   }
 
   a#nav-toggle {
