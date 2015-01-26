@@ -79,6 +79,14 @@ label.dd-selected-text {
   -moz-transition: 2s all;
 }
 
+h2.contact-number {
+  margin-left: 10px;
+}
+
+#contact-item-popover .popover-content > a {
+  color: #333333;
+}
+
 @media (min-width: 401px) and (max-width: 768px) {
   a#nav-toggle {
     width: 55px !important;
