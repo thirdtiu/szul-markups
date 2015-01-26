@@ -302,7 +302,7 @@ label.dd-selected-text {
   }
 
   .mob-form-body.active {
-    height: 625px;
+    height: 674px;
   }
 
   form.diamond_filter ul.types li {
@@ -6609,6 +6609,10 @@ div#thumbs .thumbs li.selected a.thumb {
   form.diamond_filter .mobile-fields .sub-group {
     width: 100% !important;
   }
+  form.diamond_filter .mobile-fields .sub-group .mobile-colorange-separator {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
   form.diamond_filter .mobile-fields .sub-group .spec-separator {
     display: inline-block !important;
     padding-right: 7px;
@@ -8520,17 +8524,21 @@ body.modal-open {
   font-size: 12px;
 }
 
-#clarity3, #clarity4 {
+#clarity3, #clarity4, #color-range3, #color-range4 {
   display: inline-block;
   width: 79px !important;
   font-size: 12px;
+}
+
+#color-range3, #color-range4 {
+  float: left;
 }
 
 #clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select {
   width: 50px !important;
 }
 
-#clarity3 .dd-select, #clarity4 .dd-select {
+#clarity3 .dd-select, #clarity4 .dd-select, #color-range3 .dd-select, #color-range4 .dd-select {
   width: 79px !important;
 }
 
@@ -8561,7 +8569,7 @@ body.modal-open {
   width: 50px !important;
 }
 
-#clarity3 .dd-options, #clarity4 .dd-options {
+#clarity3 .dd-options, #clarity4 .dd-options, #color-range3 .dd-options, #color-range4 .dd-options {
   width: 79px !important;
 }
 

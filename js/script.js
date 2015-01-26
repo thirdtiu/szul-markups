@@ -1218,6 +1218,95 @@ $(window).load(function(){
 		onSelected: function (data) {}
 	});
 
+
+
+	var colorInital2 = [
+		{
+			text: "D",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "E",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "F",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "G",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "H",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "I",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "J",
+			value: 1,
+			selected: true,
+		}
+	
+	]; 
+
+	$('#color-range3').ddslick({
+		data: colorInital2,
+		onSelected: function (data) {}
+	});
+
+	var colorFinal2 = [
+		{
+			text: "D",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "E",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "F",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "G",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "H",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "I",
+			value: 1,
+			selected: true,
+		},
+		{
+			text: "J",
+			value: 1,
+			selected: true,
+		}
+	
+	]; 
+
+	$('#color-range4').ddslick({
+		data: colorFinal2,
+		onSelected: function (data) {}
+	});
 	
 });
 
