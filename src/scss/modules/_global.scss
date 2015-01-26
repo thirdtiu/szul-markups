@@ -106,7 +106,7 @@ h2.contact-number{
 		-moz-transform: translate3d(50% , 0px , 1px);
 	}
 	.mob-form-body{
-		height:140px;
+		height:130px;
 		overflow:hidden;
 		transition: .5s all ease !important;
 		-webkit-transition: .5s all ease !important;
@@ -151,6 +151,15 @@ h2.contact-number{
 		padding-top:0px;
 	}
 }
+
+@media (min-width:401px) and (max-width:568px){
+	.mob-form-body {
+		height: 122px;
+	}
+
+}
+
+
 @media (min-width:360px) and (max-width:400px){
 	#mobile-nav{
 		width:66% !important;
