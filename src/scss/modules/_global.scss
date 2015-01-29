@@ -605,8 +605,8 @@ h2.contact-number{
 	}
 }
 .ribbon{
-	height:70px;
-	width:70px;
+	height:60px;
+	width:60px;
 	background:#cecece;
 	@include border-radius(70px);
 	display:inline-block;
@@ -620,7 +620,8 @@ h2.contact-number{
 		display: inline-block;
 		vertical-align: middle;
 		font-style: normal;
-		line-height: 20px;
+		line-height: 16px;
+		margin-bottom: 9px;
 	}
 }
 .ribbon.active{

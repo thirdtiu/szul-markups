@@ -755,8 +755,8 @@ h2.contact-number {
 }
 
 .ribbon {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   background: #cecece;
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
@@ -775,7 +775,8 @@ h2.contact-number {
   display: inline-block;
   vertical-align: middle;
   font-style: normal;
-  line-height: 20px;
+  line-height: 16px;
+  margin-bottom: 9px;
 }
 
 .ribbon.active {
@@ -3467,6 +3468,10 @@ ul.payment-icons li {
   position: absolute;
   top: 0;
   right: 0;
+}
+.products-carousel .product .save-percentage,
+.products .product .save-percentage {
+  font-size: 20px;
 }
 .products-carousel .product .product-body,
 .products .product .product-body {
