@@ -1390,6 +1390,22 @@ ul.payment-icons{
 		}
 	}
 }
+
+
+.prod-list-filter {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 18%;
+}
+.prod-list-main-content {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 82%;
+}
+
+
 .products-carousel{
 	margin-left:-3.5714286%;
 }
@@ -4722,6 +4738,17 @@ div#thumbs{
 	#gift-cert button{
 		margin-left:0px;
 		margin-top:8px;
+	}
+
+
+
+	.prod-list-filter {
+		float: left;
+		width: 100%;
+	}
+	.prod-list-main-content {
+		float: left;
+		width: 100%;
 	}
 
 	
