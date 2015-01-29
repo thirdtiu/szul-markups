@@ -901,6 +901,7 @@ h2.contact-number {
 }
 .top_primary .search-form {
   background: #dfdfdf;
+  border: 1px solid #DFDFDF;
   float: right;
 }
 .top_primary .search-form input,
@@ -1049,6 +1050,7 @@ h2.contact-number {
   font-family: "museo_sans500", sans-serif;
   text-align: left;
   font-size: 12px;
+  margin-top: 1px;
 }
 .top_secondary #main_nav li a {
   height: 50px;
