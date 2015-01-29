@@ -184,6 +184,9 @@ h2.contact-number{
 	body > div.mm-page > div.container > div.module.mod-diamond-search.hidden-sm > form > div.form-body.clearfix.mob-form-body.active > div > div.form-group.search-diamond-button > p {
 		text-align: center !important;
 	}
+	body.move-right{
+		position:fixed;
+	}
 
 	.mm-menu > .mm-list{
 		padding-top:0px !important;
