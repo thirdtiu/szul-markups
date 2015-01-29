@@ -787,7 +787,7 @@ h2.contact-number {
   display: inline-block;
 }
 .centered-tabs > li > a {
-  color: #e0e0e0;
+  color: #6A6A6A;
 }
 .centered-tabs > li > a:hover {
   color: #6a6a6a;
@@ -805,6 +805,7 @@ h2.contact-number {
 }
 .centered-tabs > li.active > a {
   color: #6a6a6a;
+  text-decoration: underline;
 }
 .centered-tabs > li.active > a,
 .centered-tabs > li.active > a:hover,

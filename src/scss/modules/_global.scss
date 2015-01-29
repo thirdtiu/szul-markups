@@ -630,7 +630,7 @@ h2.contact-number{
 		float:none;
 		display: inline-block;
 		> a{
-			color: #e0e0e0;
+			color: #6A6A6A;
 		}
 		> a:hover{
 			color: #6a6a6a;
@@ -646,6 +646,7 @@ h2.contact-number{
 	> li.active{
 		> a{
 			color: #6a6a6a;
+			text-decoration: underline;
 		}
 		> a,
 		> a:hover,
