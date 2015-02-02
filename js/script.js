@@ -404,6 +404,16 @@ $(function(){
 	})
 
 	$(document).ready(function(){
+
+		$(window).scroll(function (event) {
+	      if($(window).scrollTop() >= $('.windowshade').offset().top - 47){
+	             $('.top_secondary').addClass('animate');
+	         }else{
+	          $('.top_secondary').removeClass('animate');
+	         }
+	     });
+
+
 		if ($(window).width() < 400) {
 		  $('#dont-see-size').tooltip({
 			'html': 'true',
@@ -1321,6 +1331,10 @@ $(document).ready(function($) {
 	$(document).on('click', '.mobile-search', function(event) {
 		$('input#search').focus();
 	});
+
+
+
+
 });
 
 // Can also be used with $(document).ready()
@@ -1332,3 +1346,6 @@ $(window).load(function() {
     nextText: ""
   });
 });
+
+
+

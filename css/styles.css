@@ -1484,6 +1484,21 @@ ul.breadcrumbs li span {
     margin-right: 15px;
   }
 }
+.top_secondary {
+  -webkit-transition: background-color 1s;
+  /* For Safari 3.1 to 6.0 */
+  -moz-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.top_secondary.animate {
+  background: #e5e3e3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: auto;
+}
+
 .star-fill {
   color: #fdd225;
 }
