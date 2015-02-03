@@ -64,9 +64,9 @@ h2.contact-number{
 		height: 49px !important;
 	}
 	#top_header{
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 		transform: translate3d(0px ,0px, 1px);
 		-webkit-transform: translate3d(0px, 0px, 0px);
 		-moz-transform: translate3d(0px, 0px, 0px);
@@ -81,9 +81,9 @@ h2.contact-number{
 		transform: translate3d(-100% ,0px, 0px);
 		-webkit-transform: translate3d(-100%, 0px, 0px);
 		-moz-transform: translate3d(-100%, 0px, 0px);
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 	}
 	#mobile-nav.move-right{
 		transform: translate3d(0% ,0px, 0px);
@@ -92,9 +92,9 @@ h2.contact-number{
 		
 	}
 	.mm-page{
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 		background:white;
 	}
 	.mm-page.move-right{
@@ -107,9 +107,9 @@ h2.contact-number{
 		transform: translate3d(0px ,0px, 0px);
 		-webkit-transform: translate3d(0px, 0px, 0px);
 		-moz-transform: translate3d(0px, 0px, 0px);
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 	}
 	.windowshade.move-right{
 		transform: translate3d(50% , 0px , 0px);
@@ -119,9 +119,9 @@ h2.contact-number{
 	.mob-form-body{
 		height:130px;
 		overflow:hidden;
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 	}
 	.mob-form-body.active{
 		height:370px;
@@ -189,9 +189,9 @@ h2.contact-number{
 		padding-top:0px !important;
 	}
 	.mm-page, .mm-fixed-top, .mm-fixed-bottom, .mm-menu.mm-horizontal > .mm-panel{
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
         -webkit-transition-delay: 2s; /* Safari */
     	transition-delay: 2s;
 	}
@@ -200,15 +200,15 @@ h2.contact-number{
 		transform: translate3d(-100% ,0px, 0px);
 		-webkit-transform: translate3d(-100%, 0px, 0px);
 		-moz-transform: translate3d(-100%, 0px, 0px);
-		transition: .5s transform ease !important;
-		-webkit-transition: .5s -webkit-transform ease !important;
-		-moz-transition: .5s -moz-transform ease !important;
+		transition: .2s transform ease !important;
+		-webkit-transition: .2s -webkit-transform ease !important;
+		-moz-transition: .2s -moz-transform ease !important;
 		
 	}
 	#mobile-nav.move-right{
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 		transform: translate3d(0% ,0px, 0px);
 		-webkit-transform: translate3d(0%, 0px, 0px);
 		-moz-transform: translate3d(0%, 0px, 0px);
@@ -216,9 +216,9 @@ h2.contact-number{
 	}
 	.mm-page{
 		background:white;
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 	}
 	.mm-page.move-right{
 		transform: translate3d(240px, 0px, 0px);
@@ -229,9 +229,9 @@ h2.contact-number{
 		transform: translate3d(0px ,0px, 0px);
 		-webkit-transform: translate3d(0px, 0px, 0px);
 		-moz-transform: translate3d(0px, 0px, 0px);
-		transition: .5s all ease;
-		-webkit-transition: .5s all ease;
-		-moz-transition: .5s all ease;
+		transition: .2s all ease;
+		-webkit-transition: .2s all ease;
+		-moz-transition: .2s all ease;
 		position:relative;
 	}
 	.windowshade.move-right{
@@ -240,9 +240,9 @@ h2.contact-number{
 		-moz-transform: translate3d(240px, 0px, 0px);
 	}
 	#top_header{
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 		transform: translate3d(0px ,0px, 0px);
 		-webkit-transform: translate3d(0px, 0px, 0px);
 		-moz-transform: translate3d(0px, 0px, 0px);
@@ -270,12 +270,12 @@ h2.contact-number{
 	.mob-form-body{
 		height:120px;
 		overflow:hidden;
-		transition: .5s all ease !important;
-		-webkit-transition: .5s all ease !important;
-		-moz-transition: .5s all ease !important;
+		transition: .2s all ease !important;
+		-webkit-transition: .2s all ease !important;
+		-moz-transition: .2s all ease !important;
 	}
 	.mob-form-body.active{
-		height:674px;
+		height:470px;
 	}
 	form.diamond_filter ul.types li{
 		margin-top:5px !important;
@@ -1265,7 +1265,11 @@ ul.breadcrumbs{
 	margin-top: 3px;
 }
 
-
+@media (min-width: 768px) and (max-width:1023px){
+	.mob-form-body{
+		height:230px;
+	}
+}
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
 @media (min-width: 1200px) {}

@@ -114,9 +114,9 @@ h2.contact-number {
   }
 
   #top_header {
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
     transform: translate3d(0px, 0px, 1px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -133,9 +133,9 @@ h2.contact-number {
     transform: translate3d(-100%, 0px, 0px);
     -webkit-transform: translate3d(-100%, 0px, 0px);
     -moz-transform: translate3d(-100%, 0px, 0px);
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
   }
 
   #mobile-nav.move-right {
@@ -145,9 +145,9 @@ h2.contact-number {
   }
 
   .mm-page {
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
     background: white;
   }
 
@@ -162,9 +162,9 @@ h2.contact-number {
     transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
   }
 
   .windowshade.move-right {
@@ -176,9 +176,9 @@ h2.contact-number {
   .mob-form-body {
     height: 130px;
     overflow: hidden;
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
   }
 
   .mob-form-body.active {
@@ -251,9 +251,9 @@ h2.contact-number {
   }
 
   .mm-page, .mm-fixed-top, .mm-fixed-bottom, .mm-menu.mm-horizontal > .mm-panel {
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
     -webkit-transition-delay: 2s;
     /* Safari */
     transition-delay: 2s;
@@ -264,15 +264,15 @@ h2.contact-number {
     transform: translate3d(-100%, 0px, 0px);
     -webkit-transform: translate3d(-100%, 0px, 0px);
     -moz-transform: translate3d(-100%, 0px, 0px);
-    transition: .5s transform ease !important;
-    -webkit-transition: .5s -webkit-transform ease !important;
-    -moz-transition: .5s -moz-transform ease !important;
+    transition: .2s transform ease !important;
+    -webkit-transition: .2s -webkit-transform ease !important;
+    -moz-transition: .2s -moz-transform ease !important;
   }
 
   #mobile-nav.move-right {
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
     transform: translate3d(0%, 0px, 0px);
     -webkit-transform: translate3d(0%, 0px, 0px);
     -moz-transform: translate3d(0%, 0px, 0px);
@@ -280,9 +280,9 @@ h2.contact-number {
 
   .mm-page {
     background: white;
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
   }
 
   .mm-page.move-right {
@@ -295,9 +295,9 @@ h2.contact-number {
     transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
-    transition: .5s all ease;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
+    transition: .2s all ease;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
     position: relative;
   }
 
@@ -308,9 +308,9 @@ h2.contact-number {
   }
 
   #top_header {
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
     transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -341,13 +341,13 @@ h2.contact-number {
   .mob-form-body {
     height: 120px;
     overflow: hidden;
-    transition: .5s all ease !important;
-    -webkit-transition: .5s all ease !important;
-    -moz-transition: .5s all ease !important;
+    transition: .2s all ease !important;
+    -webkit-transition: .2s all ease !important;
+    -moz-transition: .2s all ease !important;
   }
 
   .mob-form-body.active {
-    height: 674px;
+    height: 470px;
   }
 
   form.diamond_filter ul.types li {
@@ -1460,6 +1460,11 @@ ul.breadcrumbs li span {
   margin-top: 3px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mob-form-body {
+    height: 230px;
+  }
+}
 @media (max-width: 1199px) {
   .top_primary .store-info {
     width: 67%;
@@ -8975,9 +8980,10 @@ li.deals-collections-dd ul.sub {
   }
 }
 @media (min-width: 580px) and (max-width: 768px) {
-  .home-product-right .grid-image img {
-    height: 280px;
-  }
+  		/*.home-product-right .grid-image img {
+  			height: 280px;
+  
+  		}*/
 }
 
 /*# sourceMappingURL=styles.css.map */
