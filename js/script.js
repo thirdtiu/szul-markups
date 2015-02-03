@@ -34,13 +34,6 @@ $(function(){
 	$(document.body).on('click', '#nav-toggle.active', function() {
 		$("#mobile-nav").mmenu().trigger('close');
 	});
-	$('.mobile-nav-control').on('mouseenter', function() {
-		$('.mm-page, .windowshade, #mobile-nav, #top_header, body').removeClass('move-right');
-		$('.mobile-nav-control').hide();
-	});
-	$('.mobile-nav-control').on('click', function() {
-		$("#mobile-nav").mmenu().trigger('close');
-	});
 	$('.show-more').on('click', function() {
 		$('.mob-form-body').addClass('active');
 		$('.show-more').hide();
