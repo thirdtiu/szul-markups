@@ -143,21 +143,27 @@ li.deals-collections-dd ul.sub{
 }
 .menu-top-line{
 	position:absolute;
-	width:100%;
+	width:1%;
 	height:2px;
 	background:#ac47ad;
 	top:10px;
 	left:0px;
 	opacity:0;
+	transition:.5s opacity ease;
+	-webkit-transition:.5s opacity ease;
+	-moz-transition:.5s opacity ease;
 }
 .menu-bottom-line{
 	position:absolute;
-	width:100%;
+	width:1%;
 	height:2px;
 	background:#ac47ad;
 	bottom:5px;
 	left:0px;
 	opacity:0;
+	transition:.5s opacity ease;
+	-webkit-transition:.5s opacity ease;
+	-moz-transition:.5s opacity ease;
 }
 @media (min-width:361px) and (max-width:768px){
 	.luxury-header .lux-label{
