@@ -136,10 +136,28 @@ li.deals-collections-dd ul.sub{
 	border-radius:3px;
 }
 #mega-menu li.hasdropdown:hover{
-	box-shadow: 0px 0px 1px 1px #eeeeee;
+	/*box-shadow: 0px 0px 1px 1px #eeeeee;*/
 }
 .hasdropdown .sub{
 	box-shadow: 0px 2px 1px 1px #eeeeee;
+}
+.menu-top-line{
+	position:absolute;
+	width:100%;
+	height:2px;
+	background:#ac47ad;
+	top:10px;
+	left:0px;
+	opacity:0;
+}
+.menu-bottom-line{
+	position:absolute;
+	width:100%;
+	height:2px;
+	background:#ac47ad;
+	bottom:5px;
+	left:0px;
+	opacity:0;
 }
 @media (min-width:361px) and (max-width:768px){
 	.luxury-header .lux-label{

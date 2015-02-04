@@ -874,10 +874,11 @@ h2.contact-number{
 		margin-top: 1px;
 		li{
 			a{
-				height:50px;
+				height:45px;
 				line-height:50px;
 				color:#575757;
 				padding:0 17px;
+				position:relative;
 				text-transform: uppercase;
 			}
 			:hover{
