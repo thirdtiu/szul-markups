@@ -175,9 +175,16 @@ h2.contact-number{
 	#mobile-nav{
 		width:66% !important;
 	}
+
 }
 @media(max-width:400px){
-
+	.mobile-nav-control.search-overlay{
+		display:block !important;
+		top:107px !important;
+	}
+	.mobile-sorting{
+		top:50% !important;
+	}
 	body > div.mm-page > div.container > div.module.mod-diamond-search.hidden-sm > form > div.form-body.clearfix.mob-form-body.active > div > div.form-group.search-diamond-button > p {
 		text-align: center !important;
 	}
@@ -275,7 +282,7 @@ h2.contact-number{
 		-moz-transition: .2s all ease !important;
 	}
 	.mob-form-body.active{
-		height:470px;
+		height:675px;
 	}
 	form.diamond_filter ul.types li{
 		margin-top:5px !important;

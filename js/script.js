@@ -1323,6 +1323,12 @@ $(window).load(function(){
 $(document).ready(function($) {
 	$(document).on('click', '.mobile-search', function(event) {
 		$('input#search').focus();
+		$('.mobile-nav-control').addClass('search-overlay');
+	});
+	$('#mobile-nav-control').on('click', function(){
+		$('#mobile-search').removeClass('in');
+		$('#mobile-search').addClass('collapse');
+		$('.mobile-nav-control').removeClass('search-overlay');
 	});
 
 
