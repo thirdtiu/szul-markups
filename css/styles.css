@@ -348,6 +348,12 @@ h2.contact-number {
     top: 107px !important;
   }
 
+  #mobile-nav-control.showtooltip {
+    display: block !important;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+  }
+
   .mobile-sorting {
     top: 50% !important;
   }
