@@ -41,7 +41,52 @@ h2.contact-number{
 #contact-item-popover .popover-content > a{
 	color:#333333;
 }
+#cart-popover{
+	right:0px !important;
+	left:auto !important;
+}
 @media (min-width:401px) and (max-width:768px){
+	#contact-item-popover{
+		text-align: center;
+		left: 50% !important;
+		top: 50% !important;
+		transform: translate(-50%,-50%);
+		width: 85%;
+		padding-bottom:20px;
+		position:fixed;
+		z-index: 99999999;
+	}
+	#contact-item-popover .arrow{
+		display:none;
+	}
+	#contact-item-popover .contact-popup-close-btn{
+		font-size: 24px;
+		position: absolute;
+		right: -15px;
+		background: black;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		color: white;
+		line-height: 28px;
+		top: -15px;
+	}
+	#contact-item-popover h3{
+		border-bottom:2px solid #ac47ad;
+		padding:10px 0px;
+		margin-bottom:20px;
+	}
+	#contact-item-popover .contact-item-popover{
+		padding:20px;
+	}
+	#contact-item-popover .contact-number-btn{
+		padding:10px 20px;
+		background:#ac47ad;
+		border:0px;
+		width:100%;
+		border-radius:3px;
+		color:white !important;
+	}
 	#contact-item-popover{
 		display:block;
 	}
@@ -58,6 +103,11 @@ h2.contact-number{
 	}
 	.contact-item-popover-contents.showtooltip{
 		display:block;
+	}
+	#mobile-nav-control.showtooltip{
+		display:block !important;
+		background: rgba(0,0,0,.7);
+		opacity: 1;
 	}
 	a#nav-toggle {
 		width: 55px !important;
@@ -178,6 +228,47 @@ h2.contact-number{
 
 }
 @media(max-width:400px){
+	#contact-item-popover{
+		text-align: center;
+		left: 50% !important;
+		top: 50% !important;
+		transform: translate(-50%,-50%);
+		width: 85%;
+		padding-bottom:20px;
+		position:fixed;
+		z-index: 99999999;
+	}
+	#contact-item-popover .arrow{
+		display:none;
+	}
+	#contact-item-popover .contact-popup-close-btn{
+		font-size: 24px;
+		position: absolute;
+		right: -15px;
+		background: black;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		color: white;
+		line-height: 28px;
+		top: -15px;
+	}
+	#contact-item-popover h3{
+		border-bottom:2px solid #ac47ad;
+		padding:10px 0px;
+		margin-bottom:20px;
+	}
+	#contact-item-popover .contact-item-popover{
+		padding:20px;
+	}
+	#contact-item-popover .contact-number-btn{
+		padding:10px 20px;
+		background:#ac47ad;
+		border:0px;
+		width:100%;
+		border-radius:3px;
+		color:white !important;
+	}
 	.mobile-nav-control.search-overlay{
 		display:block !important;
 		top:107px !important;

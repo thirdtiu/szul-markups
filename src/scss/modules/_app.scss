@@ -4494,9 +4494,16 @@ div#thumbs{
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width:1367px ) {
+#cart-popover.popover {
+		left:60% !important;
+		top:100px !important;
+	}
+}
+@media (min-width: 1200px) and (max-width:1366px ) {
 	#cart-popover.popover {
-	    left: 59.8% !important;
+	    left: 65% !important;
+	    top:100px !important;
 	}
 }
 

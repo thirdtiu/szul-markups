@@ -25,7 +25,7 @@ $(function(){
 			$('#nav-toggle').removeClass('active');
 		});
 	$('.z-contact-item').fastClick(function(){
-		$('.contact-item-popover-contents').toggleClass('showtooltip');
+		$('#mobile-nav-control').addClass('showtooltip');
 	});	
 	$('#nav-toggle').fastClick(function(){
 		$('.mm-page, .windowshade, #mobile-nav, #top_header, body').toggleClass('move-right');
@@ -1329,8 +1329,13 @@ $(document).ready(function($) {
 		$('#mobile-search').removeClass('in');
 		$('#mobile-search').addClass('collapse');
 		$('.mobile-nav-control').removeClass('search-overlay');
+		$('#mobile-nav-control').removeClass('showtooltip');
 	});
-
+	$(document).on('click', '#contact-item-popover .contact-popup-close-btn', function(event) {
+		$('#contact-item-popover').hide();
+		$('#mobile-nav-control').removeClass('showtooltip');
+		
+	});
 
 
 
