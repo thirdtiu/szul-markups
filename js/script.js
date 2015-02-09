@@ -895,7 +895,7 @@ if ($('.return-process')) {
 
 $(document).ready(function($) {
 
-	
+	$('#mega-menu .sub').addClass('clearfix');
 
 	if ($(window).width() < 767) {
 		$('.mob-promo-hide').prev().hide();

@@ -1273,7 +1273,7 @@ h2.contact-number {
 
 #mega-menu li .sub .mrow {
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   clear: both;
   margin: 0 !important;
 }

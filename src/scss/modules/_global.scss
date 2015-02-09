@@ -1070,9 +1070,12 @@ border-top:none;
 
 #mega-menu li .sub .mrow {
 width: 100%;
-overflow: hidden;
+/*overflow: hidden;*/
 clear: both;
 margin:0 !important;
+}
+#mega-menu li .sub{
+	
 }
 #mega-menu li .sub li {
 list-style: none;
