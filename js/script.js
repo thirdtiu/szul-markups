@@ -905,10 +905,12 @@ $(document).ready(function($) {
 		$(document).on('mouseenter', '.zoomContainer', function(event) {
 			$('.product-doverlay, .zoomWindow').show();
 			$( ".zoomWindow" ).append( "<span class='p-dialog-close-btn'>x</span>" );
+			$('#top_header').css('z-index', '9');
 			/* Act on the event */
 		});
 		$(document).on('mouseenter', '.p-dialog-close-btn', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
+			$('#top_header').css('z-index', '99999');
 			$( ".p-dialog-close-btn" ).remove();
 			location.reload(true);
 			/* Act on the event */
@@ -916,9 +918,10 @@ $(document).ready(function($) {
 		$(document).on('mouseenter', '.product-doverlay', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
+			$('#top_header').css('z-index', '99999');
 			location.reload(true);
 		});
-		$(document).on('mouseenter', '.zoomWindow', function(event) {
+		$(document).on('mouseenter', '.zooWindow', function(event) {
 			$('.product-doverlay, .zoomWindow').hide();
 			$( ".p-dialog-close-btn" ).remove();
 			location.reload(true);

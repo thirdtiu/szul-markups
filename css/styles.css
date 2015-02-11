@@ -3704,6 +3704,7 @@ ul.payment-icons li {
 }
 .product-large-view .the-product .gallerific-wrap .stage img {
   width: 100% !important;
+  height: auto !important;
 }
 .product-large-view .the-product .gallerific-wrap #gal1 {
   /*Change the colour*/
@@ -6219,6 +6220,11 @@ div#thumbs .thumbs li.selected a.thumb {
 }
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
+@media (max-width: 800px) and (min-width: 601px) {
+  .zoomWrapper {
+    height: 240px !important;
+  }
+}
 @media (min-width: 768px) {
   /* MY ACCOUNT TAB */
   .my-account-tab .nav li {
@@ -8035,6 +8041,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   opacity: 1;
 }
 
+#specs .media {
+  float: left;
+}
+
 .ataf-tooltip-container input, .ataf-tooltip-container textarea {
   margin-bottom: 10px;
   border: 1px solid #cccccc;
@@ -8082,7 +8092,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   background-color: #38caa5 !important;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li {
     width: 53%;
     margin-bottom: 10px;
@@ -8115,7 +8125,11 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     border-top: 1px solid #efefef;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 415px) {
+  .block.mobile-details {
+    display: none;
+  }
+
   #dont-see-size + .tooltip > .tooltip-inner {
     font-family: "museo_sans300", sans-serif;
     background-color: white;

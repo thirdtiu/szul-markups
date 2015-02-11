@@ -89,6 +89,9 @@
 .tooltip.in{
 	opacity:1;
 }
+#specs .media{
+	float:left;
+}
 .ataf-tooltip-container input, .ataf-tooltip-container textarea{
 	margin-bottom:10px;
 	border: 1px solid #cccccc;
@@ -154,7 +157,7 @@
 #product-details .block-body .btn-turquoise{
 	background-color: #38caa5 !important;
 }
-@media (max-width:320px){
+@media (max-width:415px){
 	.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li{
 		width:53%;
 		margin-bottom:10px;
@@ -185,7 +188,10 @@
 	}
 }
 
-@media (max-width:400px){
+@media (max-width:415px){
+	.block.mobile-details{
+		display:none;
+	}
 	#dont-see-size + .tooltip > .tooltip-inner {
 		font-family: "museo_sans300", sans-serif; 
 		background-color: white; 
