@@ -1700,6 +1700,7 @@ ul.payment-icons{
 						font-family: $brandon-bold;
 						font-size: 16px;
 						.icon{
+							cursor: pointer;
 							vertical-align: top;
 							margin-left: 5px;
 							margin-right:5px;
@@ -1752,6 +1753,10 @@ ul.payment-icons{
 			}
 		}
 	}
+}
+
+#customize-tooltip {
+	cursor: pointer;
 }
 
 .product-diamond{

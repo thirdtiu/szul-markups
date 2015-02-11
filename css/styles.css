@@ -3859,6 +3859,7 @@ ul.payment-icons li {
   font-size: 16px;
 }
 .product-large-view .the-product .product-information .info-bd .socials-mobile h4 .icon {
+  cursor: pointer;
   vertical-align: top;
   margin-left: 5px;
   margin-right: 5px;
@@ -3901,6 +3902,10 @@ ul.payment-icons li {
 }
 .product-large-view .product-details .sidebar .mod-recommended .products li.product .ribbon {
   right: 7px;
+}
+
+#customize-tooltip {
+  cursor: pointer;
 }
 
 .product-diamond .the-product .product-information .info-bd .info {
