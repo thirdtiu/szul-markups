@@ -24,7 +24,14 @@
 		width: 100%;
 	}
 }
-
+#slideshow .image-wrapper.current{
+	display:none !important;
+	opacity:0 !important;
+}
+#thumbs,
+.modal div#thumbs .thumbs li{
+	opacity:1 !important;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
 
