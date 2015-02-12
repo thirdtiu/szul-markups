@@ -157,7 +157,20 @@
 #product-details .block-body .btn-turquoise{
 	background-color: #38caa5 !important;
 }
+.product-detail-mob span.ribbon{
+	position:absolute;
+	right:15px;
+	z-index:99;
+}
+.product-detail-mob .owl-theme .owl-dots .owl-dot.active span{
+	background:#934295;
+}
+.product-detail-mob .owl-theme .owl-dots .owl-dot span{
+	background:white;
+	border:1px solid #934295;
+}
 @media (max-width:415px){
+	
 	.product-large-view .the-product .product-information .info-bd .option-block ul.metal-types li{
 		width:53%;
 		margin-bottom:10px;

@@ -47,6 +47,9 @@ input[type=text]:focus, textarea:focus {
 a.green{
 	color:$green;
 }
+.socials-mobile img{
+	width:30px;
+}
 .grey{
 	color:#9b9b9b;
 }
@@ -1684,7 +1687,7 @@ ul.payment-icons{
 				}
 				.socials-mobile{
 					margin-top: 10px;
-					padding:20px 0;
+					padding:10px 0;
 					text-align: center;
 					@include border-radius(5px);
 					background-color: #fff;

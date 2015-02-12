@@ -2225,6 +2225,10 @@ a.green {
   color: #39cca4;
 }
 
+.socials-mobile img {
+  width: 30px;
+}
+
 .grey {
   color: #9b9b9b;
 }
@@ -3842,7 +3846,7 @@ ul.payment-icons li {
 }
 .product-large-view .the-product .product-information .info-bd .socials-mobile {
   margin-top: 10px;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -8103,6 +8107,21 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 
 #product-details .block-body .btn-turquoise {
   background-color: #38caa5 !important;
+}
+
+.product-detail-mob span.ribbon {
+  position: absolute;
+  right: 15px;
+  z-index: 99;
+}
+
+.product-detail-mob .owl-theme .owl-dots .owl-dot.active span {
+  background: #934295;
+}
+
+.product-detail-mob .owl-theme .owl-dots .owl-dot span {
+  background: white;
+  border: 1px solid #934295;
 }
 
 @media (max-width: 415px) {
