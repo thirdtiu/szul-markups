@@ -1586,6 +1586,11 @@ ul.breadcrumbs li span {
     height: 230px;
   }
 }
+@media (min-width: 1025px) {
+  .p-dialog-close-btn {
+    display: none !important;
+  }
+}
 @media (max-width: 1199px) {
   .top_primary .store-info {
     width: 67%;
@@ -7000,7 +7005,7 @@ body.modal-open {
 }
 
 #quick-look-modal, .modal {
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .windowshade-promo div.main-content {
@@ -8978,6 +8983,10 @@ li.deals-collections-dd ul.sub {
   transition: .5s opacity ease;
   -webkit-transition: .5s opacity ease;
   -moz-transition: .5s opacity ease;
+}
+
+.popover {
+  z-index: 999999;
 }
 
 @media (min-width: 361px) and (max-width: 768px) {

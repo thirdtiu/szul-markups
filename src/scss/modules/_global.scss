@@ -1379,7 +1379,11 @@ ul.breadcrumbs{
 }
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
-@media (min-width: 1200px) {}
+@media (min-width: 1025px) {
+	.p-dialog-close-btn{
+		display:none !important;
+	}
+}
 
 @media (max-width: 1199px) {
 	.top_primary .store-info {
