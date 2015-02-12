@@ -74,7 +74,7 @@ a#nav-toggle{
 
 #top_header {
 	position: relative;
-	z-index: 99999;
+	z-index: 1029;
 }
 
 .page-header{
@@ -5028,6 +5028,16 @@ body.modal-open {
 	}
 
 }
+
+.dd-container .dd-options {
+	z-index: 1000 !important;
+}
+
+
+#quick-look-modal, .modal {
+	z-index: 99999;
+}
+
 
 .windowshade-promo div.main-content{
 	padding-left:10px !important;
