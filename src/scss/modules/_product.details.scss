@@ -59,15 +59,15 @@
 }
 #gal1.animate, .stage.hidden-xs.animate{
 	position:fixed !important;
-	top: 120px;
+	top: 80px;
 	width: 355px;
 }
 #gal1.animate{
-	top: 550px !important;
+	top: 480px !important;
 	width: 555px;
 }
 .stage.hidden-xs.snap{
-	top: 275px;
+	top: 290px;
 	position:absolute !important;
 }
 #gal1.snap{
@@ -76,7 +76,7 @@
 }
 @media(min-width:1025px){
 	.stage.hidden-xs{
-		margin: 0px 100px;
+		margin: 30px 100px 0px;
 	}
 }
 #ataf-tooltip + .tooltip > .tooltip-inner, #customize-tooltip + .tooltip > .tooltip-inner, #dont-see-size + .tooltip > .tooltip-inner {

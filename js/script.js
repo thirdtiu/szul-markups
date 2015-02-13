@@ -400,11 +400,18 @@ $(function(){
 
 		$(window).scroll(function (event) {
 	      if($(window).scrollTop() >= 105){
-	             $('.top_secondary, #gal1, .stage.hidden-xs').addClass('animate');
+	             $('.top_secondary').addClass('animate');
 	         }else{
-	          $('.top_secondary, #gal1, .stage.hidden-xs').removeClass('animate');
+	          $('.top_secondary').removeClass('animate');
 	         }
-	       if($(window).scrollTop() >= 400){
+
+	         if($(window).scrollTop() >= 190){
+	             $('#gal1, .stage.hidden-xs').addClass('animate');
+	         }else{
+	          $('#gal1, .stage.hidden-xs').removeClass('animate');
+	         }
+
+	       if($(window).scrollTop() >= 450){
 	       		$('.top_secondary, #gal1, .stage.hidden-xs').addClass('snap');
 	       }else{
 	       		$('.top_secondary, #gal1, .stage.hidden-xs').removeClass('snap');
