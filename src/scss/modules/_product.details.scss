@@ -57,26 +57,78 @@
 		height: 48px;
 	}
 }
-#gal1.animate, .stage.hidden-xs.animate{
-	position:fixed !important;
-	top: 80px;
-	width: 355px;
+.product-detail-mob .item{
+	padding:40px;
 }
-#gal1.animate{
-	top: 480px !important;
-	width: 555px;
+@media(max-width:768px){
+	.product-large-view .the-product .gallerific-wrap .stage{
+		margin-bottom:120px;
+	}
+	.product-large-view .the-product .gallerific-wrap #gal1 a{
+		width:23%;
+	}
+	.stage.hidden-xs.animate{
+		position:fixed !important;
+		top: 80px;
+	}
+	#gal1.animate{
+		position: fixed;
+		width: 45%;
+		top: 450px;
+	}
+	#gal1.snap{
+		position: absolute;
+		width: 90%;
+		top: 780px;
+	}
+	.stage.hidden-xs.snap{
+		top: 400px;
+		position:absolute !important;
+	}
 }
-.stage.hidden-xs.snap{
-	top: 290px;
-	position:absolute !important;
-}
-#gal1.snap{
-	position: absolute !important;
-	top: 690px !important;
+@media(min-width:769px) and (max-width:1024px){
+	.product-large-view .the-product .gallerific-wrap #gal1 a{
+		width: 23%;
+	}
+	.stage.hidden-xs.animate{
+		position:fixed !important;
+		top: 80px;
+	}
+	#gal1.animate{
+		position: fixed;
+		width: 45%;
+		top: 530px;
+	}
+	#gal1.snap{
+		position: absolute;
+		width: 95%;
+		top: 750px;
+	}
+	.stage.hidden-xs.snap{
+		top: 290px;
+		position:absolute !important;
+	}
 }
 @media(min-width:1025px){
 	.stage.hidden-xs{
 		margin: 30px 100px 0px;
+	}
+	#gal1.animate, .stage.hidden-xs.animate{
+		position:fixed !important;
+		top: 80px;
+		width: 355px;
+	}
+	#gal1.animate{
+		top: 480px !important;
+		width: 555px;
+	}
+	.stage.hidden-xs.snap{
+		top: 290px;
+		position:absolute !important;
+	}
+	#gal1.snap{
+		position: absolute !important;
+		top: 690px !important;
 	}
 }
 #ataf-tooltip + .tooltip > .tooltip-inner, #customize-tooltip + .tooltip > .tooltip-inner, #dont-see-size + .tooltip > .tooltip-inner {
@@ -277,12 +329,14 @@
 		z-index: 9999;
 	}
 	.zoomWindowContainer .zoomWindow{
-		top: -130px !important;
-		left: 100px !important;
-		width: 730px !important;
-		height: 489px !important;
+		top: 50% !important;
+		width: 150% !important;
+		height: 150% !important;
 		background-size: 100% !important;
 		background-position:0px !important;
+		transform:translate(-50%,-50%);
+		-webkit-transform:translate(-50%,-50%);
+		-moz-transform:translate(-50%,-50%);
 	}
 	.product-doverlay{
 		position: fixed;
@@ -306,10 +360,9 @@
 }
 @media (min-width:361px) and (max-width:768px){
 	.zoomWindowContainer .zoomWindow{
-		top: 50px !important;
-		left: 0px !important;
-		width: 730px !important;
-		height: 489px !important;
+		top: 50% !important;
+		width: 150% !important;
+		height: 150% !important;
 		background-size: 100% !important;
 		background-position:0px !important;
 	}

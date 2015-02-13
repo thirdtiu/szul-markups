@@ -54,15 +54,31 @@ body.modal-open {
 .product-tabs .nav-tabs{
 	margin-top:40px;
 }
-.preset-diamond-container{
-	float: left;
-	width: 60%;
-	padding: 0px 15px;
+.hidden-clearfix{
+	display:none;
 }
-.birthstone-jewel-container{
-	float: left;
-	width: 40%;
-	padding: 0px 15px;
+@media(min-width:769px) and (max-width:990px){
+	.preset-diamond-container{
+		padding:0px 15px;
+	}
+}
+@media(max-width:990px){
+	.hidden-clearfix{
+		display:block;
+	}
+}
+@media(min-width:991px){
+	.birthstone-jewel-container{
+		float: left;
+		width: 40%;
+		padding: 0px 15px;
+	}
+	.preset-diamond-container{
+		float: left;
+		width: 60%;
+		padding:0px 15px;
+	}
+	
 }
 @media(max-width:768px){
 	.preset-diamond-container{
@@ -75,8 +91,10 @@ body.modal-open {
 		text-align:center;
 	}
 	.birthstone-jewel-container{
-		width:100%;
-		margin-bottom:30px;
+		width:50%;
+	}
+	.preset-diamond-container{
+		padding:0px 15px;
 	}
 }
 @media (min-width:416px) and (max-width:630px){
@@ -102,7 +120,7 @@ body.modal-open {
 		margin-top: 10px;
 	}
 	.birthstone-jewel-container{
-		width:100%;
+		width:50%;
 		padding: 0px 5px; 
 	}
 	
