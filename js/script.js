@@ -404,7 +404,7 @@ $(function(){
 	         }else{
 	          $('.top_secondary, #gal1, .stage.hidden-xs').removeClass('animate');
 	         }
-	       if($(window).scrollTop() >= 300){
+	       if($(window).scrollTop() >= 400){
 	       		$('.top_secondary, #gal1, .stage.hidden-xs').addClass('snap');
 	       }else{
 	       		$('.top_secondary, #gal1, .stage.hidden-xs').removeClass('snap');
