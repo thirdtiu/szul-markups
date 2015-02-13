@@ -74,6 +74,10 @@ body.modal-open {
 	.featured-product-inner h2{
 		text-align:center;
 	}
+	.birthstone-jewel-container{
+		width:100%;
+		margin-bottom:30px;
+	}
 }
 @media (min-width:416px) and (max-width:630px){
 	.featured-product-inner h2{
@@ -96,6 +100,10 @@ body.modal-open {
 	.featured-product-container .col-sm-7{
 		padding: 0px 5px;
 		margin-top: 10px;
+	}
+	.birthstone-jewel-container{
+		width:100%;
+		padding: 0px 5px; 
 	}
 	
 }

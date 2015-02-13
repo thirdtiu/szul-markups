@@ -4787,17 +4787,52 @@ div#thumbs{
 }
 
 @media(max-width:570px){
-	
-}
-
-@media(max-width:360px){
-	
-
-	/*HOME PAGE*/
 	.jcarousel.jcarousel-disabled ul.products-carousel li.product{
 		width:50% !important;
 		padding: 0 5px;
 	}
+}
+@media(min-width:911px) and (max-width:929px){
+	.products-carousel .product{
+		width:185px;
+	}
+}
+
+@media(min-width:871px) and (max-width:910px){
+	.products-carousel .product{
+		width:175px;
+	}
+}
+@media(min-width:830px) and (max-width:870px){
+	.products-carousel .product{
+		width:166px;
+	}
+}
+@media(min-width:930px) and (max-width:970px){
+	.products-carousel .product{
+		width:190px;
+	}
+}
+@media(min-width:971px) and (max-width:1200px){
+	.products-carousel .product{
+		width:200px;
+	}
+}
+@media(min-width:790px) and (max-width:829px){
+	.products-carousel .product{
+		width:220px;
+	}
+}
+@media(min-width:769px) and (max-width:789px){
+	.products-carousel .product{
+		width:212px;
+	}
+}
+@media(max-width:360px){
+	
+
+	/*HOME PAGE*/
+	
 	.m-clearfix{
 		display: block;
 	}
@@ -5210,6 +5245,9 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 		width:60% !important;
 		float:none !important;
 	}
+	
+}
+@media(min-width: 567px) and (max-width:768px){
 	.jcarousel.jcarousel-disabled ul.products-carousel li.product{
 		width:33% !important;
 	}
