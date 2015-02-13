@@ -57,7 +57,28 @@
 		height: 48px;
 	}
 }
-
+#gal1.animate, .stage.hidden-xs.animate{
+	position:fixed !important;
+	top: 120px;
+	width: 355px;
+}
+#gal1.animate{
+	top: 550px !important;
+	width: 555px;
+}
+.stage.hidden-xs.snap{
+	top: 190px;
+	position:absolute !important;
+}
+#gal1.snap{
+	position: absolute !important;
+	top: 620px !important;
+}
+@media(min-width:1025px){
+	.stage.hidden-xs{
+		margin: 50px 100px 0px;
+	}
+}
 #ataf-tooltip + .tooltip > .tooltip-inner, #customize-tooltip + .tooltip > .tooltip-inner, #dont-see-size + .tooltip > .tooltip-inner {
 	font-family: "museo_sans300", sans-serif; 
 	background-color: white; 

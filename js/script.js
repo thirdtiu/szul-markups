@@ -399,11 +399,16 @@ $(function(){
 	$(document).ready(function(){
 
 		$(window).scroll(function (event) {
-	      if($(window).scrollTop() >= $('.windowshade').offset().top - 47){
-	             $('.top_secondary').addClass('animate');
+	      if($(window).scrollTop() >= 105){
+	             $('.top_secondary, #gal1, .stage.hidden-xs').addClass('animate');
 	         }else{
-	          $('.top_secondary').removeClass('animate');
+	          $('.top_secondary, #gal1, .stage.hidden-xs').removeClass('animate');
 	         }
+	       if($(window).scrollTop() >= 300){
+	       		$('.top_secondary, #gal1, .stage.hidden-xs').addClass('snap');
+	       }else{
+	       		$('.top_secondary, #gal1, .stage.hidden-xs').removeClass('snap');
+	       }
 	     });
 
 
