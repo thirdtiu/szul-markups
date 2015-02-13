@@ -8090,7 +8090,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 
 @media (min-width: 1025px) {
   .stage.hidden-xs {
-    margin: 50px 100px 0px;
+    margin: 0px 100px;
   }
 }
 #ataf-tooltip + .tooltip > .tooltip-inner, #customize-tooltip + .tooltip > .tooltip-inner, #dont-see-size + .tooltip > .tooltip-inner {
