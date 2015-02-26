@@ -72,6 +72,11 @@ body.modal-open {
 	}
 	
 }
+@media(min-width:768px){
+	.the-product.row{
+		min-height:855px;
+	}
+}
 @media(min-width:769px) and (max-width:949px){
 	.windowshade{
 		padding-top: 11px;
@@ -144,6 +149,7 @@ body.modal-open {
 		width: 60%;
 		padding:0px 15px;
 	}
+
 	
 }
 @media(max-width:768px){
