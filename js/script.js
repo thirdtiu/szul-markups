@@ -715,6 +715,8 @@ $(window).load(function(){
 
 $(window).resize(function(){
 	carouselEnabler();
+
+
 });
 
 
@@ -1336,6 +1338,10 @@ $(window).load(function(){
 });
 
 $(document).ready(function($) {
+
+
+	
+
 	$(document).on('click', '.mobile-search', function(event) {
 		$('input#search').focus();
 		$('.mobile-nav-control').addClass('search-overlay');
@@ -1359,9 +1365,8 @@ $(document).ready(function($) {
 	});
 
 
-
-});
-
+		
+	});
 // Can also be used with $(document).ready()
 $(window).load(function() {
   $('.flexslider').flexslider({
@@ -1371,6 +1376,15 @@ $(window).load(function() {
     nextText: ""
   });
 });
-
-
-
+/*
+$(window).resize(function(){
+	if ($(window).width() < 750) {
+	        $('.sampless').attr('src', 'images/banner.jpg');
+	        $('.sampless').addClass('test');
+	    }
+	    else {
+	        $('.sampless').attr('src', 'images/logo.png');
+	        $('.sampless').removeClass('test');
+	    }
+});
+*/
