@@ -141,7 +141,10 @@
 	color:black; 
 	text-align:left;
 }
-#ataf-tooltip + .tooltip > .tooltip-arrow, #customize-tooltip + .tooltip > .tooltip-arrow, #dont-see-size + .tooltip > .tooltip-arrow { border-right-color:#9026a0; }
+#customize-tooltip + .tooltip > .tooltip-arrow, #dont-see-size + .tooltip > .tooltip-arrow { border-right-color:#9026a0; }
+#ataf-tooltip + .tooltip > .tooltip-arrow{
+	border-bottom-color:#9026a0;
+}
 .tooltip-cont, .ataf-tooltip-container{
 	font-size:14px; 
 	padding:10px; 

@@ -448,7 +448,7 @@ $(function(){
 		  $('#ataf-tooltip').tooltip({
 			'html': 'true',
 			'trigger': 'click',
-			'placement': 'right',
+			'placement': 'bottom',
 			'title': '<span class="ttip-title">Email a Friend</span><span class="ataf-tooltip-container"><label class="col-md-4">Name</label><input class="col-md-8"/><br/><label class="col-md-4">Email</label><input class="col-md-8"/><br/><label class="col-md-4">Friends Email</label><textarea class="col-md-8"></textarea><br/><label class="col-md-4">Subject</label><input class="col-md-8"/><br/><button class="pull-right">Submit</button><div class="clearfix"></div></span>'
 		  });
 		  }
