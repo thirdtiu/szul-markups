@@ -4293,7 +4293,7 @@ div#thumbs{
 		.the-product {
 			.gallerific-wrap {
 				#gal1 {
-					text-align: left;
+					text-align: center;
 
 					img {
 						display: block;
@@ -4302,8 +4302,9 @@ div#thumbs{
 
 					a {
 						border: 2px solid #eee;
-						width: 24.46%;
+						width: 72px !important;
 						height: auto;
+						margin:0px 5px;
 						-webkit-border-radius: 0;
 								border-radius: 0;
 					}

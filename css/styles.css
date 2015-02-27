@@ -6269,7 +6269,7 @@ div#thumbs .thumbs li.selected a.thumb {
   }
 
   .product-large-view .the-product .gallerific-wrap #gal1 {
-    text-align: left;
+    text-align: center;
   }
   .product-large-view .the-product .gallerific-wrap #gal1 img {
     display: block;
@@ -6277,8 +6277,9 @@ div#thumbs .thumbs li.selected a.thumb {
   }
   .product-large-view .the-product .gallerific-wrap #gal1 a {
     border: 2px solid #eee;
-    width: 24.46%;
+    width: 72px !important;
     height: auto;
+    margin: 0px 5px;
     -webkit-border-radius: 0;
     border-radius: 0;
   }
@@ -8146,13 +8147,13 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   }
 
   .stage.hidden-xs.snap {
-    top: 290px;
+    top: 310px;
     position: absolute !important;
   }
 
   #gal1.snap {
     position: absolute !important;
-    top: 690px !important;
+    top: 710px !important;
   }
 }
 #ataf-tooltip + .tooltip > .tooltip-inner, #customize-tooltip + .tooltip > .tooltip-inner, #dont-see-size + .tooltip > .tooltip-inner {
@@ -9023,10 +9024,58 @@ body.modal-open {
   margin-top: 40px;
 }
 
-.hidden-clearfix {
+.hidden-clearfix, .flexslider-loader {
   display: none;
 }
 
+@media (min-width: 1200px) {
+  body.load-control .flexslider-container {
+    height: 420px;
+  }
+
+  body.load-control .featured-product-container .col-md-4.col-sm-6 {
+    height: 380px;
+  }
+
+  body.load-control .preset-diamond-container,
+  body.load-control .birthstone-jewel-container {
+    height: 426px;
+  }
+
+  body.load-control .flexslider-loader {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  body.load-control .flexslider-container {
+    height: 420px;
+  }
+
+  body.load-control .featured-product-container .col-md-4.col-sm-6 {
+    height: 283pxpx;
+  }
+
+  body.load-control .preset-diamond-container,
+  body.load-control .birthstone-jewel-container {
+    height: 346px;
+  }
+
+  body.load-control .flexslider-loader {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+}
 @media (min-width: 950px) and (max-width: 993px) {
   .top_secondary #main_nav li a {
     font-size: 10px;
@@ -9092,7 +9141,7 @@ body.modal-open {
   }
 
   .product-large-view .the-product .gallerific-wrap #gal1, #gal1.animate {
-    width: 555px;
+    width: 475px;
   }
 
   .product-large-view .the-product .gallerific-wrap .stage {

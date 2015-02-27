@@ -942,8 +942,13 @@ $(document).ready(function($) {
 		});
 
 	}
-});
 
+});
+$('img').load(function(){
+	setTimeout( function() {
+		$('body').removeClass('load-control');
+	}, 5000);
+});
 $(window).load(function(){
 	var stateProvinceData = [
 		{
