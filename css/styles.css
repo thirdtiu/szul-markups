@@ -9052,6 +9052,27 @@ body.modal-open {
     -moz-transform: translate(-50%, -50%);
   }
 }
+@media (max-width: 415px) {
+  body.load-control .flexslider-container {
+    height: 163px;
+    position: relative;
+  }
+
+  body.load-control .flexslider-loader {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+
+  body.load-control .featured-product-container .col-md-4.col-sm-6,
+  body.load-control .preset-diamond-container {
+    height: 163px;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1199px) {
   body.load-control .flexslider-container {
     height: 420px;
