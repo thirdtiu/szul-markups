@@ -2561,7 +2561,7 @@ form.diamond_filter .mobile-fields .sub-group #color-label, form.diamond_filter 
 }
 
 .product-grid2 .product {
-  /*width: 47.91666666666667%;*/
+  width: 48.91666666666667%;
   float: left;
   margin: 0 2.0416666666666665% 20px 0px;
 }
@@ -5221,9 +5221,9 @@ div#thumbs .thumbs li.selected a.thumb {
   }
 
   .product-grid3 .product {
-    width: 48.33%;
-    margin: 0 3.33% 10px;
     text-align: center;
+    width: 32.08%;
+    margin: 0 1.8416666666666665% 20px 0px;
   }
 
   .product-grid3 .product:first-child {
@@ -5249,8 +5249,8 @@ div#thumbs .thumbs li.selected a.thumb {
   }
 
   .product-grid2 .product {
-    margin: 0 0 10px 0;
-    width: 100%;
+    width: 48.916667%;
+    margin: 0 2.0416666666666665% 20px 0px;
   }
 
   .product-grid2 .product .grid-image {
@@ -7233,7 +7233,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 
 @media (min-width: 361px) and (max-width: 768px) {
   .product-grid3 .product {
-    width: 38.33% !important;
+    /*width: 38.33% !important;*/
   }
 
   .dwb-container {
@@ -7245,9 +7245,9 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   }
 
   .product-grid2 .product {
-    margin: 15px auto !important;
-    width: 60% !important;
-    float: none !important;
+    /*margin:15px auto !important;
+    width:60% !important;
+    float:none !important;*/
   }
 }
 @media (min-width: 567px) and (max-width: 768px) {
@@ -7778,22 +7778,33 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 }
 /* Cyrus changes for product-listingb.html */
 @media (min-width: 361px) and (max-width: 768px) {
-  .product-grid3 .product:last-child {
-    margin-right: 51px !important;
-    width: 38% !important;
-  }
-
-  .product-grid3 .product:first-child {
-    margin-left: 51px !important;
-    width: 38% !important;
-  }
-
   .product-listing-page .main-content .mobile-filters {
     border-top: 1px solid #cccccc;
   }
 
+  .product-grid3 .product {
+    /*margin-right: 51px !important;*/
+    /*width: 32.08% !important;
+    margin: 0 1.8416666666666665% 20px 0px !important;*/
+  }
+
+  .product-grid3 .product:first-child {
+    /*margin-left: 51px !important;*/
+  }
+
+  .product-grid3 .product:last-child {
+    /*margin-right: 51px !important;*/
+  }
+
   .mobile-filters .pull-left {
     line-height: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .product-grid3 .product:last-child {
+    /*margin-right: 51px !important;*/
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 /* Cyrus changes for product-listing.html */
@@ -9485,8 +9496,9 @@ li.deals-collections-dd ul.sub {
   }
 
   .product-grid2 .product {
-    width: 38% !important;
-    float: left !important;
+    /*float: left!important;
+    width: 48.916667% !important;
+    margin: 0 2.0416666666666665% 20px 0px !important;*/
   }
 
   .product-grid2 .product.grid.hidden-xs {
@@ -9494,11 +9506,11 @@ li.deals-collections-dd ul.sub {
   }
 
   .product-grid2 .product {
-    margin-left: 51px !important;
+    /*margin-left: 51px !important;*/
   }
 
   .product-grid2 .product.grid:last-child {
-    margin-left: 75px !important;
+    /*margin-left: 75px !important;*/
   }
 
   .advanced-search-form .form-group {
@@ -9593,13 +9605,20 @@ li.deals-collections-dd ul.sub {
     width: 100px;
   }
 }
+@media (max-width: 768px) {
+  .product-grid2 .product {
+    /*float: left!important;
+    width: 48.916667% !important;
+    margin: 0 2.0416666666666665% 20px 0px !important;*/
+  }
+}
 @media (max-width: 570px) {
   .product-grid2 .product.grid:last-child {
-    margin-left: 29px !important;
+    /*margin-left: 29px !important;*/
   }
 
   .product-grid2 .product img {
-    height: 204px;
+    /*height: 204px;*/
   }
 
   .spec-separator {
@@ -9627,6 +9646,28 @@ li.deals-collections-dd ul.sub {
   			height: 280px;
   
   		}*/
+}
+@media (max-width: 480px) {
+  .product-grid2 .product {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .product-grid3 .product {
+    width: 49.08%;
+    margin: 0 1.8416666666666665% 20px 0px;
+  }
+
+  .product-grid3 .product:nth-child(2) {
+    margin-right: 0 !important;
+  }
+
+  .product-grid3 .product:last-child {
+    /*margin-right: 51px !important;*/
+    width: 100% !important;
+    margin: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

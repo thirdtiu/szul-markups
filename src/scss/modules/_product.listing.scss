@@ -105,19 +105,36 @@
 /* Cyrus changes for product-listingb.html */
 
 @media(min-width:361px) and (max-width:768px){
-	.product-grid3 .product:last-child{
-		margin-right: 51px !important;
-		width: 38% !important;
-	}
-	.product-grid3 .product:first-child{
-		margin-left: 51px !important;
-		width: 38% !important;
-	}
+	
+	
 	.product-listing-page .main-content .mobile-filters{
 		border-top:1px solid #cccccc;
 	}
+	.product-grid3 .product {
+		/*margin-right: 51px !important;*/
+		/*width: 32.08% !important;
+		margin: 0 1.8416666666666665% 20px 0px !important;*/
+	}
+
+	.product-grid3 .product:first-child{
+		/*margin-left: 51px !important;*/
+		
+	}
+	.product-grid3 .product:last-child{
+		/*margin-right: 51px !important;*/
+	}
 	.mobile-filters .pull-left{
 		line-height: 40px;
+	}
+}
+
+
+
+@media(max-width:360px){
+	.product-grid3 .product:last-child{
+		/*margin-right: 51px !important;*/
+		width: 100% !important;
+		margin: 0 !important;
 	}
 }
 

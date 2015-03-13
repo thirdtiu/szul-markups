@@ -379,7 +379,7 @@ form.diamond_filter {
 }
 .product-grid2{
 	.product{
-		/*width: 47.91666666666667%;*/
+		width: 48.91666666666667%;
 		float: left;
 		margin:0 2.0416666666666665% 20px 0px;
 	}
@@ -3127,9 +3127,9 @@ div#thumbs{
 		
 	}
 	.product-grid3 .product{
-		width: 48.33%;
-		margin: 0 3.33% 10px;
 		text-align: center;
+		width: 32.08%;
+		margin: 0 1.8416666666666665% 20px 0px;
 	}
 	.product-grid3 .product:first-child{
 		margin-left:0;
@@ -3151,8 +3151,8 @@ div#thumbs{
 		font-weight: normal;
 	}
 	.product-grid2 .product{
-		margin:0 0 10px 0;
-		width: 100%;
+		width: 48.916667%;
+		margin: 0 2.0416666666666665% 20px 0px;
 	}
 	.product-grid2 .product .grid-image{
 		text-align: center;
@@ -5233,7 +5233,7 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 }
 @media(min-width: 361px) and (max-width:768px){
 	.product-grid3 .product{
-		width: 38.33% !important;
+		/*width: 38.33% !important;*/
 	}
 	.dwb-container{
 		margin-left: 50px !important;
@@ -5242,9 +5242,9 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 		margin-right: 50px !important;
 	}
 	.product-grid2 .product{
-		margin:15px auto !important;
+		/*margin:15px auto !important;
 		width:60% !important;
-		float:none !important;
+		float:none !important;*/
 	}
 	
 }
