@@ -98,6 +98,8 @@ h2.contact-number {
     left: 50% !important;
     top: 50% !important;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     width: 85%;
     padding-bottom: 20px;
     position: fixed;
