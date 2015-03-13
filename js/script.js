@@ -26,6 +26,7 @@ $(function(){
 		});
 	$('.z-contact-item').fastClick(function(){
 		$('#mobile-nav-control').addClass('showtooltip');
+		$('.mm-page, .windowshade, #mobile-nav, #top_header, body').removeClass('move-right');
 	});	
 	$('#nav-toggle').fastClick(function(){
 		$('.mm-page, .windowshade, #mobile-nav, #top_header, body').toggleClass('move-right');
@@ -1360,6 +1361,7 @@ $(document).ready(function($) {
 	$(document).on('click', '#contact-item-popover .contact-popup-close-btn', function(event) {
 		$('#contact-item-popover').hide();
 		$('#mobile-nav-control').removeClass('showtooltip');
+
 		
 	});
 

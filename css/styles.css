@@ -7800,13 +7800,6 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     line-height: 40px;
   }
 }
-@media (max-width: 360px) {
-  .product-grid3 .product:last-child {
-    /*margin-right: 51px !important;*/
-    width: 100% !important;
-    margin: 0 !important;
-  }
-}
 /* Cyrus changes for product-listing.html */
 #quick-look-modal .modal-dialog .col-md-6 .btn-primary-gradient {
   background-color: #38caa5 !important;
@@ -9062,6 +9055,18 @@ body.modal-open {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
   }
+
+  body.load-control .product-banner {
+    height: 267px;
+  }
+
+  body.load-control .product-grid2 {
+    height: 480px;
+  }
+
+  body.load-control .product-grid3 {
+    height: 322px;
+  }
 }
 @media (max-width: 415px) {
   body.load-control .flexslider-container {
@@ -9082,6 +9087,18 @@ body.modal-open {
   body.load-control .featured-product-container .col-md-4.col-sm-6,
   body.load-control .preset-diamond-container {
     height: 163px;
+  }
+
+  body.load-control .product-banner {
+    height: 96px;
+  }
+
+  body.load-control .product-grid2 {
+    height: 620px;
+  }
+
+  body.load-control .product-grid3 {
+    height: 452px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -9106,6 +9123,18 @@ body.modal-open {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
+  }
+
+  body.load-control .product-banner {
+    height: 267px;
+  }
+
+  body.load-control .product-grid2 {
+    height: 480px;
+  }
+
+  body.load-control .product-grid3 {
+    height: 322px;
   }
 }
 @media (min-width: 950px) and (max-width: 993px) {

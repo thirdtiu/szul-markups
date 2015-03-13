@@ -78,6 +78,15 @@ body.modal-open {
 		-webkit-transform:translate(-50%,-50%);
 		-moz-transform:translate(-50%,-50%);
 	}
+	body.load-control .product-banner {
+		height: 267px;
+	}
+	body.load-control .product-grid2 {
+		height: 480px;
+	}
+	body.load-control .product-grid3 {
+		height: 322px;
+	}
 }
 @media(max-width:415px){
 	body.load-control .flexslider-container{
@@ -97,6 +106,18 @@ body.modal-open {
 	body.load-control .preset-diamond-container{
 		height:163px;
 	}
+
+	body.load-control .product-banner {
+		height: 96px;
+	}
+	body.load-control .product-grid2 {
+		height: 620px;
+	}
+	body.load-control .product-grid3 {
+		height: 452px;
+	}
+
+
 }
 @media(min-width:1024px) and (max-width:1199px){
 	body.load-control .flexslider-container{
@@ -117,6 +138,15 @@ body.modal-open {
 		transform:translate(-50%,-50%);
 		-webkit-transform:translate(-50%,-50%);
 		-moz-transform:translate(-50%,-50%);
+	}
+	body.load-control .product-banner {
+		height: 267px;
+	}
+	body.load-control .product-grid2 {
+		height: 480px;
+	}
+	body.load-control .product-grid3 {
+		height: 322px;
 	}
 }
 @media(min-width:950px) and (max-width:993px){
@@ -607,3 +637,4 @@ li.deals-collections-dd ul.sub{
 		margin: 0 !important;
 	}
 }
+
