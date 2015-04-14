@@ -1237,7 +1237,7 @@ ul.payment-icons{
 	/* float: right;
 	width: 220px;
 	margin-left: 20px; */
-	margin-top: 40px;
+	margin-top: 20px;
 	.block {
 		background-color: #f7f7f7;
 		padding: 20px;
@@ -1261,6 +1261,7 @@ ul.payment-icons{
 		}
 		a.btn {
 			margin: auto;
+			width:100%;
 		}
 	}
 }
@@ -4391,7 +4392,7 @@ div#thumbs{
 
 	/* 5 CHECKOUT 2 PAYMENt */
 	.checkout-cart-info {
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 
 	.payment-nav-tabs {

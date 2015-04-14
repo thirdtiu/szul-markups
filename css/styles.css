@@ -3404,7 +3404,7 @@ ul.payment-icons li {
   /* float: right;
   width: 220px;
   margin-left: 20px; */
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .checkout-cart-info .block {
   background-color: #f7f7f7;
@@ -3430,6 +3430,7 @@ ul.payment-icons li {
 }
 .checkout-cart-info .block a.btn {
   margin: auto;
+  width: 100%;
 }
 
 /** PRODUCT LISTING **/
@@ -6349,7 +6350,7 @@ div#thumbs .thumbs li.selected a.thumb {
 
   /* 5 CHECKOUT 2 PAYMENt */
   .checkout-cart-info {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .payment-nav-tabs {
@@ -9065,24 +9066,20 @@ body.modal-open {
   left: -30px;
 }
 
-.checkout-shipping-container {
-  float: left;
-  width: 75%;
-}
-
-.checkout-cart-info {
-  float: right;
-  width: 23%;
-}
-
 .shipping-address-item {
-  background: white;
   padding: 10px;
+  margin-top: 20px;
+}
+
+.shipping-address-item-inner {
+  padding: 20px;
+  background: white;
 }
 
 .shipping-address-item ul {
-  padding-bottom: 10px;
-  border-bottom: #dddddd;
+  padding: 10px 0px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 15px;
 }
 
 .shipping-address-item ul li {
@@ -9091,6 +9088,120 @@ body.modal-open {
 
 .continue-btn-container a.btn-primary-gradient {
   padding: 10px 30px;
+}
+
+.shipping-items-buttons .shipping-edit-btn,
+.shipping-items-buttons .shipping-delete-btn {
+  background: #efefef;
+  color: #272727;
+  padding: 5px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "brandon_grotesquebold", sans-serif;
+  border: 1px solid #dddddd;
+}
+
+.shipping-items-buttons .shipping-uta-btn {
+  padding: 5px;
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.addnew-shipping-address {
+  display: block;
+  margin-top: 30px;
+  height: 260px;
+  background: #f5f5f5;
+  border: 1px solid #dddddd;
+}
+
+.addnew-shipping-address:hover {
+  cursor: pointer;
+}
+
+.addnew-shipping-address .plus-sign {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  display: block;
+  margin: 70px auto 50px;
+}
+
+.addnew-shipping-address .plus-sign:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 50%;
+  left: 0px;
+  margin-top: -2px;
+  background: #272727;
+}
+
+.addnew-shipping-address .plus-sign:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  left: 50%;
+  margin-left: -2px;
+  background: #272727;
+}
+
+.addnew-shipping-address p {
+  width: 80%;
+  margin: 0px auto;
+  font-family: "brandon_grotesquebold", sans-serif;
+  font-weight: bold;
+  color: #272727;
+}
+
+.add-new-shipping-address-modal {
+  font-family: "museo_sans300", sans-serif;
+}
+
+.add-new-shipping-address-modal .modal-dialog {
+  max-width: 550px;
+}
+
+.add-new-shipping-address-modal .shipping-info-inner input,
+.add-new-shipping-address-modal .shipping-info-inner select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.modal-footer {
+  border-top: 0px;
+  margin-top: 0px;
+}
+
+.add-new-shipping-address-modal .shipping-info-inner .country-input {
+  background: #e5e5e5;
+}
+
+.shipping-radio-btns {
+  padding: 10px;
+  background: #efefef;
+}
+
+.shipping-radio-btns input {
+  margin-right: 5px;
+}
+
+.shipping-items-buttons .col-md-6,
+.shipping-items-buttons .col-md-12 {
+  padding: 0px 5px;
+}
+
+.shipping-address-item h5 {
+  font-weight: bold;
+  font-family: "brandon_grotesquebold", sans-serif;
 }
 
 .color-separator {
