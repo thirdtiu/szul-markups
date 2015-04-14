@@ -8997,6 +8997,73 @@ body.modal-open {
   width: 79px !important;
 }
 
+.top_header2 .top_primary {
+  background: #f8f8f8;
+  padding: 10px 0px;
+}
+
+.continue-btn-container {
+  margin-top: 15px;
+}
+
+.continue-btn-container ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header2-contact {
+  color: #272727 !important;
+  position: relative;
+  margin-right: 40px;
+}
+
+.header2-contact label {
+  margin-bottom: 0px;
+  color: #bbbbbb;
+}
+
+.header2-contact label:hover {
+  cursor: pointer;
+}
+
+.header2-contact span {
+  font-weight: bold;
+}
+
+.header2-contact:before {
+  content: url("../images/mobile-icon.png");
+  position: absolute;
+  left: -30px;
+}
+
+.checkout-shipping-container {
+  float: left;
+  width: 75%;
+}
+
+.checkout-cart-info {
+  float: right;
+  width: 23%;
+}
+
+.shipping-address-item {
+  background: white;
+  padding: 10px;
+}
+
+.shipping-address-item ul {
+  padding-bottom: 10px;
+  border-bottom: #dddddd;
+}
+
+.shipping-address-item ul li {
+  list-style: none;
+}
+
+.continue-btn-container a.btn-primary-gradient {
+  padding: 10px 30px;
+}
+
 .color-separator {
   padding-left: 3px;
   padding-right: 3px;
