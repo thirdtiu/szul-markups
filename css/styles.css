@@ -3261,7 +3261,13 @@ ul.payment-icons li {
   margin-right: 20px;
 }
 
+.checkout-page-container {
+  margin-bottom: 100px;
+}
+
 .checkout .main-content {
+  float: left;
+  width: 75%;
   /* width: 700px;
   float: left; */
 }
@@ -3348,7 +3354,7 @@ ul.payment-icons li {
 }
 .checkout .main-content .pull-right .carousel {
   padding: 10px 20px;
-  min-height: 676px;
+  min-height: 679px;
 }
 .checkout .main-content .pull-right .carousel .carousel-control {
   top: 92.5%;
@@ -6187,6 +6193,9 @@ div#thumbs .thumbs li.selected a.thumb {
 /* 5 CHECKOUT 2 PAYMENt */
 .checkout-cart-info {
   margin-top: 0;
+  margin-left: 32px;
+  float: left;
+  width: 22%;
 }
 
 .payment-nav-tabs {
@@ -7063,10 +7072,30 @@ body.modal-open {
   width: 281px !important;
 }
 
+/*.checkout #rp1-c-input .dd-select, .checkout #rp1-c2-input .dd-select, .checkout #rp1-sp2-input .dd-select {
+	width: 253px !important;
+}*/
 #rp1-sp-input label, #rp1-c-input label, #rp1-sp2-input label, #rp1-c2-input label {
   margin-top: 5px;
 }
 
+@media (max-width: 1200px) {
+  .checkout-cart-info {
+    margin-left: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .checkout .main-content {
+    float: none;
+    width: 100%;
+  }
+
+  .checkout-cart-info {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+  }
+}
 @media (min-width: 361px) and (max-width: 768px) {
   .container .page-header {
     margin: 26px 0px;
