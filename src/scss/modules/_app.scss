@@ -1093,12 +1093,19 @@ ul.payment-icons{
 		margin-right: 20px;
 	}
 }
+
+.checkout-page-container {
+	margin-bottom: 100px;
+}
+
 .checkout .main-content {
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"], {
 		@extend .input-styles;
 	}
+	float: left;
+	width: 75%;
 	/* width: 700px;
 	float: left; */
 	.block-forms {
@@ -1181,7 +1188,7 @@ ul.payment-icons{
 		padding: 0;
 		.carousel {
 			padding: 10px 20px;
-			min-height: 676px;
+			min-height: 679px;
 			.carousel-control {
 				top: 92.5%;
 				bottom: inherit;
@@ -4182,6 +4189,9 @@ div#thumbs{
 /* 5 CHECKOUT 2 PAYMENt */
 .checkout-cart-info {
 	margin-top: 0;
+	margin-left: 32px;
+	float: left;
+	width: 22%;
 }
 
 .payment-nav-tabs {
@@ -5085,9 +5095,33 @@ body.modal-open {
 #rp1-c-input .dd-options, #rp1-sp-input .dd-options, #rp1-c2-input .dd-options, #rp1-sp2-input .dd-options{
 	width:281px !important;
 }
+
+/*.checkout #rp1-c-input .dd-select, .checkout #rp1-c2-input .dd-select, .checkout #rp1-sp2-input .dd-select {
+	width: 253px !important;
+}*/
+
 #rp1-sp-input label, #rp1-c-input label, #rp1-sp2-input label, #rp1-c2-input label{
 	margin-top:5px;
 }
+
+@media(max-width:1200px){
+	.checkout-cart-info {
+		margin-left: 28px;		
+	}
+}
+
+@media(max-width:992px){
+	.checkout .main-content {
+		float: none;
+		width: 100%;
+	}
+	.checkout-cart-info {
+		float: none;
+		margin-left: 0;
+		width: 100%;		
+	}
+}
+
 @media(min-width:361px) and (max-width:768px){
 	.container .page-header{
 		margin:26px 0px;
