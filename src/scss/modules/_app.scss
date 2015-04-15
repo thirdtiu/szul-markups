@@ -915,7 +915,6 @@ ul.payment-icons{
 			font-family: $brandon-bold;
 		}
 		label {
-			display: block;
 			margin-bottom: 2px;
 		}
 		select {
@@ -925,8 +924,8 @@ ul.payment-icons{
 			@include border-radius(3px);	
 			width: 30%;
 			height: 28px;
-			-webkit-appearance: none;
-			background: #fff url(../images/sprite.png) 179px -570px;
+			/*-webkit-appearance: none;
+			background: #fff url(../images/sprite.png) 179px -570px;*/
 		}
 		textarea {
 			padding: 5px 12px;
@@ -4400,8 +4399,8 @@ div#thumbs{
 		li {
 			float: left;
 			line-height: 44px;
-			margin-right: 0;
-			width: 33.333333%;
+			margin-right: 10px;
+			width: 27%;
 		}
 
 		li.active a {

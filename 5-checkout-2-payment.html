@@ -1,4 +1,4 @@
-<?php include_once('header.html'); ?>
+<?php include_once('header2.html'); ?>
 
 		<div class="container">
 
@@ -22,50 +22,140 @@
 						<li><a href="#paypal" data-toggle="tab"><img src="images/steps-paypal.png"/></a></li>
 					  </ul>
 					  <div class="tab-content">
-						<div class="tab-pane active" id="onlinecc">
-						  <ul class="payment-icons">
-							<li><img src="images/cc1.png" alt=""></li>
-							<li><img src="images/cc2.png" alt=""></li>
-							<li><img src="images/cc3.png" alt=""></li>
-							<li><img src="images/cc4.png" alt=""></li>
-						  </ul>
-						  <fieldset>
-							<p>
-							  <label class="cc-type">CREDIT CARD TYPE</label>
-							  <select class="cc-options">
-								<option>VISA</option>
-								<option>MASTERCARD</option>
-							  </select>
-							</p>
-							<div class="clearfix"></div>
-							<p>
-							  <label class="cc-cnumber">CARD NUMBER</label>
-							  <input class="cc-cnumber-input" type="text" id="card-num">
-							</p>
-							<p>
-							  <div class="row">
-								<div class="col-md-5 col-xs-12 mmspace">
-								  <label class="cc-exp-date">EXPIRATION DATE</label>
-								  <select id="month" class="pull-left cc-exp-date-options">
-									<option>Month</option>
-									<option>Month</option>
-								  </select>
-								  <select id="year" class="pull-right cc-exp-date-year">
-									<option>Year</option>
-									<option>Year</option>
-								  </select>
-								</div>
-								<div class="col-md-5 col-xs-12 mmspace">
-								  <label class="cc-cverification">CARD VERIFICATION (CCV) NO.</label>
-								  <input class="cc-cverification-input" id="fw" type="text">
-								</div>
-							  </div>
-							</p>
-							<p class="cc-name-cont">
-							  <label class="cc-cname">NAME AS IT APPEARS ON THE CARD</label>
-							  <input class="cc-cname-input" type="text" id="name-card">
-							</p>
-						  </fieldset>
+						<div class="tab-pane active clearfix" id="onlinecc">
+						  <h2 class="block-head">SELECT CREDIT CARD</h2>
+						  <div class="col-md-4">
+						  	<div class="checkout-payment-select-cc">
+						  		<img src="images/cc2.png" alt="">
+						  		<h5>VISA XXXXX - 1898</h5>
+						  		<span>John Edward Doe</span><br/>
+						  		<span>Expires 01/2016</span>
+						  		<h2 class="block-head">BILLING ADDRESS</h2>
+						  		<h5>JOHN EDWARD DOE</h5>
+						  		<ul>
+						  			<li>11234 Address Line 04</li>
+                    				<li>Second Address Line</li>
+                    				<li>Woodside, NY 1377</li>
+                    				<li>United States</li>
+                    				<li>133 4331</li>
+						  		</ul>
+						  		<div class="payment-items-buttons text-center clearfix">
+				                    <div class="col-md-6">
+				                      <a href="" class="payment-edit-btn">EDIT</a>
+				                    </div>
+				                    <div class="col-md-6">
+				                      <a href="" class="payment-delete-btn">DELETE</a>
+				                    </div>
+				                    <div class="col-md-12">
+				                      <a href="" class="payment-uta-btn btn-primary-gradient">USE THIS ADDRESS</a>
+				                    </div>
+				                    
+				                  </div>
+						  	</div>
+						  </div>
+						  <div class="col-md-4">
+						  	<div class="checkout-payment-select-cc">
+						  		<img src="images/cc3.png" alt="">
+						  		<h5>VISA XXXXX - 1898</h5>
+						  		<span>John Edward Doe</span><br/>
+						  		<span>Expires 01/2016</span>
+						  		<h2 class="block-head">BILLING ADDRESS</h2>
+						  		<h5>JOHN EDWARD DOE</h5>
+						  		<ul>
+						  			<li>11234 Address Line 04</li>
+                    				<li>Second Address Line</li>
+                    				<li>Woodside, NY 1377</li>
+                    				<li>United States</li>
+                    				<li>133 4331</li>
+						  		</ul>
+						  		<div class="payment-items-buttons text-center clearfix">
+				                    <div class="col-md-6">
+				                      <a href="" class="payment-edit-btn">EDIT</a>
+				                    </div>
+				                    <div class="col-md-6">
+				                      <a href="" class="payment-delete-btn">DELETE</a>
+				                    </div>
+				                    <div class="col-md-12">
+				                      <a href="" class="payment-uta-btn btn-primary-gradient">USE THIS ADDRESS</a>
+				                    </div>
+				                    
+				                  </div>
+						  	</div>
+						  </div>
+						  <div class="col-md-4">
+			                <a href="" class="addnew-payment-address text-center" data-toggle="modal" data-target=".add-new-payment-address-modal">
+			                  <div class="plus-sign"></div>
+			                  <p>ADD A NEW CREDIT CARD</p>
+			                </a>
+			                <!-- Modal -->
+			                <div class="modal fade add-new-payment-address-modal" tabindex="-1" role="dialog" aria-labelledby="new-payment-address-modal" aria-hidden="true">
+			                  <div class="modal-dialog">
+			                    <div class="modal-content">
+			                      <div class="modal-header">
+			                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			                        <h4 class="modal-title">ADD NEW CREDIT CARD</h4>
+			                      </div>
+			                      <div class="modal-body clearfix">
+			                        <form action="">
+			                          <div class="col-md-12 creditcard-imgs">
+			                          	<img src="images/cc1.png" alt="">
+			                          	<img src="images/cc2.png" alt="">
+			                          	<img src="images/cc3.png" alt="">
+			                          	<img src="images/cc4.png" alt="">
+			                          </div>
+			                          <div class="col-md-6">
+			                            <div class="payment-info-inner">
+			                              <h5>CREDIT CARD TYPE</h5>
+			                              <select>
+			                                <option>VISA</option>
+			                              </select>
+			                            </div>
+			                          </div>
+			                          <div class="col-md-12">
+			                            <div class="payment-info-inner">
+			                              <h5>CARD NUMBER</h5>
+			                              <input type="text">
+			                            </div>
+			                          </div>
+			                          <div class="col-md-6 add-new-creditcard-expiration-date">
+			                          	<h5>EXPIRATION DATE</h5>
+			                          	<div class="col-md-6">
+			                          		<div class="payment-info-inner">
+				                              <select>
+				                                <option>Month</option>
+				                              </select>
+				                            </div>
+			                          	</div>
+			                            <div class="col-md-6">
+			                          		<div class="payment-info-inner">
+				                              <select>
+				                                <option>Year</option>
+				                              </select>
+				                            </div>
+			                          	</div>
+			                          </div>
+			                          <div class="col-md-6">
+			                            <div class="payment-info-inner">
+			                              <h5>CARD VERIFICATION (CCV) NO.</h5>
+				                            <input type="text">
+				                          </div>
+			                          </div>
+			                          <div class="col-md-12">
+			                            <div class="payment-info-inner">
+			                              <h5>NAME AS IT APPEARS ON THE CARD</h5>
+			                              <input type="text">
+			                            </div>
+			                          </div>
+			                        </form>
+			                      </div>
+			                      <div class="modal-footer">
+			                        <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+			                        <button type="button" class="btn btn-primary-gradient">ADD CREDIT CARD</button>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
 						</div><!--onlinecc-->
 						<div class="tab-pane" id="bankwired">
 
@@ -85,12 +175,12 @@
 						  <a href="#"><img class="paypal-btn" src="images/paypal-checkout.png" alt="Pay with Paypal"></a>
 						</div>
 					  </div>
-
+						<!--
 					  <div class="block" id="gift-cert">
 						<small>Have a gift certificate? Enter it here.</small><br/>
 						<input type="text"><button class="btn btn-default btn-md">APPLY GIFT CERTIFICATE</button>
 					  </div>
-
+					
 					  <div class="block">
 						<p><input type="checkbox">SEND ORDER AS A GIFT</p>
 						<p>
@@ -98,6 +188,7 @@
 						  <textarea></textarea>
 						</p>
 					  </div>
+					  -->
 					</div>
 				  </form>
 

@@ -76,7 +76,9 @@ body.modal-open {
 	padding: 10px 30px;
 }
 .shipping-items-buttons .shipping-edit-btn, 
-.shipping-items-buttons .shipping-delete-btn{
+.shipping-items-buttons .shipping-delete-btn, 
+.payment-items-buttons .payment-edit-btn, 
+.payment-items-buttons .payment-delete-btn{
 	background:#efefef;
 	color:#272727;
 	padding:5px;
@@ -88,30 +90,41 @@ body.modal-open {
 	font-family: "brandon_grotesquebold", sans-serif;
 	border:1px solid #dddddd;
 }
-.shipping-items-buttons .shipping-uta-btn{
+.payment-items-buttons a{
+	height:auto !important;
+}
+.shipping-items-buttons .shipping-uta-btn, 
+.payment-items-buttons .payment-uta-btn{
 	padding:5px;
 	width:100%;
 	display:inline-block;
 	margin-top:10px;
 }
-.addnew-shipping-address{
+.addnew-payment-address{
+	margin-top:0px !important;
+}
+.addnew-shipping-address, 
+.addnew-payment-address{
 	display:block;
 	margin-top:30px;
-	height:260px;
+	height:260px !important;
 	background:#f5f5f5;
 	border:1px solid #dddddd;
 }
-.addnew-shipping-address:hover{
+.addnew-shipping-address:hover, 
+.addnew-payment-address:hover{
 	cursor:pointer;
 }
-.addnew-shipping-address .plus-sign{
+.addnew-shipping-address .plus-sign, 
+.addnew-payment-address .plus-sign{
 	height:50px;
 	width:50px;
 	position:relative;
 	display:block;
 	margin: 70px auto 50px;
 }
-.addnew-shipping-address .plus-sign:after{
+.addnew-shipping-address .plus-sign:after, 
+.addnew-payment-address .plus-sign:after{
 	content: "";
 	position:absolute;
 	width:100%;
@@ -121,7 +134,8 @@ body.modal-open {
 	margin-top:-2px;
 	background:#272727;
 }
-.addnew-shipping-address .plus-sign:before{
+.addnew-shipping-address .plus-sign:before, 
+.addnew-payment-address .plus-sign:before{
 	content: "";
 	position:absolute;
 	height:100%;
@@ -130,21 +144,26 @@ body.modal-open {
 	margin-left:-2px;
 	background:#272727;
 }
-.addnew-shipping-address p{
+.addnew-shipping-address p, 
+.addnew-payment-address p{
 	width: 80%;
   	margin: 0px auto;
   	font-family: "brandon_grotesquebold", sans-serif;
   	font-weight:bold;
   	color:#272727;
 }
-.add-new-shipping-address-modal{
+.add-new-shipping-address-modal, 
+.add-new-payment-address-modal{
 	font-family: "museo_sans300", sans-serif;
 }
-.add-new-shipping-address-modal .modal-dialog{
+.add-new-shipping-address-modal .modal-dialog, 
+.add-new-payment-address-modal .modal-dialog{
 	max-width:550px;
 }
 .add-new-shipping-address-modal .shipping-info-inner input, 
-.add-new-shipping-address-modal .shipping-info-inner select{
+.add-new-shipping-address-modal .shipping-info-inner select,
+.add-new-payment-address-modal .payment-info-inner input, 
+.add-new-payment-address-modal .payment-info-inner select{
 	width:100%;
 	padding:5px;
 	margin-bottom: 15px;
@@ -153,24 +172,54 @@ body.modal-open {
 .modal-footer{
 	border-top:0px;
 	margin-top:0px;
+	padding-top:0px;
 }
-.add-new-shipping-address-modal .shipping-info-inner .country-input{
+.creditcard-imgs img{
+	margin-right:5px;
+	margin-bottom:10px;
+}
+.add-new-shipping-address-modal .shipping-info-inner .country-input, 
+.add-new-payment-address-modal .payment-info-inner .country-input{
 	background:#e5e5e5;
 }
-.shipping-radio-btns{
+.shipping-radio-btns, 
+.payment-radio-btns{
 	padding:10px;
 	background:#efefef;
 }
-.shipping-radio-btns input{
+.shipping-radio-btns input, 
+.payment-radio-btns input{
 	margin-right:5px;
 }
+.payment-items-buttons{
+	margin-top:20px;
+}
 .shipping-items-buttons .col-md-6, 
-.shipping-items-buttons .col-md-12{
+.shipping-items-buttons .col-md-12, 
+.payment-items-buttons .col-md-6, 
+.payment-items-buttons .col-md-12{
 	padding:0px 5px;
+}
+.checkout-payment-select-cc img{
+	margin-bottom:10px;
+}
+.checkout-payment-select-cc .block-head{
+	margin-top:10px;
 }
 .shipping-address-item h5{
 	font-weight:bold;
 	font-family: "brandon_grotesquebold", sans-serif;
+}
+.checkout-payment-select-cc{
+	background:white;
+	padding:20px;
+}
+.checkout-payment-select-cc ul li{
+	list-style:none;
+	height:auto !important;
+}
+.add-new-creditcard-expiration-date .col-md-6{
+	padding-left:0px;
 }
 .color-separator {
 	padding-left: 3px;
