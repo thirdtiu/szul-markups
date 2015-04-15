@@ -252,6 +252,11 @@ body.modal-open {
 .hidden-clearfix, .flexslider-loader{
 	display:none;
 }
+.add-new-shipping-mobile-btn{
+	display:none;
+	background:#eeeeee;
+	padding:5px;
+}
 
 @media(min-width:1200px){
 	body.load-control .flexslider-container{
@@ -456,6 +461,30 @@ body.modal-open {
 	}
 	.preset-diamond-container{
 		padding:0px 15px;
+	}
+	.add-new-shipping-mobile-btn{
+		display:block;
+	}
+	.add-new-shipping-mobile-btn .addnew-shipping-address{
+		margin-top:0px;
+		height:auto !important;
+		padding:10px;
+	}
+	.add-new-shipping-mobile-btn .addnew-shipping-address .plus-sign{
+		display:none;
+	}
+	.checkout-mobile-shipping{
+		padding:0px;
+	}
+	.checkout-mobile-shipping .block{
+		background:white;
+	}
+	.checkout-mobile-shipping .shipping-address-item{
+		padding:0px;
+	}
+	.checkout-mobile-shipping .shipping-address-item-inner{
+		background:#efefef;
+		border:1px solid #dddddd;
 	}
 }
 @media (min-width:416px) and (max-width:630px){
