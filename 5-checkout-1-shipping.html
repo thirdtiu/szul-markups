@@ -1,7 +1,23 @@
 <?php include_once('header2.html'); ?>
 
     <div class="container mob-promo-hide checkout-mobile-shipping">
-    
+      <div class="mobile-checkout-header">
+        <a href="index.html"><img src="images/mobile-logo-new.png" alt="SZUL" /></a>
+        <div class="z-contact-item header-contact-icon" data-container="body" data-toggle="">
+              <h2 class="contact-number">
+                <span class="glyphicon glyphicon-earphone"></span>
+                 <img src="images/mobile-icon.png" />
+              </h2>
+              <div class="contact-item-popover-contents">
+                  <span class="contact-popup-close-btn">x</span>
+                  <div class="row"><h3>CALL US</h3></div>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                  <a class="contact-number-btn" href="tel:088-432-8832">088-432-8832</a>
+              </div>
+                <!--088-432-8832-->
+          </div>
+          <button class="pull-right btn-primary-gradient continue-shopping-mobile-btn">CONTINUE SHOPPING</button>
+      </div>
       <div class="page-container checkout checkout-shipping-container">
         <div class="main-content clearfix">
           <h1 class="page-header">CHECKOUT</h1>
@@ -20,8 +36,11 @@
           <div class="block-forms clearfix">
             <div class="block clearfix">
               <h2 class="block-head hidden-xs">SELECT SHIPPING ADDRESS</h2>
-              <div class="col-md-4 shipping-address-item">
+              <div class="col-md-4 shipping-address-item active-address">
                 <div class="shipping-address-item-inner clearfix">
+                  <div class="mob-shipping-addres-selector">
+                    <span></span>
+                  </div>
                   <h5>JOHN EDWARD DOE</h5>
                   <ul>
                     <li>11234 Address Line 04</li>
@@ -47,6 +66,36 @@
               </div>
               <div class="col-md-4 shipping-address-item">
                 <div class="shipping-address-item-inner clearfix">
+                  <div class="mob-shipping-addres-selector">
+                    <span></span>
+                  </div>
+                  <h5>JOHN EDWARD DOE</h5>
+                  <ul>
+                    <li>11234 Address Line 04</li>
+                    <li>Second Address Line</li>
+                    <li>Woodside, NY 1377</li>
+                    <li>United States</li>
+                    <li>133 4331</li>
+                  </ul>
+                  <div class="shipping-items-buttons text-center">
+                    <div class="col-md-6 col-xs-6">
+                      <a href="" class="shipping-edit-btn">EDIT</a>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                      <a href="" class="shipping-delete-btn">DELETE</a>
+                    </div>
+                    <div class="col-md-12">
+                      <a href="" class="shipping-uta-btn btn-primary-gradient">USE THIS ADDRESS</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 shipping-address-item">
+                <div class="shipping-address-item-inner clearfix">
+                  <div class="mob-shipping-addres-selector">
+                    <span></span>
+                  </div>
                   <h5>JOHN EDWARD DOE</h5>
                   <ul>
                     <li>11234 Address Line 04</li>
@@ -78,19 +127,23 @@
                 <div class="modal fade add-new-shipping-address-modal" tabindex="-1" role="dialog" aria-labelledby="new-shipping-address-modal" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
-                      <div class="modal-header">
+                      <div class="modal-header hidden-xs">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title">ADD NEW SHIPPING ADDRESS</h4>
                       </div>
+                      <div class="mobile-modal-content">
+                        <button type="button" class="address-mobile-btn" data-dismiss="modal" aria-label="Close">ADDRESS BOOK</button>
+                        <button class="mobile-save-address">SAVE</button>
+                      </div>
                       <div class="modal-body clearfix">
                         <form action="">
-                          <div class="col-md-6">
+                          <div class="col-md-6 col-xs-6">
                             <div class="shipping-info-inner">
                               <h5>FIRST NAME</h5>
                               <input type="text">
                             </div>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-6 col-xs-6">
                             <div class="shipping-info-inner">
                               <h5>LAST NAME</h5>
                               <input type="text">
@@ -149,7 +202,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="modal-footer">
+                      <div class="modal-footer hidden-xs">
                         <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
                         <button type="button" class="btn btn-primary-gradient">ADD ADDRESS</button>
                       </div>
@@ -161,7 +214,7 @@
           </div>
 
           
-          <div class="block">
+          <div class="block shipping-options-container">
             <h2 class="block-head">SHIPPING OPTIONS</h2>
               <p class="radio">
                 <input type="radio" />

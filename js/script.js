@@ -431,7 +431,12 @@ $(function(){
 		}
 		
 
-		
+		if ($(window).width() < 768) {
+			$('.shipping-address-item').on('click', function(){
+				$('.shipping-address-item').removeClass('active-address');
+				$(this).addClass('active-address');
+			});
+		}
 
 
 		if ($(window).width() < 400) {
