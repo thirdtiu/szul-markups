@@ -404,7 +404,7 @@ $(function(){
              $('.top_secondary').addClass('animate');
          }else{
           $('.top_secondary').removeClass('animate');
-         }
+         } 
 		});
 
 		var productHeight = $('.the-product.row').height();
