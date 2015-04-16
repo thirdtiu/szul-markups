@@ -399,16 +399,20 @@ $(function(){
 
 	$(document).ready(function(){
 		
+		$(window).scroll(function (event) {
+			if($(window).scrollTop() >= 105){
+             $('.top_secondary').addClass('animate');
+         }else{
+          $('.top_secondary').removeClass('animate');
+         }
+		});
+
 		var productHeight = $('.the-product.row').height();
 
 		if(productHeight > 600){
 			$('.the-product.row').addClass('set');
 			$(window).scroll(function (event) {
-		      if($(window).scrollTop() >= 105){
-		             $('.top_secondary').addClass('animate');
-		         }else{
-		          $('.top_secondary').removeClass('animate');
-		         }
+		      
 
 		         if($(window).scrollTop() >= 190){
 		             $('#gal1, .stage.hidden-xs').addClass('animate');
