@@ -104,7 +104,8 @@ body.modal-open {
 	margin-top:0px !important;
 }
 .addnew-shipping-address, 
-.addnew-payment-address{
+.addnew-payment-address, 
+.addnew-creditcard-address{
 	display:block;
 	margin-top:30px;
 	height:260px !important;
@@ -145,7 +146,8 @@ body.modal-open {
 	background:#272727;
 }
 .addnew-shipping-address p, 
-.addnew-payment-address p{
+.addnew-payment-address p, 
+.addnew-creditcard-address p{
 	width: 80%;
   	margin: 0px auto;
   	font-family: "brandon_grotesquebold", sans-serif;
@@ -252,12 +254,15 @@ body.modal-open {
 .hidden-clearfix, .flexslider-loader{
 	display:none;
 }
-.add-new-shipping-mobile-btn{
+.add-new-shipping-mobile-btn, 
+.add-new-creditcard-mobile-btn{
 	display:none;
 	background:#eeeeee;
 	padding:5px;
 }
-
+.checkout-paypal-title .checkout-paypal-title-text{
+	display:none;
+}
 @media(min-width:1200px){
 	body.load-control .flexslider-container{
 		height:420px;
@@ -422,6 +427,45 @@ body.modal-open {
 		width:20%;
 	}
 }
+@media(min-width:769px) and (max-width:950px){
+	.top_header2 .top_primary{
+		display:none;
+	}
+	.mobile-checkout-header{
+		display:block !important;
+	}
+	.continue-shopping-mobile-btn{
+		margin-top:10px;
+		padding:10px;
+		border:0px;
+		margin-right:5px;
+	}
+	.mobile-checkout-header{
+		display:block;
+		position: absolute;
+  		top: 0px;
+  		height: 60px;
+  		width: 100%;
+  		background: #f8f8f8;
+  		left:0px;
+	}
+	.mobile-checkout-header > a > img{
+		margin-top:20px;
+		margin-left:20px;
+	}
+	.mobile-checkout-header .header-contact-icon{
+		right: 180px;
+  		left: auto;
+  		margin-top:5px;
+  		display: block;
+		position: absolute;
+		top: 8px;
+		z-index: 1000;
+	}
+	.mobile-checkout-header .glyphicon-earphone{
+		display:none;
+	}
+}
 @media(min-width:769px) and (max-width:990px){
 	.preset-diamond-container{
 		padding:0px 15px;
@@ -447,10 +491,14 @@ body.modal-open {
 	
 }
 @media(max-width:768px){
+	.checkout-paypal-title span{
+		display:block !important;
+	}
 	.preset-diamond-container{
 		width:100%;
 	}
-	.mob-hidden-title{
+	.mob-hidden-title, 
+	.checkout-paypal-title img{
 		display:none;
 	}
 	.featured-product-inner h2{
@@ -462,31 +510,67 @@ body.modal-open {
 	.preset-diamond-container{
 		padding:0px 15px;
 	}
-	.add-new-shipping-mobile-btn{
+	.add-new-shipping-mobile-btn, 
+	.add-new-creditcard-mobile-btn{
 		display:block;
 	}
-	.add-new-shipping-mobile-btn .addnew-shipping-address{
+	.add-new-shipping-mobile-btn .addnew-shipping-address, 
+	.add-new-creditcard-mobile-btn .addnew-creditcard-address{
 		margin-top:0px;
 		height:auto !important;
 		padding:10px;
 	}
-	.add-new-shipping-mobile-btn .addnew-shipping-address .plus-sign{
+	.add-new-shipping-mobile-btn .addnew-shipping-address .plus-sign, 
+	.add-new-creditcard-mobile-btn .addnew-creditcard-address .plus-sign{
 		display:none;
 	}
-	.checkout-mobile-shipping{
+	.checkout-mobile-shipping, 
+	.checkout-payment .main-content{
 		padding:0px;
 	}
-	.checkout-mobile-shipping .block{
+	.checkout-mobile-shipping .block, 
+	.checkout-payments-section .tab-content{
 		background:white;
 		padding:0px 15px 20px;
 		margin-top:0px;
 	}
+	.checkout-payments-section{
+		margin:0px;
+	}
+	.checkout-payments-section > .col-md-12 .tab-pane.clearfix, 
+	.checkout-payments-section > .col-md-12 .tab-pane.clearfix .col-md-4{
+	 	padding:0px;
+	}
 	.checkout-mobile-shipping .shipping-address-item{
 		padding:0px;
 	}
-	.checkout-mobile-shipping .shipping-address-item-inner{
+	.checkout-mobile-shipping .shipping-address-item-inner, 
+	.checkout-payment-select-cc{
 		background:#efefef;
 		border:1px solid #dddddd;
+	}
+	.continue-btn-container, .top_header2 .top_primary{
+		display:none;
+	}
+	.continue-shopping-mobile-btn{
+		margin-top:10px;
+		padding:10px;
+		border:0px;
+		margin-right:5px;
+	}
+	.checkout-payments-section .payment-nav-tabs{
+		margin-top:20px;
+	}
+	.checkout-payments-section .tab-content .tab-pane > .block-head, 
+	.checkout-payment-select-cc > img{
+		display:none;
+	}
+	.checkout-payments-section .payment-nav-tabs li.active a{
+		background:none;
+		color:#ac47ad;
+	}
+	.checkout-payments-section .payment-nav-tabs li a{
+		background:none;
 	}
 }
 @media (min-width:416px) and (max-width:630px){
@@ -803,7 +887,8 @@ li.deals-collections-dd ul.sub{
 }
 .mob-shipping-addres-selector, 
 .mobile-modal-content, 
-.mobile-checkout-header{
+.mobile-checkout-header, 
+.mob-payment-cc-selector{
 	display:none;
 }
 @media (max-width: 768px) {
@@ -815,7 +900,8 @@ li.deals-collections-dd ul.sub{
 	.shipping-address-item{
 		position:relative;
 	}
-	.mob-shipping-addres-selector{
+	.mob-shipping-addres-selector, 
+	.mob-payment-cc-selector{
 		  display: block;
 		  position: absolute;
 		  height: 20px;
@@ -824,7 +910,8 @@ li.deals-collections-dd ul.sub{
 		  border-radius: 50%;
 		  padding: 5px;
 	}
-	.shipping-address-item.active-address .mob-shipping-addres-selector span{
+	.shipping-address-item.active-address .mob-shipping-addres-selector span, 
+	.checkout-payment-select-cc.active-cc .mob-payment-cc-selector span{
 		  width: 100%;
 		  height: 100%;
 		  background: #272727;
@@ -854,7 +941,8 @@ li.deals-collections-dd ul.sub{
 		overflow:hidden;
 		height:160px;
 	}
-	.shipping-address-item .shipping-uta-btn{
+	.shipping-address-item .shipping-uta-btn, 
+	.payment-uta-btn{
 		background:#39cba4 !important;
 	}
 	.shipping-items-buttons .shipping-edit-btn, 
@@ -898,6 +986,11 @@ li.deals-collections-dd ul.sub{
   		height: 60px;
   		width: 100%;
   		background: #f8f8f8;
+  		left:0px;
+	}
+	.checkout-payment .page-header, 
+	.checkout-shipping-container .page-header{
+		text-align:center;
 	}
 	.mobile-checkout-header .header-contact-icon{
 		right: 180px;
@@ -908,20 +1001,43 @@ li.deals-collections-dd ul.sub{
 		margin-top:20px;
 		margin-left:20px;
 	}
-	.continue-shopping-mobile-btn{
-		margin-top:10px;
-		padding:10px;
-		border:0px;
-		margin-right:5px;
-	}
+	
 	.checkout-mobile-shipping .row > .col-md-12{
 		padding:0px;
 	}
-	.checkout-mobile-shipping .create-steps{
-		display:none;
+	.checkout-mobile-shipping .create-steps, 
+	.checkout-payment .create-steps, 
+	.col-md-4 .addnew-payment-address.text-center{
+		display:none !important;
 	}
 	.checkout-mobile-shipping .page-header{
 		padding-left:20px;
+	}
+	.checkout-payment-select-cc{
+		margin-bottom:20px;
+		height:255px;
+		overflow:hidden;
+		transition:.5s all ease;
+	    -webkit-transition:.5s all ease;
+	    -moz-transition:.5s all ease;
+	    position:relative;
+	}
+	.checkout-payment-select-cc.active-cc{
+		height:370px;
+	}
+	.mob-payment-cc-selector{
+		position:absolute;
+	}
+	.checkout-payment-select-cc > h5, 
+	.checkout-payment-select-cc > span, 
+	.checkout-payment-select-cc > h2, 
+	.checkout-payment-select-cc > ul{
+		margin-left:40px !important;
+	}
+	.checkout-payment-select-cc > h2.block-head{
+		padding: 5px 0 !important;
+  		margin-bottom: 10px !important;
+  		border-bottom:0px !important;
 	}
 }
 

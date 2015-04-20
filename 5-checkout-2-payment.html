@@ -1,17 +1,40 @@
 <?php include_once('header2.html'); ?>
 
 		<div class="container">
-
+			<div class="mobile-checkout-header">
+			    <a href="index.html"><img src="images/mobile-logo-new.png" alt="SZUL" /></a>
+			    <div class="z-contact-item header-contact-icon" data-container="body" data-toggle="">
+			          <h2 class="contact-number">
+			            <span class="glyphicon glyphicon-earphone"></span>
+			             <img src="images/mobile-icon.png" />
+			          </h2>
+			          <div class="contact-item-popover-contents">
+			              <span class="contact-popup-close-btn">x</span>
+			              <div class="row"><h3>CALL US</h3></div>
+			              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+			              <a class="contact-number-btn" href="tel:088-432-8832">088-432-8832</a>
+			          </div>
+			            <!--088-432-8832-->
+			      </div>
+			      <button class="pull-right btn-primary-gradient continue-shopping-mobile-btn">CONTINUE SHOPPING</button>
+			  </div>
 		  <div class="page-container row checkout checkout-payment mob-promo-hide">
 			<div class="main-content col-sm-8 col-md-9 clearfix">
 			  <h1 class="page-header">CHECKOUT</h1>
+
 			  <ul class="steps create-steps clearfix">
 			  	<li class="m-checkout-level">Checkout (step 2 of 3)</li>
 				<li class="checked"><span>&nbsp;</span> SHIPPING INFORMATION</li>
 				<li class="active"><span>02</span> PAYMENT</li>
 				<li><span>03</span> REVIEW</li>
 			  </ul>
-			  <div class="row">
+			  <div class="add-new-creditcard-mobile-btn">
+	            <a href="" class="addnew-creditcard-address text-center" data-toggle="modal" data-target=".add-new-payment-address-modal">
+	              <div class="plus-sign"></div>
+	              <p>ADD A NEW CREDIT CARD</p>
+	            </a>
+	          </div>
+			  <div class="row checkout-payments-section">
 				<div class="col-md-12">
 
 				  <form>
@@ -19,14 +42,17 @@
 					  <ul class="payment-nav-tabs clearfix">
 						<li class="active"><a href="#onlinecc" data-toggle="tab"><span>ONLINE WITH</span> CREDIT CARD</a></li>
 						<li><a href="#bankwired" data-toggle="tab">BANK WIRE <span>TRANSFER</span></a></li>
-						<li><a href="#paypal" data-toggle="tab"><img src="images/steps-paypal.png"/></a></li>
+						<li class="checkout-paypal-title"><a href="#paypal" data-toggle="tab"><img src="images/steps-paypal.png"/><span class="checkout-paypal-title-text">PAYPAL</span></a></li>
 					  </ul>
 					  <div class="tab-content">
 						<div class="tab-pane active clearfix" id="onlinecc">
 						  <h2 class="block-head">SELECT CREDIT CARD</h2>
 						  <div class="col-md-4">
-						  	<div class="checkout-payment-select-cc">
+						  	<div class="checkout-payment-select-cc active-cc">
 						  		<img src="images/cc2.png" alt="">
+						  		<div class="mob-payment-cc-selector">
+				                  <span></span>
+				                </div>
 						  		<h5>VISA XXXXX - 1898</h5>
 						  		<span>John Edward Doe</span><br/>
 						  		<span>Expires 01/2016</span>
@@ -40,10 +66,10 @@
                     				<li>133 4331</li>
 						  		</ul>
 						  		<div class="payment-items-buttons text-center clearfix">
-				                    <div class="col-md-6">
+				                    <div class="col-md-6 col-xs-6">
 				                      <a href="" class="payment-edit-btn">EDIT</a>
 				                    </div>
-				                    <div class="col-md-6">
+				                    <div class="col-md-6 col-xs-6">
 				                      <a href="" class="payment-delete-btn">DELETE</a>
 				                    </div>
 				                    <div class="col-md-12">
@@ -56,6 +82,9 @@
 						  <div class="col-md-4">
 						  	<div class="checkout-payment-select-cc">
 						  		<img src="images/cc3.png" alt="">
+						  		<div class="mob-payment-cc-selector">
+				                  <span></span>
+				                </div>
 						  		<h5>VISA XXXXX - 1898</h5>
 						  		<span>John Edward Doe</span><br/>
 						  		<span>Expires 01/2016</span>
@@ -69,10 +98,10 @@
                     				<li>133 4331</li>
 						  		</ul>
 						  		<div class="payment-items-buttons text-center clearfix">
-				                    <div class="col-md-6">
+				                    <div class="col-md-6 col-xs-6">
 				                      <a href="" class="payment-edit-btn">EDIT</a>
 				                    </div>
-				                    <div class="col-md-6">
+				                    <div class="col-md-6 col-xs-6">
 				                      <a href="" class="payment-delete-btn">DELETE</a>
 				                    </div>
 				                    <div class="col-md-12">
@@ -97,7 +126,7 @@
 			                      </div>
 			                      <div class="modal-body clearfix">
 			                        <form action="">
-			                          <div class="col-md-12 creditcard-imgs">
+			                          <div class="col-md-12 creditcard-imgs hidden-xs">
 			                          	<img src="images/cc1.png" alt="">
 			                          	<img src="images/cc2.png" alt="">
 			                          	<img src="images/cc3.png" alt="">

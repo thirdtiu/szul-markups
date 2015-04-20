@@ -436,6 +436,11 @@ $(function(){
 				$('.shipping-address-item').removeClass('active-address');
 				$(this).addClass('active-address');
 			});
+
+			$('.checkout-payment-select-cc').on('click', function(){
+				$('.checkout-payment-select-cc').removeClass('active-cc');
+				$(this).addClass('active-cc');
+			});
 		}
 
 
@@ -932,8 +937,7 @@ $(document).ready(function($) {
 	$('#mega-menu .sub').addClass('clearfix');
 
 	if ($(window).width() < 767) {
-		$('.mob-promo-hide').prev().hide();
-		$('.mob-promo-hide').parent().prev().hide();
+		$('.mob-promo-hide').parents('body').children('.windowshade').hide();
 	}
 	if ($(window).width() < 1025){
 		$(document).on('mouseenter', '.zoomContainer', function(event) {
@@ -1102,10 +1106,6 @@ $(window).load(function(){
 });
 
 $(window).load(function(){
-	if ($(window).width() < 800) {
-		$('.mob-promo-hide').prev().hide();
-		$('.mob-promo-hide').parent().prev().hide();
-	}
 	var stateProvinceData = [
 		{
 			text: "1",
