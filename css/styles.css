@@ -1181,7 +1181,7 @@ h2.contact-number {
   height: 45px;
   line-height: 50px;
   color: #575757;
-  padding: 0 17px;
+  padding: 0 15px;
   position: relative;
   text-transform: uppercase;
 }
@@ -1232,8 +1232,8 @@ h2.contact-number {
 }
 
 #mega-menu li:last-child a {
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-contact-icon {
