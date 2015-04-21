@@ -9312,6 +9312,10 @@ body.modal-open {
   display: none;
 }
 
+.module .mod-bd > img {
+  width: 100%;
+}
+
 @media (min-width: 1200px) {
   body.load-control .flexslider-container {
     height: 420px;

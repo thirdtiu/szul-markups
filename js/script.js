@@ -399,6 +399,12 @@ $(function(){
 
 	$(document).ready(function(){
 		
+
+		$('#thumbs .thumbs li a img').on('click', function(){
+			var imgSrc = $(this).attr('src');
+			$('#gallery #slideshow img').attr('src', imgSrc);
+		});
+		
 		$(window).scroll(function (event) {
 			if($(window).scrollTop() >= 105){
              $('.top_secondary').addClass('animate');
