@@ -886,7 +886,7 @@ var checkoutPage = $('.checkout-cart-info').length,
 	buttonContainer = '<p class="fixed-container" id="fixed-container"></p>';
 
 // check if were in the checkout page
-if (checkoutPage) {
+/*if (checkoutPage) {
 	// append fixed-container to body element
 	$('body').prepend($(buttonContainer));
 	// store fixed-container element
@@ -896,10 +896,10 @@ if (checkoutPage) {
 	btn = $('#btn-place-order');
 
 	placeCheckoutButtonHelper(btnContainer, btn);
-}
+}*/
 
 // check if cart page
-if (myCart) {
+/*if (myCart) {
 	// append fixed-container to body element
 	$('body').prepend($(buttonContainer));
 	// store fixed-container element
@@ -910,7 +910,7 @@ if (myCart) {
 
 	placeCheckoutButtonHelper(btnContainer, btn);
 }
-
+*/
 // helper function for floating checkout and place order buttons
 function placeCheckoutButtonHelper(buttonContainer, button) {
 	enquire.register("screen and (min-width:768px)", {
@@ -940,10 +940,13 @@ if ($('.return-process')) {
 
 $(document).ready(function($) {
 
+
+
 	$('#mega-menu .sub').addClass('clearfix');
 
 	if ($(window).width() < 767) {
 		$('.mob-promo-hide').parents('body').children('.windowshade').hide();
+		$('.review-items').insertAfter('.review-cc');
 	}
 	if ($(window).width() < 1025){
 		$(document).on('mouseenter', '.zoomContainer', function(event) {

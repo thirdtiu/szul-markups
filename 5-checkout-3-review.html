@@ -20,18 +20,33 @@
           </div>
           <div class="page-container checkout checkout-payment mob-promo-hide">
             <div class="main-content clearfix">
-              <h1 class="page-header">CHECKOUT</h1>
+              <h1 class="page-header hidden-xs">CHECKOUT</h1>
+              <h1 class="page-header visible-xs">REVIEW ORDER DETAILS</h1>
               <ul class="steps create-steps clearfix">
                 <li class="m-checkout-level">Checkout (step 3 of 3)</li>
                 <li class="checked"><span>&nbsp;</span> SHIPPING INFORMATION</li>
                 <li class="checked"><span>&nbsp;</span> PAYMENT</li>
                 <li class="active"><span>03</span> REVIEW</li>
               </ul>
+              <div class="review-shipping-options visible-xs">
+                  <p class="radio">
+                    <input type="radio">
+                    <label>Complimentary Express Shipping - Free</label>
+                  </p>
+                  <p class="radio">
+                    <input type="radio">
+                    <label class="offer">Guaranteed delivery by Valentines Day - Free</label>
+                  </p>
+                  <p class="radio">
+                    <input type="radio">
+                    <label>Expedited Shipping (1-2 days) - $24.95</label>
+                  </p>
+              </div>
               <div class="row">
                 <div class="col-md-12">
 
                     <div class="payment-review">
-                      <div class="block">
+                      <div class="block review-items">
                         <h2 class="block-head">ITEMS</h2>
                         <div class="items-list">
                         <div class="entry">
@@ -47,7 +62,7 @@
                               <p>Size: <span>7.0</span></p>
                             </div>
                           </div>
-                          <div class="col-lg-2 col-md-2">
+                          <div class="col-lg-2 col-md-2 col-xs-7 item-total-price-review">
                             <p class="total">$2,899.00</p>
                           </div>
                         </div>
@@ -65,7 +80,7 @@
                               <p>Size: <span>7.0</span></p>
                             </div>
                           </div>
-                          <div class="col-lg-2 col-md-2">
+                          <div class="col-lg-2 col-md-2 col-xs-7 item-total-price-review">
                             <p class="total">$2,899.00</p>
                           </div>
                         </div>
@@ -73,10 +88,11 @@
                       </div>
                       </div>
 
-                      <div class="row">
+                      <div class="row review-cc">
                         <div class="col-md-4 col-xs-12">
                           <div  class="block sm-blocks">
-                            <h2 class="block-head">SHIPPING</h2>
+                            <h2 class="block-head hidden-xs">SHIPPING</h2>
+                            <h2 class="block-head visible-xs">SHIP TO</h2>
                             <p class="title">JOHN EDWARD DOE</p>
                             <div class="address-line">
                               <p>11234 Address Line 01</p>
@@ -91,7 +107,7 @@
                               <p>Shipping - Free</p>
                             </div>
                             <br>
-                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md hidden-xs">EDIT</a>
                           </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
@@ -106,7 +122,7 @@
                               <p>371 1234</p>
                             </div>
                             <br>
-                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md hidden-xs">EDIT</a>
                           </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
@@ -121,7 +137,7 @@
                               <p>Expires 01/2016</p>
                             </div>
                             <br>
-                            <a href="#" class="btn btn-default btn-md">EDIT</a>
+                            <a href="#" class="btn btn-default btn-md hidden-xs">EDIT</a>
                           </div>
                         </div>
                       </div>
@@ -138,7 +154,17 @@
               </div>
 
             </div><!--end .main-content -->
-
+            <div class="apply-gift-certificate text-center visible-xs">
+              <p>Have a gift certificate? Enter it here</p>
+              <input type="text">
+              <button class="btn-default">APPLY GIFT CERTIFICATE</button>
+            </div>
+            <div class="send-order-as-gift text-center visible-xs">
+              <input type="checkbox">
+              <label for="">SEND ORDER AS A GIFT</label>
+              <p>Enter gift message</p>
+              <textarea name="" id="" cols="30" rows="3"></textarea>
+            </div>
             <div class="checkout-cart-info">
               <div class="block">
                 <p class="subtotal">SUB TOTAL <span class="pull-right">$2,899.00</span></p>

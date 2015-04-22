@@ -9574,6 +9574,73 @@ body.modal-open {
   }
 }
 @media (max-width: 768px) {
+  #cart-summary {
+    margin-bottom: 40px;
+  }
+
+  .row-item-container {
+    clear: both;
+  }
+
+  .apply-gift-certificate,
+  .send-order-as-gift {
+    background-color: #efefef;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .apply-gift-certificate p,
+  .send-order-as-gift p {
+    margin-bottom: 5px;
+  }
+
+  .apply-gift-certificate input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    padding: 3px;
+  }
+
+  .apply-gift-certificate button {
+    width: 100%;
+    padding: 5px;
+    font-family: "brandon_grotesquebold", sans-serif;
+    margin-top: 5px;
+  }
+
+  .item-total-price-review {
+    float: right;
+    margin: 0px !important;
+  }
+
+  .item-total-price-review p {
+    float: none !important;
+  }
+
+  .review-shipping-options {
+    background: #efefef;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .review-shipping-options .offer {
+    color: red;
+  }
+
+  .checkout .payment-review .sm-blocks {
+    height: auto !important;
+  }
+
+  .review-items {
+    background: white !important;
+    padding: 0px !important;
+  }
+
+  .review-items .block-head {
+    display: none;
+  }
+
   .checkout-paypal-title span {
     display: block !important;
   }
@@ -10053,6 +10120,43 @@ li.deals-collections-dd ul.sub {
 }
 
 @media (max-width: 768px) {
+  .mycart-total-price-mob {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    background: white;
+    width: 100%;
+    z-index: 99;
+    border-top: 1px solid #dddddd;
+    line-height: 20px;
+  }
+
+  .subtotal-container-mob {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  .subtotal-container-mob label:first-child {
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+
+  .subtotal-container-mob label:last-child {
+    display: block;
+    font-size: 24px;
+    color: #DE506E;
+  }
+
+  .mycart-total-price-mob a {
+    background: #39CBA6;
+    padding: 10px 20px;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
   .product-grid2 .product {
     /*float: left!important;
     width: 48.916667% !important;
@@ -10167,11 +10271,10 @@ li.deals-collections-dd ul.sub {
     left: 0px;
   }
 
-  .checkout-payment .page-header,
-  .checkout-shipping-container .page-header {
-    text-align: center;
-  }
-
+  /*.checkout-payment .page-header, 
+  .checkout-shipping-container .page-header{
+  	text-align:center;
+  }*/
   .mobile-checkout-header .header-contact-icon {
     right: 180px;
     left: auto;
