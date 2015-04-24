@@ -266,6 +266,19 @@ body.modal-open {
 .module .mod-bd > img{
 	width:100%;
 }
+.single-customer-review{
+	padding:20px 0px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.product-reviews-view-more{
+	padding:20px 0px 0px;
+}
+.product-reviews-view-more a{
+	cursor:pointer;
+}
+.single-customer-review h5{
+	margin-bottom:5px;
+}
 @media(min-width:1200px){
 	body.load-control .flexslider-container{
 		height:420px;
