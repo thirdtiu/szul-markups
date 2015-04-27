@@ -4288,6 +4288,100 @@ div#thumbs{
 	}
 }
 
+
+/*---------ENGRAVE ITEM PAGE------------*/
+
+.engrave-item-info .info-head {
+  font-size: 22px;
+  color: #373737;
+  font-family: "brandon_grotesquebold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.single-engrave-item {
+	padding-bottom: 20px;
+}
+
+.engrave-item-img img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.style-options, .font-options {
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.style-select .block, .font-select .block, .enter-to-engrave .block {
+	background-color: #EFEFEF;
+  	padding: 10px 20px 20px;
+}
+.style-select .block .block-head {
+	color: #575757;
+}
+
+.initals-style p, .monogram-style p, .font-options div p {
+	text-align: center;
+}
+.initals-style img, .monogram-style img, .font-options div img {
+	margin-right: auto;
+	margin-left: auto;
+}
+.initals-style {
+	text-align: center;
+}
+
+.monogram-style {
+	text-align: center;
+}
+.initals-style input[type="radio"], .monogram-style input[type="radio"], .font-options div input[type="radio"] {
+	height: 21px;
+	margin-top: 20px;
+	width: 21px;
+}
+
+.font-options div {
+	float: left;
+	text-align: center;
+	width: 20%;
+}
+.name-initial-inputs div.col-md-4 {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 20px;
+}
+.name-initial-inputs div p {
+	margin-bottom: 0;
+}
+.name-initial-inputs div input {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	height: 30px;
+	width: 70%;
+}
+
+.engrave-footer-options {
+	padding-bottom: 50px;
+}
+
+.engrave-footer-options a {
+	float: right;
+	margin-left: 20px;
+}
+
+.engrave-footer-options .btn-gray {
+	 font-family: "brandon_grotesquebold", sans-serif;
+	 width: 228px;
+}
+
+.engrave-footer-options .btn-primary-gradient {
+	width: 224px
+}
+
+/*----------------------------------*/
+
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media (max-width:800px) and (min-width:601px){
