@@ -507,6 +507,16 @@ body.modal-open {
 	
 }
 @media(max-width:768px){
+	.font-options div, 
+	.name-initial-inputs div input, 
+	.engrave-footer-options .btn-primary-gradient, 
+	.engrave-footer-options .btn-gray{
+		width:100%;
+	}
+	.engrave-footer-options .btn-primary-gradient, 
+	.engrave-footer-options .btn-gray{
+		margin-bottom:10px;
+	}
 	#cart-summary{
 		margin-bottom:40px;
 	}
