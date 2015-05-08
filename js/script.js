@@ -700,9 +700,9 @@ $(window).load(function(){
 });
 
 $(window).load(function(){
-	$('ul.products .product').syncHeight({
+	/*$('ul.products .product').syncHeight({
 	    updateOnResize:true
-	});
+	});*/
 });
 
 $(window).load(function(){

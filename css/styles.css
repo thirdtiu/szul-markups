@@ -9469,6 +9469,10 @@ body.modal-open {
   margin-bottom: 5px;
 }
 
+.products .product {
+  min-height: 350px;
+}
+
 @media (min-width: 1200px) {
   body.load-control .flexslider-container {
     height: 420px;
