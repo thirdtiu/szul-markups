@@ -282,6 +282,28 @@ body.modal-open {
 .products .product{
 	min-height:350px;
 }
+.apply-gift-certificate, 
+.send-order-as-gift{
+	background-color: #efefef;
+    padding: 20px;
+    margin-bottom:20px;
+}
+.apply-gift-certificate p, 
+.send-order-as-gift p{
+	margin-bottom:5px;
+}
+.apply-gift-certificate input{
+	width:100%;
+	border-radius: 3px;
+		border: 1px solid #c8c8c8;
+		padding: 3px;
+}
+.apply-gift-certificate button{
+	width:100%;
+	padding:5px;
+	font-family: "brandon_grotesquebold", sans-serif;
+	margin-top:5px;
+}
 @media(min-width:1200px){
 	body.load-control .flexslider-container{
 		height:420px;
@@ -535,28 +557,7 @@ body.modal-open {
 	.row-item-container{
 		clear:both;
 	}
-	.apply-gift-certificate, 
-	.send-order-as-gift{
-		background-color: #efefef;
-        padding: 20px;
-        margin-bottom:20px;
-	}
-	.apply-gift-certificate p, 
-	.send-order-as-gift p{
-		margin-bottom:5px;
-	}
-	.apply-gift-certificate input{
-		width:100%;
-		border-radius: 3px;
-  		border: 1px solid #c8c8c8;
-  		padding: 3px;
-	}
-	.apply-gift-certificate button{
-		width:100%;
-		padding:5px;
-		font-family: "brandon_grotesquebold", sans-serif;
-		margin-top:5px;
-	}
+	
 	.item-total-price-review{
 		float:right;
 		margin:0px !important;
@@ -625,6 +626,9 @@ body.modal-open {
 		background:white;
 		padding:0px 15px 20px;
 		margin-top:0px;
+	}
+	.shipping-options-container{
+		background:#efefef !important;
 	}
 	.checkout-payments-section{
 		margin:0px;
@@ -830,6 +834,9 @@ li.deals-collections-dd ul.sub{
 .popover{
 	z-index:999999;
 }
+.continue-shopping-link.header2{
+	display:none;
+}
 @media(min-width:500px) and (max-width:768px){
 	div.module.mod-diamond-search form .form-group{
 		width:50% !important;
@@ -852,9 +859,9 @@ li.deals-collections-dd ul.sub{
 	table.in-cart tr td.text-center{
 		text-align:right;
 	}
-	.coupon-container form#coupon-code input{
+	/*.coupon-container form#coupon-code input{
 		width:50%;
-	}
+	}*/
 	.coupon-container form#coupon-code button{
 		font-size:12px;
 		padding:10px;
@@ -1049,7 +1056,7 @@ li.deals-collections-dd ul.sub{
 	    -moz-transition:.5s all ease;
 	}
 	.shipping-address-item.active-address .shipping-address-item-inner{
-		height:260px !important;
+		height:225px !important;
 		transition:.5s all ease;
 	    -webkit-transition:.5s all ease;
 	    -moz-transition:.5s all ease;
@@ -1075,8 +1082,7 @@ li.deals-collections-dd ul.sub{
 	.payment-items-buttons .payment-delete-btn{
 		background:#f3f3f3 !important;
 	}
-	.checkout-mobile-shipping .checkout-cart-info, 
-	.checkout-mobile-shipping .shipping-options-container{
+	.checkout-mobile-shipping .checkout-cart-info{
 		display:none;
 	}
 	.shipping-radio-btns label{
@@ -1117,9 +1123,14 @@ li.deals-collections-dd ul.sub{
 		text-align:center;
 	}*/
 	.mobile-checkout-header .header-contact-icon{
-		right: 180px;
-  		left: auto;
+  		left: 110px;
   		margin-top:5px;
+	}
+	.continue-shopping-link.header2{
+		margin-right: 20px;  
+		margin-top: 20px;  
+		font-size: 14px;
+		display:block;
 	}
 	.mobile-checkout-header > a > img{
 		margin-top:20px;
@@ -1147,7 +1158,7 @@ li.deals-collections-dd ul.sub{
 	    position:relative;
 	}
 	.checkout-payment-select-cc.active-cc{
-		height:370px;
+		height:315px;
 	}
 	.mob-payment-cc-selector{
 		position:absolute;
