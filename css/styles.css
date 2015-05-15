@@ -10306,7 +10306,48 @@ li.deals-collections-dd ul.sub {
   display: none;
 }
 
+.alternative-checkout button {
+  margin-top: 10px !important;
+}
+
+.alternative-checkout h5 {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.paypal-btn {
+  background: url("../images/paypal.png");
+  float: left;
+  width: 48%;
+  height: 48px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 0px;
+}
+
+.amazon-btn {
+  background: url("../images/amazon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 0px;
+  float: right;
+  width: 45%;
+  height: 48px;
+}
+
 @media (max-width: 768px) {
+  .paypal-btn {
+    width: 80%;
+    height: 45px;
+    float: none;
+  }
+
+  .amazon-btn {
+    width: 80%;
+    height: 60px;
+    float: none;
+  }
+
   .mycart-total-price-mob {
     position: fixed;
     bottom: 0px;
