@@ -304,6 +304,13 @@ body.modal-open {
 	font-family: "brandon_grotesquebold", sans-serif;
 	margin-top:5px;
 }
+.shipping-modal-checkbox input{
+	width:5% !important;
+}
+img.paypal-btn{
+	background:none;
+	width:auto;
+}
 @media(min-width:1200px){
 	body.load-control .flexslider-container{
 		height:420px;
@@ -469,6 +476,15 @@ body.modal-open {
 	}
 }
 @media(min-width:769px) and (max-width:950px){
+	.shipping-modal-checkbox{
+		margin-top:20px;
+	}
+	.continue-shopping-link.header2{
+		margin-right: 20px;  
+		margin-top: 23px;  
+		font-size: 12px;
+		display:block !important;
+	}
 	.top_header2 .top_primary{
 		display:none;
 	}
@@ -532,6 +548,18 @@ body.modal-open {
 	
 }
 @media(max-width:768px){
+	.shipping-modal-checkbox{
+		margin-top:20px;
+	}
+	.proceed-btn-container{
+		text-align:center;
+	}
+	.proceed-btn-container a{
+		width:96% !important;
+	}
+	.block.shipping-options-container{
+		margin:15px;
+	}
 	.font-options div, 
 	.name-initial-inputs div input, 
 	.engrave-footer-options .btn-primary-gradient, 
@@ -581,7 +609,8 @@ body.modal-open {
 		background:white !important;
 		padding:0px !important;
 	}
-	.review-items .block-head{
+	.review-items .block-head, 
+	.hidden-xs .addnew-shipping-address{
 		display:none;
 	}
 	.checkout-paypal-title span{
@@ -854,7 +883,7 @@ li.deals-collections-dd ul.sub{
 		font-size:11px;
 	}
 	table.in-cart tr .cart-img-cont{
-		width: 10% !important;
+		width: 3% !important;
 	}
 	table.in-cart tr td.text-center{
 		text-align:right;
