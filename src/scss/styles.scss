@@ -260,7 +260,8 @@ body.modal-open {
 	background:#eeeeee;
 	padding:5px;
 }
-.checkout-paypal-title .checkout-paypal-title-text{
+.checkout-paypal-title .checkout-paypal-title-text, 
+.mob-payment-info-review{
 	display:none;
 }
 .module .mod-bd > img{
@@ -310,6 +311,56 @@ body.modal-open {
 img.paypal-btn{
 	background:none;
 	width:auto;
+}
+.modal-footer.add-new-cc-modal{
+	padding-top:20px;
+	margin-top:20px;
+	border-top:1px solid #dddddd;
+}
+.cc-select-billing-address{
+	padding:0px 20px 0px;
+}
+.existing-addresses ul li{
+	list-style:none;
+	height:auto !important;
+}
+.address-cc-header{
+	padding: 0px 0px 10px;
+    line-height: 54px;
+    border-bottom: 1px solid #dddddd;
+}
+.existing-addresses{
+	padding-top:20px;
+}
+.cc-select-billing-address.show-existing-cc .create-new-address-cc, 
+.cc-select-billing-address.show-existing-cc .use-existing-address-btn,
+.cc-select-billing-address.show-create-cc .existing-addresses,
+.cc-select-billing-address.show-create-cc .add-new-address-btn,
+.cc-select-billing-address.show-existing-cc .cc-create-new-address-title, 
+.cc-select-billing-address.show-create-cc .cc-select-existing-address-title, 
+.review-shipping-options span.glyphicon-chevron-right{
+	display:none;
+}
+.address-cc-header > .pull-right > a{
+	height:auto !important;
+}
+.existing-addresses > .col-md-6{
+	margin-bottom:20px;
+}
+.create-new-address-cc input, 
+.create-new-address-cc select{
+	width:100% !important;
+	margin-bottom:15px;
+}
+.create-new-address-cc .shipping-radio-btns input{
+	width:auto !important;
+}
+.existing-addresses-item{
+	padding:10px;
+	background:#f5f5f5;
+}
+.existing-addresses-item ul{
+	padding-left:40px;
 }
 @media(min-width:1200px){
 	body.load-control .flexslider-container{
@@ -548,6 +599,13 @@ img.paypal-btn{
 	
 }
 @media(max-width:768px){
+	.address-cc-header > span, 
+	.hide-mob{
+		display: none;
+	}
+	.address-cc-header > .pull-right{
+		float:left !important;
+	}
 	.shipping-modal-checkbox{
 		margin-top:20px;
 	}
@@ -565,6 +623,24 @@ img.paypal-btn{
 	.engrave-footer-options .btn-primary-gradient, 
 	.engrave-footer-options .btn-gray{
 		width:100%;
+	}
+	.payment-method-container, 
+	.payment-billing-address-container{
+		margin-bottom: 10px;
+		background:white;
+		padding:10px;
+		display:block;
+		color:#272727;
+	}
+	.payment-method-container span, 
+	.payment-billing-address-container span{
+		margin-top:13px;
+	}
+	.mob-payment-info-review .block-head{
+		margin-bottom:10px;
+	}
+	.payment-info-review p{
+		margin:0px;
 	}
 	.engrave-footer-options .btn-primary-gradient, 
 	.engrave-footer-options .btn-gray{
@@ -595,9 +671,33 @@ img.paypal-btn{
 	}
 	.review-shipping-options{
 		background:#efefef;
-		padding:10px;
+		padding:0px 5px 10px 7px;
 		margin-bottom:20px;
 		font-size:12px;
+		height:36px;
+		overflow:hidden;
+		transition:.5s all ease;
+	    -webkit-transition:.5s all ease;
+	    -moz-transition:.5s all ease;
+	}
+	.review-shipping-options.show-options{
+		height:100px !important;
+	}
+	.review-shipping-options span.glyphicon-chevron-right{
+		margin-top:10px;
+		transition:.5s all ease;
+	    -webkit-transition:.5s all ease;
+	    -moz-transition:.5s all ease;
+	    margin-right:5px;
+	}
+	.review-shipping-options.show-options span.glyphicon-chevron-right{
+		transform:rotate(90deg);
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+	}
+	.shipping-options-arrow{
+		height:35px;
+		width:25px;
 	}
 	.review-shipping-options .offer{
 		color:red;
@@ -613,8 +713,10 @@ img.paypal-btn{
 	.hidden-xs .addnew-shipping-address{
 		display:none;
 	}
-	.checkout-paypal-title span{
-		display:block !important;
+	.checkout-paypal-title span, 
+	.review-shipping-options span.glyphicon-chevron-right, 
+	.mob-payment-info-review{
+		display:block !important; 
 	}
 	.preset-diamond-container{
 		width:100%;

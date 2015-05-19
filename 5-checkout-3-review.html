@@ -29,16 +29,20 @@
                 <li class="active"><span>03</span> REVIEW</li>
               </ul>
               <div class="review-shipping-options visible-xs visible-sm">
+                  <div class="pull-right shipping-options-arrow">
+                    <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                  </div>
+                  
                   <p class="radio">
-                    <input type="radio">
+                    <input type="radio" name="shipping-options-review" checked="checked">
                     <label>Complimentary Express Shipping - Free</label>
                   </p>
                   <p class="radio">
-                    <input type="radio">
+                    <input type="radio" name="shipping-options-review">
                     <label class="offer">Guaranteed delivery by Valentines Day - Free</label>
                   </p>
                   <p class="radio">
-                    <input type="radio">
+                    <input type="radio" name="shipping-options-review">
                     <label>Expedited Shipping (1-2 days) - $24.95</label>
                   </p>
               </div>
@@ -110,7 +114,7 @@
                             <a href="#" class="btn btn-default btn-md hidden-xs hidden-sm">EDIT</a>
                           </div>
                         </div>
-                        <div class="col-md-4 col-xs-12">
+                        <div class="col-md-4 col-xs-12 hide-mob">
                           <div  class="block sm-blocks mm-blocks">
                             <h2 class="block-head">BILLING ADDRESS</h2>
                             <p class="title">JOHN EDWARD DOE</p>
@@ -125,7 +129,7 @@
                             <a href="#" class="btn btn-default btn-md hidden-xs hidden-sm">EDIT</a>
                           </div>
                         </div>
-                        <div class="col-md-4 col-xs-12">
+                        <div class="col-md-4 col-xs-12 hide-mob">
                           <div  class="block sm-blocks">
                             <h2 class="block-head">PAYMENT</h2><br>
                             <ul class="payment-icons">
@@ -138,6 +142,25 @@
                             </div>
                             <br>
                             <a href="#" class="btn btn-default btn-md hidden-xs hidden-sm">EDIT</a>
+                          </div>
+                        </div>
+
+                        <!--mobile payment-->
+                        <div class="col-md-4 col-xs-12 mob-payment-info-review">
+                          <div class="block payment-info-review">
+                            <h2 class="block-head">PAYMENT INFO</h2>
+                            <a href="5-checkout-2-payment.html" class="payment-method-container">
+                              <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                              <p class="title">PAYMENT METHOD</p>
+                              <p>VISA XXXXX - 1898</p>
+                            </a>
+                            <a href="5-checkout-2-payment.html" class="payment-billing-address-container">
+                              <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+                              <p class="title">BILLING ADDRESS</p>
+                              <p>11234 Address Line 01</p>
+                            </a>
+                            
+                            
                           </div>
                         </div>
                       </div>

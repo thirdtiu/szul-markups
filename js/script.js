@@ -942,7 +942,18 @@ if ($('.return-process')) {
 
 $(document).ready(function($) {
 
+	$('.add-new-address-btn').on('click',function(){
+		$('.cc-select-billing-address').removeClass('show-existing-cc');
+		$('.cc-select-billing-address').addClass('show-create-cc');
+	});
+	$('.use-existing-address-btn').on('click',function(){
+		$('.cc-select-billing-address').addClass('show-existing-cc');
+		$('.cc-select-billing-address').removeClass('show-create-cc');
+	});
 
+	$('.shipping-options-arrow').on('click',function(){
+		$('.review-shipping-options').toggleClass('show-options');
+	});
 
 	$('#mega-menu .sub').addClass('clearfix');
 
