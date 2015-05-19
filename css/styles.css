@@ -9839,6 +9839,11 @@ img.paypal-btn {
   }
 }
 @media (max-width: 768px) {
+  body.modal-open {
+    overflow: hidden;
+    position: fixed !important;
+  }
+
   .payment-review .review-items {
     padding: 0px 10px !important;
   }
