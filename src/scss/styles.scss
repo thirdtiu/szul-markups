@@ -599,6 +599,12 @@ img.paypal-btn{
 	
 }
 @media(max-width:768px){
+	.checkout-cart-info .block{
+		margin-top:0px !important;
+	}
+	.proceed2-btn-container{
+		padding:0px 15px;
+	}
 	.address-cc-header > span, 
 	.hide-mob{
 		display: none;
