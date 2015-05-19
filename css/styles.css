@@ -9839,6 +9839,15 @@ img.paypal-btn {
   }
 }
 @media (max-width: 768px) {
+  .payment-review .review-items {
+    padding: 0px 10px !important;
+  }
+
+  .send-order-as-gift textarea {
+    width: 100%;
+    resize: none;
+  }
+
   .checkout-cart-info .block {
     margin-top: 0px !important;
   }
