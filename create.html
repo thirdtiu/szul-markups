@@ -26,86 +26,59 @@
               <ul class="types clearfix">
                 <li class="type">
                   <label class="type-header" for="type-round">Round
-                    <img class="type-image" alt="" src="images/type-round.png">
+                    <img class="type-image select-shape" alt="" src="images/type-round.png">
                   </label>
-                  <div class="type-checkbox">
+                  <!--<div class="type-checkbox">
                     <input type="checkbox" id="type-round">
-                  </div>
+                  </div>-->
                 </li>
                 <li class="type">
                   <label class="type-header" for="type-princess">Princess
                     <img class="type-image" alt="" src="images/type-princess.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-princess">
-                  </div>
                 </li>
                 <li class="type">
                   <label class="type-header" for="type-radiant">Radiant
                     <img class="type-image" alt="" src="images/type-radiant.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-radiant">
-                  </div>
                 </li>
                 <li class="type">
                   <label class="type-header" for="type-cushion">Cushion
                     <img class="type-image" alt="" src="images/type-cushion.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-cushion">
-                  </div>
                 </li>
                 <li class="type">
                   <label class="type-header" for="type-oval">Oval
                     <img class="type-image" alt="" src="images/type-oval.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval">
-                  </div>
                 </li>
 
                 <li class="type">
                   <label class="type-header" for="type-oval">Emerald
                     <img class="type-image" alt="" src="images/type-oval.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval">
-                  </div>
                 </li>
 
                 <li class="type">
                   <label class="type-header" for="type-oval">Asscher
                     <img class="type-image" alt="" src="images/type-oval.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval">
-                  </div>
                 </li>
 
                 <li class="type">
                   <label class="type-header" for="type-oval">Marquise
                     <img class="type-image" alt="" src="images/type-oval.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval">
-                  </div>
                 </li>
                 <li class="type">
                   <label class="type-header" for="type-oval">Pear
                     <img class="type-image" alt="" src="images/type-oval.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval">
-                  </div>
                 </li>
                 <li class="type">
                   <label class="type-header" for="type-oval">Heart
                     <img class="type-image" alt="" src="images/type-oval.png">
                   </label>
-                  <div class="type-checkbox">
-                    <input type="checkbox" id="type-oval">
-                  </div>
                 </li>
               </ul>
             </div>
@@ -143,9 +116,30 @@
         </div>
         <div class="block block-advanced-search">
           <h3 class="block-head"><a href="#">ADVANCED SEARCH OPTIONS <span class="glyphicon glyphicon-chevron-down"></span></a></h3>
-          <div class="block-body">
-            <div class="form-group diamond-color clearfix">
-              <p>WHAT DIAMOND COLOR GRADES ARE YOU LOOKING FOR? (OPTIONAL) <span class="glyphicon glyphicon-info-sign"></span></p>
+          <div class="block-body clearfix">
+            <div class="form-group diamond-color col-md-4">
+              <p>DIAMOND COLOR GRADES (OPTIONAL) <!--<span class="glyphicon glyphicon-info-sign"></span>--></p>
+			  <select name="" id="">
+			  	<option value="">D</option>
+			  	<option value="">E</option>
+			  	<option value="">F</option>
+			  	<option value="">G</option>
+			  	<option value="">H</option>
+			  	<option value="">I</option>
+			  	<option value="">J</option>
+			  	<option value="">K</option>
+			  </select>
+			  <select name="" id="">
+			  	<option value="">D</option>
+			  	<option value="">E</option>
+			  	<option value="">F</option>
+			  	<option value="">G</option>
+			  	<option value="">H</option>
+			  	<option value="">I</option>
+			  	<option value="">J</option>
+			  	<option value="">K</option>
+			  </select>
+              <!--
               <label>
                 <input type="checkbox"> D
               </label>
@@ -169,58 +163,51 @@
               </label>
               <label>
                 <input type="checkbox"> K
-              </label>
+              </label>-->
             </div>
-            <div class="form-group diamond-clarity clearfix">
-              <p>WHAT DIAMOND CLARITY GRADES ARE YOU LOOKING FOR? (OPTIONAL) <span class="glyphicon glyphicon-info-sign"></span></p>
-              <label>
-                <input type="checkbox"> FL (Flawless)
-              </label>
-              <label>
-                <input type="checkbox"> SI3
-              </label>
-              <label>
-                <input type="checkbox"> I1
-              </label>
-              <label>
-                <input type="checkbox"> I2
-              </label>
-              <label>
-                <input type="checkbox"> VS1 (Few inclusions at 10X)
-              </label>
-              <label>
-                <input type="checkbox"> IF (Internally Flawless)
-              </label>
-              <label>
-                <input type="checkbox"> VS2 (Some inclusions at 10X)
-              </label>
-              <label>
-                <input type="checkbox"> VVS1 (Few inclusions at 30X)
-              </label>
-              <label>
-                <input type="checkbox"> SI1 (Few visible inclusions)
-              </label>
-              <label>
-                <input type="checkbox"> VVS2 (Some inclusions at 30X)
-              </label>
-              <label>
-                <input type="checkbox"> SI2 (Some visible inclusions)
-              </label>
+            <div class="form-group diamond-clarity col-md-4">
+              <p>DIAMOND CLARITY GRADES (OPTIONAL)<!--<span class="glyphicon glyphicon-info-sign"></span>--></p>
+              <select name="" id="">
+			  	<option value="">FL (Flawless)</option>
+			  	<option value="">SI3</option>
+			  	<option value="">I1</option>
+			  	<option value="">I2</option>
+			  	<option value="">VS1 (Few inclusions at 10X)</option>
+			  	<option value="">IF (Internally Flawless)</option>
+			  	<option value="">VS2 (Some inclusions at 10X)</option>
+			  	<option value="">VVS1 (Few inclusions at 30X)</option>
+			  	<option value="">SI1 (Few visible inclusions)</option>
+			  	<option value="">VVS2 (Some inclusions at 30X)</option>
+			  	<option value="">SI2 (Some visible inclusions)</option>
+			  </select>
+			  <select name="" id="">
+			  	<option value="">FL (Flawless)</option>
+			  	<option value="">SI3</option>
+			  	<option value="">I1</option>
+			  	<option value="">I2</option>
+			  	<option value="">VS1 (Few inclusions at 10X)</option>
+			  	<option value="">IF (Internally Flawless)</option>
+			  	<option value="">VS2 (Some inclusions at 10X)</option>
+			  	<option value="">VVS1 (Few inclusions at 30X)</option>
+			  	<option value="">SI1 (Few visible inclusions)</option>
+			  	<option value="">VVS2 (Some inclusions at 30X)</option>
+			  	<option value="">SI2 (Some visible inclusions)</option>
+			  </select>
             </div>
-            <div class="form-group diamond-grades">
-              <p>WHAT DIAMOND CUT GRADES ARE YOU LOOKING FOR? (OPTIONAL) <span class="glyphicon glyphicon-info-sign"></span></p>
-              <label>
-                <input type="checkbox"> Excellent
-              </label>
-              <label>
-                <input type="checkbox"> Very Good
-              </label>
-              <label class="mrg-fix">
-                <input type="checkbox"> Good
-              </label>
-              <label>
-                <input type="checkbox"> Fair
-              </label>
+            <div class="form-group diamond-grades col-md-4">
+              <p>DIAMOND CUT GRADES ARE (OPTIONAL)</p>
+              <select name="" id="">
+			  	<option value="">Fair</option>
+			  	<option value="">Good</option>
+			  	<option value="">Very Good</option>
+			  	<option value="">Excellent</option>
+			  </select>
+			  <select name="" id="">
+			  	<option value="">Fair</option>
+			  	<option value="">Good</option>
+			  	<option value="">Very Good</option>
+			  	<option value="">Excellent</option>
+			  </select>
             </div>
           </div>
         </div>

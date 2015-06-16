@@ -4111,10 +4111,11 @@ ul.steps li.active span {
   margin-right: 2.1276596%;
   float: left;
   padding: 10px 20px;
-  height: 308px;
+  height: 260px;
   font-size: 14px;
   line-height: 18px;
   overflow: hidden;
+  margin-top: 10px;
 }
 .create-form .create-intro .text-box p {
   margin-bottom: 10px;
@@ -4124,7 +4125,7 @@ ul.steps li.active span {
   width: 35.106383%;
   margin-right: 2.1276596%;
   background: #efefef;
-  height: 308px;
+  height: 260px;
 }
 .create-form .create-intro .block .block-head {
   margin: 0px 20px;
@@ -4140,7 +4141,7 @@ ul.steps li.active span {
 }
 .create-form .create-intro .block .block-body ul.types li {
   float: left;
-  margin: 0 1% 20px;
+  margin: 9px;
   text-align: center;
 }
 .create-form .create-intro .block .block-body ul.types li :first-child {
@@ -4157,6 +4158,10 @@ ul.steps li.active span {
 .create-form .create-intro .block .block-body ul.types li label img {
   margin-top: 5px;
   display: block;
+  border: 1px solid white;
+}
+.create-form .create-intro .block .block-body ul.types li label img.select-shape {
+  border: 1px solid #ac47ad;
 }
 .create-form .create-intro .block .block-body input[type="text"] {
   display: inline-block;
@@ -4184,6 +4189,10 @@ ul.steps li.active span {
 
 .block-advanced-search {
   background: #efefef;
+}
+.block-advanced-search select {
+  width: 48%;
+  padding: 5px;
 }
 .block-advanced-search .block-head {
   margin: 0px 20px;
@@ -7378,12 +7387,6 @@ body.modal-open {
     margin-top: 3px;
   }
 }
-.product-filter-sidebar .dr-checkbox-lists li,
-.product-filter-sidebar .ss-checkbox-lists li {
-  width: 33%;
-  float: left;
-}
-
 @media (min-width: 361px) and (max-width: 768px) {
   #sort-by-container {
     float: right !important;
@@ -10834,6 +10837,59 @@ li.deals-collections-dd ul.sub {
     width: 100% !important;
     margin: 0 !important;
   }
+}
+/*new 06-15-2015*/
+.diamond-rings-info-container {
+  position: relative;
+}
+
+.diamond-rings-info {
+  background: white;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  width: 130px;
+  list-style: none;
+  z-index: 99;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  padding: 20px;
+  box-shadow: -1px 1px 1px 1px #dddddd;
+}
+
+.diamond-rings-info img {
+  margin: 5px 0px 10px;
+}
+
+.diamond-rings-info-container:hover .diamond-rings-info {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 8px solid white;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  top: 15px;
+  left: -8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

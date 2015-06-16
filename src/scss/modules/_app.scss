@@ -1942,10 +1942,11 @@ ul.steps{
 			margin-right:2.1276596%;
 			float:left;
 			padding:10px 20px;
-			height: 308px;
+			height: 260px;
 			font-size: 14px;
 			line-height: 18px;
 			overflow: hidden;
+			margin-top:10px;
 			p{
 				margin-bottom: 10px;
 			}
@@ -1955,7 +1956,7 @@ ul.steps{
 			width: 35.106383%;
 			margin-right:2.1276596%;
 			background:#efefef;
-			height: 308px;
+			height: 260px;
 			.block-head{
 				margin:0px 20px;
 				padding:10px 0;
@@ -1968,7 +1969,7 @@ ul.steps{
 					list-style-type: none;
 					li{
 						float:left;
-						margin:0 1% 20px;
+						margin:9px;
 						text-align: center;
 						:first-child{
 							margin-left: 0;
@@ -1983,6 +1984,10 @@ ul.steps{
 							img{
 								margin-top: 5px;
 								display: block;
+								border:1px solid white;
+							}
+							img.select-shape{
+								border:1px solid #ac47ad;
 							}
 						}
 					}
@@ -2012,6 +2017,10 @@ ul.steps{
 	}
 }
 .block-advanced-search{
+	select{
+		width:48%;
+		padding:5px;
+	}
 	background:#efefef;
 	.block-head{
 		margin:0px 20px;
@@ -2026,6 +2035,7 @@ ul.steps{
 		a{
 
 		}
+
 	}
 	.block-body{
 		padding:10px 20px 20px;
@@ -5353,12 +5363,6 @@ body.modal-open {
 	.checkout .main-content .block .boxed p.radio label{
 		margin-top:3px;
 	}
-}
-
-.product-filter-sidebar .dr-checkbox-lists li, 
-.product-filter-sidebar .ss-checkbox-lists li{
-	width:33%;
-	float:left;
 }
 @media(min-width:361px) and (max-width: 768px){
 	#sort-by-container{
