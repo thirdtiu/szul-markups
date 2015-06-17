@@ -6766,7 +6766,7 @@ div#thumbs .thumbs li.selected a.thumb {
 
   /*Checkout payment*/
   .product-details-tabs .tab-content {
-    padding: 0px !important;
+    padding: 10px !important;
   }
 
   .payment-tabs .cc-type, .cc-cnumber, .payment-tabs .cc-exp-date {
