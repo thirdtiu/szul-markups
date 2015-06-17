@@ -18,34 +18,28 @@
           <div class="gallerific-wrap col-md-6">
             
             <!-- Start Advanced Gallery Html Containers -->
-            <div id="gallery" class="content">
-              <div id="controls" class="controls"></div>
-              <div class="slideshow-container">
-                <div id="loading" class="loader"></div>
-                <div id="slideshow" class="slideshow"></div>
-              </div>
-              <div id="caption" class="caption-container"></div>
+            <div class="product-detail-mob owl-carousel-container visible-xs">
+                  <div class="owl-carousel">
+                      <div class="item"><img src="images/small/diamond-detail.png" /></div>
+                      <div class="item"><img src="images/small/diamond-detail2.png" /></div>
+                      <div class="item"><img src="images/small/diamond-detail3.png" /></div>
+                  </div>
+                </div>
+            <div class="stage hidden-xs">
+              <img id="diamond-detail" src="images/small/diamond-detail.png" data-zoom-image="images/large/diamond-detail.png"/>
             </div>
-            <div id="thumbs" class="navigation">
-              <ul class="thumbs noscript">
-                <li>
-                  <a class="thumb" name="Item1" href="images/gal1.jpg" title="Item 1">
-                    <img src="images/gal1.jpg" alt="Item 1" />
-                  </a>
-                </li>
 
-                <li>
-                  <a class="thumb" name="Item2" href="images/gal2.jpg" title="Item 2">
-                    <img src="images/gal2.jpg" alt="Item 2" />
-                  </a>
-                </li>
-
-                <li>
-                  <a class="thumb" name="Item3" href="images/gal3.jpg" title="Item 3">
-                    <img src="images/gal3.jpg" alt="Item 3" />
-                  </a>
-                </li>
-              </ul>
+            <div id="diamond-gallery" class="hidden-xs">
+              <a href="#" data-image="images/small/diamond-detail.png" data-zoom-image="images/large/diamond-detail.png" class="active">
+                <img src="images/small/diamond-detail.png" />
+              </a>  
+              <a href="#" data-image="images/small/diamond-detail2.png" data-zoom-image="images/large/diamond-detail2.png">
+                <img src="images/small/diamond-detail2.png" />
+              </a>
+              <a href="#" data-image="images/small/diamond-detail3.png" data-zoom-image="images/large/diamond-detail3.png">
+                <img src="images/small/diamond-detail3.png" />
+              </a>
+              
             </div>
             <div style="clear: both;"></div>
 
@@ -62,13 +56,16 @@ This diamond comes accompanied with a diamond grading report from GIA.</p>
                 <div class="block block-price">
                   <p>
                     Credit Card Price: <strong>$915.00</strong><br>
+                  </p>
+                  <p>
                     Bank Wire Price: <strong>$896.00</strong> <a href="#" class="grey"><span class="glyphicon glyphicon-info-sign"></span></a>
                   </p>
                 </div>
               </div>
-              <div class="block block-buttons">
-                <a class="btn btn-primary-gradient btn-lg btn-left-col" href="#">BUY THIS DIAMOND</a><a class="btn btn-gray btn-lg btn-right-col" href="create.html">SELECT ANOTHER DIAMOND</a><a class="btn btn-gray btn-lg btn-left-col" href="select-setting.html">USE TO DESIGN RING</a><a class="btn btn-gray btn-lg btn-right-col" href="select-setting.html">USE TO DESIGN PENDANT</a>
+              <div class="block block-buttons clearfix">
+                <a class="btn btn-primary-gradient btn-lg btn-left-col hidden-xs pull-left" href="#">BUY THIS DIAMOND</a><a class="btn btn-gray btn-lg btn-right-col pull-left" href="select-setting.html">USE TO DESIGN RING</a><a class="btn btn-gray btn-lg btn-left-col pull-left" href="select-setting.html">USE TO DESIGN PENDANT</a>
               </div>
+              <a class="select-another-diamond-btn" href="create.html"><span><</span>SELECT ANOTHER DIAMOND</a>
               <div class="socials">
                 <ul>
                   <li>
@@ -299,6 +296,9 @@ This diamond comes accompanied with a diamond grading report from GIA.</p>
           </div><!--.product-tabs-->
         </div>
       </div>      
+    </div>
+    <div class="mobile-floating-btn-container visible-xs">
+      <a class="btn btn-primary-gradient btn-lg btn-left-col pull-right" href="#">BUY THIS DIAMOND</a>
     </div>
 
 <?php include_once('footer.html'); ?>

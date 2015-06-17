@@ -46,6 +46,15 @@ a.dd-selected {
   color: #373737 !important;
 }
 
+.mobile-floating-btn-container {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  border-top: 1px solid #dddddd;
+}
+
 label.dd-selected-text {
   margin: 5px 5px 5px 10px;
 }
@@ -2317,6 +2326,17 @@ a.green {
   color: #39cca4;
 }
 
+.select-another-diamond-btn span {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.select-another-diamond-btn {
+  font-family: "brandon_grotesquebold",sans-serif;
+  margin: 15px 0px;
+  display: block;
+}
+
 .continue-shopping-link {
   color: #934295 !important;
   cursor: pointer;
@@ -3847,14 +3867,14 @@ ul.payment-icons li {
   width: 100% !important;
   height: auto !important;
 }
-.product-large-view .the-product .gallerific-wrap #gal1 {
+.product-large-view .the-product .gallerific-wrap #gal1, .product-large-view .the-product .gallerific-wrap #diamond-gallery {
   /*Change the colour*/
 }
-.product-large-view .the-product .gallerific-wrap #gal1 a {
+.product-large-view .the-product .gallerific-wrap #gal1 a, .product-large-view .the-product .gallerific-wrap #diamond-gallery a {
   display: inline-block;
   border: 2px solid #eee;
 }
-.product-large-view .the-product .gallerific-wrap #gal1 a.active {
+.product-large-view .the-product .gallerific-wrap #gal1 a.active, .product-large-view .the-product .gallerific-wrap #diamond-gallery a.active {
   border-color: #9026a0;
 }
 .product-large-view .the-product .product-information {
@@ -3871,13 +3891,14 @@ ul.payment-icons li {
   padding-left: 2px;
 }
 .product-large-view .the-product .product-information .info-bd .info {
+  border-bottom: 1px solid #dddddd;
   font-size: 12px;
   line-height: 18px;
   color: #6b6b6b;
   position: relative;
 }
 .product-large-view .the-product .product-information .info-bd .info p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .product-large-view .the-product .product-information .info-bd .info p.new-price, .product-large-view .the-product .product-information .info-bd .info .checkout p.main-price, .checkout .product-large-view .the-product .product-information .info-bd .info p.main-price {
   color: #fd4b6d;
@@ -4064,6 +4085,7 @@ ul.payment-icons li {
 }
 .product-diamond .the-product .product-information .info-bd .block-buttons {
   margin-bottom: 0;
+  margin-top: 20px;
 }
 .product-diamond .the-product .product-information .info-bd .block-buttons .btn {
   padding-left: 0;
@@ -5966,20 +5988,20 @@ div#thumbs .thumbs li.selected a.thumb {
   float: none !important;
 }
 
-.product-large-view .the-product .gallerific-wrap #gal1 {
+.product-large-view .the-product .gallerific-wrap #gal1, .product-large-view .the-product .gallerific-wrap #diamond-gallery {
   text-align: center;
 }
-.product-large-view .the-product .gallerific-wrap #gal1 img {
+.product-large-view .the-product .gallerific-wrap #gal1 img, .product-large-view .the-product .gallerific-wrap #diamond-gallery img {
   display: none;
 }
-.product-large-view .the-product .gallerific-wrap #gal1 a {
+.product-large-view .the-product .gallerific-wrap #gal1 a, .product-large-view .the-product .gallerific-wrap #diamond-gallery a {
   border: 2px solid #934295;
   width: 12px;
   height: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
 }
-.product-large-view .the-product .gallerific-wrap #gal1 a.active {
+.product-large-view .the-product .gallerific-wrap #gal1 a.active, .product-large-view .the-product .gallerific-wrap #diamond-gallery a.active {
   background-color: #934295;
 }
 
@@ -6509,14 +6531,14 @@ div#thumbs .thumbs li.selected a.thumb {
     text-indent: 0;
   }
 
-  .product-large-view .the-product .gallerific-wrap #gal1 {
+  .product-large-view .the-product .gallerific-wrap #gal1, .product-large-view .the-product .gallerific-wrap #diamond-gallery {
     text-align: center;
   }
-  .product-large-view .the-product .gallerific-wrap #gal1 img {
+  .product-large-view .the-product .gallerific-wrap #gal1 img, .product-large-view .the-product .gallerific-wrap #diamond-gallery img {
     display: block;
     width: 100%;
   }
-  .product-large-view .the-product .gallerific-wrap #gal1 a {
+  .product-large-view .the-product .gallerific-wrap #gal1 a, .product-large-view .the-product .gallerific-wrap #diamond-gallery a {
     border: 2px solid #eee;
     width: 72px !important;
     height: auto;

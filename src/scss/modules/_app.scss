@@ -47,8 +47,15 @@ input[type=text]:focus, textarea:focus {
 a.green{
 	color:$green;
 }
-
-
+.select-another-diamond-btn span{
+	font-size: 22px;
+    margin-right: 10px;
+}
+.select-another-diamond-btn{
+	font-family: "brandon_grotesquebold",sans-serif;
+	margin:15px 0px;
+	display:block;
+}
 .continue-shopping-link {
 	color: #934295 !important;
 	cursor: pointer;
@@ -1592,7 +1599,7 @@ ul.payment-icons{
 				margin-bottom: 25px;
 			}
 			/*set a border on the images to prevent shifting*/ 
-			#gal1{
+			#gal1, #diamond-gallery{
 	
 				img{
 					
@@ -1620,12 +1627,13 @@ ul.payment-icons{
 			.info-bd{
 				padding-left:2px;
 				.info{
+					border-bottom:1px solid #dddddd;
 					font-size: 12px;
 					line-height: 18px;
 					color: #6b6b6b;
 					position:relative;
 					p{
-						margin-bottom: 0;
+						margin-bottom: 10px;
 					}
 					p.new-price{
 						color: #fd4b6d;
@@ -1825,6 +1833,7 @@ ul.payment-icons{
 				}
 				.block-buttons{
 					margin-bottom: 0;
+					margin-top:20px;
 					.btn{
 						padding-left:0;
 						padding-right:0;
@@ -3819,7 +3828,7 @@ div#thumbs{
 .product-large-view {
 	.the-product {
 		.gallerific-wrap {
-			#gal1 {
+			#gal1, #diamond-gallery {
 				text-align: center;
 
 				img {
@@ -4443,7 +4452,7 @@ div#thumbs{
 	.product-large-view {
 		.the-product {
 			.gallerific-wrap {
-				#gal1 {
+				#gal1, #diamond-gallery {
 					text-align: center;
 
 					img {
