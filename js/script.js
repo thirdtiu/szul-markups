@@ -403,7 +403,10 @@ $(function(){
 			$('.block-shape-select ul li img').removeClass('select-shape');
 			$(this).addClass('select-shape');
 		});
-		
+
+		$('.show-advanced-search-option-btn').on('click', function(){
+			$('.block-advanced-search, .show-advanced-search-option-btn span').toggleClass('show-more-options');
+		});
 
 		$('#thumbs .thumbs li a img').on('click', function(){
 			var imgSrc = $(this).attr('src');

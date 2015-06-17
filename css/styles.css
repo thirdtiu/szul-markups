@@ -92,6 +92,62 @@ h2.contact-number {
   left: auto !important;
 }
 
+.block-advanced-search {
+  height: 47px;
+  overflow: hidden;
+  transition: 0.75s all;
+  -webkit-transition: 0.75s all;
+  -moz-transition: 0.75s all;
+}
+
+.show-advanced-search-option-btn span {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transition: 0.75s all;
+  -webkit-transition: 0.75s all;
+  -moz-transition: 0.75s all;
+}
+
+.show-advanced-search-option-btn span.show-more-options {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+}
+
+.block-advanced-search.show-more-options {
+  height: 140px;
+}
+
+.mobile-select-settings .clearfix {
+  margin: 15px 0px;
+  line-height: 28px;
+}
+
+.mobile-select-settings select {
+  padding: 5px 0px;
+}
+
+.mobile-item-pager {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 99;
+  background-color: #f5f5f5;
+  padding: 10px;
+  line-height: 30px;
+  border-top: 1px solid #dddddd;
+}
+
+@media (max-width: 768px) {
+  .product-filter-sidebar .block {
+    margin: 0px !important;
+  }
+
+  .block-advanced-search.show-more-options {
+    height: 330px;
+  }
+}
 @media (min-width: 401px) and (max-width: 768px) {
   #contact-item-popover {
     text-align: center;
@@ -5590,7 +5646,7 @@ div#thumbs .thumbs li.selected a.thumb {
   }
 
   .select-setting .main-content .top-filters {
-    display: block !important;
+    display: none;
   }
   .select-setting .main-content .top-filters .pull-left,
   .select-setting .main-content .top-filters .pull-right {

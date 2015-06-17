@@ -14,7 +14,7 @@
         <div class="row">
         <div class="col-md-3">
             <form action="#" role="form" class="product-filter-sidebar">
-            <div class="block">
+            <div class="block hidden-xs">
               <div class="head-wrap clearfix">
                 <h3 class="block-head pull-left">DIAMOND RINGS</h3>
                 <div class="pull-right diamond-rings-info-container">
@@ -31,7 +31,7 @@
                 </div>
                 
               </div>
-              <ul class="dr-checkbox-lists">
+              <ul class="dr-checkbox-lists hidden-xs">
                 <li>
                   <label>
                     <input type="checkbox"> 14K Yellow Gold
@@ -61,7 +61,7 @@
               </ul>
             </div>
 
-            <div class="block">
+            <div class="block hidden-xs">
               <div class="head-wrap clearfix">
                 <h3 class="block-head pull-left">SETTING STYLE</h3>
                 <div class="pull-right diamond-rings-info-container">
@@ -96,6 +96,31 @@
                 <div class="clearfix"></div>
               </ul>
             </div>
+            <div class="block visible-xs mobile-select-settings">
+              <h3 class="block-head">SELECT SETTING</h3>
+              <div class="clearfix">
+                <span class="pull-left">DIAMOND RINGS</span>
+                <select name="" id="" class="pull-right">
+                  <option value="">14K Yellow Gold</option>
+                  <option value="">18K Yellow Gold</option>
+                  <option value="">14K White Gold</option>
+                  <option value="">18K White Gold</option>
+                  <option value="">Platinum</option>
+                </select>
+              </div>
+              <div class="clearfix">
+                <span class="pull-left">DIAMOND RINGS</span>
+                <select name="" id="" class="pull-right">
+                  <option value="">14K Yellow Gold</option>
+                  <option value="">18K Yellow Gold</option>
+                  <option value="">14K White Gold</option>
+                  <option value="">18K White Gold</option>
+                  <option value="">Platinum</option>
+                </select>
+              </div>
+              
+
+            </div>
 
           </form>
         </div>
@@ -125,13 +150,13 @@
             </div>
           </form>
           <div class="item-navigation clearfix">
-            <div class="pull-left view-page">
+            <div class="pull-left view-page hidden-xs">
               <label for="page">VIEW PAGE</label> <input type="text" id="page"> <button class="btn btn-default"><strong>GO</strong></button>
             </div>
 
             <p class="item-count text-center">27 Items | Showing 1 to 9</p>
             
-            <div class="pull-right">
+            <div class="pull-right hidden-xs">
               <div class="item-pager">
                 Page 1 of 3
                 <a href="#" class="btn btn-default disabled"><span class="icon icon-first"></span></a>
@@ -356,6 +381,13 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="item-pager mobile-item-pager">
+      
+      <a href="#" class="btn btn-default disabled pull-left"><span class="icon icon-first"></span></a>
+      
+      <a href="#" class="btn btn-default pull-right"><span class="icon icon-last"></span></a>
+      <div class="text-center">Page 1 of 3</div>
     </div>
 
 <?php include_once('footer.html'); ?>
