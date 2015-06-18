@@ -96,6 +96,28 @@ h2.contact-number {
   color: #333333;
 }
 
+/*advanced search*/
+.advanced-search-form .ui-widget-header {
+  background: #934295;
+}
+
+.advanced-search-form .ui-slider-horizontal {
+  height: .4em;
+  outline: none !important;
+  background-color: #dddddd;
+}
+
+.advanced-search-form .ui-slider-horizontal:focus,
+.ui-slider .ui-slider-handle:focus {
+  outline: none !important;
+}
+
+.advanced-search-form .ui-slider-horizontal .ui-slider-handle {
+  border-radius: 50%;
+  background: white !important;
+  top: -.5em;
+}
+
 #cart-popover {
   right: 0px !important;
   left: auto !important;
@@ -2348,6 +2370,46 @@ a.green {
   padding-left: 4px;
 }
 
+.diamond-detail-description {
+  border-bottom: 1px solid #dddddd;
+}
+
+.color-grade-range-container .row,
+.clarity-grade-range-container {
+  display: flex;
+}
+
+.color-grade-range-container span,
+.clarity-grade-range-container span {
+  flex-grow: 8;
+  text-align: center;
+}
+
+.cas-caratrange-container input,
+.cas-pricerange-container input {
+  padding: 5px;
+}
+
+.cut-grade-range-container span,
+.symmetry-range-container span,
+.polish-range-container span {
+  margin-right: 27%;
+}
+
+.cut-grade-range-container span:last-child,
+.symmetry-range-container span:last-child,
+.polish-range-container span:last-child {
+  margin-right: 0px;
+}
+
+.flourescence-range-container span {
+  margin-right: 20%;
+}
+
+.flourescence-range-container span:last-child {
+  margin-right: 0px;
+}
+
 .shopping-cart-header {
   margin-bottom: 20px;
 }
@@ -3891,7 +3953,6 @@ ul.payment-icons li {
   padding-left: 2px;
 }
 .product-large-view .the-product .product-information .info-bd .info {
-  border-bottom: 1px solid #dddddd;
   font-size: 12px;
   line-height: 18px;
   color: #6b6b6b;

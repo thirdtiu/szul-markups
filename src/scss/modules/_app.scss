@@ -65,7 +65,38 @@ a.green{
 .continue-shopping-link span {
 	padding-left: 4px;
 }
-
+.diamond-detail-description{
+	border-bottom:1px solid #dddddd;
+}
+.color-grade-range-container .row, 
+.clarity-grade-range-container{
+	display:flex;
+}
+.color-grade-range-container span, 
+.clarity-grade-range-container span{
+	flex-grow: 8;
+	text-align:center;
+}
+.cas-caratrange-container input, 
+.cas-pricerange-container input{
+	padding:5px;
+}
+.cut-grade-range-container span, 
+.symmetry-range-container span,
+.polish-range-container span{
+	margin-right:27%;
+}
+.cut-grade-range-container span:last-child, 
+.symmetry-range-container span:last-child,
+.polish-range-container span:last-child{
+	margin-right:0px;
+}
+.flourescence-range-container span{
+	margin-right:20%;
+}
+.flourescence-range-container span:last-child{
+	margin-right:0px;
+}
 .shopping-cart-header {
 	margin-bottom: 20px;
 }
@@ -1627,7 +1658,6 @@ ul.payment-icons{
 			.info-bd{
 				padding-left:2px;
 				.info{
-					border-bottom:1px solid #dddddd;
 					font-size: 12px;
 					line-height: 18px;
 					color: #6b6b6b;

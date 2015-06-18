@@ -61,16 +61,85 @@ $(function(){
 		speed: 'fast'
 	});
 
+	/*price range*/
 
+	$( "#price-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#price-amount" ).val( "$" + ui.values[ 0 ] );
+        $( "#price-amount2" ).val( "$" + ui.values[ 1 ] );
+      }
+    });
 
-	$('#carat-range-slider').slider({
-		value:[2, 16]
-	}).on('slide', function(ev){
-		var firstvalue = ev.value[0];
-		var secondvalue = ev.value[1];
-		$('#carat-range1').val(firstvalue);
-		$('#carat-range2').val(secondvalue);
-	});
+	/*carat range*/
+
+	$( "#carat-range" ).slider({
+      range: true,
+      min: 0,
+      max: 20,
+      values: [ 2, 16 ],
+      slide: function( event, ui ) {
+        $( "#carat-amount" ).val( ui.values[ 0 ] );
+        $( "#carat-amount2" ).val( ui.values[ 1 ] );
+      }
+    });
+
+    /*color grade range*/
+
+    $( "#color-grade-range" ).slider({
+      range: true,
+      min: 0,
+      max: 7,
+      values: [ 2, 4 ]
+    });
+
+    /*clarity grade range*/
+
+    $( "#clarity-grade-range" ).slider({
+      range: true,
+      min: 0,
+      max: 10,
+      values: [ 2, 8 ]
+    });
+
+    /*cut grade range*/
+
+    $( "#cut-grade-range" ).slider({
+      range: true,
+      min: 0,
+      max: 3,
+      values: [ 0, 1 ]
+    });
+
+    /*symmetry range*/
+
+    $( "#symmetry-range" ).slider({
+      range: true,
+      min: 0,
+      max: 3,
+      values: [ 0, 1 ]
+    });
+
+    /*polish range*/
+
+    $( "#polish-range" ).slider({
+      range: true,
+      min: 0,
+      max: 3,
+      values: [ 0, 1 ]
+    });
+
+    /*flourescence range*/
+
+    $( "#flourescence-range" ).slider({
+      range: true,
+      min: 0,
+      max: 4,
+      values: [ 0, 3 ]
+    });
 
 	$('#range-slider').slider({
 		value:[0, 16]
@@ -81,14 +150,6 @@ $(function(){
 		$('#range-input2').val(rangesecondvalue);
 	});
 
-	$('#color-grade-range-slider').slider({
-		value:[0, 7]
-	}).on('slide', function(ev){
-		/*var firstvalue = ev.value[0];
-		var secondvalue = ev.value[1];
-		$('#carat-range1').val(firstvalue);
-		$('#carat-range2').val(secondvalue);*/
-	});
 
 	$('#clarity-grade-range-slider').slider({
 		value:[0, 10]
