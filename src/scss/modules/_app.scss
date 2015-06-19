@@ -1888,6 +1888,50 @@ ul.payment-icons{
 	}
 
 }
+.completed-product-description, 
+.ring-setting-product-description{
+	.btn{
+		padding-left:0;
+		padding-right:0;
+		text-align: center;
+		font-family: $brandon-bold;
+		font-weight: normal;
+		margin-bottom: 2.173913%;
+	}
+	.btn-left-col{
+		width: 45.652174%;
+		margin-right: 2.173913%;
+	}
+	.btn-right-col{
+		width: 52.173913%;
+	}
+	.info{
+		padding:0px 0px 20px;
+		p:first-child{
+			margin-bottom:20px
+		}
+		p{
+			margin-bottom:5px;
+			.red{
+				color:red;
+			}
+		}
+		select{
+			padding:5px;
+		}
+	}
+}
+.ring-setting-product-description{
+	.btn-left-col{
+		margin-left: 2.173913%;
+		margin-right:0px;
+	}
+}
+.completed-product-img img, 
+.ring-setting-img img{
+	width:80%;
+	margin:0px auto;
+}
 .modal-dialog .product-large-view{
 	.the-product{
 		.gallerific-wrap{
@@ -2008,7 +2052,7 @@ ul.steps{
 					list-style-type: none;
 					li{
 						float:left;
-						margin:9px;
+						margin:8px;
 						text-align: center;
 						:first-child{
 							margin-left: 0;
@@ -2023,10 +2067,10 @@ ul.steps{
 							img{
 								margin-top: 5px;
 								display: block;
-								border:1px solid white;
+								border:2px solid white;
 							}
 							img.select-shape{
-								border:1px solid #ac47ad;
+								border:2px solid #ac47ad;
 							}
 						}
 					}
@@ -3536,7 +3580,7 @@ div#thumbs{
 				}
 			}
 			.item-navigation{
-				display: block !important;
+				display: block;
 				text-align: center;
 				.pull-left,
 				.pull-right{
@@ -5019,6 +5063,19 @@ div#thumbs{
 		width:212px;
 	}
 }
+/*IPAD*/
+@media (min-width:950px) and (max-width:1199px){
+	.create-form .create-intro .block, 
+	.create-form .create-intro .text-box{
+		height:355px;
+	}
+	.block-advanced-search p{
+		font-size:12px;
+	}
+	.top_secondary #main_nav li a{
+		font-size:11px;
+	}
+}
 @media(max-width:360px){
 	
 
@@ -5042,7 +5099,7 @@ div#thumbs{
 
 	/*CREATE PAGE*/
 	.create-form .create-intro .block .block-body ul.types li{
-		margin: 0 6px 20px;
+		margin: 0 5px 20px;
 	}
 	.create-form .create-intro .block .block-body{
 		padding: 10px 15px 0;

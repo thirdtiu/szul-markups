@@ -52,6 +52,7 @@ a.dd-selected {
   width: 100%;
   padding: 10px;
   background: #f5f5f5;
+  z-index: 99;
   border-top: 1px solid #dddddd;
 }
 
@@ -4167,6 +4168,56 @@ ul.payment-icons li {
   margin-top: 0;
 }
 
+.completed-product-description .btn,
+.ring-setting-product-description .btn {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  font-family: "brandon_grotesquebold", sans-serif;
+  font-weight: normal;
+  margin-bottom: 2.173913%;
+}
+.completed-product-description .btn-left-col,
+.ring-setting-product-description .btn-left-col {
+  width: 45.652174%;
+  margin-right: 2.173913%;
+}
+.completed-product-description .btn-right-col,
+.ring-setting-product-description .btn-right-col {
+  width: 52.173913%;
+}
+.completed-product-description .info,
+.ring-setting-product-description .info {
+  padding: 0px 0px 20px;
+}
+.completed-product-description .info p:first-child,
+.ring-setting-product-description .info p:first-child {
+  margin-bottom: 20px;
+}
+.completed-product-description .info p,
+.ring-setting-product-description .info p {
+  margin-bottom: 5px;
+}
+.completed-product-description .info p .red,
+.ring-setting-product-description .info p .red {
+  color: red;
+}
+.completed-product-description .info select,
+.ring-setting-product-description .info select {
+  padding: 5px;
+}
+
+.ring-setting-product-description .btn-left-col {
+  margin-left: 2.173913%;
+  margin-right: 0px;
+}
+
+.completed-product-img img,
+.ring-setting-img img {
+  width: 80%;
+  margin: 0px auto;
+}
+
 .modal-dialog .product-large-view .the-product .gallerific-wrap .stage {
   height: 200px;
   line-height: 200px;
@@ -4280,7 +4331,7 @@ ul.steps li.active span {
 }
 .create-form .create-intro .block .block-body ul.types li {
   float: left;
-  margin: 9px;
+  margin: 8px;
   text-align: center;
 }
 .create-form .create-intro .block .block-body ul.types li :first-child {
@@ -4297,10 +4348,10 @@ ul.steps li.active span {
 .create-form .create-intro .block .block-body ul.types li label img {
   margin-top: 5px;
   display: block;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 .create-form .create-intro .block .block-body ul.types li label img.select-shape {
-  border: 1px solid #ac47ad;
+  border: 2px solid #ac47ad;
 }
 .create-form .create-intro .block .block-body input[type="text"] {
   display: inline-block;
@@ -5742,7 +5793,7 @@ div#thumbs .thumbs li.selected a.thumb {
     display: block;
   }
   .select-setting .main-content .item-navigation {
-    display: block !important;
+    display: block;
     text-align: center;
   }
   .select-setting .main-content .item-navigation .pull-left,
@@ -7124,6 +7175,21 @@ div#thumbs .thumbs li.selected a.thumb {
     width: 212px;
   }
 }
+/*IPAD*/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .create-form .create-intro .block,
+  .create-form .create-intro .text-box {
+    height: 355px;
+  }
+
+  .block-advanced-search p {
+    font-size: 12px;
+  }
+
+  .top_secondary #main_nav li a {
+    font-size: 11px;
+  }
+}
 @media (max-width: 360px) {
   /*HOME PAGE*/
   .m-clearfix {
@@ -7147,7 +7213,7 @@ div#thumbs .thumbs li.selected a.thumb {
 
   /*CREATE PAGE*/
   .create-form .create-intro .block .block-body ul.types li {
-    margin: 0 6px 20px;
+    margin: 0 5px 20px;
   }
 
   .create-form .create-intro .block .block-body {
