@@ -7068,6 +7068,10 @@ div#thumbs .thumbs li.selected a.thumb {
 }
 
 @media (max-width: 768px) {
+  .block-additional-details {
+    padding: 10px 0px;
+  }
+
   /*WISHLIST TAB*/
   #wishlist .m-wishlist-col1:before,
   #wishlist .m-wishlist-col3:before,
