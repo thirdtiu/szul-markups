@@ -473,9 +473,8 @@ $(function(){
 
 	$(document).ready(function(){
 
-		$('.block-shape-select ul li').on('click', 'img', function(){
-			$('.block-shape-select ul li img').removeClass('select-shape');
-			$(this).addClass('select-shape');
+		$('.block-shape-select ul li, .advanced-search-form ul.shapes li').on('click', 'img', function(){
+			$(this).toggleClass('select-shape');
 		});
 
 		$('.show-advanced-search-option-btn').on('click', function(){

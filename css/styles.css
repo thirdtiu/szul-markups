@@ -4380,6 +4380,16 @@ ul.steps li.active span {
   margin-right: 0;
 }
 
+.advanced-search-form ul.shapes li img {
+  margin-top: 5px;
+  display: block;
+  border: 2px solid white;
+}
+
+.advanced-search-form ul.shapes li img.select-shape {
+  border: 2px solid #ac47ad;
+}
+
 .block-advanced-search {
   background: #efefef;
 }
