@@ -61,6 +61,19 @@ $(function(){
 		speed: 'fast'
 	});
 
+	/*product list price range*/
+
+	$( "#product-list-price-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#product-list-price-amount" ).val( "$" + ui.values[ 0 ] );
+        $( "#product-list-price-amount2" ).val( "$" + ui.values[ 1 ] );
+      }
+    });
+
 	/*price range*/
 
 	$( "#price-range" ).slider({

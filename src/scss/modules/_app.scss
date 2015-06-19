@@ -5020,7 +5020,10 @@ div#thumbs{
 .m-type-cert{
 	padding-left:0px;
 }
-
+.product-listing-price-range input{
+	float:left !important;
+	width:35%;
+}
 @media(max-width:570px){
 	.jcarousel.jcarousel-disabled ul.products-carousel li.product{
 		width:50% !important;
@@ -5074,6 +5077,21 @@ div#thumbs{
 	}
 	.top_secondary #main_nav li a{
 		font-size:11px;
+	}
+	.cas-pricerange-container input, .cas-caratrange-container input{
+		width:40%;
+		float:left !important;
+	}
+	.cas-pricerange-container span.text-center, 
+	.cas-caratrange-container span.text-center{
+		line-height:34px;
+		margin:0px 20px;
+	}
+	.cut-grade-range-container span, .symmetry-range-container span, .polish-range-container span{
+		margin-right:25%;
+	}
+	.flourescence-range-container span{
+		margin-right:19%;
 	}
 }
 @media(max-width:360px){

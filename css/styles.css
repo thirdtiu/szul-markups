@@ -98,11 +98,13 @@ h2.contact-number {
 }
 
 /*advanced search*/
-.advanced-search-form .ui-widget-header {
+.advanced-search-form .ui-widget-header,
+.product-listing-price-range .ui-widget-header {
   background: #934295;
 }
 
-.advanced-search-form .ui-slider-horizontal {
+.advanced-search-form .ui-slider-horizontal,
+.product-listing-price-range .ui-slider-horizontal {
   height: .4em;
   outline: none !important;
   background-color: #dddddd;
@@ -113,7 +115,8 @@ h2.contact-number {
   outline: none !important;
 }
 
-.advanced-search-form .ui-slider-horizontal .ui-slider-handle {
+.advanced-search-form .ui-slider-horizontal .ui-slider-handle,
+.product-listing-price-range .ui-slider-horizontal .ui-slider-handle {
   border-radius: 50%;
   background: white !important;
   top: -.5em;
@@ -7134,6 +7137,11 @@ div#thumbs .thumbs li.selected a.thumb {
   padding-left: 0px;
 }
 
+.product-listing-price-range input {
+  float: left !important;
+  width: 35%;
+}
+
 @media (max-width: 570px) {
   .jcarousel.jcarousel-disabled ul.products-carousel li.product {
     width: 50% !important;
@@ -7188,6 +7196,25 @@ div#thumbs .thumbs li.selected a.thumb {
 
   .top_secondary #main_nav li a {
     font-size: 11px;
+  }
+
+  .cas-pricerange-container input, .cas-caratrange-container input {
+    width: 40%;
+    float: left !important;
+  }
+
+  .cas-pricerange-container span.text-center,
+  .cas-caratrange-container span.text-center {
+    line-height: 34px;
+    margin: 0px 20px;
+  }
+
+  .cut-grade-range-container span, .symmetry-range-container span, .polish-range-container span {
+    margin-right: 25%;
+  }
+
+  .flourescence-range-container span {
+    margin-right: 19%;
   }
 }
 @media (max-width: 360px) {

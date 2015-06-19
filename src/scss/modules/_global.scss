@@ -51,10 +51,12 @@ h2.contact-number{
 }
 
 /*advanced search*/
-.advanced-search-form .ui-widget-header{
+.advanced-search-form .ui-widget-header, 
+.product-listing-price-range .ui-widget-header{
 	background: #934295;
 }
-.advanced-search-form .ui-slider-horizontal{
+.advanced-search-form .ui-slider-horizontal, 
+.product-listing-price-range .ui-slider-horizontal{
 	height:.4em;
 	outline:none !important;
 	background-color: #dddddd;
@@ -63,7 +65,8 @@ h2.contact-number{
 .ui-slider .ui-slider-handle:focus{
 	outline:none !important;
 }
-.advanced-search-form .ui-slider-horizontal .ui-slider-handle{
+.advanced-search-form .ui-slider-horizontal .ui-slider-handle, 
+.product-listing-price-range .ui-slider-horizontal .ui-slider-handle{
 	border-radius:50%;
 	background:white !important;
 	top:-.5em;
