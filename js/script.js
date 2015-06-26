@@ -473,6 +473,11 @@ $(function(){
 
 	$(document).ready(function(){
 
+		/*advanced search mobile*/
+
+		$('.mobile-filter-btn').on('click', function(){
+			$('.mobile-advanced-create-container').addClass('show-filter');
+		});
 		$('.block-shape-select ul li, .advanced-search-form ul.shapes li').on('click', 'img', function(){
 			$(this).toggleClass('select-shape');
 		});

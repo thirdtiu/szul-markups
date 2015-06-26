@@ -11,7 +11,7 @@
       </ul>
       
       <div class="advanced-search-wrap">
-        <form action="#" method="post" class="advanced-search-form">
+        <form action="#" method="post" class="advanced-search-form hidden-xs">
           <div class="form-group clearfix">
             <p>SELECT DIAMOND SHAPE</p>
             <ul class="shapes">
@@ -184,7 +184,7 @@
 
         </form>
         <div class="advanced-results">
-          <div class="results-heading clearfix">
+          <div class="results-heading clearfix hidden-xs">
             <p class="stats pull-left"><span class="count">2,538 Records</span> | <span class="page-count">Showing 27 of 567</span></p>
             <div class="pull-right">
               <a href="#" class="btn btn-default">EMAIL THIS LIST</a>
@@ -194,7 +194,7 @@
               <a class="btn btn-default" href="#"><span class="icon icon-last"></span></a>
             </div>
           </div>
-          <div class="table-responsive">
+          <div class="table-responsive mobile-create-advanced-table">
           <table class="table table-condensed table-striped table-hover">
             <thead>
               <tr>
@@ -208,7 +208,7 @@
                 <th class="hidden-xs">POLISH</th>
                 <th class="hidden-xs">MEASUREMENT</th>
                 <th class="price">PRICE</th>
-                <th>&nbsp;</th>
+                <th class="hidden-xs">&nbsp;</th>
               </tr>
             </thead>
             <tbody>
@@ -225,7 +225,7 @@
                 <td class="polish hidden-xs">VG</td>
                 <td class="measurement hidden-xs">8.26x8.20x5.19</td>
                 <td class="price">$2,450.00</td>
-                <td class="more"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
+                <td class="more hidden-xs"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
               </tr>
               <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
                 <td class="shape">
@@ -240,7 +240,7 @@
                 <td class="polish hidden-xs">VG</td>
                 <td class="measurement hidden-xs">8.26x8.20x5.19</td>
                 <td class="price">$2,450.00</td>
-                <td class="more"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
+                <td class="more hidden-xs"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
               </tr>
               <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
                 <td class="shape">
@@ -255,7 +255,7 @@
                 <td class="polish hidden-xs">VG</td>
                 <td class="measurement hidden-xs">8.26x8.20x5.19</td>
                 <td class="price">$2,450.00</td>
-                <td class="more"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
+                <td class="more hidden-xs"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
               </tr>
               <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
                 <td class="shape">
@@ -270,7 +270,7 @@
                 <td class="polish hidden-xs">VG</td>
                 <td class="measurement hidden-xs">8.26x8.20x5.19</td>
                 <td class="price">$2,450.00</td>
-                <td class="more"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
+                <td class="more hidden-xs"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
               </tr>
               <tr data-toggle="popover" data-placement="bottom" title="DIAMOND DETAILS" class="results-popover">
                 <td class="shape">
@@ -285,7 +285,7 @@
                 <td class="polish hidden-xs">VG</td>
                 <td class="measurement hidden-xs">8.26x8.20x5.19</td>
                 <td class="price">$2,450.00</td>
-                <td class="more"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
+                <td class="more hidden-xs"><a href="diamond-detail.html"><span class="glyphicon glyphicon-search"></span></a></td>
               </tr>
             </tbody>
           </table>
@@ -314,7 +314,7 @@
               </tbody>
             </table>
           </div>
-          <div class="pagination-wrap text-center">
+          <div class="pagination-wrap text-center hidden-xs">
             <ul class="pagination">
               <li class="hidden-phone"><a href="#" class="btn btn-default"><span class="icon icon-prev"></span></a></li>
               <li><a href="#" class="btn btn-default"><span class="icon icon-first"></span> BACK</a></li>
@@ -326,6 +326,133 @@
               <li class="hidden-phone"><a href="#" class="btn btn-default"><span class="icon icon-next"></span></a></li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+
+    <div class="mobile-advanced-create-container visible-xs">
+      <div class="floating-nav clearfix">
+        <ul class="pull-right">
+          <li><a>Sort</a></li>
+          <li><a class="mobile-filter-btn">filter</a></li>
+        </ul>
+      </div>
+      <div class="mobile-filter-search-container hidden">
+        <div class="mobile-side-bar-nav text-center">
+          <ul>
+            <li><a>DIAMOND SHAPE</a></li>
+            <li><a>DIAMOND SPECS</a></li>
+            <li><a>PRICE RANGE</a></li>
+          </ul>
+        </div>
+        <div class="mobile-filter-inner-container">
+          <div class="mobile-diamond-shape mobile-tab">
+            <ul class="shapes">
+                <li class="type">
+                    <img src="images/type-round.png" alt="" class="type-image select-shape">
+                </li>
+                <li class="type">
+                    <img src="images/type-princess.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-radiant.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-cushion.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">                  
+                </li>
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+                <li class="type">
+                    <img src="images/type-oval.png" alt="" class="type-image">
+                </li>
+            </ul>
+          </div>
+          <div class="mobile-tab active">
+            <div class="mobile-certificate">
+              <p>CERTIFICATE</p>
+              <label>
+                <input type="checkbox"> GIA
+              </label>
+              <label>
+                <input type="checkbox"> EGL
+              </label>
+            </div>
+            <div class="mobile-range-container">
+              <p>CARAT RANGE</p>
+              <select>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+                TO
+              <select>
+                 <option value="">12</option>
+                 <option value="">23</option>
+                 <option value="">33</option>
+               </select>
+            </div>
+            <div class="mobile-range-container">
+              <p>COLOR GRADE RANGE</p>
+              <select>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+                TO
+              <select>
+                 <option value="">12</option>
+                 <option value="">23</option>
+                 <option value="">33</option>
+               </select>
+            </div>
+            <div class="mobile-range-container">
+              <p>CLARITY GRADE RANGE</p>
+              <select>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+                TO
+              <select>
+                 <option value="">12</option>
+                 <option value="">23</option>
+                 <option value="">33</option>
+               </select>
+            </div>
+            <div class="mobile-range-container">
+              <p>CUT GRADE RANGE</p>
+              <select>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+                TO
+              <select>
+                 <option value="">12</option>
+                 <option value="">23</option>
+                 <option value="">33</option>
+               </select>
+            </div>
+          </div>
+          <div class="mobile-tab"></div>
         </div>
       </div>
     </div>
