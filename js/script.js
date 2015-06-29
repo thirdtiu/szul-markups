@@ -475,10 +475,48 @@ $(function(){
 
 		/*advanced search mobile*/
 
+		$('.mobile-side-bar-nav ul li').on('click', 'a', function(){
+
+			var dataTarget= $(this).attr('data-tab');
+			var dataTabContainer = $('.mobile-filter-inner-container .mobile-tab');
+			var dataTab = $('.mobile-filter-inner-container .mobile-tab').attr('data-target');
+
+			$('.mobile-side-bar-nav ul li a').removeClass('active');
+			$(this).addClass('active');
+
+			if(dataTarget == 'diamond-specs'){
+				$('.mobile-diamond-shape, .mobile-price-range').removeClass('active');
+				$('.mobile-diamond-specs').addClass('active');
+			}
+			else if(dataTarget == 'diamond-shape'){
+				$('.mobile-diamond-specs, .mobile-price-range').removeClass('active');
+				$('.mobile-diamond-shape').addClass('active');
+			}
+			else if(dataTarget == 'diamond-price-range'){
+				$('.mobile-diamond-specs, .mobile-diamond-shape').removeClass('active');
+				$('.mobile-price-range').addClass('active');
+			}
+		});
+
+		$('.mobile-sort-btn').on('click', function(){
+			$('.mobile-sort-search-container').addClass('show-filter');
+			$('.floating-nav-confirm').addClass('active');
+			$('.filter-options-btns').hide();
+		});
+
 		$('.mobile-filter-btn').on('click', function(){
 			$('.mobile-advanced-create-container').addClass('show-filter');
+			$('.floating-nav-confirm').addClass('active');
+			$('.filter-options-btns').hide();
 		});
-		$('.block-shape-select ul li, .advanced-search-form ul.shapes li').on('click', 'img', function(){
+
+		$('.cancel-mobile-filter').on('click', function(){
+			$('.mobile-advanced-create-container, .mobile-sort-search-container').removeClass('show-filter');
+			$('.floating-nav-confirm').removeClass('active');
+			$('.filter-options-btns').show();
+		});
+
+		$('.block-shape-select ul li, .advanced-search-form ul.shapes li, .mobile-diamond-shape ul li').on('click', 'img', function(){
 			$(this).toggleClass('select-shape');
 		});
 
@@ -524,6 +562,9 @@ $(function(){
 		
 
 		if ($(window).width() <= 768) {
+			$('.results-popover').on('click', function(){
+				window.location = 'diamond-detail.html';
+			});
 			$('.shipping-address-item').on('click', function(){
 				$('.shipping-address-item').removeClass('active-address');
 				$(this).addClass('active-address');

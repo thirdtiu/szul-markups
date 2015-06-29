@@ -11,7 +11,7 @@
       </ul>
       
       <div class="advanced-search-wrap">
-        <form action="#" method="post" class="advanced-search-form hidden-xs">
+        <form action="#" method="post" class="advanced-search-form">
           <div class="form-group clearfix">
             <p>SELECT DIAMOND SHAPE</p>
             <ul class="shapes">
@@ -184,7 +184,7 @@
 
         </form>
         <div class="advanced-results">
-          <div class="results-heading clearfix hidden-xs">
+          <div class="results-heading clearfix">
             <p class="stats pull-left"><span class="count">2,538 Records</span> | <span class="page-count">Showing 27 of 567</span></p>
             <div class="pull-right">
               <a href="#" class="btn btn-default">EMAIL THIS LIST</a>
@@ -314,7 +314,7 @@
               </tbody>
             </table>
           </div>
-          <div class="pagination-wrap text-center hidden-xs">
+          <div class="pagination-wrap text-center">
             <ul class="pagination">
               <li class="hidden-phone"><a href="#" class="btn btn-default"><span class="icon icon-prev"></span></a></li>
               <li><a href="#" class="btn btn-default"><span class="icon icon-first"></span> BACK</a></li>
@@ -332,60 +332,111 @@
 
     <!-- MOBILE NAV -->
 
-    <div class="mobile-advanced-create-container visible-xs">
+    <div class="mobile-advanced-create-container">
       <div class="floating-nav clearfix">
-        <ul class="pull-right">
-          <li><a>Sort</a></li>
-          <li><a class="mobile-filter-btn">filter</a></li>
+        <span class="pull-left">Showing 300 items</span>
+        <ul class="pull-right filter-options-btns">
+          <li><a class="btn btn-default btn-sm mobile-sort-btn"><span class="icon icon-msort"></span>Sort</a></li>
+          <li><a class="btn btn-default btn-sm btn-mfilter mobile-filter-btn"><span class="icon icon-mfilter"></span>Filter</a></li>
         </ul>
+      </div>
+      <div class="floating-nav clearfix floating-nav-confirm">
+        <ul class="text-center">
+          <li class="pull-left"><a class="cancel-mobile-filter">Cancel</a></li>
+          <li><a href="">Apply</a></li>
+          <li class="pull-right"><a href="">Reset</a></li>
+        </ul>
+      </div>
+      <div class="mobile-sort-search-container hidden">
+        <h5>ITEMS PER PAGE</h5>
+        <select>
+          <option>Select Page</option>
+          <option>1</option>
+          <option>23</option>
+          <option>32</option>
+        </select>
+        <h5>SORT BY</h5>
+        <select>
+          <option>Our Picks</option>
+          <option>32</option>
+          <option>33</option>
+          <option>232</option>
+        </select>
       </div>
       <div class="mobile-filter-search-container hidden">
         <div class="mobile-side-bar-nav text-center">
           <ul>
-            <li><a>DIAMOND SHAPE</a></li>
-            <li><a>DIAMOND SPECS</a></li>
-            <li><a>PRICE RANGE</a></li>
+            <li><a data-tab="diamond-shape" class="active">
+              <img class="img-default" src="images/diamond-shape.png"/>
+              <img class="img-active" src="images/diamond-shape-active.png"/>
+              DIAMOND SHAPE
+              </a>
+            </li>
+            <li>
+              <a data-tab="diamond-specs">
+              <img class="img-default" src="images/diamond-specs.png"/>
+              <img class="img-active" src="images/diamond-specs-active.png"/>
+              DIAMOND SPECS
+              </a>
+            </li>
+            <li>
+              <a data-tab="diamond-price-range">
+              <img class="img-default" src="images/price-range.png"/>
+              <img class="img-active" src="images/price-range-active.png"/>
+              PRICE RANGE
+              </a>
+            </li>
           </ul>
         </div>
         <div class="mobile-filter-inner-container">
-          <div class="mobile-diamond-shape mobile-tab">
-            <ul class="shapes">
+          <div data-target="diamond-shape" class="mobile-diamond-shape mobile-tab active">
+            <ul class="shapes text-center">
                 <li class="type">
+                    <h5>Round</h5>
                     <img src="images/type-round.png" alt="" class="type-image select-shape">
                 </li>
                 <li class="type">
+                    <h5>Princess</h5>
                     <img src="images/type-princess.png" alt="" class="type-image">
                 </li>
                 <li class="type">
+                    <h5>Radiant</h5>
                     <img src="images/type-radiant.png" alt="" class="type-image">
                 </li>
                 <li class="type">
+                    <h5>Cusion</h5>
                     <img src="images/type-cushion.png" alt="" class="type-image">
                 </li>
                 <li class="type">
+                    <h5>Oval</h5>
                     <img src="images/type-oval.png" alt="" class="type-image">
                 </li>
 
                 <li class="type">
+                    <h5>Emerald</h5>
                     <img src="images/type-oval.png" alt="" class="type-image">
                 </li>
 
                 <li class="type">
+                    <h5>Asscher</h5>
                     <img src="images/type-oval.png" alt="" class="type-image">
                 </li>
 
                 <li class="type">
+                    <h5>Marquise</h5>
                     <img src="images/type-oval.png" alt="" class="type-image">                  
                 </li>
                 <li class="type">
+                    <h5>Pear</h5>
                     <img src="images/type-oval.png" alt="" class="type-image">
                 </li>
                 <li class="type">
+                    <h5>Heart</h5>
                     <img src="images/type-oval.png" alt="" class="type-image">
                 </li>
             </ul>
           </div>
-          <div class="mobile-tab active">
+          <div data-target="diamond-specs" class="mobile-diamond-specs mobile-tab">
             <div class="mobile-certificate">
               <p>CERTIFICATE</p>
               <label>
@@ -410,7 +461,7 @@
                </select>
             </div>
             <div class="mobile-range-container">
-              <p>COLOR GRADE RANGE</p>
+              <p>PRICE RANGE</p>
               <select>
                  <option value="">1</option>
                  <option value="">2</option>
@@ -452,7 +503,14 @@
                </select>
             </div>
           </div>
-          <div class="mobile-tab"></div>
+          <div data-target="diamond-price-range" class="mobile-price-range mobile-tab">
+            <div class="mobile-range-container">
+              <p>CUT GRADE RANGE</p>
+              <input type="text">
+                TO
+              <input type="text">
+            </div>
+          </div>
         </div>
       </div>
     </div>
