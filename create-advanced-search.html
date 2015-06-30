@@ -14,7 +14,7 @@
         <form action="#" method="post" class="advanced-search-form">
           <div class="form-group clearfix">
             <p>SELECT DIAMOND SHAPE</p>
-            <ul class="shapes">
+            <div class="shapes">
               <ul class="types">
                 <li class="type">
                     <img src="images/type-round.png" alt="" class="type-image select-shape">
@@ -50,7 +50,7 @@
                     <img src="images/type-oval.png" alt="" class="type-image">
                 </li>
               </ul>
-            </ul>
+            </div>
             <div class="clearfix m-clearfix"></div>
           </div>
           <div class="form-group cas-certificate-container">
@@ -63,35 +63,28 @@
             </label>
           </div>
           <div class="clearfix t-clearfix"></div>
-          <div class="form-group cas-pricerange-container">
-            <p class="clearfix">
-              <div for="amount">PRICE RANGE:</div>
+          <div class="form-group cas-pricerange-container clearfix">
+              <div>PRICE RANGE:</div>
               <div class="clearfix">
                 <input type="text" id="price-amount" value="$75" class="pull-left">
                 <span class="pull-left text-center">TO</span>
                 <input type="text" id="price-amount2" value="$300" class="pull-right">
               </div>
-              
-            </p>
             <div id="price-range"></div>
           </div>
 
-          <div class="form-group cas-caratrange-container">
-            <p class="clearfix">
-              <div for="amount">CARAT RANGE:</div>
+          <div class="form-group cas-caratrange-container clearfix">
+              <div>CARAT RANGE:</div>
               <div class="clearfix">
                 <input type="text" id="carat-amount" value="2" class="pull-left">
                 <span class="pull-left text-center">TO</span>
                 <input type="text" id="carat-amount2" value="16" class="pull-right">
               </div>
-              
-            </p>
             <div id="carat-range"></div>
           </div>
 
-          <div class="form-group color-grade-range-container">
-            <p class="clearfix">
-              <div for="amount">COLOR GRADE RANGE:</div>
+          <div class="form-group color-grade-range-container clearfix">
+              <div>COLOR GRADE RANGE:</div>
               <div class="row">
                 <span>D</span>
                 <span>E</span>
@@ -102,13 +95,11 @@
                 <span>J</span>
                 <span>K</span>
               </div>
-            </p>
             <div id="color-grade-range"></div>
           </div>
 
-          <div class="form-group">
-            <p class="clearfix">
-              <div for="amount">CLARITY GRADE RANGE:</div>
+          <div class="form-group clearfix">
+              <div>CLARITY GRADE RANGE:</div>
               <div class="clarity-grade-range-container">
               <span>FL</span>
               <span>IF</span>
@@ -122,52 +113,44 @@
               <span>I1</span>
               <span>I2</span>
               </div>
-            </p>
             <div id="clarity-grade-range"></div>
           </div>
 
-          <div class="form-group">
-            <p class="clearfix">
-              <div for="amount">CUT GRADE RANGE:</div>
+          <div class="form-group clearfix">
+              <div>CUT GRADE RANGE:</div>
               <div class="cut-grade-range-container">
                 <span>EX</span>
                 <span>VG</span>
                 <span>G</span>
                 <span>F</span>
               </div>
-            </p>
             <div id="cut-grade-range"></div>
           </div>
 
-          <div class="form-group">
-            <p class="clearfix">
-              <div for="amount">SYMMETRY RANGE:</div>
+          <div class="form-group clearfix">
+              <div>SYMMETRY RANGE:</div>
               <div class="symmetry-range-container">
                 <span>EX</span>
                 <span>VG</span>
                 <span>G</span>
                 <span>F</span>
               </div>
-            </p>
             <div id="symmetry-range"></div>
           </div>
 
-          <div class="form-group">
-            <p class="clearfix">
-              <div for="amount">POLISH RANGE:</div>
+          <div class="form-group clearfix">
+              <div>POLISH RANGE:</div>
               <div class="polish-range-container">
                 <span>EX</span>
                 <span>VG</span>
                 <span>G</span>
                 <span>F</span>
               </div>
-            </p>
             <div id="polish-range"></div>
           </div>
 
-          <div class="form-group">
-            <p class="clearfix">
-              <div for="amount">FLOURESCENCE RANGE:</div>
+          <div class="form-group clearfix">
+              <div>FLOURESCENCE RANGE:</div>
               <div class="flourescence-range-container">
                 <span>N</span>
                 <span>F</span>
@@ -175,7 +158,6 @@
                 <span>S</span>
                 <span>VS</span>
               </div>
-            </p>
             <div id="flourescence-range"></div>
           </div>
 
@@ -367,22 +349,22 @@
         <div class="mobile-side-bar-nav text-center">
           <ul>
             <li><a data-tab="diamond-shape" class="active">
-              <img class="img-default" src="images/diamond-shape.png"/>
-              <img class="img-active" src="images/diamond-shape-active.png"/>
+              <img class="img-default" src="images/diamond-shape.png" alt=".."/>
+              <img class="img-active" src="images/diamond-shape-active.png" alt=".."/>
               DIAMOND SHAPE
               </a>
             </li>
             <li>
               <a data-tab="diamond-specs">
-              <img class="img-default" src="images/diamond-specs.png"/>
-              <img class="img-active" src="images/diamond-specs-active.png"/>
+              <img class="img-default" src="images/diamond-specs.png" alt=".."/>
+              <img class="img-active" src="images/diamond-specs-active.png" alt=".."/>
               DIAMOND SPECS
               </a>
             </li>
             <li>
               <a data-tab="diamond-price-range">
-              <img class="img-default" src="images/price-range.png"/>
-              <img class="img-active" src="images/price-range-active.png"/>
+              <img class="img-default" src="images/price-range.png" alt=".."/>
+              <img class="img-active" src="images/price-range-active.png" alt=".."/>
               PRICE RANGE
               </a>
             </li>
@@ -393,46 +375,46 @@
             <ul class="shapes text-center">
                 <li class="type">
                     <h5>Round</h5>
-                    <img src="images/type-round.png" alt="" class="type-image select-shape">
+                    <img src="images/type-round.png" alt=".." class="type-image select-shape">
                 </li>
                 <li class="type">
                     <h5>Princess</h5>
-                    <img src="images/type-princess.png" alt="" class="type-image">
+                    <img src="images/type-princess.png" alt=".." class="type-image">
                 </li>
                 <li class="type">
                     <h5>Radiant</h5>
-                    <img src="images/type-radiant.png" alt="" class="type-image">
+                    <img src="images/type-radiant.png" alt=".." class="type-image">
                 </li>
                 <li class="type">
                     <h5>Cusion</h5>
-                    <img src="images/type-cushion.png" alt="" class="type-image">
+                    <img src="images/type-cushion.png" alt=".." class="type-image">
                 </li>
                 <li class="type">
                     <h5>Oval</h5>
-                    <img src="images/type-oval.png" alt="" class="type-image">
+                    <img src="images/type-oval.png" alt=".." class="type-image">
                 </li>
 
                 <li class="type">
                     <h5>Emerald</h5>
-                    <img src="images/type-oval.png" alt="" class="type-image">
+                    <img src="images/type-oval.png" alt=".." class="type-image">
                 </li>
 
                 <li class="type">
                     <h5>Asscher</h5>
-                    <img src="images/type-oval.png" alt="" class="type-image">
+                    <img src="images/type-oval.png" alt=".." class="type-image">
                 </li>
 
                 <li class="type">
                     <h5>Marquise</h5>
-                    <img src="images/type-oval.png" alt="" class="type-image">                  
+                    <img src="images/type-oval.png" alt=".." class="type-image">                  
                 </li>
                 <li class="type">
                     <h5>Pear</h5>
-                    <img src="images/type-oval.png" alt="" class="type-image">
+                    <img src="images/type-oval.png" alt=".." class="type-image">
                 </li>
                 <li class="type">
                     <h5>Heart</h5>
-                    <img src="images/type-oval.png" alt="" class="type-image">
+                    <img src="images/type-oval.png" alt=".." class="type-image">
                 </li>
             </ul>
           </div>

@@ -516,7 +516,7 @@ $(function(){
 			$('.filter-options-btns').show();
 		});
 
-		$('.block-shape-select ul li, .advanced-search-form ul.shapes li, .mobile-diamond-shape ul li').on('click', 'img', function(){
+		$('.block-shape-select ul li, .advanced-search-form ul.types li, .mobile-diamond-shape ul li').on('click', 'img', function(){
 			$(this).toggleClass('select-shape');
 		});
 
