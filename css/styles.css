@@ -1091,12 +1091,12 @@ h2.contact-number {
 .top_primary a {
   color: #fff;
 }
-.top_primary #logo {
+.top_primary #logo, .top_primary .main-logo {
   float: left;
   vertical-align: middle;
   margin-right: 10px;
 }
-.top_primary #logo img {
+.top_primary #logo img, .top_primary .main-logo img {
   display: block;
 }
 .top_primary .store-info {
