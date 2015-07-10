@@ -17,7 +17,10 @@ body.modal-open {
 #color-range3, #color-range4 {
 	float: left;
 }
-
+.page-indicator a{
+	color: #9d54a8 !important;
+    font-weight: bold;
+}
 #clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select {
 	width:50px !important;
 }

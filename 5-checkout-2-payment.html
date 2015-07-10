@@ -121,7 +121,7 @@
 			                        <h4 class="modal-title">ADD NEW CREDIT CARD</h4>
 			                      </div>
 			                      <div class="modal-body clearfix">
-			                        <form action="#">
+			                        <form action="index.html">
 			                          <div class="col-md-12 creditcard-imgs hidden-xs">
 			                          	<img src="images/cc1.png" alt="">
 			                          	<img src="images/cc2.png" alt="">
@@ -139,21 +139,21 @@
 			                          <div class="col-md-12">
 			                            <div class="payment-info-inner">
 			                              <h5>CARD NUMBER</h5>
-			                              <input type="text">
+			                              <input type="text" required="true">
 			                            </div>
 			                          </div>
 			                          <div class="col-md-6 add-new-creditcard-expiration-date">
 			                          	<h5>EXPIRATION DATE</h5>
 			                          	<div class="col-md-6">
 			                          		<div class="payment-info-inner">
-				                              <select>
+				                              <select required="true">
 				                                <option>Month</option>
 				                              </select>
 				                            </div>
 			                          	</div>
 			                            <div class="col-md-6">
 			                          		<div class="payment-info-inner">
-				                              <select>
+				                              <select required="true">
 				                                <option>Year</option>
 				                              </select>
 				                            </div>
@@ -162,13 +162,13 @@
 			                          <div class="col-md-6">
 			                            <div class="payment-info-inner">
 			                              <h5>CARD VERIFICATION (CCV) NO.</h5>
-				                            <input type="text">
+				                            <input type="text" required="true">
 				                          </div>
 			                          </div>
 			                          <div class="col-md-12">
 			                            <div class="payment-info-inner">
 			                              <h5>NAME AS IT APPEARS ON THE CARD</h5>
-			                              <input type="text">
+			                              <input type="text" required="true">
 			                            </div>
 			                          </div>
 			                        </form>
@@ -179,8 +179,8 @@
 			                      		<span class="cc-select-existing-address-title">Select Existing Address</span>
 			                      		<span class="cc-create-new-address-title">Create New Address</span>
 			                      		<div class="pull-right">
-				                      		<a class="btn btn-default use-existing-address-btn">USE EXISTING ADDRESS</a>
-				                      		<a class="btn btn-default add-new-address-btn">ADD NEW ADDRESS</a>
+				                      		<input class="btn btn-default use-existing-address-btn" value="USE EXISTING ADDRESS">
+				                      		<input class="btn btn-default add-new-address-btn" value="ADD NEW ADDRESS">
 				                      	</div>
 			                      	</div>
 			                      	

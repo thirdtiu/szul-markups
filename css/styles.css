@@ -1544,10 +1544,10 @@ h2.contact-number {
 }
 .social-links a {
   display: inline-block;
-  width: 48px;
-  height: 48px;
-  text-indent: -9999px;
+  width: 38px;
+  /*text-indent: -9999px;*/
   outline: none;
+  margin: 10px 0px;
   margin-right: 13px;
 }
 .social-links .facebook a {
@@ -9634,6 +9634,11 @@ body.modal-open {
 
 #color-range3, #color-range4 {
   float: left;
+}
+
+.page-indicator a {
+  color: #9d54a8 !important;
+  font-weight: bold;
 }
 
 #clarity .dd-select, #clarity2 .dd-select, #color-range .dd-select, #color-range2 .dd-select {
