@@ -127,6 +127,9 @@ h2.contact-number{
 	.block-advanced-search.show-more-options{
 		height:330px;
 	}
+	.autocomplete-suggestions{
+		width:94% !important;
+	}
 }
 @media (min-width:401px) and (max-width:768px){
 	#contact-item-popover{
@@ -1327,7 +1330,7 @@ background: #efefef;
 	}
 	a{
 		display: inline-block;
-		width: 38px;
+		width: 35px;
 		/*text-indent: -9999px;*/
 		outline: none;
 		margin:10px 0px;
@@ -1526,7 +1529,7 @@ ul.breadcrumbs{
 	bottom: auto;
 }
 
-.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestions { box-shadow: 0px 2px 1px 1px #dddddd; background: #fff; cursor: default; overflow: auto; }
 .autocomplete-suggestion { padding: 10px 5px; font-size: 14px; white-space: nowrap; overflow: hidden; }
 .autocomplete-selected { background: #f0f0f0; }
 .autocomplete-suggestions strong { font-weight: bold; color: #9026A0; }
