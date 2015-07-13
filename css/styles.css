@@ -711,6 +711,10 @@ h2.contact-number {
   height: 15px;
 }
 
+.gemstone-types li a:focus {
+  text-decoration: none;
+}
+
 .icon-blue-topaz {
   background-position: -183px 0;
 }
@@ -745,6 +749,26 @@ h2.contact-number {
 
 .icon-smokey-quartz {
   background-position: -213px -30px;
+}
+
+.icon-emerald {
+  background-position: -408px 0px;
+}
+
+.icon-ruby {
+  background-position: -438px 0px;
+}
+
+.icon-labcreated-emerald {
+  background-position: -423px 0px;
+}
+
+.icon-sapphire {
+  background-position: -408px -15px;
+}
+
+.icon-tanzanite {
+  background-position: -423px -15px;
 }
 
 .icon-mfb {
