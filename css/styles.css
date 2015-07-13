@@ -1760,6 +1760,29 @@ ul.breadcrumbs li span {
   bottom: auto;
 }
 
+.autocomplete-suggestions {
+  border: 1px solid #999;
+  background: #fff;
+  cursor: default;
+  overflow: auto;
+}
+
+.autocomplete-suggestion {
+  padding: 10px 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.autocomplete-selected {
+  background: #f0f0f0;
+}
+
+.autocomplete-suggestions strong {
+  font-weight: bold;
+  color: #9026A0;
+}
+
 .star-fill {
   color: #fdd225;
 }

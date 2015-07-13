@@ -55,10 +55,10 @@
           <h1 class="hidden-xs hidden-sm main-logo"><a href="index.html"><img src="images/logo-new.gif" alt="SZUL" /></a></h1>
           <h1 id="logo" class="mobile-logo hidden-md hidden-lg"><a href="index.html"><img src="images/mobile-logo-new.png" alt="SZUL" /></a></h1>
           <div class="store-info clearfix">
-            <form action="#" role="form" class="form-inline search-form">
-              <div class="form-group">
+            <form action="#" role="form" class="form-inline search-form" autocomplete="on">
+              <div id="searchfield" class="form-group">
                 <label class="sr-only" for="search">Email address</label>
-                <input type="text" class="form-control" name="search" placeholder="Search Title, Keyword, or SKU" />
+                <input type="text" id="autocomplete" class="form-control" name="search" placeholder="Search Title, Keyword, or SKU" autocomplete="on" />
               </div>
               <button type="submit" class="btn btn-transparent">
                 <span class="glyphicon glyphicon-search"></span>
