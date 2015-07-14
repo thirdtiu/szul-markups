@@ -1072,10 +1072,13 @@ $(document).ready(function($) {
 	$('.add-new-address-btn').on('click',function(){
 		$('.cc-select-billing-address').removeClass('show-existing-cc');
 		$('.cc-select-billing-address').addClass('show-create-cc');
+		$('.cc-select-billing-address .create-new-address-cc input').attr('required', '');
+		
 	});
 	$('.use-existing-address-btn').on('click',function(){
 		$('.cc-select-billing-address').addClass('show-existing-cc');
 		$('.cc-select-billing-address').removeClass('show-create-cc');
+		$('.cc-select-billing-address .create-new-address-cc input').removeAttr('required');
 	});
 
 	$('.shipping-options-arrow').on('click',function(){

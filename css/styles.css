@@ -60,6 +60,10 @@ label.dd-selected-text {
   margin: 5px 5px 5px 10px;
 }
 
+.cc-select-billing-address .address-cc-header .pull-right input.btn {
+  width: 230px;
+}
+
 /**typography**/
 .strike {
   text-decoration: line-through;

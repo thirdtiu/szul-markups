@@ -121,7 +121,7 @@
 			                        <h4 class="modal-title">ADD NEW CREDIT CARD</h4>
 			                      </div>
 			                      <div class="modal-body clearfix">
-			                        <form action="index.html">
+			                        <form action="5-checkout-2-payment.html">
 			                          <div class="col-md-12 creditcard-imgs hidden-xs">
 			                          	<img src="images/cc1.png" alt="">
 			                          	<img src="images/cc2.png" alt="">
@@ -171,8 +171,6 @@
 			                              <input type="text" required="true">
 			                            </div>
 			                          </div>
-			                        </form>
-			                      </div>
 			                      <div class="cc-select-billing-address show-existing-cc">
 			                      	<h4 class="modal-title">SELECT ADDRESS</h4>
 			                      	<div class="address-cc-header clearfix">
@@ -188,7 +186,7 @@
 			                      	<div class="row existing-addresses clearfix">
 			                      		<div class="col-md-6">
 			                      			<div class="existing-addresses-item">
-			                      				<input type="radio" name="existing-address" class="pull-left">
+			                      				<input type="radio" class="pull-left">
 			                      				<ul>
 				                      				<li>JOHN EDWARD DOE</li>
 				                      				<li>11234 Address Line 01</li>
@@ -202,7 +200,7 @@
 			                      		</div>
 			                      		<div class="col-md-6">
 			                      			<div class="existing-addresses-item">
-			                      				<input type="radio" name="existing-address" class="pull-left">
+			                      				<input type="radio" class="pull-left">
 			                      				<ul>
 				                      				<li>JOHN EDWARD DOE</li>
 				                      				<li>11234 Address Line 01</li>
@@ -216,7 +214,7 @@
 			                      		</div>
 			                      		<div class="col-md-6">
 			                      			<div class="existing-addresses-item">
-			                      				<input type="radio" name="existing-address" class="pull-left">
+			                      				<input type="radio" class="pull-left">
 			                      				<ul>
 				                      				<li>JOHN EDWARD DOE</li>
 				                      				<li>11234 Address Line 01</li>
@@ -230,7 +228,7 @@
 			                      		</div>
 			                      		<div class="col-md-6">
 			                      			<div class="existing-addresses-item">
-			                      				<input type="radio" name="existing-address" class="pull-left">
+			                      				<input type="radio" class="pull-left">
 			                      				<ul>
 				                      				<li>JOHN EDWARD DOE</li>
 				                      				<li>11234 Address Line 01</li>
@@ -245,11 +243,10 @@
 			                      	</div>
 										
 									<div class="row modal-body clearfix create-new-address-cc">
-				                        <form action="#">
 				                          <div class="col-md-6 col-xs-6">
 				                            <div class="shipping-info-inner">
 				                              <h5>FIRST NAME</h5>
-				                              <input type="text">
+				                              <input class="test" type="text">
 				                            </div>
 				                          </div>
 				                          <div class="col-md-6 col-xs-6">
@@ -311,7 +308,8 @@
 				                          </div>
 				                          <div class="clearfix"></div>
 				                          
-				                        </form>
+
+			                      </div>
 				                      </div>
 
 
@@ -319,8 +317,9 @@
 			                      <div class="modal-footer add-new-cc-modal">
 
 			                        <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
-			                        <button type="button" class="btn btn-primary-gradient">ADD CREDIT CARD</button>
+			                        <input type="submit" class="btn btn-primary-gradient" value="ADD CREDIT CARD">
 			                      </div>
+				                        </form>
 			                    </div>
 			                  </div>
 			                </div>
