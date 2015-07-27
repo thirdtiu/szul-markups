@@ -1,7 +1,7 @@
 $(function(){
 
 	//let's clone mega menu
-	var $cloneItem = $("#mega-menu").clone(),
+	/*var $cloneItem = $("#mega-menu").clone(),
 		$dropdownItems = $cloneItem.find('li.hasdropdown');
 
 	//after cloning remove extra ul
@@ -11,7 +11,7 @@ $(function(){
 
 	$("#mobile-nav").append("<ul>" + $cloneItem.html() + "</ul");
 	
-	
+	*/
 	// after cloning, execute mmenu
 	$("#mobile-nav").mmenu({
 		classes: "mm-fullscreen"
