@@ -5683,6 +5683,48 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	}
 
 
+.thank-you-message-wrap {
+	padding-bottom: 30px;
+}
+
+.thank-you-message {
+	padding-top: 48px;
+	padding-bottom: 70px;
+}
+
+.thank-you-message img {
+	margin-bottom: 30px;
+}
+.thank-you-message h3 {
+	margin-bottom: 20px;
+}
+.thank-you-message p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 54%;
+}
+
+.order-item-review h3 span {
+	font-family: "museo_sans300", sans-serif;
+}
+
+.order-single-item-container {
+	border-bottom: 1px solid #b8b8b8;
+	padding-bottom: 20px;
+	padding-top: 40px;
+}
+
+.order-item-review .order-number {
+	border-bottom: 1px solid #b8b8b8;
+	padding-bottom: 10px;
+}
+
+.order-item-review-desc h3 {
+	magin-bottom: 20px;
+}
+
+
+
 /*--------clearfix----------*/
 .clearfix:before,
 .clearfix:after {
