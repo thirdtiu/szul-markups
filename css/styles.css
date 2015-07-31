@@ -8051,7 +8051,16 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
+.thank-you-other-details {
+  padding-top: 30px;
+}
+
+.thank-you-other-details p span {
+  color: #272727;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
   .order-item-review .order-number {
     text-align: center;
   }
@@ -8069,6 +8078,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     width: 138px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .thank-you-other-details p {
+    text-align: center;
   }
 }
 /*--------clearfix----------*/
