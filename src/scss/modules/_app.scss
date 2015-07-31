@@ -4543,8 +4543,8 @@ div#thumbs{
 					}
 
 					a {
-						border: 2px solid #eee;
-						width: 72px !important;
+						border: 2px solid #ffffff;
+						width: 37px !important;
 						height: auto;
 						margin:0px 5px;
 						-webkit-border-radius: 0;
@@ -5817,6 +5817,9 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	font-size: 16px;
 }
 
+.mm-page #divGray, .mm-page #dvCert {
+	z-index: 1100 !important;
+}
 
 @media (max-width: 768px) {
 	.order-item-review .order-number {

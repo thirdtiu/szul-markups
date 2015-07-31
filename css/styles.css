@@ -6729,8 +6729,8 @@ div#thumbs .thumbs li.selected a.thumb {
     width: 100%;
   }
   .product-large-view .the-product .gallerific-wrap #gal1 a, .product-large-view .the-product .gallerific-wrap #diamond-gallery a {
-    border: 2px solid #eee;
-    width: 72px !important;
+    border: 2px solid #ffffff;
+    width: 37px !important;
     height: auto;
     margin: 0px 5px;
     -webkit-border-radius: 0;
@@ -8058,6 +8058,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 .thank-you-other-details p span {
   color: #272727;
   font-size: 16px;
+}
+
+.mm-page #divGray, .mm-page #dvCert {
+  z-index: 1100 !important;
 }
 
 @media (max-width: 768px) {
