@@ -166,83 +166,7 @@
             </div>
           </div>
           
-          <div class="form-reasons-wrapper">
-            <div class="form-item-reasons">
-              <div class="card">
-                <p>WHAT IS THE REASON FOR RETURNING THIS PRODUCT?</p>
-                <form>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox" id="chckbox1">
-                        </span>
-                        <label for="chckbox1">Didn't mean to order this item</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Found this item at a better price elsewhere</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Item is damaged</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Order was delayed</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Item not as described</label>
-                      </div>
-                    </div>
-                    
-                    <div class="col-sm-6">
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Received the wrong item</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>No longer needed</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Unauthorized purchase</label>
-                      </div>
-                      <div class="input-group">
-                        <span class="chkbox-wrapper">
-                          <input type="checkbox">
-                        </span>
-                        <label>Other</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row additional-comments">
-                    <div class="col-sm-6">
-                      <p>ADDITIONAL COMMENTS</p>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div><!-- form-item-reasons -->
-          </div>
+          
         </div><!-- list-item -->
 
         <div class="list-footer two">
@@ -280,11 +204,11 @@
       </div><!-- item-list -->
 
       <div class="checkout">
-        <div class="main-content">
+        <div class="main-content return-main-content">
           <div class="row">
             <div class="block-forms col-md-9">
               <div class="clearfix">
-                <div class="block pull-left col-md-9">
+                <div class="block pull-left col-md-12 return-process-form">
                   <form>
                     <h2 class="block-head">FROM SHIPPING ADDRESS</h2>
                     <div class="row">
@@ -298,20 +222,13 @@
                         <input class="m-co1" type="text">
                       </div>
                       <div class="clearfix m-clearfix"></div>
-                      <div class="col-md-6 m-co1-bs-cont">
-                        <label>BUSINESS NAME (optional)</label>
-                        <input class="m-co1" type="text">
-                      </div>
-                      <div class="clearfix m-clearfix"></div>
                     </div>
                     <div class="row">
-                      <div class="col-md-6"></div>
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <label>ADDRESS LINE 1</label>
                         <input class="m-co1" type="text">
                       </div>
-                      <div class="clearfix m-clearfix"></div>
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <label>ADDRESS LINE 2</label>
                         <input class="m-co1" type="text">
                       </div>
@@ -330,57 +247,30 @@
                             <select class="white m-state-province" id="rp1-sp-input">
                             </select>
                           </div>
-                          <div class="clearfix m-clearfix"></div>
-                          <div class="col-md-12">
-                            <label class="m-co1-zpc">ZIP/POSTAL CODE</label>
-                            <input class="m-co1" type="text">
-                          </div>
-                          <div class="clearfix m-clearfix"></div>
-                          <div class="col-md-12">
-                            <label class="m-phone-label">PHONE</label>
-                            <input class="m-co1" type="text">
-                          </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="row">
                           <div class="col-md-12">
-                            <label class="m-country-label">COUNTRY</label>
-                            <select class="m-co1" id="c-sp-input">
-                            </select>   
-                            <div class="clearfix m-clearfix t-clearfix"></div> 
-                            <div class="boxed">
-                              <p class="radio">
-                                <input type="radio" name="return-country-radio">
-                                <label>US</label>
-                              </p>
-                              <p class="radio">
-                                <input type="radio" name="return-country-radio">
-                                <label>International</label>
-                              </p>
-                              <p class="radio">
-                                <input type="radio" name="return-country-radio">
-                                <label>AFO/FPO</label>
-                              </p>
-                              <div class="clearfix m-clearfix t-clearfix"></div>
-                            </div>
+                            <label class="m-co1-zpc">ZIP/POSTAL CODE</label>
+                            <input class="m-co1" type="text">
                           </div>
                         </div>
                       </div>
                     </div>
-                    <input type="checkbox">THIS IS ALSO MY BILLING ADDRESS
                   </form>
                 </div>
+                <!--
                 <div class="block pull-right col-md-3">
-                  <!--carousel-->
+                  <!--carousel
                   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
+                    <!-- Indicators 
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
+                    <!-- Wrapper for slides 
                     <div class="carousel-inner">
                       <div class="item active">
                         <h2 class="block-head">MY ADDRESS BOOK</h2>
@@ -446,7 +336,7 @@
                       </div>
                     </div>
 
-                    <!-- Controls -->
+                    <!-- Controls 
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                       <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
@@ -454,8 +344,8 @@
                       <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                   </div>
-                  <!--/carousel-->
-                </div>
+                  <!--/carousel
+                </div>-->
               </div>
             </div>
             <div class="col-md-3">
@@ -468,26 +358,12 @@
           </div>
         </div><!-- main-content -->
         
-        <div class="block">
-          <h2 class="block-head">RETURN METHOD FOR THESE ITEMS</h2>
-            <p class="radio">
-              <input type="radio">
-              <label>USPS drop-off</label>
-              <span>Drop off at authorized USPS location or can be picked up by your USPS Delivery Person (if available). You will need a printer to print the pre-paid Shipping label and packing slip. $4.95 will be deducted from your refund.</span>
-            </p>
-            <p class="radio">
-              <input type="radio">
-              <label class="offer">Self-Return</label>
-              <span>Print your packagins slip and shup using shipping methods of your choice (you will pay for shippping). We highly recommend insuring your package to protect your shipment.</span>
-            </p>
-            <p class="address">
-                <span><strong>SZUL.COM</strong></span>
-                <span>12 East 46th Street, STE 2E New York, NY 10017</span>
-            </p>
-        </div>
+        
 
-        <div class="proceed-payment">
-          <a class="btn btn-primary-gradient btn-lg" href="03-return-process.html">CONTINUE</a>
+        <div class="proceed-payment clearfix">
+          <div class="col-md-9">
+            <a class="btn btn-primary-gradient btn-lg" href="03-return-process.html">CONTINUE</a>
+          </div>
         </div>
 
         <p class="text-center">All items must be returned by <strong>Friday, September 26, 2014</strong></p>

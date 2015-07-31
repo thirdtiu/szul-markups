@@ -16,7 +16,7 @@
 
 	.item-list {
 		margin-bottom: 32px;
-		p { margin: 0; }
+		p { margin: 10px 0px; }
 
 		.list-item {
 			padding: 16px 0;
@@ -208,6 +208,10 @@
 	}
 
 	.checkout {
+		.return-main-content{
+			float:none;
+			width:100%;
+		}
 		.main-content {
 			.block-forms .pull-left select {
 				background: #fff;
@@ -223,7 +227,7 @@
 	}
 
 	.form-item-reasons {
-		display: none;
+		//display: none;
 
 		.card {
 			height: auto;
@@ -257,6 +261,9 @@
 		}
 	}
 }
+.return-process-form{
+	width:100% !important;
+}
 #cs1-sp-input label{
 	margin-top:5px;
 }
@@ -281,7 +288,7 @@
 		}
 
 		.item-list {
-			margin-top: 32px;
+			//margin-top: 32px;
 			.list-item {
 				padding: 16px 0;
 
