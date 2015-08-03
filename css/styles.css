@@ -4330,20 +4330,23 @@ ul.steps {
   padding: 0;
   list-style-type: none;
   margin-bottom: 20px;
-  height: 52px;
+  height: 70px;
   line-height: 52px;
   font-family: "brandon_grotesquebold", sans-serif;
   color: #a5a5a5;
 }
 ul.steps li {
   float: left;
+  height: 100%;
   width: 33.33%;
-  padding: 0 10px;
+  padding: 8px 10px;
 }
 ul.steps li span {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  float: left;
+  font-size: 24px;
+  width: 52px;
+  height: 52px;
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
   -ms-border-radius: 32px;
@@ -4353,6 +4356,7 @@ ul.steps li span {
   text-align: center;
   line-height: 32px;
   margin-right: 14px;
+  padding-top: 10px;
 }
 ul.steps li.active {
   background: #f7f7f7;
@@ -4361,6 +4365,10 @@ ul.steps li.active {
 ul.steps li.active span {
   background: #fff;
   color: #9026a0;
+}
+
+.step-content {
+  float: left;
 }
 
 .create-form .create-intro .text-box {
