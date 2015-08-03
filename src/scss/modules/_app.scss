@@ -54,7 +54,7 @@ a.green{
 .select-another-diamond-btn{
 	font-family: "brandon_grotesquebold",sans-serif;
 	margin:15px 0px;
-	display:block;
+	display:inline-block;
 }
 .continue-shopping-link {
 	color: #934295 !important;
@@ -5816,8 +5816,10 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	color: #272727;
 	font-size: 16px;
 }
-
-.mm-page #divGray, .mm-page #dvCert {
+.mm-page #dvCert{
+	z-index: 1110 !important;
+}
+.mm-page #divGray{
 	z-index: 1100 !important;
 }
 
