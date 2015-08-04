@@ -634,6 +634,16 @@ $(function(){
 		$('.selected-metal-type').text($(this).data('metal-name'));
 	});
 
+	// GEMSTONE ITEM EVENT
+	$('.diamond-shapes').on('click', '.type > a', function(e) {
+		e.preventDefault();
+
+		$('.diamond-shapes li').removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().addClass('active');
+		$('.selected-diamond-shape').text($(this).data('type'));
+	});
+
 });
 
 /* Product details ring size */
