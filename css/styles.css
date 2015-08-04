@@ -2483,6 +2483,47 @@ a.green {
   margin-bottom: 20px;
 }
 
+.create-steps li {
+  position: relative;
+}
+
+.create-steps li .block-head {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 5px;
+}
+
+.step-details {
+  line-height: 14px;
+}
+.step-details .chosen-diamond-options {
+  float: right;
+  width: 30%;
+}
+.step-details .chosen-diamond-options span {
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  line-height: 12px;
+  border-radius: 0px;
+  background-color: white;
+  color: #272727;
+  padding-top: 7px;
+  margin-right: 0px;
+  float: right;
+  margin-left: 10%;
+}
+.step-details .chosen-diamond-options span:hover {
+  color: #ac47ad;
+}
+.step-details .chosen-diamond {
+  width: 70%;
+  margin-top: 8px;
+}
+.step-details .chosen-diamond img {
+  float: left;
+  margin-right: 10px;
+}
+
 .page-header.shopping-cart-heading {
   margin-bottom: 0 !important;
 }
@@ -4352,7 +4393,7 @@ ul.steps li span {
   -ms-border-radius: 32px;
   -o-border-radius: 32px;
   border-radius: 32px;
-  background: #f5f5f5;
+  background: white;
   text-align: center;
   line-height: 32px;
   margin-right: 14px;
@@ -4369,6 +4410,7 @@ ul.steps li.active span {
 
 .step-content {
   float: left;
+  width: 77%;
 }
 
 .create-form .create-intro .text-box {
@@ -6729,14 +6771,29 @@ div#thumbs .thumbs li.selected a.thumb {
     text-indent: 0;
   }
 
-  .product-large-view .the-product .gallerific-wrap #gal1, .product-large-view .the-product .gallerific-wrap #diamond-gallery {
+  .product-large-view .the-product .gallerific-wrap #gal1 {
     text-align: center;
   }
-  .product-large-view .the-product .gallerific-wrap #gal1 img, .product-large-view .the-product .gallerific-wrap #diamond-gallery img {
+  .product-large-view .the-product .gallerific-wrap #gal1 img {
     display: block;
     width: 100%;
   }
-  .product-large-view .the-product .gallerific-wrap #gal1 a, .product-large-view .the-product .gallerific-wrap #diamond-gallery a {
+  .product-large-view .the-product .gallerific-wrap #gal1 a {
+    border: 2px solid #ffffff;
+    width: 72px !important;
+    height: auto;
+    margin: 0px 5px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  .product-large-view .the-product .gallerific-wrap #diamond-gallery {
+    text-align: center;
+  }
+  .product-large-view .the-product .gallerific-wrap #diamond-gallery img {
+    display: block;
+    width: 100%;
+  }
+  .product-large-view .the-product .gallerific-wrap #diamond-gallery a {
     border: 2px solid #ffffff;
     width: 37px !important;
     height: auto;
