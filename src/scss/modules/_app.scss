@@ -239,6 +239,14 @@ a#nav-toggle{
 	margin:0 0 20px;
 	background:#444;
 }
+.stage-diamond-detail{
+	width: 400px;
+    margin: 0px auto;
+    position:relative;
+}
+.stage-diamond-detail #diamond-detail{
+	width:100%;
+}
 #home-carousel{
 	.carousel-indicator-wrap{
 		position:absolute;
@@ -4528,6 +4536,7 @@ div#thumbs{
 .engrave-footer-options .btn-primary-gradient {
 	width: 224px
 }
+
 
 /*----------------------------------*/
 

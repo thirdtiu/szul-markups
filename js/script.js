@@ -1069,7 +1069,15 @@ if ($('.return-process')) {
 
 $(document).ready(function($) {
 
-	$('.add-new-address-btn').on('click',function(){
+	$('#diamond-gallery a').on('click', function(){
+		if($('.diamond-thumb-first').hasClass('active')){
+			$('.testdiv').removeClass('hidden');
+		}
+	});
+
+	
+
+	$('.add-new-address-btn').click(function(){
 		$('.cc-select-billing-address').removeClass('show-existing-cc');
 		$('.cc-select-billing-address').addClass('show-create-cc');
 		$('.cc-select-billing-address .create-new-address-cc input').attr('required', '');

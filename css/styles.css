@@ -2648,6 +2648,16 @@ a#nav-toggle {
   background: #444;
 }
 
+.stage-diamond-detail {
+  width: 400px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.stage-diamond-detail #diamond-detail {
+  width: 100%;
+}
+
 #home-carousel .carousel-indicator-wrap {
   position: absolute;
   width: 100%;
