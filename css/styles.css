@@ -779,6 +779,67 @@ h2.contact-number {
   background-position: -423px -15px;
 }
 
+/*diamond shapes*/
+.preview-ring-diamond-shapes li {
+  padding: 10px 0px;
+  margin-right: 7px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.preview-ring-diamond-shapes li.active {
+  border: 2px solid #ac47ad;
+}
+
+.icon-diamond {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  background: url(../images/diamond-shapes-sprite.png) no-repeat;
+}
+
+.icon-diamond-asscher {
+  background-position: 0px 0px;
+}
+
+.icon-diamond-cushion {
+  background-position: -20px 0px;
+}
+
+.icon-diamond-emerald {
+  background-position: -40px 0px;
+}
+
+.icon-diamond-heart {
+  background-position: -60px 0px;
+}
+
+.icon-diamond-marquise {
+  background-position: -80px 0px;
+}
+
+.icon-diamond-oval {
+  background-position: -100px 0px;
+}
+
+.icon-diamond-pear {
+  background-position: -120px 0px;
+}
+
+.icon-diamond-princess {
+  background-position: -140px 0px;
+}
+
+.icon-diamond-radiant {
+  background-position: -160px 0px;
+}
+
+.icon-diamond-round {
+  background-position: -180px 0px;
+}
+
 .icon-mfb {
   width: 15px;
   height: 15px;
@@ -4353,7 +4414,7 @@ ul.payment-icons li {
 
 .completed-product-img img,
 .ring-setting-img img {
-  width: 80%;
+  width: 60%;
   margin: 0px auto;
 }
 

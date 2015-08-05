@@ -1079,10 +1079,8 @@ if ($('.return-process')) {
 
 $(document).ready(function($) {
 
-	$('#diamond-gallery a').on('click', function(){
-		if($('.diamond-thumb-first').hasClass('active')){
-			$('.testdiv').removeClass('hidden');
-		}
+	$('.diamond-thumb-first').on('click', function(){
+		$('.testdiv').removeClass('hidden');
 	});
 
 	
