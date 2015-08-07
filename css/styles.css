@@ -8231,7 +8231,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
 }
 
 .matching-brand-item-img img {
-  margin-bottom: 30px;
+  margin: 0px auto;
 }
 
 .matching-brand-item-img a {
@@ -9361,6 +9361,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   color: #272727;
   display: inline-block;
   margin-left: 5px;
+  font-size: 12px;
 }
 
 /* Small devices (tablets, 768px and up) */
