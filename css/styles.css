@@ -9257,6 +9257,49 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   float: none;
 }
 
+.your-diamond-change-btn:hover .change-tooltip {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.change-tooltip {
+  position: absolute;
+  top: -40px;
+  left: -14px;
+  background-color: white;
+  padding: 7px 20px;
+  z-index: 9;
+  box-shadow: 0px 0px 1px 1px #dddddd;
+  transition: .5s all;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid white;
+  position: absolute;
+  top: 28px;
+}
+
+.chosen-diamond-options > a {
+  position: relative;
+  color: #272727;
+  display: inline-block;
+  margin-left: 5px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .diamond-detail-tabs .col-2 {
