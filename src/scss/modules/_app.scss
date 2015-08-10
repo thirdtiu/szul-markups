@@ -5970,6 +5970,35 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	height: 20px;
 	width: 20px;
 }
+.ring-setting-thumbs {
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.ring-setting-thumbs ul {
+	margin-left: auto;
+	margin-right: auto;
+	width: 256px;
+}
+
+.ring-setting-thumbs ul li {
+	float: left;
+	height: 71px;
+	list-style: none;
+	margin-right: 20px;
+	width: 71px;
+}
+.ring-setting-thumbs ul li:last-child {
+	margin-right: 0;
+}
+.ring-setting-thumbs ul li a {
+	display: block;
+	border: 2px solid #dddddd;
+}
+.ring-setting-thumbs ul li a.active-thumb, .ring-setting-thumbs ul li a:hover {
+	border: 2px solid #934295;
+}
+
 @media (max-width: 768px) {
 	.order-item-review .order-number {
 		text-align: center;
