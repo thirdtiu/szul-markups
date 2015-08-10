@@ -1080,7 +1080,36 @@ if ($('.return-process')) {
 $(document).ready(function($) {
 
 	$('.diamond-thumb-first').on('click', function(){
-		$('.testdiv').removeClass('hidden');
+		$('#diamond-gallery a').removeClass('active');
+		$(this).addClass('active');
+		$('.stage-diamond-detail');
+		$('.diamond-details-labels').removeClass('hidden');
+		$('.diamond-details-labels2').addClass('hidden');
+		var diamondThumb1 = $(this).attr('data-image');
+
+		$('#diamond-details-img').attr('src', diamondThumb1);
+		
+	});
+	$('.diamond-thumb-second').on('click', function(){
+		$('#diamond-gallery a').removeClass('active');
+		$(this).addClass('active');
+		$('.diamond-details-labels2').removeClass('hidden');
+		$('.diamond-details-labels').addClass('hidden');
+
+		var diamondThumb2 = $(this).attr('data-image');
+
+		$('#diamond-details-img').attr('src', diamondThumb2);
+	});
+
+	$('.diamond-thumb-third').on('click', function(){
+		$('#diamond-gallery a').removeClass('active');
+		$(this).addClass('active');
+		$('.diamond-details-labels, .diamond-details-labels2').addClass('hidden');
+
+		var diamondThumb3 = $(this).attr('data-image');
+
+		$('#diamond-details-img').attr('src', diamondThumb3);
+
 	});
 
 	

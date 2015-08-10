@@ -9320,6 +9320,45 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   float: none;
 }
 
+.stage-diamond-detail img {
+  width: 100%;
+}
+
+.diamond-details-labels {
+  position: absolute;
+  top: 0px;
+}
+.diamond-details-labels span {
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+.diamond-details-labels .table-label {
+  top: 61px;
+  left: 157px;
+  width: 100px;
+}
+.diamond-details-labels .depth-label {
+  top: 185px;
+}
+.diamond-details-labels .culet-label {
+  top: 295px;
+  left: 110px;
+}
+.diamond-details-labels .girdle-label {
+  top: 290px;
+  left: 312px;
+}
+.diamond-details-labels .depth-percent-label {
+  top: 170px;
+  left: 350px;
+}
+
+#diamond-gallery {
+  margin-top: 30px;
+}
+
 .your-diamond-change-btn:hover .change-tooltip {
   transform: translateY(0px);
   -webkit-transform: translateY(0px);

@@ -4,6 +4,42 @@
 		float: none;
 	}
 }
+.stage-diamond-detail img{
+	width:100%;
+}
+.diamond-details-labels{
+	position:absolute;
+	top:0px;
+	span{
+		position: absolute;
+		background-color: white;
+        padding: 5px;
+        font-weight:bold;
+	}
+	.table-label{
+		top: 61px;
+    	left: 157px;
+    	width: 100px;
+	}
+	.depth-label{
+		top: 185px;
+	}
+	.culet-label{
+		top: 295px;
+        left: 110px;
+	}
+	.girdle-label{
+		top: 290px;
+        left: 312px;
+	}
+	.depth-percent-label{
+		top: 170px;
+        left: 350px;
+	}
+}
+#diamond-gallery{
+	margin-top:30px;
+}
 .your-diamond-change-btn:hover .change-tooltip{
 	transform:translateY(0px);
     -webkit-transform:translateY(0px);
