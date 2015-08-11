@@ -1887,7 +1887,7 @@ ul.payment-icons{
 	}
 }
 
-#customize-tooltip {
+#customize-tooltip, .ring-setting-thumbs ul li a:hover {
 	cursor: pointer;
 }
 
@@ -5995,7 +5995,7 @@ form.diamond_filter .form-group .sub-group input[type="text"]{
 	display: block;
 	border: 2px solid #dddddd;
 }
-.ring-setting-thumbs ul li a.active-thumb, .ring-setting-thumbs ul li a:hover {
+.ring-setting-thumbs ul li a.active-thumb{
 	border: 2px solid #934295;
 }
 

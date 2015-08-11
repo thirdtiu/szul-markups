@@ -1112,6 +1112,16 @@ $(document).ready(function($) {
 
 	});
 
+	$('.ring-setting-thumbs li a').on('click', function(){
+		$('.ring-setting-thumbs li a').removeClass('active-thumb');
+		$(this).addClass('active-thumb');
+
+		var ringSettingThumb = $(this).attr('data-image');
+
+		$('#ring-setting-image-preview').attr('src', ringSettingThumb);
+
+	});
+
 	
 
 	$('.add-new-address-btn').click(function(){

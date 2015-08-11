@@ -143,6 +143,9 @@
 .mobile-advanced-create-container{
 	display:none;
 }
+.diamond-product-detail-mob .item{
+	padding: 0px 40px 40px;
+}
 @media(max-width:768px){
 	.mobile-create-advanced-table{
 		border:0px;
@@ -174,10 +177,10 @@
 	}
 	
 }
-@media (max-width:768px){
+@media (max-width:991px){
 	.diamond-product-detail-mob .item img{
 		width:260px !important;
-		margin:0px auto;
+		margin:0px auto 20px;
 	}
 	.diamond-details-labels span{
 		font-size:12px;
@@ -212,5 +215,20 @@
 	.depth-percent-label{
 		top: 120px !important;
         left: 215px !important;
+	}
+	.gallerific-wrap-diamond{
+		padding:0px;
+	}
+	.diamond-round-width-label{
+		top: 127px !important;
+        left: -19px !important;
+        text-align: left;
+        font-size: 10px !important;
+        border-radius: 30px;
+	}
+	.diamond-round-height-label{
+		top: 230px !important;
+        left: 112px !important;
+        font-size: 10px !important;
 	}
 }

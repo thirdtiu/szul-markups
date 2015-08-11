@@ -7,7 +7,7 @@
 .stage-diamond-detail img{
 	width:100%;
 }
-.diamond-details-labels{
+.diamond-details-labels, .diamond-details-labels2{
 	position:absolute;
 	top:0px;
 	span{
@@ -36,6 +36,18 @@
 		top: 170px;
         left: 350px;
 	}
+	.diamond-round-height-label{
+		top: 357px;
+        left: 192px;
+	}
+	.diamond-round-width-label{
+		top: 215px;
+		left: -13px;
+	}
+}
+.preview-ring-mobile .item img{
+	width:80% !important;
+	margin:0px auto;
 }
 #diamond-gallery{
 	margin-top:30px;

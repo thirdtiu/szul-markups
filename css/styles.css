@@ -4309,7 +4309,7 @@ ul.payment-icons li {
   right: 7px;
 }
 
-#customize-tooltip {
+#customize-tooltip, .ring-setting-thumbs ul li a:hover {
   cursor: pointer;
 }
 
@@ -8315,7 +8315,7 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   border: 2px solid #dddddd;
 }
 
-.ring-setting-thumbs ul li a.active-thumb, .ring-setting-thumbs ul li a:hover {
+.ring-setting-thumbs ul li a.active-thumb {
   border: 2px solid #934295;
 }
 
@@ -9197,12 +9197,14 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   z-index: 99;
 }
 
-.product-detail-mob .owl-theme .owl-dots .owl-dot.active span {
-  background: #934295;
+.product-detail-mob .owl-theme .owl-dots .owl-dot.active span,
+.preview-ring-mobile .owl-dots .owl-dot.active span {
+  background: #934295 !important;
 }
 
-.product-detail-mob .owl-theme .owl-dots .owl-dot span {
-  background: white;
+.product-detail-mob .owl-theme .owl-dots .owl-dot span,
+.preview-ring-mobile .owl-dots .owl-dot span {
+  background: white !important;
   border: 1px solid #934295;
 }
 
@@ -9356,35 +9358,48 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   width: 100%;
 }
 
-.diamond-details-labels {
+.diamond-details-labels, .diamond-details-labels2 {
   position: absolute;
   top: 0px;
 }
-.diamond-details-labels span {
+.diamond-details-labels span, .diamond-details-labels2 span {
   position: absolute;
   background-color: white;
   padding: 5px;
   font-weight: bold;
 }
-.diamond-details-labels .table-label {
+.diamond-details-labels .table-label, .diamond-details-labels2 .table-label {
   top: 61px;
   left: 157px;
   width: 100px;
 }
-.diamond-details-labels .depth-label {
+.diamond-details-labels .depth-label, .diamond-details-labels2 .depth-label {
   top: 185px;
 }
-.diamond-details-labels .culet-label {
+.diamond-details-labels .culet-label, .diamond-details-labels2 .culet-label {
   top: 295px;
   left: 110px;
 }
-.diamond-details-labels .girdle-label {
+.diamond-details-labels .girdle-label, .diamond-details-labels2 .girdle-label {
   top: 290px;
   left: 312px;
 }
-.diamond-details-labels .depth-percent-label {
+.diamond-details-labels .depth-percent-label, .diamond-details-labels2 .depth-percent-label {
   top: 170px;
   left: 350px;
+}
+.diamond-details-labels .diamond-round-height-label, .diamond-details-labels2 .diamond-round-height-label {
+  top: 357px;
+  left: 192px;
+}
+.diamond-details-labels .diamond-round-width-label, .diamond-details-labels2 .diamond-round-width-label {
+  top: 215px;
+  left: -13px;
+}
+
+.preview-ring-mobile .item img {
+  width: 80% !important;
+  margin: 0px auto;
 }
 
 #diamond-gallery {
@@ -10149,6 +10164,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   display: none;
 }
 
+.diamond-product-detail-mob .item {
+  padding: 0px 40px 40px;
+}
+
 @media (max-width: 768px) {
   .mobile-create-advanced-table {
     border: 0px;
@@ -10185,10 +10204,10 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     padding: 0px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .diamond-product-detail-mob .item img {
     width: 260px !important;
-    margin: 0px auto;
+    margin: 0px auto 20px;
   }
 
   .diamond-details-labels span {
@@ -10230,6 +10249,24 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   .depth-percent-label {
     top: 120px !important;
     left: 215px !important;
+  }
+
+  .gallerific-wrap-diamond {
+    padding: 0px;
+  }
+
+  .diamond-round-width-label {
+    top: 127px !important;
+    left: -19px !important;
+    text-align: left;
+    font-size: 10px !important;
+    border-radius: 30px;
+  }
+
+  .diamond-round-height-label {
+    top: 230px !important;
+    left: 112px !important;
+    font-size: 10px !important;
   }
 }
 body.modal-open {
