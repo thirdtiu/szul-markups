@@ -9397,6 +9397,17 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
   left: -13px;
 }
 
+.my-account-mobile-menu {
+  border-bottom: 2px solid #ac47ad;
+}
+
+.avatar-account-icon {
+  float: left;
+  margin-top: 8px !important;
+  font-size: 18px;
+  width: auto !important;
+}
+
 .preview-ring-mobile .item img {
   width: 80% !important;
   margin: 0px auto;
