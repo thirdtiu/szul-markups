@@ -10185,10 +10185,51 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     padding: 0px;
   }
 }
-@media (min-width: 415px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .diamond-product-detail-mob .item img {
-    width: 50% !important;
+    width: 260px !important;
     margin: 0px auto;
+  }
+
+  .diamond-details-labels span {
+    font-size: 12px;
+  }
+
+  .diamond-details-labels-container {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 0px;
+    left: 50%;
+    margin-left: -130px;
+  }
+
+  .table-label {
+    top: 20px !important;
+    left: 104px !important;
+    width: 60px !important;
+  }
+
+  .depth-label {
+    top: 125px !important;
+    left: 0px !important;
+  }
+
+  .culet-label {
+    top: 189px !important;
+    left: 65px !important;
+  }
+
+  .girdle-label {
+    top: 198px !important;
+    left: 156px !important;
+    width: 80px !important;
+    border-radius: 13px;
+  }
+
+  .depth-percent-label {
+    top: 120px !important;
+    left: 215px !important;
   }
 }
 body.modal-open {
