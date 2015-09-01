@@ -1216,6 +1216,7 @@ h2.contact-number {
   float: left;
   vertical-align: middle;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 .top_primary #logo img, .top_primary .main-logo img {
   display: block;
@@ -1781,6 +1782,12 @@ ul.breadcrumbs li h2 {
   font-weight: bold;
 }
 
+ul.breadcrumbs li.current h1 {
+  color: #373737;
+  font-size: 16px;
+  font-family: "brandon_grotesquebold", sans-serif;
+}
+
 .fixed-container {
   position: fixed;
   z-index: 100;
@@ -1841,6 +1848,13 @@ ul.breadcrumbs li h2 {
     margin-right: 15px;
   }
 }
+.main-home-heading {
+  font-size: 16px;
+  font-family: "museo_sans300", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .top_secondary {
   -webkit-transition: background-color 1s;
   /* For Safari 3.1 to 6.0 */
