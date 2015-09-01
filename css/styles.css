@@ -1139,6 +1139,24 @@ h2.contact-number {
   border-right: 1px solid #b9b9b9;
 }
 
+.centered-tabs > li h3 a {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  border: none;
+  padding: 10px 15px;
+}
+
+.centered-tabs > li h3 a:hover {
+  text-decoration: underline;
+}
+
+.centered-tabs > li.active > h3 > a {
+  color: #6a6a6a;
+  text-decoration: underline;
+}
+
 .col-2 {
   width: 48.41269841269841%;
   float: left;
@@ -1198,6 +1216,7 @@ h2.contact-number {
   float: left;
   vertical-align: middle;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 .top_primary #logo img, .top_primary .main-logo img {
   display: block;
@@ -1758,6 +1777,17 @@ ul.breadcrumbs li span {
   vertical-align: baseline;
 }
 
+ul.breadcrumbs li h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+ul.breadcrumbs li.current h1 {
+  color: #373737;
+  font-size: 16px;
+  font-family: "brandon_grotesquebold", sans-serif;
+}
+
 .fixed-container {
   position: fixed;
   z-index: 100;
@@ -1818,6 +1848,13 @@ ul.breadcrumbs li span {
     margin-right: 15px;
   }
 }
+.main-home-heading {
+  font-size: 16px;
+  font-family: "museo_sans300", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .top_secondary {
   -webkit-transition: background-color 1s;
   /* For Safari 3.1 to 6.0 */
