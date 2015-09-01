@@ -1139,6 +1139,24 @@ h2.contact-number {
   border-right: 1px solid #b9b9b9;
 }
 
+.centered-tabs > li h3 a {
+  color: #6a6a6a;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  border: none;
+  padding: 10px 15px;
+}
+
+.centered-tabs > li h3 a:hover {
+  text-decoration: underline;
+}
+
+.centered-tabs > li.active > h3 > a {
+  color: #6a6a6a;
+  text-decoration: underline;
+}
+
 .col-2 {
   width: 48.41269841269841%;
   float: left;
@@ -1756,6 +1774,11 @@ ul.breadcrumbs li a {
 ul.breadcrumbs li span {
   color: #9d54a8;
   vertical-align: baseline;
+}
+
+ul.breadcrumbs li h2 {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .fixed-container {
