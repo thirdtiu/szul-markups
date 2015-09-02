@@ -476,6 +476,20 @@ img.paypal-btn{
 	.the-product.row.set{
 		min-height:855px;
 	}
+}
+
+.gift-items figure{
+	padding:5px 2%;
+	border:1px solid #dddddd;
+}
+@media(min-width:769px){
+	.figure2{
+		text-align:center;
+		img{
+			width:60%;
+			margin-top:20px;
+		}
+	}
 
 }
 @media(min-width:769px) and (max-width:949px){

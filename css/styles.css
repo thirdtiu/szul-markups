@@ -8088,10 +8088,6 @@ form.diamond_filter .form-group .sub-group input[type="text"] {
     height: 53px !important;
   }
 
-  .windowshade {
-    padding-top: 11px !important;
-  }
-
   .header-contact-icon {
     display: block;
     position: absolute;
@@ -10884,6 +10880,20 @@ img.paypal-btn {
 @media (min-width: 768px) {
   .the-product.row.set {
     min-height: 855px;
+  }
+}
+.gift-items figure {
+  padding: 5px 2%;
+  border: 1px solid #dddddd;
+}
+
+@media (min-width: 769px) {
+  .figure2 {
+    text-align: center;
+  }
+  .figure2 img {
+    width: 60%;
+    margin-top: 20px;
   }
 }
 @media (min-width: 769px) and (max-width: 949px) {
